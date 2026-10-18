@@ -5,7 +5,7 @@ RESERVA = {
  "divisor": [
   "USO: fim da apresentação principal; mostrar só se houver perguntas.",
   "PONTO-CHAVE: daqui em diante é material de apoio, para responder perguntas.",
-  "FALA: Depois das mensagens finais deixei material de apoio: a síntese das drogas, um slide para cada droga de bolus e para a vasopressina, os adjuvantes do choque refratário, a sequência da SSC 2026, os alvos de pressão no choque e no intraoperatório, a conduta na falência de VD, o roteiro e as referências. Posso abrir o que for útil para a discussão.",
+  "FALA: Depois das mensagens finais deixei material de apoio: a síntese das drogas, um slide para cada droga de bolus e para a vasopressina, os adjuvantes do choque refratário, a sequência da SSC 2026, os alvos de pressão no choque e no intraoperatório, o roteiro e as referências. Posso abrir o que for útil para a discussão.",
  ],
  "comparativo": [
   "USO: pergunta sobre comparação entre drogas, receptores ou doses.",
@@ -87,6 +87,6 @@ RESERVA = {
  "refs": [
   "USO: se pedirem a referência exata de um estudo citado.",
   "PONTO-CHAVE: as citações completas estão abaixo; as diretrizes de base são SSC 2026, ESICM 2025, POQI 2024 e Miller, 10ª ed.",
-  "FALA: As referências estão neste slide em forma abreviada; nas notas estão os dados completos dos principais estudos.",
+  "FALA: As principais referências estão resumidas neste slide; os detalhes dos estudos estão nas notas correspondentes.",
  ],
 }
