@@ -40,7 +40,64 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 18
+## Estado atual: versão 19 (cerca de 18 minutos)
+
+O Bruno autorizou passar de 15 minutos, sem chegar a 20. São 34 slides: 20 na apresentação
+principal e 14 de reserva. Tempo previsto: 18 min 20 s; ensaiar em 18 a 19 minutos.
+
+| Slide | Título | Tempo |
+|---|---|---|
+| 1 | Capa | 20 s |
+| 2 | Escolher a droga pelo mecanismo da hipotensão (objetivos) | 30 s |
+| 3 | Determinantes da pressão arterial média | 1 min |
+| 4 | Pressão arterial não garante perfusão (novo) | 1 min |
+| 5 | Receptores e vias de sinalização | 45 s |
+| 6 | Catecolaminas e não catecolaminas | 30 s |
+| 7 | Noradrenalina | 1 min 15 s |
+| 8 | Adrenalina | 1 min |
+| 9 | Dopamina e dobutamina | 1 min |
+| 10 | AMPc: onde agem dobutamina e milrinona (novo, diagrama) | 1 min |
+| 11 | Milrinona | 45 s |
+| 12 | Milrinona ou dobutamina: quando escolher | 1 min 15 s |
+| 13 | Fenilefrina e efedrina | 1 min |
+| 14 | Vasopressina e adjuvantes | 1 min |
+| 15 | Choque séptico: recomendações da SSC 2026 | 1 min |
+| 16 | Escolha da droga no intraoperatório (agora fluxograma) | 1 min 15 s |
+| 17 | Hipotensão intraoperatória e alvo de pressão | 45 s |
+| 18 | Caso: hipotensão na saída de CEC (novo, caso ilustrativo) | 1 min |
+| 19 | Falência de VD após CEC: o que fazer (novo) | 1 min 15 s |
+| 20 | Problema hemodinâmico e droga de escolha | 45 s |
+
+## O que mudou na versão 19
+
+- Auditoria aprofundada do Codex, correções obrigatórias:
+  - milrinona: indicação passou a "disfunção ventricular com baixo débito que exige suporte
+    inotrópico", incluindo dificuldade de saída de CEC e falência de VD;
+  - milrinona × dobutamina: a tabela virou "perfil esperado" ("tende a"), os cartões viraram
+    "Considere"; nas notas, DOREMI sem diferença em arritmias, hipotensão sustentada e
+    vasopressor, e subanálise por betabloqueador sem vantagem da milrinona;
+  - vasopressina: sem regras absolutas de dose e desmame;
+  - dobutamina: "associar vasopressor quando necessário para sustentar a pressão de perfusão"
+    no lugar de "nunca no lugar dele";
+  - PAM < 65: "risco associado", em estudos observacionais; associação não prova benefício.
+- Slides novos: perfusão (sinais de hipoperfusão e resposta a volume), sinalização AMPc
+  (β1–Gs–adenilato ciclase–AMPc–PKA e PDE3), caso ilustrativo de falência de VD pós-CEC e
+  conduta (pressão de perfusão, RVP, contratilidade, volume e ritmo).
+- Fluxograma intraoperatório no lugar da tabela.
+- ECR de 2025 (Tongyoo, Ann Med 2025; n = 64): milrinona aumentou o débito em 6 h vs.
+  placebo, mortalidade em 28 dias igual (50% × 50%). Está nas notas do slide de perfusão.
+- Revisão final (4 revisores com verificação): 127 achados confirmados aplicados, entre eles
+  HISTAP com primeiro autor Cecconi, unidades, "certeza baixa" e redação mais formal.
+- Miller: marcadores "[cap./pág.]" retirados; citação padronizada como "Miller's Anesthesia,
+  10ª ed. (2025)". O PDF de 287 MB no Drive não teve texto extraído; capítulos e páginas
+  ficam para quando o sumário estiver disponível.
+- Conversor: números serifados fora dos títulos saem em Cambria (a Georgia tem algarismos de
+  estilo antigo); itens de lista com subscrito mantêm o marcador.
+- Imagens de eco não entraram: a rede do ambiente bloqueia os sites das figuras. Candidatas com
+  licença aberta: Yamano, J Med Ultrason 2024, Fig. 1 (CC BY 4.0); Hori, Rev Cardiovasc Med
+  2025, Fig. 1.
+
+## Estado anterior: versão 18
 
 30 slides: 16 na apresentação principal e 14 de reserva para perguntas. Tempo previsto da
 parte principal: 13 min 50 s. A meta é ensaiar em 13 a 14 minutos.
@@ -290,11 +347,11 @@ Em Linux, instale `fonts-liberation` para que as quebras de linha batam com o Po
 
 Estas dependem do Bruno:
 
-1. Miller's Anesthesia, 10ª ed.: preencher `[cap./pág.]` nos rodapés e `[caps.]` nas
-   referências. O Bruno precisa mandar o sumário ou os capítulos, porque o PDF está num
-   projeto do Claude que esta sessão não acessa.
-2. Ensaiar com cronômetro, mirando 13 a 14 minutos. Os tempos por slide estão nas notas da
+1. Miller's Anesthesia, 10ª ed.: acrescentar capítulos (e páginas) quando houver o sumário,
+   por exemplo prints das páginas do sumário.
+2. Ensaiar com cronômetro, mirando 18 a 19 minutos. Os tempos por slide estão nas notas da
    capa.
+3. Opcional: imagem de eco de VD dilatado com septo retificado no slide do caso.
 
 ## Regras para continuar o trabalho
 
@@ -310,6 +367,6 @@ Estas dependem do Bruno:
   - símbolo da UFRJ no canto inferior direito de todos os slides;
   - títulos serifados e texto sem serifa;
   - uma ideia por slide, com a fonte no rodapé.
-- Manter a parte principal em 15 minutos, com folga; material extra vai para a reserva.
+- Manter a parte principal em cerca de 18 minutos, sem passar de 20; material extra vai para a reserva.
 - Editar a fonte HTML, rodar `npm run verificar` e regenerar o .pptx, ou editar só o .pptx.
   Não misturar os dois sem sincronizar.

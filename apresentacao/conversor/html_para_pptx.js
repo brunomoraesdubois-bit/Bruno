@@ -20,6 +20,9 @@ const PX = 1 / 144; // polegadas por px: 1920 px = 13,333 pol (LAYOUT_WIDE)
 const PT = 0.5; // pontos por px
 const FONTE_TITULO = 'Georgia';
 const FONTE_TEXTO = 'Calibri';
+// A Georgia tem algarismos de estilo antigo ("0,03" vira "o,o3"): números serifados fora dos
+// títulos saem em Cambria, que tem algarismos alinhados
+const FONTE_NUMEROS = 'Cambria';
 
 const TEMA = {
   nome: 'Aminas Vasoativas',
@@ -315,7 +318,8 @@ function separarIndices(texto) {
   return partes;
 }
 
-function montarTrechos(trechos) {
+function montarTrechos(trechos, tag = '') {
+  const titulo = /^H[12]$/.test(tag);
   const out = [];
   let quebrarAntes = false;
   for (const r of trechos) {
@@ -325,7 +329,7 @@ function montarTrechos(trechos) {
     }
     for (const parte of separarIndices(r.texto)) {
       const op = {
-        fontFace: r.serif ? FONTE_TITULO : FONTE_TEXTO,
+        fontFace: r.serif ? (!titulo && /\d/.test(r.texto) ? FONTE_NUMEROS : FONTE_TITULO) : FONTE_TEXTO,
         fontSize: +(r.tam * PT).toFixed(1),
         color: r.cor || '000000',
         bold: r.negrito,
@@ -462,7 +466,7 @@ function ajusteLinhaDeBase(it) {
 }
 
 function adicionarTexto(slide, pres, it, opcoesExtra = {}) {
-  const trechos = montarTrechos(it.trechos);
+  const trechos = montarTrechos(it.trechos, it.tag);
   if (!trechos.length) return;
   const umaLinha = it.linhas === 1 || it.semQuebra;
   const comum = {
@@ -505,6 +509,9 @@ function adicionarTexto(slide, pres, it, opcoesExtra = {}) {
   if (it.marcador) {
     x -= it.marcador;
     w += it.marcador;
+    // Com vários trechos (ex.: "CO₂"), o pptxgenjs repete o pPr em cada trecho; sem o marcador
+    // em todos, o último pPr (sem marcador) prevalece
+    for (const tr of trechos) tr.options = { ...tr.options, ...marcador };
   }
   slide.addText(trechos, {
     x: x * PX, y: y * PX, w: w * PX, h: h * PX,
@@ -715,7 +722,7 @@ async function main() {
         if (it === t && !it.pintura) {
           // Com placeholder, o pptxgenjs só aplica espaçamento de linha vindo dos trechos
           const lineSpacing = +(it.lh * PT).toFixed(2);
-          const trechos = montarTrechos(it.trechos).map((r) => ({ ...r, options: { ...r.options, lineSpacing } }));
+          const trechos = montarTrechos(it.trechos, it.tag).map((r) => ({ ...r, options: { ...r.options, lineSpacing } }));
           slide.addText(trechos, { placeholder: 'title', lineSpacing, paraSpaceBefore: 0, paraSpaceAfter: 0 });
         } else {
           adicionarTexto(slide, pres, it);
