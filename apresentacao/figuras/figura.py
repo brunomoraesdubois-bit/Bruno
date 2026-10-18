@@ -62,7 +62,7 @@ t(1100, 428, "libera Ca²⁺", 20, CINZA, 600)
 caixa(1330, 354, 250, 44, "SERCA2a · fosfolambam", size=21)
 t(1455, 428, "recapta Ca²⁺", 20, CINZA, 600)
 # fosforilação pela PKA
-for (x2, y2) in ((1044, 178), (1100, 350), (1452, 350)):
+for (x2, y2) in ((1044, 178), (1452, 350)):
     s.append(f'<line x1="922" y1="262" x2="{x2}" y2="{y2}" stroke="{LARANJA}" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#p{LARANJA[1:]})"/>')
 t(860, 322, "PKA fosforila →", 20, LARANJA, 700)
 # resultado

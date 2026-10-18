@@ -46,17 +46,17 @@ PERGUNTAS = [
  ("Milrinona no choque séptico?",
   "A SSC 2026 não encontrou dados para comparar com a dobutamina. Em um ECR de 2025 (Tongyoo, 64 pacientes), a milrinona aumentou o débito em 6 h, sem diferença de mortalidade (50% vs. 50%). Débito maior não é desfecho melhor."),
  ("Então quando a milrinona tem indicação?",
-  "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, a hipotensão é vasoplegia e a droga é o vasopressor. Slide 12 e reserva “Falência de VD”."),
+  "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, a hipotensão é vasoplegia e a droga é o vasopressor. Slides 12 e 13."),
  ("Quando associar vasopressina?",
-  "SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide 15 e reserva."),
+  "SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide 16 e reserva."),
  ("Qual o alvo de PAM no intraoperatório?",
-  "POQI 2024: PAM ≥60 mmHg em pacientes de risco como piso, maior com pressão venosa ou compartimental alta. HISTAP favoreceu ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram neutros. Slide 17 e reserva."),
+  "POQI 2024: PAM ≥60 mmHg em pacientes de risco como piso, maior com pressão venosa ou compartimental alta. HISTAP favoreceu ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram neutros. Slide 18 e reserva."),
  ("Noradrenalina em veia periférica é segura?",
   "Na metanálise de Tran, complicações em 7% (combinada 8,6%), 96% leves; menos com protocolo de segurança. A SSC 2026 sugere iniciar por veia periférica. Reserva “Início precoce e via periférica”."),
  ("Fenilefrina ou noradrenalina na cesárea?",
   "O consenso de 2018 recomenda vasopressor α-agonista em infusão profilática. A noradrenalina causa menos bradicardia materna, com pH umbilical semelhante (Sharkey, 10,7% vs. 37,5% de bradicardia). Reserva “Fenilefrina”."),
  ("E na hipotensão da reperfusão do transplante hepático?",
-  "No estudo do nosso serviço (Gouvêa, Diaz et al., PLoS One 2022; 19 pacientes, ETE), a função do VD foi normal em todas as fases, inclusive após a reperfusão. O eco ajuda a separar vasoplegia de disfunção ventricular; na vasoplegia refratária, vasopressina e, como resgate, azul de metileno. Slide 16."),
+  "No estudo do nosso serviço (Gouvêa, Diaz et al., PLoS One 2022; 19 pacientes, ETE), a função do VD foi normal em todas as fases, inclusive após a reperfusão. O eco ajuda a separar vasoplegia de disfunção ventricular; na vasoplegia refratária, vasopressina e, como resgate, azul de metileno. Slide 17."),
  ("Dopamina em dose renal?",
   "Não protege o rim: no ANZICS (n = 328), sem diferença em creatinina, diálise ou mortalidade."),
  ("E o azul de metileno?",
@@ -88,7 +88,7 @@ for k, id_ in enumerate(ordem[ini_res + 1:], ini_res + 2):
 
 perguntas = "".join(f'<details class="q"><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in PERGUNTAS)
 reserva = "".join(blocos_res)
-marcos = [(6, "fim da farmacologia básica"), (12, "fim de milrinona × dobutamina"), (16, "fim da escolha no intraoperatório")]
+marcos = [(6, "fim da farmacologia básica"), (13, "fim de milrinona, dobutamina e falência de VD"), (17, "fim da escolha no intraoperatório")]
 acum = [0] + [x['fim'] for x in dados]
 marcos_html = "".join(f'<li><b>{mmss(acum[k])}</b> ao fim do slide {k} — {m}</li>' for k, m in marcos)
 indice = "".join(f'<a href="#s{x["n"]}"><span>{x["n"]:02d}</span>{e(x["titulo"])}</a>' for x in notas)
@@ -156,16 +156,16 @@ html {{ scroll-behavior: smooth }}
   <p>O que dizer em cada slide, com o relógio acumulado, a frase-chave, a transição para o próximo e o que guardar para as perguntas. O mesmo texto está nas notas do apresentador de cada slide.</p>
 </header>
 <div class="painel">
-  <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">18 slides principais. Ensaiar em 16 a 17 minutos, sem passar de 20.</p></section>
+  <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">19 slides principais. Ensaiar em cerca de 17 minutos e meio, sem passar de 18.</p></section>
   <section><h3>Marcos no cronômetro</h3><ul>{marcos_html}</ul></section>
-  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Números de estudos só se perguntarem.</li><li>No slide 16, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado do serviço.</li></ul></section>
+  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Números de estudos só se perguntarem.</li><li>No slide 17, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado do serviço.</li></ul></section>
 </div>
 <nav class="indice" aria-label="Slides">{indice}</nav>
 {"".join(blocos)}
 <h2 class="secao">Perguntas prováveis</h2>
 {perguntas}
 <h2 class="secao">Slides de reserva</h2>
-<p style="margin:0;color:var(--suave)">Depois do divisor (slide 19). Cada um tem uma fala curta, para responder perguntas sem voltar à apresentação principal.</p>
+<p style="margin:0;color:var(--suave)">Depois do divisor (slide 20). Cada um tem uma fala curta, para responder perguntas sem voltar à apresentação principal.</p>
 {reserva}
 </main>
 '''

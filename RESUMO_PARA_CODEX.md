@@ -40,12 +40,11 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 22 (cerca de 17 minutos)
+## Estado atual: versão 23 (cerca de 17 minutos e meio)
 
-33 slides: 18 na apresentação principal, um divisor e 14 de reserva. Tempo previsto da parte
-principal: 16 min 50 s, calibrado pela contagem de palavras da fala (cerca de 125 palavras por
-minuto); ensaiar em cerca de 17 minutos, sem passar de 20. O caso clínico ilustrativo foi
-retirado a pedido do Bruno (plateia mais experiente); a conduta na falência de VD ficou na reserva.
+33 slides: 19 na apresentação principal, um divisor e 13 de reserva. Tempo previsto da parte
+principal: 17 min 45 s (2.100 palavras de fala, cerca de 117 palavras por minuto, já com folga
+para pausas); limite combinado com o Bruno: 18 minutos.
 
 | Slide | Título | Tempo |
 |---|---|---|
@@ -54,38 +53,42 @@ retirado a pedido do Bruno (plateia mais experiente); a conduta na falência de 
 | 3 | Determinantes da pressão arterial média | 1 min |
 | 4 | Pressão arterial não garante perfusão | 1 min |
 | 5 | Receptores e vias de sinalização | 45 s |
-| 6 | Catecolaminas e não catecolaminas | 30 s |
+| 6 | Catecolaminas e não catecolaminas | 35 s |
 | 7 | Noradrenalina | 1 min |
 | 8 | Adrenalina | 50 s |
 | 9 | Dopamina e dobutamina | 1 min |
 | 10 | AMPc: onde agem dobutamina e milrinona (figura própria) | 1 min 30 s |
 | 11 | Milrinona | 50 s |
 | 12 | Milrinona ou dobutamina: quando escolher | 1 min 20 s |
-| 13 | Fenilefrina e efedrina | 55 s |
-| 14 | Vasopressina e adjuvantes | 1 min |
-| 15 | Choque séptico: recomendações da SSC 2026 | 1 min |
-| 16 | Escolha da droga no intraoperatório (fluxograma; estudo de Gouvêa e Diaz) | 1 min 25 s |
-| 17 | Hipotensão intraoperatória e alvo de pressão (editorial com Diaz) | 55 s |
-| 18 | Problema hemodinâmico e droga de escolha | 50 s |
+| 13 | Falência de VD: o que fazer (veio da reserva) | 50 s |
+| 14 | Fenilefrina e efedrina | 55 s |
+| 15 | Vasopressina e adjuvantes | 1 min |
+| 16 | Choque séptico: recomendações da SSC 2026 | 1 min |
+| 17 | Escolha da droga no intraoperatório (fluxograma; estudo de Gouvêa e Diaz) | 1 min 25 s |
+| 18 | Hipotensão intraoperatória e alvo de pressão (editorial com Diaz) | 55 s |
+| 19 | Problema hemodinâmico e droga de escolha | 50 s |
 
-Guia de fala dentro da apresentação: as notas de TODOS os slides seguem um formato fixo. Nos 18
-principais: TEMPO (com o relógio acumulado), PONTO-CHAVE, FALA, TRANSIÇÃO e, quando há, SE
-PERGUNTAREM. Nos 15 de reserva: USO (quando mostrar), PONTO-CHAVE, FALA e SE PERGUNTAREM. O
-conversor grava cada linha como um parágrafo no painel de notas do .pptx. A mesma informação
-está em `apresentacao/guia/guia-de-fala.html` (gerada por `gerar_guia.py`; as notas são
-escritas por `montar_guia.py` e `reserva_notas.py`).
+Notas (guia de fala) de todos os slides, começando pela fala, a pedido do Bruno: FALA, TRANSIÇÃO,
+TEMPO (com o relógio acumulado), PONTO-CHAVE e, quando há, SE PERGUNTAREM. Na reserva: FALA,
+USO (quando mostrar), PONTO-CHAVE e SE PERGUNTAREM. Cada linha é um parágrafo no painel de notas
+do .pptx. A página `apresentacao/guia/guia-de-fala.html` traz o mesmo conteúdo.
 
-Revisão desta versão (3 revisores independentes, 65 achados, 43 aplicados após conferência):
-grafia "Gouvêa" (como no PubMed), "Kattan" como primeiro autor do texto sobre dose de
-noradrenalina em base e sal (Intensive Care Med 2024), números não confirmados do 65 trial
-retirados das notas, paginação da SSC 2026 retirada, registro formal ("apenas" no lugar de "só",
-sem "da casa"), espaços inseparáveis em doses, text-wrap nos cartões com viúvas, cabeçalhos do
-fluxograma com a mesma altura.
+Mudanças da versão 23 (revisão do Codex sobre a versão 22, conferida):
+- Figura do AMPc: a seta da PKA para o RyR2 saiu; ficam os alvos bem estabelecidos (canal de
+  cálcio tipo L e fosfolambam/SERCA2a). A fala segue o texto proposto pelo Codex; a dúvida sobre o
+  RyR2 está em SE PERGUNTAREM. Grafia "fosfolambam" mantida por decisão do Bruno.
+- Catecolaminas: "favorece" a infusão contínua (em vez de "exige"); fenilefrina e efedrina
+  "costumam" ser usadas em bolus, e a fenilefrina também pode ser infundida.
+- Estudo de Gouvêa e Diaz: "19 pacientes selecionados", função do VD preservada nos momentos
+  avaliados; a fala não presume vasoplegia nem falência de VD na reperfusão. Os critérios de
+  exclusão não puderam ser lidos (texto completo bloqueado); por isso não são citados.
+- Falência de VD: "com débito preservado e RVS baixa, considerar vasoplegia".
+- Milrinona × dobutamina: a subanálise negativa do DOREMI não prova equivalência (na fala).
+- Mensagens finais: "Hipotensão com bradicardia (anestesia)".
+- Transições 1→2, 2→3, 8→9 e 18→19 reescritas conforme o Codex; 12→13 e 13→14 novas.
+- Referências: a fala diz que as citações completas estão nas notas.
 
-Citações dos staffs: Lineburger et al., "The hidden cost of hypotension" (Braz J Anesthesiol
-2025; Rodrigo Diaz coautor), no slide 17; Gouvêa G, Feiner J, Joshi S, Diaz R, et al., função do
-VD no transplante hepático por ETE (PLoS One 2022;17(10):e0275301; n = 19, função normal em
-todas as fases), no slide 16.
+## Estado anterior: versão 22
 
 ## Estado anterior: versão 21
 
