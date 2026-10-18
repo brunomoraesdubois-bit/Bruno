@@ -29,6 +29,7 @@ function problemasDoSlide() {
   const fixos = [];
   for (const ch of sec.children) {
     if (ch.tagName === 'ASIDE') continue;
+    if (ch.tagName === 'IMG') continue; // símbolo fixo: conferido abaixo, contra o texto
     if (getComputedStyle(ch).position === 'absolute') fixos.push(ch);
     else fundo = Math.max(fundo, ch.getBoundingClientRect().bottom);
   }
@@ -50,6 +51,18 @@ function problemasDoSlide() {
     }
     const r = el.getBoundingClientRect();
     if (r.right > 1920 || r.bottom > 1080) problemas.push(`fora do slide: "${el.textContent.slice(0, 50)}"`);
+  }
+  // Imagens fixas (o símbolo da UFRJ): nenhuma linha de texto a menos de 12 px delas
+  for (const im of sec.querySelectorAll(':scope > img')) {
+    const a = im.getBoundingClientRect();
+    for (const el of sec.querySelectorAll('p, h1, h2, h3, td, th')) {
+      if (el.closest('aside')) continue;
+      const faixa = document.createRange();
+      faixa.selectNodeContents(el);
+      const encosta = [...faixa.getClientRects()].some((t) => t.width
+        && t.right > a.left - 12 && t.left < a.right + 12 && t.bottom > a.top - 12 && t.top < a.bottom + 12);
+      if (encosta) problemas.push(`texto encosta em "${im.alt}": "${el.textContent.slice(0, 50)}"`);
+    }
   }
   return { fundo: Math.round(fundo), limite, problemas };
 }
