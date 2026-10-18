@@ -42,9 +42,9 @@ PERGUNTAS = [
  ("Por que não milrinona sempre que o paciente usa betabloqueador?",
   "Porque o benefício é teórico. A milrinona age depois do receptor e mantém efeito no betabloqueado, mas na subanálise do DOREMI (93 pacientes betabloqueados) não houve vantagem clínica. Slides 10 e 12."),
  ("O DOREMI não mostrou que as duas são iguais?",
-  "Não houve diferença significativa (49% × 54%; RR 0,90; IC 95% 0,69–1,19; n = 192), mas o intervalo é largo: o estudo não prova equivalência. Arritmia, hipotensão sustentada e necessidade de vasopressor também não diferiram."),
+  "Não houve diferença significativa (49% vs. 54%; RR 0,90; IC 95% 0,69–1,19; n = 192), mas o intervalo é largo: o estudo não prova equivalência. Arritmia, hipotensão sustentada e necessidade de vasopressor também não diferiram."),
  ("Milrinona no choque séptico?",
-  "A SSC 2026 não encontrou dados para comparar com a dobutamina. Num ECR de 2025 (Tongyoo, 64 pacientes), a milrinona aumentou o débito em 6 h, sem diferença de mortalidade (50% × 50%). Débito maior não é desfecho melhor."),
+  "A SSC 2026 não encontrou dados para comparar com a dobutamina. Em um ECR de 2025 (Tongyoo, 64 pacientes), a milrinona aumentou o débito em 6 h, sem diferença de mortalidade (50% vs. 50%). Débito maior não é desfecho melhor."),
  ("Então quando a milrinona tem indicação?",
   "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, a hipotensão é vasoplegia e a droga é o vasopressor. Slide 12 e reserva “Falência de VD”."),
  ("Quando associar vasopressina?",
@@ -54,9 +54,9 @@ PERGUNTAS = [
  ("Noradrenalina em veia periférica é segura?",
   "Na metanálise de Tran, complicações em 7% (combinada 8,6%), 96% leves; menos com protocolo de segurança. A SSC 2026 sugere iniciar por veia periférica. Reserva “Início precoce e via periférica”."),
  ("Fenilefrina ou noradrenalina na cesárea?",
-  "O consenso de 2018 recomenda vasopressor α-agonista em infusão profilática. A noradrenalina causa menos bradicardia materna, com pH umbilical semelhante (Sharkey, 10,7% × 37,5% de bradicardia). Reserva “Fenilefrina”."),
+  "O consenso de 2018 recomenda vasopressor α-agonista em infusão profilática. A noradrenalina causa menos bradicardia materna, com pH umbilical semelhante (Sharkey, 10,7% vs. 37,5% de bradicardia). Reserva “Fenilefrina”."),
  ("E na hipotensão da reperfusão do transplante hepático?",
-  "No estudo da casa (Gouvêa, Diaz et al., PLoS One 2022; 19 pacientes, ETE), a função do VD foi normal em todas as fases, inclusive após a reperfusão. O eco ajuda a separar vasoplegia de disfunção ventricular; na vasoplegia refratária, vasopressina e, como resgate, azul de metileno. Slide 16."),
+  "No estudo do nosso serviço (Gouvêa, Diaz et al., PLoS One 2022; 19 pacientes, ETE), a função do VD foi normal em todas as fases, inclusive após a reperfusão. O eco ajuda a separar vasoplegia de disfunção ventricular; na vasoplegia refratária, vasopressina e, como resgate, azul de metileno. Slide 16."),
  ("Dopamina em dose renal?",
   "Não protege o rim: no ANZICS (n = 328), sem diferença em creatinina, diálise ou mortalidade."),
  ("E o azul de metileno?",
@@ -66,12 +66,28 @@ PERGUNTAS = [
  ("Como a PKA aumenta a corrente de cálcio?",
   "Parte do efeito passa pela fosforilação da proteína Rad, que deixa de inibir o canal tipo L (Liu, Nature 2020). A sinalização do AMPc é compartimentalizada em nanodomínios (Zaccolo e Kovanich, Physiol Rev 2025)."),
 ]
-RESERVA = ["Síntese das drogas", "Dopamina", "Dobutamina", "Fenilefrina", "Efedrina", "Vasopressina", "Choque refratário: adjuvantes",
-           "Sequência de vasopressores na SSC 2026", "Alvo de PAM no choque séptico", "Início precoce e via periférica",
-           "Alvo de PAM no intraoperatório: ensaios", "Falência de VD: o que fazer", "Roteiro", "Referências"]
+import sys; sys.path.insert(0, S + "/guia")
+from reserva_notas import RESERVA as RES_NOTAS
+ordem = deck["order"]; ini_res = ordem.index("divisor")
+def titulo_de(id_):
+    t_ = open(f"{S}/artifact-files/351a25a9-1efc-412b-9232-d1cf8f2e53fe/project/slides/{id_}.html", encoding="utf-8").read()
+    return html.unescape(re.sub("<[^>]+>", "", re.search(r"<h[12][^>]*>(.*?)</h[12]>", t_, re.S).group(1)))
+def campo(linhas, rotulo):
+    for l in linhas:
+        if l.startswith(rotulo + ":"): return l[len(rotulo) + 1:].strip()
+    return ""
+blocos_res = []
+for k, id_ in enumerate(ordem[ini_res + 1:], ini_res + 2):
+    L = RES_NOTAS[id_]; manga = campo(L, "SE PERGUNTAREM")
+    blocos_res.append(f'''<article class="slide res" id="s{k}">
+  <div class="cab"><span class="num">{k:02d}</span><h2>{e(titulo_de(id_))}</h2><span class="tempo">reserva</span></div>
+  <div class="corpo"><img src="{thumb(k - 1)}" alt="Miniatura do slide {k}: {e(titulo_de(id_))}" loading="lazy">
+    <div class="texto"><p class="uso"><span>Quando mostrar</span> {e(campo(L, "USO"))}</p><p class="chave">{e(campo(L, "PONTO-CHAVE"))}</p><p class="fala">{e(campo(L, "FALA"))}</p>
+      {f'<details><summary>Se perguntarem</summary><p>{e(manga)}</p></details>' if manga else ''}</div></div>
+</article>''')
 
 perguntas = "".join(f'<details class="q"><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in PERGUNTAS)
-reserva = "".join(f'<li><span>{20+i}</span> {e(r)}</li>' for i, r in enumerate(RESERVA))
+reserva = "".join(blocos_res)
 marcos = [(6, "fim da farmacologia básica"), (12, "fim de milrinona × dobutamina"), (16, "fim da escolha no intraoperatório")]
 acum = [0] + [x['fim'] for x in dados]
 marcos_html = "".join(f'<li><b>{mmss(acum[k])}</b> ao fim do slide {k} — {m}</li>' for k, m in marcos)
@@ -118,6 +134,8 @@ nav.indice a:hover, nav.indice a:focus-visible {{ text-decoration: underline; ou
 .fala {{ margin: 0; max-width: 72ch }}
 .pausa {{ margin: 0; font-weight: 600; color: var(--acento) }}
 .trans {{ margin: 0; color: var(--suave); font-style: italic }}
+.uso {{ margin: 0; color: var(--suave) }}
+.uso span {{ font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-right: 6px; color: var(--acento) }}
 .trans span {{ font-style: normal; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-right: 6px; color: var(--acento) }}
 details {{ background: var(--acento2); border-radius: 8px; padding: 8px 14px }}
 details summary {{ cursor: pointer; font-weight: 600 }}
@@ -140,15 +158,15 @@ html {{ scroll-behavior: smooth }}
 <div class="painel">
   <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">18 slides principais. Ensaiar em 16 a 17 minutos, sem passar de 20.</p></section>
   <section><h3>Marcos no cronômetro</h3><ul>{marcos_html}</ul></section>
-  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Números de estudos só se perguntarem.</li><li>No slide 16, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado da casa.</li></ul></section>
+  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Números de estudos só se perguntarem.</li><li>No slide 16, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado do serviço.</li></ul></section>
 </div>
 <nav class="indice" aria-label="Slides">{indice}</nav>
 {"".join(blocos)}
 <h2 class="secao">Perguntas prováveis</h2>
 {perguntas}
 <h2 class="secao">Slides de reserva</h2>
-<p style="margin:0;color:var(--suave)">Depois do divisor (slide 19). Use para responder perguntas sem voltar à apresentação principal.</p>
-<ol class="reserva">{reserva}</ol>
+<p style="margin:0;color:var(--suave)">Depois do divisor (slide 19). Cada um tem uma fala curta, para responder perguntas sem voltar à apresentação principal.</p>
+{reserva}
 </main>
 '''
 open(S + "/guia/guia-de-fala.html", "w", encoding="utf-8").write(page)

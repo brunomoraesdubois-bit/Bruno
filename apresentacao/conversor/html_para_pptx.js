@@ -147,7 +147,8 @@ function extrairSlide() {
     (function rec(node) {
       for (const ch of node.childNodes) {
         if (ch.nodeType === 3) {
-          let t = ch.textContent.replace(/\s+/g, ' ');
+          // Espaço inseparável (U+00A0) fica como está: o PowerPoint o respeita como não quebrável
+          let t = ch.textContent.replace(/[ \t\r\n\f]+/g, ' ');
           if (!t) continue;
           const st = estilo(ch.parentElement);
           if (st.maiusculas) t = t.toUpperCase();
