@@ -86,8 +86,9 @@ referências; slides mais interativos e mais fáceis de lembrar; revisão comple
    recuo padrão (-25%), docProps com 13 slides ocultos e fontes Georgia/Calibri, oito seções
    alinhadas às partes numeradas dos slides, mais a seção dos ocultos.
 8. Revisão final por 12 agentes (6 revisores: linguagem, fatos, cliques, visual, .pptx,
-   transições; 6 céticos): 134 achados, 60 confirmados e aplicados; os refutados eram, em
-   geral, números já conferidos em fonte que não constavam desta lista, e foram mantidos.
+   transições; 6 céticos que tentaram refutar cada achado): 107 achados, 74 aplicados. Os
+   não aplicados eram números já conferidos em fonte que não constavam desta lista (mantidos),
+   siglas de uso corrente (não expandidas) e sugestões de estilo descartadas.
 9. Pendências: ensaiar com cronômetro (17 min 55 s previstos; limite de 18); áudio da fala
    para ouvir dirigindo (pedido para depois; os serviços de síntese de voz estão bloqueados
    nesta sessão, então a saída provável é um botão "ouvir" no guia, com a voz do celular);
