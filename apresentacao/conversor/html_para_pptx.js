@@ -237,6 +237,10 @@ function extrairSlide() {
       itens.push(tabela(el));
       return;
     }
+    if (el.tagName === 'IMG') {
+      itens.push({ tipo: 'imagem', caixa: caixa(el.getBoundingClientRect()), src: el.getAttribute('src') || '', alt: el.getAttribute('alt') || '' });
+      return;
+    }
     if (ehTexto(el)) {
       itens.push(bloco(el, cs));
       return;
@@ -538,6 +542,38 @@ function adicionarForma(slide, it) {
   });
 }
 
+// Largura e altura de um PNG ou JPEG, lidas do cabeçalho do arquivo
+function tamanhoImagem(arquivo) {
+  const b = fs.readFileSync(arquivo);
+  if (b.readUInt32BE(0) === 0x89504e47) return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+  for (let i = 2; i < b.length - 9;) {
+    const marcador = b.readUInt16BE(i);
+    if (marcador >= 0xffc0 && marcador <= 0xffc3) return { w: b.readUInt16BE(i + 7), h: b.readUInt16BE(i + 5) };
+    i += 2 + b.readUInt16BE(i + 2);
+  }
+  return null;
+}
+
+// Imagem encaixada na caixa medida, sem distorcer (object-fit: contain)
+function adicionarImagem(slide, it, imagens, pastaDeck, idSlide) {
+  const rel = imagens[it.src] || it.src;
+  const arquivo = rel && path.resolve(pastaDeck, rel.replace(/^\//, ''));
+  if (!arquivo || !fs.existsSync(arquivo)) {
+    console.warn(`aviso: imagem "${it.src}" de "${idSlide}" sem arquivo local; ficou de fora`);
+    return;
+  }
+  let { x, y, w, h } = it.caixa;
+  const t = tamanhoImagem(arquivo);
+  if (t) {
+    const escala = Math.min(w / t.w, h / t.h);
+    x += (w - t.w * escala) / 2;
+    y += (h - t.h * escala) / 2;
+    w = t.w * escala;
+    h = t.h * escala;
+  }
+  slide.addImage({ path: arquivo, x: x * PX, y: y * PX, w: w * PX, h: h * PX, altText: it.alt, objectName: it.alt || 'Imagem' });
+}
+
 // Título = primeiro h1/h2 do slide (ou, sem eles, o primeiro texto); vira o placeholder
 // de título do layout, para navegação e leitores de tela
 function tituloDe(s) {
@@ -645,6 +681,10 @@ async function main() {
   pres.subject = 'Sessão clínica';
   pres.theme = { headFontFace: FONTE_TITULO, bodyFontFace: FONTE_TEXTO };
 
+  // imagens.json (opcional) liga cada src do deck (por exemplo /_blob/<id>) a um arquivo local
+  const arqImagens = path.join(pastaDeck, 'imagens.json');
+  const imagens = fs.existsSync(arqImagens) ? JSON.parse(fs.readFileSync(arqImagens, 'utf8')) : {};
+
   const layouts = definirLayouts(pres, slides);
   const inicioSecao = new Map(Object.values(deck.sections || {}).map((s) => [s.start, s.description]));
   let secaoAtual = null;
@@ -662,6 +702,7 @@ async function main() {
       if (it.tipo === 'caixa') adicionarCaixa(slide, pres, it);
       else if (it.tipo === 'tabela') adicionarTabela(slide, it);
       else if (it.tipo === 'forma') adicionarForma(slide, it);
+      else if (it.tipo === 'imagem') adicionarImagem(slide, it, imagens, pastaDeck, s.id);
       else if (it.tipo === 'texto') {
         if (it === t && !it.pintura) {
           // Com placeholder, o pptxgenjs só aplica espaçamento de linha vindo dos trechos
