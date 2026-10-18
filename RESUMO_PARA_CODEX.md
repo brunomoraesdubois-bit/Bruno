@@ -64,6 +64,11 @@ mais fáceis de lembrar na hora de apresentar"):
   Conferido por ida e volta no LibreOffice (.pptx → .odp): a contagem de cliques por slide bate
   com a dos marcadores ▸. O deck no Claude não tem animação (o tipo Slides só anima elementos
   posicionados); a apresentação é feita pelo .pptx.
+- Referências: `apresentacao/referencias.md` lista as 41 citações da aula com autores, título,
+  periódico, ano, volume/páginas e DOI; cada DOI foi conferido em duas buscas independentes
+  (agentes com WebSearch; PubMed, PMC e Crossref estavam bloqueados pela rede, então a
+  confirmação veio dos trechos literais dos resultados e das URLs das editoras). Gerada por
+  `apresentacao/guia/gerar_referencias.py` a partir do JSON da conferência.
 - Áudio da fala para ouvir dirigindo: pedido pelo Bruno para depois; ainda não gerado.
 
 ## Estado anterior: versão 28 (17 min 55 s)
