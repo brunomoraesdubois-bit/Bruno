@@ -86,7 +86,7 @@ RESERVA = {
  ],
  "refs": [
   "USO: se pedirem a referência exata de um estudo citado.",
-  "PONTO-CHAVE: as citações completas estão abaixo; as diretrizes de base são SSC 2026, ESICM 2025, POQI 2024 e Miller, 10ª ed.",
+  "PONTO-CHAVE: referências principais resumidas; detalhes dos estudos nas notas correspondentes; diretrizes de base: SSC 2026, ESICM 2025, POQI 2024 e Miller, 10ª ed.",
   "FALA: As principais referências estão resumidas neste slide; os detalhes dos estudos estão nas notas correspondentes.",
  ],
 }
