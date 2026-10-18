@@ -59,7 +59,7 @@ s.append(f'<rect x="1000" y="376" width="620" height="118" rx="40" fill="#f6e6d5
 t(1310, 478, "Retículo sarcoplasmático", 22, NAVY, 700)
 caixa(1040, 354, 120, 44, "RyR2", size=22)
 t(1100, 428, "libera Ca²⁺", 20, CINZA, 600)
-caixa(1330, 354, 250, 44, "SERCA2a · fosfolambano", size=21)
+caixa(1330, 354, 250, 44, "SERCA2a · fosfolambam", size=21)
 t(1455, 428, "recapta Ca²⁺", 20, CINZA, 600)
 # fosforilação pela PKA
 for (x2, y2) in ((1044, 178), (1100, 350), (1452, 350)):
