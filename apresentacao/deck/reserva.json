@@ -1,0 +1,18 @@
+{
+ "description": "Slides ocultos de reserva para perguntas (não aparecem na apresentação)",
+ "order": [
+  "divisor",
+  "comparativo",
+  "dopamina",
+  "dobutamina",
+  "fenilefrina",
+  "efedrina",
+  "vasopressina",
+  "refratario",
+  "sequencia",
+  "alvopam",
+  "timing",
+  "intraopalvo",
+  "roteiro"
+ ]
+}

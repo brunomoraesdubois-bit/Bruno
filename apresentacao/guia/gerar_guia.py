@@ -4,7 +4,7 @@ from PIL import Image
 S = "/tmp/claude-0/-home-user-Bruno/82e201e1-5baf-5943-97e1-cc467015b7d6/scratchpad"
 notas = json.load(open(S + "/v20/notas.json", encoding="utf-8"))
 import os
-prints = sorted(os.listdir(S + "/v20/webfull"))
+prints = sorted(os.listdir(S + "/v23/webfull"))
 
 G = json.load(open(S + "/guia/guia.json", encoding="utf-8"))
 dados = G["slides"]; total = G["total"]
@@ -16,7 +16,7 @@ for x in dados:
 def mmss(s): return f"{s//60}:{s%60:02d}"
 def dur(s): return " ".join(v for v in ((f"{s//60} min" if s >= 60 else ""), (f"{s%60} s" if s % 60 else "")) if v)
 def thumb(i):
-    im = Image.open(f"{S}/v20/webfull/{prints[i]}").convert("RGB").resize((640, 360), Image.LANCZOS)
+    im = Image.open(f"{S}/v23/webfull/{prints[i]}").convert("RGB").resize((640, 360), Image.LANCZOS)
     b = io.BytesIO(); im.save(b, "JPEG", quality=72, optimize=True)
     return "data:image/jpeg;base64," + base64.b64encode(b.getvalue()).decode()
 e = html.escape
@@ -68,7 +68,7 @@ PERGUNTAS = [
 ]
 import sys; sys.path.insert(0, S + "/guia")
 from reserva_notas import RESERVA as RES_NOTAS
-ordem = deck["order"]; ini_res = ordem.index("divisor")
+ordem = deck["order"]; res_ordem = json.load(open("/home/user/Bruno/apresentacao/deck/reserva.json", encoding="utf-8"))["order"]
 def titulo_de(id_):
     t_ = open(f"{S}/artifact-files/351a25a9-1efc-412b-9232-d1cf8f2e53fe/project/slides/{id_}.html", encoding="utf-8").read()
     return html.unescape(re.sub("<[^>]+>", "", re.search(r"<h[12][^>]*>(.*?)</h[12]>", t_, re.S).group(1)))
@@ -77,10 +77,11 @@ def campo(linhas, rotulo):
         if l.startswith(rotulo + ":"): return l[len(rotulo) + 1:].strip()
     return ""
 blocos_res = []
-for k, id_ in enumerate(ordem[ini_res + 1:], ini_res + 2):
+for k, id_ in enumerate(res_ordem, len(ordem) + 1):
+    if id_ == "divisor": continue  # o divisor não tem título h2; os blocos começam no primeiro slide de conteúdo
     L = RES_NOTAS[id_]; manga = campo(L, "SE PERGUNTAREM")
     blocos_res.append(f'''<article class="slide res" id="s{k}">
-  <div class="cab"><span class="num">{k:02d}</span><h2>{e(titulo_de(id_))}</h2><span class="tempo">reserva</span></div>
+  <div class="cab"><span class="num">{k:02d}</span><h2>{e(titulo_de(id_))}</h2><span class="tempo">oculto</span></div>
   <div class="corpo"><img src="{thumb(k - 1)}" alt="Miniatura do slide {k}: {e(titulo_de(id_))}" loading="lazy">
     <div class="texto"><p class="uso"><span>Quando mostrar</span> {e(campo(L, "USO"))}</p><p class="chave">{e(campo(L, "PONTO-CHAVE"))}</p><p class="fala">{e(campo(L, "FALA"))}</p>
       {f'<details><summary>Se perguntarem</summary><p>{e(manga)}</p></details>' if manga else ''}</div></div>
@@ -154,9 +155,10 @@ html {{ scroll-behavior: smooth }}
   <p class="eyebrow">Sessão clínica · Anestesiologia · UFRJ</p>
   <h1>Guia de fala das aminas vasoativas</h1>
   <p>O que dizer em cada slide, com o relógio acumulado, a frase-chave, a transição para o próximo e o que guardar para as perguntas. O mesmo texto está nas notas do apresentador de cada slide.</p>
+  <p>Referências completas da aula: <a href="https://github.com/brunomoraesdubois-bit/Bruno/blob/claude/aminas-vasoativas-project-w6qsns/apresentacao/referencias.md">apresentacao/referencias.md</a> (o mesmo endereço do QR code do último slide).</p>
 </header>
 <div class="painel">
-  <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">19 slides principais. Ensaiar em cerca de 17 minutos e meio, sem passar de 18.</p></section>
+  <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">{len(dados)} slides. Ensaiar em cerca de 17 minutos e meio, sem passar de 18.</p></section>
   <section><h3>Marcos no cronômetro</h3><ul>{marcos_html}</ul></section>
   <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Números de estudos só se perguntarem.</li><li>No slide 17, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado do serviço.</li></ul></section>
 </div>
@@ -164,8 +166,8 @@ html {{ scroll-behavior: smooth }}
 {"".join(blocos)}
 <h2 class="secao">Perguntas prováveis</h2>
 {perguntas}
-<h2 class="secao">Slides de reserva</h2>
-<p style="margin:0;color:var(--suave)">Depois do divisor (slide 20). Cada um tem uma fala curta, para responder perguntas sem voltar à apresentação principal.</p>
+<h2 class="secao">Slides ocultos de reserva</h2>
+<p style="margin:0;color:var(--suave)">Ficam no PowerPoint depois do Obrigado, ocultos: não aparecem na apresentação. Para mostrar um, digite o número do slide e Enter. Cada um tem uma fala curta, para responder perguntas sem voltar à apresentação principal.</p>
 {reserva}
 </main>
 '''

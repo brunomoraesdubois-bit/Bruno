@@ -3,9 +3,9 @@
 # Os números vêm das notas anteriores, já conferidas; nada novo foi acrescentado.
 RESERVA = {
  "divisor": [
-  "USO: fim da apresentação principal; mostrar só se houver perguntas.",
-  "PONTO-CHAVE: daqui em diante é material de apoio, para responder perguntas.",
-  "FALA: Depois das mensagens finais deixei material de apoio: a síntese das drogas, um slide para cada droga de bolus e para a vasopressina, os adjuvantes do choque refratário, a sequência da SSC 2026, os alvos de pressão no choque e no intraoperatório, o roteiro e as referências. Posso abrir o que for útil para a discussão.",
+  "USO: slides ocultos no PowerPoint, depois do Obrigado; não aparecem na apresentação. Abrir só se houver pergunta, indo até o slide pelo número.",
+  "PONTO-CHAVE: daqui em diante é material de apoio, oculto na apresentação.",
+  "FALA: Deixei material de apoio em slides ocultos: a síntese das drogas, um slide para cada droga de bolus e para a vasopressina, os adjuvantes do choque refratário, a sequência da SSC 2026, os alvos de pressão no choque e no intraoperatório e o roteiro. Posso abrir o que for útil para a discussão.",
  ],
  "comparativo": [
   "USO: pergunta sobre comparação entre drogas, receptores ou doses.",
@@ -83,10 +83,5 @@ RESERVA = {
   "USO: só se alguém pedir a estrutura da aula; o slide de objetivos faz esse papel na apresentação.",
   "PONTO-CHAVE: do raciocínio fisiológico para a farmacologia, para cada droga e, por fim, para a aplicação.",
   "FALA: A aula vai do raciocínio fisiológico para a farmacologia dos receptores, depois para cada droga, com a milrinona e a escolha frente à dobutamina no centro, e termina na aplicação no choque séptico e no centro cirúrgico.",
- ],
- "refs": [
-  "USO: se pedirem a referência exata de um estudo citado.",
-  "PONTO-CHAVE: referências principais resumidas; detalhes dos estudos nas notas correspondentes; diretrizes de base: SSC 2026, ESICM 2025, POQI 2024 e Miller, 10ª ed.",
-  "FALA: As principais referências estão resumidas neste slide; os detalhes dos estudos estão nas notas correspondentes.",
  ],
 }

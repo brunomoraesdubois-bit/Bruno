@@ -598,16 +598,25 @@ function tituloDe(s) {
   return textos.find((it) => it.tag === 'H1' || it.tag === 'H2') || textos[0] || null;
 }
 
+// Um layout por fundo, tag do título e posição do título (um título em outra posição, como o do
+// slide de encerramento, ganha layout próprio em vez de herdar a posição da capa)
+function chaveLayout(s) {
+  const t = tituloDe(s);
+  return `${s.fundo}|${t ? `${t.tag}|${Math.round(t.caixa.x)},${Math.round(t.caixa.y)}` : '-'}`;
+}
+
 function definirLayouts(pres, slides) {
   const layouts = new Map();
   for (const s of slides) {
     const t = tituloDe(s);
-    const chave = `${s.fundo}|${t ? t.tag : '-'}`;
+    const chave = chaveLayout(s);
     if (!layouts.has(chave)) {
       const escuro = parseInt(s.fundo.slice(0, 2), 16) < 0x80;
-      const nome = t && t.tag === 'H1' ? 'Capa'
+      let nome = t && t.tag === 'H1' ? 'Capa'
         : t && t.tag === 'H2' ? (escuro ? 'Conteúdo escuro' : 'Conteúdo')
           : escuro ? 'Divisor' : 'Livre';
+      const usados = [...layouts.values()].filter((l) => l.nome === nome || l.nome.startsWith(nome + ' ')).length;
+      if (usados) nome = nome === 'Capa' && usados === 1 ? 'Encerramento' : `${nome} ${usados + 1}`;
       layouts.set(chave, { nome, fundo: s.fundo, titulo: t, slides: [] });
     }
     layouts.get(chave).slides.push(s);
@@ -699,7 +708,13 @@ async function main() {
     process.exit(1);
   }
   const deck = JSON.parse(fs.readFileSync(path.join(pastaDeck, 'deck.json'), 'utf8'));
-  const slides = await medirDeck(pastaDeck, deck, pastaPrints);
+  // reserva.json (opcional): slides que entram no .pptx depois dos principais, ocultos
+  // (não aparecem na apresentação; servem para responder perguntas)
+  const arqReserva = path.join(pastaDeck, 'reserva.json');
+  const reserva = fs.existsSync(arqReserva) ? JSON.parse(fs.readFileSync(arqReserva, 'utf8')) : null;
+  const ocultos = new Set(reserva ? reserva.order : []);
+  const deckCompleto = reserva ? { ...deck, order: [...deck.order, ...reserva.order] } : deck;
+  const slides = await medirDeck(pastaDeck, deckCompleto, pastaPrints);
 
   const pres = new PptxGenJS();
   pres.layout = 'LAYOUT_WIDE';
@@ -714,6 +729,7 @@ async function main() {
 
   const layouts = definirLayouts(pres, slides);
   const inicioSecao = new Map(Object.values(deck.sections || {}).map((s) => [s.start, s.description]));
+  if (reserva && reserva.order.length) inicioSecao.set(reserva.order[0], reserva.description || 'Slides ocultos de reserva');
   let secaoAtual = null;
 
   for (const s of slides) {
@@ -722,9 +738,10 @@ async function main() {
       pres.addSection({ title: secaoAtual });
     }
     const t = tituloDe(s);
-    const lay = layouts.get(`${s.fundo}|${t ? t.tag : '-'}`);
+    const lay = layouts.get(chaveLayout(s));
     const slide = pres.addSlide({ masterName: lay.nome, ...(secaoAtual ? { sectionTitle: secaoAtual } : {}) });
     slide.background = { color: s.fundo };
+    if (ocultos.has(s.id)) slide.hidden = true;
     for (const it of s.itens) {
       if (it.tipo === 'caixa') adicionarCaixa(slide, pres, it);
       else if (it.tipo === 'tabela') adicionarTabela(slide, it);
@@ -746,7 +763,7 @@ async function main() {
 
   await pres.writeFile({ fileName: saida });
   await posProcessar(saida);
-  console.log(`${slides.length} slides → ${saida}`);
+  console.log(`${slides.length} slides (${ocultos.size} ocultos) → ${saida}`);
 }
 
 module.exports = { CSS_BASE };

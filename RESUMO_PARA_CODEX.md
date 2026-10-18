@@ -40,7 +40,30 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 27 (17 min 50 s)
+## Estado atual: versão 28 (17 min 55 s)
+
+20 slides na apresentação (19 de conteúdo e o Obrigado) e, depois deles, 13 slides ocultos de
+reserva (o divisor e 12 de conteúdo), que não aparecem na apresentação. Tempo previsto:
+17 min 55 s (cerca de 2.110 palavras de fala e 180 de transições); limite combinado com o Bruno:
+18 minutos.
+
+Mudanças da versão 28 (pedido do Bruno: tirar o "para discutir no nosso serviço" e, depois
+disso, deixar apenas um obrigado e um QR code com as referências):
+- Slide 19 (Mensagens finais): saiu o parágrafo "Para discutir: no nosso serviço..." e a frase
+  correspondente da fala; 35 s. Transição: "Com isso, chego ao fim."
+- Slide 20 (Obrigado), novo: "Obrigado", a linha de autoria e um QR code que leva a
+  `apresentacao/referencias.md` neste repositório (lista completa, com DOI quando confirmado em
+  fonte). Fala de 10 s. O QR é gerado por `apresentacao/figuras/qr.py` (biblioteca segno); se o
+  endereço mudar, regenerar o PNG (`deck/assets/qr-referencias.png`) e enviá-lo de novo ao
+  deck no Claude.
+- O slide de referências saiu (a lista está na página do QR). Os 13 slides de reserva ficam no
+  .pptx como slides ocultos (`apresentacao/deck/reserva.json`), em seção própria, depois do
+  Obrigado; no Claude, o deck mostra só os 20 slides da apresentação. Para mostrar um oculto
+  durante a sessão: digitar o número do slide e Enter.
+- Conversor: lê `reserva.json` e marca esses slides como ocultos; o slide de encerramento tem
+  layout próprio ("Encerramento"), porque o título fica em outra posição que o da capa.
+
+## Estado anterior: versão 27 (17 min 50 s)
 
 33 slides: 19 na apresentação principal, um divisor e 13 de reserva. Tempo previsto da parte
 principal: 17 min 30 s (cerca de 2.040 palavras de fala e 180 de transições, ou seja, 127
@@ -410,6 +433,14 @@ Reserva, depois de um slide divisor:
   - Um arquivo por slide, cada um com um único `<section>` de 1920×1080 com estilos inline.
   - O `<aside>` no fim de cada slide guarda as notas do apresentador.
   - A ordem e as seções ficam em `deck.json`.
+- `apresentacao/deck/reserva.json`: ordem dos slides ocultos de reserva (entram no .pptx depois
+  dos principais, marcados como ocultos; não estão no deck do Claude).
+- `apresentacao/deck/imagens.json` e `apresentacao/deck/assets/`: imagens do deck (símbolo da
+  UFRJ, figura do AMPc, QR code das referências).
+- `apresentacao/referencias.md`: lista completa de referências; é a página aberta pelo QR code
+  do último slide.
+- `apresentacao/figuras/qr.py`: gera o QR code; `figura.py` e `render.js` geram a figura do AMPc.
+- `apresentacao/guia/`: guia de fala (HTML) e os scripts que montam as notas dos slides.
 - `apresentacao/conversor/html_para_pptx.js`: gera o .pptx a partir da fonte HTML.
 - `apresentacao/conversor/verificar_layout.js`: confere se cada slide cabe com as fontes do
   deck no Claude (Source Sans 3 e Source Serif 4).
@@ -435,9 +466,8 @@ Estas dependem do Bruno:
 
 1. Miller's Anesthesia, 10ª ed.: acrescentar capítulos (e páginas) quando houver o sumário,
    por exemplo prints das páginas do sumário.
-2. Ensaiar com cronômetro, mirando 18 a 19 minutos. Os tempos por slide estão nas notas da
-   capa.
-3. Opcional: imagem de eco de VD dilatado com septo retificado no slide do caso.
+2. Ensaiar com cronômetro, mirando cerca de 17 min 30 s, sem passar de 18. Os tempos por slide
+   estão nas notas de cada slide; o total, nas notas da capa.
 
 ## Regras para continuar o trabalho
 

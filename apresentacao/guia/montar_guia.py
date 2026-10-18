@@ -5,7 +5,7 @@ S = "/tmp/claude-0/-home-user-Bruno/82e201e1-5baf-5943-97e1-cc467015b7d6/scratch
 P = S + "/artifact-files/351a25a9-1efc-412b-9232-d1cf8f2e53fe/project"
 ANTES = S + "/v21/antes"
 deck = json.load(open(P + "/deck.json", encoding="utf-8"))
-principal = deck["order"][:deck["order"].index("divisor")]
+principal = deck["order"]
 
 G = {  # id: (segundos, ponto-chave, transição)
  "cover": (30, "A aula nasceu de uma pergunta prática: quando a milrinona tem indicação?", "A pergunta que vai orientar a aula é: qual componente da pressão arterial está falhando?"),
@@ -26,7 +26,8 @@ G = {  # id: (segundos, ponto-chave, transição)
  "ssc2026": (65, "Noradrenalina, depois vasopressina, depois adrenalina; PAM inicial de 65 mmHg.", "No centro cirúrgico, o raciocínio é o mesmo, com outras causas."),
  "intraop": (85, "Afastar causas, identificar o mecanismo, escolher a droga.", "E quanto de PAM é suficiente no intraoperatório?"),
  "pamintraop": (70, "PAM de 60–65 mmHg como piso; alvo maior apenas em selecionados.", "Para terminar, voltamos à pergunta do início: qual é o mecanismo do distúrbio hemodinâmico?"),
- "mensagens": (40, "A droga certa corrige o componente que falha, na menor dose e pelo menor tempo.", "Obrigado. Fico à disposição para perguntas."),
+ "mensagens": (35, "A droga certa corrige o componente que falha, na menor dose e pelo menor tempo.", "Com isso, chego ao fim."),
+ "obrigado": (10, "Referências completas no QR code; abrir para perguntas.", ""),
 }
 FALA = {
  "cover": "Bom dia. Sou Bruno Dubois; meus orientadores são Marcelo Bandeira e Glauber Gouvêa. O tema é aminas vasoativas. A aula nasceu de uma discussão em sala sobre o uso de milrinona: quando ela tem indicação, e quando a dobutamina ou um vasopressor seriam a escolha. Vou partir da fisiologia, passar pelas drogas e terminar no choque séptico e no centro cirúrgico.",
@@ -39,7 +40,8 @@ FALA = {
  'intraop': 'Antes da droga, afastar causas tratáveis: plano anestésico profundo, hipovolemia, compressão aortocava, pneumotórax, anafilaxia. Se persistir, avaliar a resposta a volume e fazer eco. A escolha segue o mecanismo: tônus baixo com frequência preservada pede α1; bradicardia associada pede ação β1, com efedrina ou, se grave, adrenalina; baixo débito pede inotrópico, e a milrinona tem a vantagem de reduzir a resistência pulmonar. A vasoplegia que não responde às catecolaminas, como após CEC, com uso crônico de IECA ou BRA ou na reperfusão do enxerto hepático, pode responder à vasopressina, que age por outra via; o azul de metileno fica como resgate. Na cesárea, fenilefrina profilática, com a noradrenalina como alternativa. Na anafilaxia, adrenalina. Um dado do nosso serviço: Gouvêa, Diaz e colaboradores avaliaram por ETE a função do VD de 19 pacientes selecionados em cinco momentos do transplante hepático, do basal ao fechamento; TAPSE e fração de variação de área permaneceram normais, inclusive após a reperfusão. Mais um motivo para identificar o mecanismo da hipotensão antes de presumir falência de VD.',
  'pamintraop': 'É a mensagem do editorial “The hidden cost of hypotension”, de Lineburger e colaboradores, com Rodrigo Diaz entre os autores: a hipotensão intraoperatória, mesmo por períodos curtos, se associa a lesão renal aguda, lesão miocárdica, delirium e mortalidade; o editorial defende monitorização contínua, manejo proativo e metas individualizadas. O POQI 2024 trata PAM de 60 em pacientes de risco como limite mínimo, não como garantia de perfusão; com pressão venosa ou compartimental alta, o alvo tende a ser maior. Acima do piso, o único ensaio positivo é o HISTAP: 630 pacientes com 60 anos ou mais, hipertensos, em cirurgia abdominal maior, randomizados para PAM de pelo menos 80 ou de pelo menos 65; morte ou disfunção orgânica em 38 contra 49%, sobretudo por menos lesão renal aguda. Os outros ensaios com alvos mais altos foram neutros.',
  "condutavd": "Na falência de VD, quatro frentes andam juntas. Primeiro, a pressão de perfusão: o VD fica isquêmico quando a PAM cai, então noradrenalina para sustentar a PAM e, conforme a vasoplegia associada, vasopressina. Segundo, a resistência pulmonar: corrigir hipóxia, hipercapnia e acidose e, se preciso, vasodilatador pulmonar inalado. Terceiro, a contratilidade: aqui a milrinona faz sentido, porque é inotrópica e reduz a resistência pulmonar; a dobutamina é alternativa. Quarto, volume e ritmo: o VD dilatado tolera mal mais volume. A milrinona pode baixar a PAM e não substitui o diagnóstico: com débito preservado e resistência baixa, considerar vasoplegia, e aí a droga é o vasopressor.",
- "mensagens": "Voltando à pergunta do início: qual componente da PAM está falhando? Vasoplegia pede noradrenalina e, quando a dose sobe, vasopressina; baixo débito com hipoperfusão pede inotrópico, com a milrinona reservada sobretudo para o VD com hipertensão pulmonar; na hipotensão anestésica com bradicardia, efedrina; anafilaxia, adrenalina. A droga certa é a que corrige esse componente, na menor dose eficaz e pelo menor tempo. Para discutir com o grupo: no nosso serviço, como documentamos o baixo débito antes do inotrópico, e quando associamos vasopressina?",
+ "mensagens": "Voltando à pergunta do início: qual componente da PAM está falhando? Vasoplegia pede noradrenalina e, quando a dose sobe, vasopressina; baixo débito com hipoperfusão pede inotrópico, com a milrinona reservada sobretudo para o VD com hipertensão pulmonar; na hipotensão anestésica com bradicardia, efedrina; anafilaxia, adrenalina. A droga certa é a que corrige esse componente, na menor dose eficaz e pelo menor tempo.",
+ "obrigado": "Obrigado pela atenção. As referências completas da aula estão no QR code. Fico à disposição para perguntas.",
 }
 TROCAS = {
  "classificacao": [("As catecolaminas têm meia-vida de minutos e são usadas em infusão; sem o anel catecol, fenilefrina e efedrina duram mais e servem para bolus.", "A curta duração das catecolaminas facilita a titulação por infusão contínua; fenilefrina e efedrina, sem o anel catecol, duram mais e costumam ser usadas em bolus na hipotensão transitória, embora a fenilefrina também possa ser infundida.")],
@@ -91,7 +93,7 @@ for i, x in enumerate(dados, 1):
     tempo = f"TEMPO: {dur(x['seg'])} ({mmss(x['ini'])} → {mmss(x['fim'])})"
     if x["id"] == "cover":
         tempo += f". Total previsto: {mmss(TOTAL).replace(':', ' min ')} s nos {len(dados)} slides principais; ensaiar em cerca de 17 minutos e meio, sem passar de 18."
-    linhas = [f"FALA: {x['fala']}", f"TRANSIÇÃO: {x['trans']}", tempo, f"PONTO-CHAVE: {x['chave']}"]
+    linhas = [f"FALA: {x['fala']}"] + ([f"TRANSIÇÃO: {x['trans']}"] if x["trans"] else []) + [tempo, f"PONTO-CHAVE: {x['chave']}"]
     if x["manga"]: linhas.append(f"SE PERGUNTAREM: {x['manga']}")
     nota = "\n".join(linhas)
     assert len(nota) <= 4000, (x["id"], len(nota))
@@ -102,6 +104,7 @@ from reserva_notas import RESERVA
 ORDEM = ["FALA", "USO", "PONTO-CHAVE", "SE PERGUNTAREM"]
 for id_, linhas in RESERVA.items():
     if id_ in principal: continue
+    if not os.path.exists(f"{P}/slides/{id_}.html"): continue
     linhas = sorted(linhas, key=lambda l: ORDEM.index(l.split(":")[0]))
     nota = "\n".join(linhas); assert len(nota) <= 4000, (id_, len(nota))
     p = f"{P}/slides/{id_}.html"; t = open(p, encoding="utf-8").read()
