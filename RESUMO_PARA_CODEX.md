@@ -20,7 +20,7 @@ para este repositório.
 5. Montar este resumo para o Codex.
 6. Usar os créditos extras para revisar os dados do deck.
 7. Aplicar a revisão que o Codex fez da apresentação, incluindo a redução para 15 minutos.
-8. Versão 15 (atual):
+8. Versão 15:
    - falar mais das drogas e da ação delas do que de estudos;
    - manter só os estudos principais, resumidos;
    - falar pouco de diluição;
@@ -28,37 +28,102 @@ para este repositório.
    - procurar na internet apresentações parecidas de Glauber Gouvea ou Rodrigo Diaz e seguir a
      linha de pensamento deles;
    - aplicar a revisão do Codex sobre a versão 14.
+9. Versões 16 e 17:
+   - reconferir tudo, inclusive a formatação;
+   - capa no modelo da apresentação de anestesia multimodal: sem data, com "UFRJ" e sem
+     "Terapia Intensiva";
+   - slide de objetivos logo depois da capa;
+   - símbolo da UFRJ no canto inferior direito de todos os slides;
+   - reduzir um pouco a "cara de IA" sem deixar a apresentação informal.
+10. Versão 18 (atual):
+    - slide sobre quando escolher milrinona em vez de dobutamina. Motivo: o uso de milrinona
+      em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
+    - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 15
+## Estado atual: versão 18
 
-28 slides: 14 na apresentação principal e 14 de reserva para perguntas. Tempo previsto da
-parte principal: 13 min 05 s. A meta é ensaiar em 13 a 14 minutos.
+30 slides: 16 na apresentação principal e 14 de reserva para perguntas. Tempo previsto da
+parte principal: 13 min 50 s. A meta é ensaiar em 13 a 14 minutos.
 
-| Slide | Conteúdo | Tempo |
+| Slide | Título | Tempo |
 |---|---|---|
-| 1 | Capa e objetivo | 20 s |
-| 2 | PAM ≈ DC × RVS e como reconhecer o mecanismo (ESICM 2025) | 1 min |
-| 3 | Receptores α, β, D1, V1 e a PDE3 (alvo da milrinona) | 1 min |
-| 4 | Catecolaminas e não catecolaminas | 45 s |
-| 5 | Noradrenalina: ação e uso, dose e cuidados | 1 min 15 s |
-| 6 | Adrenalina: ação e uso, dose e cuidados | 1 min |
-| 7 | Dopamina e dobutamina | 1 min 15 s |
-| 8 | Milrinona: mecanismo, efeito hemodinâmico, indicações, dose e cuidados | 1 min |
-| 9 | Fenilefrina e efedrina | 1 min |
-| 10 | Vasopressina e adjuvantes (hidrocortisona, angiotensina II, azul de metileno) | 1 min |
-| 11 | Choque séptico: a sequência da SSC 2026 | 1 min |
-| 12 | Intraoperatório: a droga segue o mecanismo | 1 min 15 s |
-| 13 | Hipotensão intraoperatória: o custo oculto | 45 s |
-| 14 | A droga certa para o problema certo | 30 s |
+| 1 | Capa (UFRJ, sem data) | 20 s |
+| 2 | Escolher a droga pelo mecanismo da hipotensão (objetivos) | 30 s |
+| 3 | Determinantes da pressão arterial média | 1 min |
+| 4 | Receptores e vias de sinalização | 45 s |
+| 5 | Catecolaminas e não catecolaminas | 30 s |
+| 6 | Noradrenalina | 1 min 15 s |
+| 7 | Adrenalina | 1 min |
+| 8 | Dopamina e dobutamina | 1 min |
+| 9 | Milrinona | 45 s |
+| 10 | Milrinona ou dobutamina: quando escolher | 1 min 15 s |
+| 11 | Fenilefrina e efedrina | 1 min |
+| 12 | Vasopressina e adjuvantes | 1 min |
+| 13 | Choque séptico: recomendações da SSC 2026 | 1 min |
+| 14 | Escolha da droga no intraoperatório | 1 min 15 s |
+| 15 | Hipotensão intraoperatória e alvo de pressão | 45 s |
+| 16 | Problema hemodinâmico e droga de escolha | 30 s |
 
 Reserva, depois de um slide divisor:
 
-- síntese das drogas (agora com a milrinona);
+- síntese das drogas (com milrinona e vasopressina);
 - slides individuais de dopamina, dobutamina, fenilefrina, efedrina e vasopressina;
 - choque refratário e sequência SSC 2026;
-- alvo de PAM e timing e via periférica;
-- alvo intraoperatório (tabela POISE-3, IMPROVE-multi e HISTAP);
+- alvo de PAM, início precoce e via periférica;
+- alvo de PAM no intraoperatório (POISE-3, IMPROVE-multi e HISTAP);
 - roteiro e referências.
+
+## O que mudou na versão 18
+
+- Slide novo "Milrinona ou dobutamina: quando escolher", logo depois do slide da milrinona:
+  - premissa: inotrópico só com baixo débito e hipoperfusão, depois de corrigir volume e PAM;
+    vasoplegia pede vasopressor;
+  - tabela: meia-vida (dobutamina cerca de 2 min; milrinona cerca de 2,4 h na IC, maior na
+    insuficiência renal), VD e circulação pulmonar, FC e PAM, uso de betabloqueador;
+  - prefira milrinona: disfunção de VD com hipertensão pulmonar, inclusive após CEC;
+    betabloqueador ou taquicardia limitando a dobutamina;
+  - prefira dobutamina: hipotensão ou vasoplegia, insuficiência renal, necessidade de titular
+    rápido, disfunção miocárdica da sepse (a droga citada pela SSC 2026);
+  - notas: nenhuma das duas é superior em desfecho. DOREMI: 49% vs. 54%, RR 0,90 (IC 95%
+    0,69–1,19), o que não prova equivalência. Subgrupo com betabloqueador: 93 pacientes
+    (48%), sem diferença (Di Santo, Crit Care 2021;25:289);
+  - notas: três perguntas para discutir o caso que motivou a aula.
+- Milrinona: saiu "preferível à dobutamina em uso de betabloqueador". As indicações agora
+  começam por "só com baixo débito e hipoperfusão".
+- Intraoperatório e mensagens finais: "baixo débito com hipoperfusão" e milrinona
+  especificamente no VD com hipertensão pulmonar.
+- Objetivos e roteiro citam a escolha entre milrinona e dobutamina.
+- Referências: entrou Di Santo (Crit Care 2021).
+- Tempos: receptores 45 s, catecolaminas 30 s, dopamina e dobutamina 1 min, milrinona 45 s.
+
+## Auditoria do Codex sobre a versão 15, aplicada na versão 18
+
+- DOREMI: "sem diferença estatisticamente significativa"; as notas dizem que isso não prova
+  equivalência.
+- Milrinona sem alegação de superioridade. A subanálise do DOREMI por betabloqueador entra
+  como cautela.
+- VANCS (notas de "Vasopressina e adjuvantes"): população de cirurgia cardíaca; não
+  extrapolar para o choque séptico.
+- IMPROVE-multi: RR 1,10 (IC 95% 0,93–1,30), só nas notas.
+- POQI 2024: PAM ≥60 em pacientes de risco como limite mínimo; alvo maior com pressão venosa
+  ou compartimental alta.
+- Indicações mais exatas de dobutamina, milrinona, vasopressina e vasopressores no centro
+  cirúrgico.
+
+## O que mudou nas versões 16 e 17
+
+- Capa no modelo da apresentação de multimodal; slide de objetivos; símbolo da UFRJ em todos
+  os slides.
+- Visual: títulos descritivos, cartões sem faixas coloridas, texto em Source Sans 3 (Calibri
+  no .pptx).
+- Correções de conteúdo:
+  - OptimaCC: o choque refratário era o principal desfecho de segurança;
+  - CAT ≠ CATS;
+  - ADRENAL e APROCCHSS descritos corretamente;
+  - disfunção miocárdica da sepse com vasoplegia;
+  - unidades da vasopressina;
+  - referências de CAT, VANISH, Salmasi e Sharkey.
+- Linha da vasopressina na síntese das drogas.
 
 ## O que mudou na versão 15
 
@@ -90,7 +155,7 @@ Reserva, depois de um slide divisor:
   - manejo proativo com monitorização funcional.
 - Mensagens finais: tabela problema → droga e uma pergunta para a discussão com o grupo.
 - Saiu o slide de reserva de prescrição de noradrenalina, porque o Bruno não quer falar muito
-  de diluição. A diferença entre dose em base e em sal continua no slide "Timing e via".
+  de diluição. A diferença entre dose em base e em sal continua na reserva "Início precoce e via periférica".
 - Saiu o slide de reserva "HISTAP vs. IMPROVE-multi". A tabela "Alvo intraoperatório" já
   cobre os dois estudos e o POISE-3.
 
@@ -130,8 +195,8 @@ Reserva, depois de um slide divisor:
 
 - VASSPR: doses medianas de NA de 0,14 e 0,34 mcg/kg/min ao iniciar a vasopressina. O deck
   usa o dado verificado de uso de vasopressina (52,4% vs. 32,9%).
-- IMPROVE-multi: IC 95% de 0,93–1,30. O RR 1,10 aparece em resumo secundário e não está mais
-  em tela.
+- IMPROVE-multi: o Codex confirmou RR 1,10 (IC 95% 0,93–1,30) no artigo. Aqui só foi possível
+  conferir os percentuais (33,5% vs. 30,5%), coerentes com esse RR; o número está só nas notas.
 - Metanálise de 2025 com 17 ensaios e 2.138 pacientes (cesárea). Não foi encontrada. O deck
   traz só a conclusão que as metanálises localizadas compartilham, sem números.
 
@@ -168,31 +233,32 @@ Reserva, depois de um slide divisor:
 - "Por que noradrenalina e não fenilefrina em infusão?"
   - A fenilefrina é α1 pura e a bradicardia reflexa pode reduzir o DC.
   - A NA mantém o DC e aumenta o retorno venoso.
-  - Slides 2, 5 e 9.
+  - Slides 3, 6 e 11.
 - "Qual o alvo de PAM no intraoperatório?"
   - POQI: PAM ≥60 em pacientes de risco, como limite mínimo; alvo maior com pressão venosa
     alta.
   - HISTAP favoreceu PAM ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram
     neutros.
-  - Slide 13 e reserva "Alvo intraoperatório".
+  - Slide 15 e reserva "Alvo de PAM no intraoperatório: ensaios".
 - "E o índice de previsão de hipotensão ou a alça fechada?"
   - Reduzem a exposição à hipotensão, ainda sem benefício claro em desfechos.
-  - Notas do slide 13.
+  - Notas do slide 15.
 - "Milrinona ou dobutamina?"
-  - Milrinona: VD, hipertensão pulmonar e betabloqueador; causa mais hipotensão e acumula
-    na insuficiência renal.
-  - DOREMI: sem diferença estatisticamente significativa.
-  - Slide 8.
+  - Primeiro, a indicação: baixo débito com hipoperfusão. Vasoplegia pede vasopressor.
+  - Milrinona: VD com hipertensão pulmonar; betabloqueador ou taquicardia limitando a
+    dobutamina. Causa mais hipotensão e acumula na insuficiência renal.
+  - DOREMI: sem diferença estatisticamente significativa, o que não prova equivalência.
+  - Slides 9 e 10.
 - "Quando associar vasopressina?"
   - SSC 2026: quando a dose de NA está subindo, sem limiar fixo.
   - VASSPR: antecipar como regra não reduziu a mortalidade.
-  - Slides 10 e 11 e reservas.
+  - Slides 12 e 13 e reservas.
 - "E na reperfusão do enxerto hepático?"
   - Vasopressina; azul de metileno como resgate, com evidência limitada.
-  - Slides 10 e 12.
+  - Slides 12 e 14.
 - "NA em veia periférica é segura?"
   - Complicações em 7% (8,6% combinada), 96% leves; menos com protocolo de segurança.
-  - Reserva "Timing e via".
+  - Reserva "Início precoce e via periférica".
 
 ## Arquivos neste repositório
 
@@ -203,7 +269,7 @@ Reserva, depois de um slide divisor:
   - A ordem e as seções ficam em `deck.json`.
 - `apresentacao/conversor/html_para_pptx.js`: gera o .pptx a partir da fonte HTML.
 - `apresentacao/conversor/verificar_layout.js`: confere se cada slide cabe com as fontes do
-  deck no Claude (Inter e Source Serif 4).
+  deck no Claude (Source Sans 3 e Source Serif 4).
 
 O artifact no Claude e este repositório não se sincronizam. Uma mudança feita aqui não
 aparece no Claude, e vice-versa.
@@ -224,19 +290,11 @@ Em Linux, instale `fonts-liberation` para que as quebras de linha batam com o Po
 
 Estas dependem do Bruno:
 
-1. Capa: preencher `[Serviço] · [Data]`.
-2. Miller's Anesthesia, 10ª ed.: preencher `[cap./pág.]` nos rodapés e `[caps.]` nas
-   referências.
-3. Ensaiar com cronômetro, mirando 13 a 14 minutos. Os tempos por slide estão nas notas da
+1. Miller's Anesthesia, 10ª ed.: preencher `[cap./pág.]` nos rodapés e `[caps.]` nas
+   referências. O Bruno precisa mandar o sumário ou os capítulos, porque o PDF está num
+   projeto do Claude que esta sessão não acessa.
+2. Ensaiar com cronômetro, mirando 13 a 14 minutos. Os tempos por slide estão nas notas da
    capa.
-
-Estas são opcionais:
-
-4. Slide de reserva "Timing e via": o rodapé cita "InCor/HC-FMUSP 2020", que não foi
-   possível confirmar. Confirmar o documento ou citar a bula do hemitartarato de
-   norepinefrina.
-5. Fenilefrina (reserva): trocar a revisão de Park e Choi pelo estudo original de Sharkey et
-   al. (Anesth Analg 2019;129:1312–8), depois de conferir os números no artigo.
 
 ## Regras para continuar o trabalho
 
@@ -247,8 +305,9 @@ Estas são opcionais:
   - estudos em uma frase, com os números nas notas;
   - pouco sobre diluição.
 - Manter o visual:
-  - fundo claro #F5F3EE e cartões #FFFDF8;
-  - azul-marinho #1B2A3A, laranja #B9581A, azul #2E5E8C, cinza #56606B;
+  - fundo claro #F5F3EE e cartões #FFFDF8 com borda #E2DDD2, sem faixas coloridas;
+  - azul-marinho #1B2A3A, laranja #B9581A, cinza #56606B;
+  - símbolo da UFRJ no canto inferior direito de todos os slides;
   - títulos serifados e texto sem serifa;
   - uma ideia por slide, com a fonte no rodapé.
 - Manter a parte principal em 15 minutos, com folga; material extra vai para a reserva.
