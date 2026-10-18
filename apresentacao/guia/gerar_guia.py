@@ -31,7 +31,7 @@ for i, x in enumerate(dados):
     <div class="texto">
       <p class="chave">{e(x["chave"])}</p>
       <p class="fala">{e(x["fala"]).replace("▸", '<span class="clique" title="clique">▸</span>')}</p>
-      <p class="trans"><span>Transição</span> {e(x["trans"])}</p>
+      {f'<p class="trans"><span>Transição</span> {e(x["trans"])}</p>' if x["trans"] else ''}
       {f'<details><summary>Se perguntarem</summary><p>{e(x["manga"])}</p></details>' if x["manga"] else ''}
     </div>
   </div>
@@ -46,7 +46,7 @@ PERGUNTAS = [
  ("Milrinona no choque séptico?",
   "A SSC 2026 não encontrou dados para comparar com a dobutamina. Em um ECR de 2025 (Tongyoo, 64 pacientes), a milrinona aumentou o débito em 6 h, sem diferença de mortalidade (50% vs. 50%). Débito maior não é desfecho melhor."),
  ("Então quando a milrinona tem indicação?",
-  "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, a hipotensão é vasoplegia e a droga é o vasopressor. Slides 12 e 13."),
+  "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, considerar vasoplegia: a droga é o vasopressor. Slides 12 e 13."),
  ("Quando associar vasopressina?",
   "SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide 16 e reserva."),
  ("Qual o alvo de PAM no intraoperatório?",

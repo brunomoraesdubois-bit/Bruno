@@ -744,6 +744,27 @@ async function posProcessar(arquivo) {
       zip.file(p, xml);
     }
   }
+  // Um único <a:pPr> por parágrafo, como primeiro filho (o pptxgenjs repete o pPr a cada trecho;
+  // o esquema admite um só) e subscrito com o recuo padrão do PowerPoint (-25%)
+  const comTexto = Object.keys(zip.files).filter((f) => /^ppt\/(slides\/slide|notesSlides\/notesSlide)\d+\.xml$/.test(f));
+  for (const p of comTexto) {
+    const xml = await zip.file(p).async('string');
+    let novo = xml.replace(/<a:p>([\s\S]*?)<\/a:p>/g, (tudo, dentro) => {
+      let primeiro = true;
+      const limpo = dentro.replace(/<a:pPr\b[^>]*\/>|<a:pPr\b[^>]*>[\s\S]*?<\/a:pPr>/g, (pp) => (primeiro ? ((primeiro = false), pp) : ''));
+      return `<a:p>${limpo}</a:p>`;
+    });
+    novo = novo.replace(/baseline="-40000"/g, 'baseline="-25000"');
+    if (novo !== xml) zip.file(p, novo);
+  }
+  // docProps/app.xml: contagem de slides ocultos e fontes usadas
+  if (zip.file('docProps/app.xml')) {
+    let app = await zip.file('docProps/app.xml').async('string');
+    let ocultos = 0;
+    for (const p of slidesXml) if (/<p:sld\b[^>]*\bshow="0"/.test(await zip.file(p).async('string'))) ocultos++;
+    app = app.replace(/<HiddenSlides>\d+<\/HiddenSlides>/, `<HiddenSlides>${ocultos}</HiddenSlides>`).replace('<vt:lpstr>Arial</vt:lpstr>', `<vt:lpstr>${FONTE_TITULO}</vt:lpstr>`);
+    zip.file('docProps/app.xml', app);
+  }
   // Animação de aparecimento (esmaecer, 0,4 s) por clique, pelos nomes "[pN] ..." dos objetos
   for (const p of slidesXml) {
     const xml = await zip.file(p).async('string');
