@@ -2,7 +2,7 @@
 // Converte o deck (deck.json + slides/<id>.html, no formato do tipo Slides do Claude)
 // em um .pptx editável.
 //
-// Cada slide é renderizado no Chromium (Playwright) com Arial e Georgia, as fontes que
+// Cada slide é renderizado no Chromium (Playwright) com Calibri e Georgia, as fontes que
 // o PowerPoint vai usar, e o layout medido vira formas, caixas de texto, tabelas nativas
 // e notas do apresentador via pptxgenjs.
 //
@@ -19,7 +19,7 @@ const JSZip = require('jszip');
 const PX = 1 / 144; // polegadas por px: 1920 px = 13,333 pol (LAYOUT_WIDE)
 const PT = 0.5; // pontos por px
 const FONTE_TITULO = 'Georgia';
-const FONTE_TEXTO = 'Arial';
+const FONTE_TEXTO = 'Calibri';
 
 const TEMA = {
   nome: 'Aminas Vasoativas',
@@ -32,7 +32,7 @@ const TEMA = {
 };
 
 // ---------------------------------------------------------------------------
-// Fontes usadas na medição: Georgia (Gelasio, métricas iguais) e Arial (Liberation Sans)
+// Fontes usadas na medição: Georgia (Gelasio) e Calibri (Carlito), com as mesmas métricas
 
 function arquivoFonte(padrao) {
   try {
@@ -52,16 +52,16 @@ function cssFontes() {
       faces.push(`@font-face{font-family:"Georgia";src:url("${url}");font-weight:${faixa};font-style:${estilo}}`);
     }
   }
-  const liberation = [
-    ['Liberation Sans:style=Regular', '100 549', 'normal'],
-    ['Liberation Sans:style=Bold', '550 900', 'normal'],
-    ['Liberation Sans:style=Italic', '100 549', 'italic'],
-    ['Liberation Sans:style=Bold Italic', '550 900', 'italic'],
+  const carlito = [
+    ['Carlito:style=Regular', '100 549', 'normal'],
+    ['Carlito:style=Bold', '550 900', 'normal'],
+    ['Carlito:style=Italic', '100 549', 'italic'],
+    ['Carlito:style=Bold Italic', '550 900', 'italic'],
   ];
-  for (const [padrao, faixa, estilo] of liberation) {
+  for (const [padrao, faixa, estilo] of carlito) {
     const f = arquivoFonte(padrao);
-    if (f && /liberation/i.test(f)) {
-      faces.push(`@font-face{font-family:"Arial";src:url("file://${f}");font-weight:${faixa};font-style:${estilo}}`);
+    if (f && /carlito/i.test(f)) {
+      faces.push(`@font-face{font-family:"Calibri";src:url("file://${f}");font-weight:${faixa};font-style:${estilo}}`);
     }
   }
   return faces.join('\n');
@@ -90,7 +90,7 @@ x-shape,x-icon{display:block}
 function trocarFontes(html) {
   return html.replace(/font-family:\s*([^;"]+)/g, (_, lista) => {
     const serif = /source serif|georgia|(^|,)\s*serif\s*$/i.test(lista.trim()) && !/sans-serif\s*$/i.test(lista.trim());
-    return serif ? 'font-family:Georgia, serif' : 'font-family:Arial, sans-serif';
+    return serif ? 'font-family:Georgia, serif' : 'font-family:Calibri, sans-serif';
   });
 }
 
@@ -198,6 +198,8 @@ function extrairSlide() {
       lh,
       linhas: Math.max(1, Math.round(conteudoH / lh)),
       semQuebra: cs.whiteSpace === 'nowrap',
+      // Item de lista: recuo do marcador = padding-left da lista
+      marcador: el.tagName === 'LI' ? parseFloat(getComputedStyle(el.parentElement).paddingLeft) || 0 : 0,
       fixo: cs.position === 'absolute',
     };
   }
@@ -266,7 +268,7 @@ async function medirDeck(pastaDeck, deck, pastaPrints) {
   const navegador = await chromium.launch();
   const pagina = await navegador.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
   await pagina.goto('file://' + arqHarness);
-  await pagina.evaluate(() => Promise.all(['Georgia', 'Arial'].flatMap((f) =>
+  await pagina.evaluate(() => Promise.all(['Georgia', 'Calibri'].flatMap((f) =>
     ['400', '700', 'italic 400', 'italic 700'].map((v) => document.fonts.load(`${v} 32px ${f}`)))));
   const slides = [];
   for (const id of deck.order) {
@@ -296,7 +298,7 @@ async function medirDeck(pastaDeck, deck, pastaPrints) {
 const SOBRE = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9', '⁺': '+', '⁻': '-' };
 const SOB = { '₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9' };
 
-// "Ca²⁺" e "O₂" viram sobrescrito/subscrito de verdade: Arial não tem todos esses glifos
+// "Ca²⁺" e "O₂" viram sobrescrito/subscrito de verdade: nem toda fonte tem esses glifos
 function separarIndices(texto) {
   const partes = [];
   let atual = { texto: '', sobre: false, sob: false };
@@ -446,8 +448,8 @@ function adicionarCaixa(slide, pres, it) {
   adicionarFaixas(slide, pres, it.caixa, it.pintura, base);
 }
 
-// Ascendente e descendente (em em) de Arial e Georgia, para alinhar a linha de base
-const METRICAS = { serif: [0.917, 0.219], sans: [0.905, 0.212] };
+// Ascendente e descendente (em em) de Georgia e Calibri, para alinhar a linha de base
+const METRICAS = { serif: [0.917, 0.219], sans: [0.952, 0.269] };
 
 // O CSS centraliza o glifo na altura da linha; com espaçamento exato o PowerPoint põe a
 // linha de base a 80% da altura da linha. Devolve quanto subir (negativo) ou descer a caixa.
@@ -498,10 +500,16 @@ function adicionarTexto(slide, pres, it, opcoesExtra = {}) {
   if (it.alinhamento === 'center') x -= folga / 2;
   else if (it.alinhamento === 'right') x -= folga;
   w += folga;
+  // Item de lista: a caixa começa no marcador e o texto fica recuado, como no navegador
+  const marcador = it.marcador ? { bullet: { indent: +(it.marcador * PT).toFixed(1) } } : {};
+  if (it.marcador) {
+    x -= it.marcador;
+    w += it.marcador;
+  }
   slide.addText(trechos, {
     x: x * PX, y: y * PX, w: w * PX, h: h * PX,
     margin: 0, valign: 'top', isTextBox: true, fit: 'none',
-    ...comum, ...opcoesExtra,
+    ...comum, ...marcador, ...opcoesExtra,
   });
 }
 

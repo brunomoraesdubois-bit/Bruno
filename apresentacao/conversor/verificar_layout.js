@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Confere se cada slide cabe no quadro de 1920×1080 com as fontes do deck no Claude
-// (Inter e Source Serif 4): conteúdo dentro da margem inferior, rodapé sem sobreposição,
+// (Source Sans 3 e Source Serif 4): conteúdo dentro da margem inferior, rodapé sem sobreposição,
 // títulos em uma linha e nenhuma palavra estourando a caixa.
 //
 // Uso: node verificar_layout.js <pasta-do-deck>
@@ -13,7 +13,7 @@ const { CSS_BASE } = require('./html_para_pptx');
 
 function linksFontes() {
   const css = [];
-  for (const [pacote, pesos] of [['@fontsource/inter', [400, 500, 600, 700]], ['@fontsource/source-serif-4', [400, 500, 600, 700]]]) {
+  for (const [pacote, pesos] of [['@fontsource/source-sans-3', [400, 500, 600, 700]], ['@fontsource/source-serif-4', [400, 500, 600, 700]]]) {
     const dir = path.dirname(require.resolve(`${pacote}/package.json`));
     for (const p of pesos) css.push(`<link rel="stylesheet" href="file://${path.join(dir, `${p}.css`)}">`);
   }
