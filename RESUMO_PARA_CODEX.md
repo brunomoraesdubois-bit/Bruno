@@ -40,7 +40,7 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 25 (17 min 35 s)
+## Estado atual: versão 26 (17 min 35 s)
 
 33 slides: 19 na apresentação principal, um divisor e 13 de reserva. Tempo previsto da parte
 principal: 17 min 30 s (cerca de 2.040 palavras de fala e 180 de transições, ou seja, 127
@@ -64,6 +64,13 @@ Mudanças da versão 24 (revisão integral do Codex sobre a versão 23, conferid
   portopulmonar, síndrome hepatopulmonar, doença cardiopulmonar, insuficiência hepática
   fulminante; 18 a 65 anos).
 - Tempos: noradrenalina 50 s, intraoperatório 80 s, receptores 50 s.
+- Regra do Bruno: todo estudo citado na fala é apresentado (população, contexto, comparação e
+  resultado); o que não cabe apresentar sai da fala. Reescritas as falas dos slides 3
+  (Persichini), 4 (OPTIME-CHF, 951 pacientes), 9 (ANZICS e SOAP II), 12 (DOREMI completo, com a
+  subanálise por betabloqueador), 16 (VASSPR), 17 (Gouvêa e Diaz; Sharkey saiu da fala e fica
+  na reserva), 18 (HISTAP); e, na reserva, choque refratário (ADRENAL, APROCCHSS, ATHOS-3), alvo
+  de PAM (65 trial, OPTPRESS), início e via (CENSER, Tran) e alvo intraoperatório (POISE-3,
+  IMPROVE-multi, HISTAP). Tempos redistribuídos: 2.143 palavras em 17 min 35 s (122 por minuto).
 - Conferência da versão 8 (Codex): fala do slide 12 diz que o DOREMI não demonstrou
   superioridade e que isso não comprova equivalência; cartão "Considere dobutamina" passa a
   "Com indicação de inotrópico: hipotensão associada; ..."; notas do divisor sem a falência de VD
