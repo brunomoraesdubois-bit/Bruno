@@ -681,7 +681,11 @@ async function main() {
   console.log(`${slides.length} slides → ${saida}`);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+module.exports = { CSS_BASE };
+
+if (require.main === module) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
