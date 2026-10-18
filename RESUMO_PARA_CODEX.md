@@ -43,7 +43,7 @@ para este repositório.
 ## Estado atual: versão 19 (cerca de 18 minutos)
 
 O Bruno autorizou passar de 15 minutos, sem chegar a 20. São 34 slides: 20 na apresentação
-principal e 14 de reserva. Tempo previsto: 18 min 20 s; ensaiar em 18 a 19 minutos.
+principal e 14 de reserva. Tempo previsto: 18 min 35 s; ensaiar em 18 a 19 minutos. Guia de fala em `apresentacao/guia/guia-de-fala.html`.
 
 | Slide | Título | Tempo |
 |---|---|---|
@@ -56,7 +56,7 @@ principal e 14 de reserva. Tempo previsto: 18 min 20 s; ensaiar em 18 a 19 minut
 | 7 | Noradrenalina | 1 min 15 s |
 | 8 | Adrenalina | 1 min |
 | 9 | Dopamina e dobutamina | 1 min |
-| 10 | AMPc: onde agem dobutamina e milrinona (novo, diagrama) | 1 min |
+| 10 | AMPc: onde agem dobutamina e milrinona (figura própria do cardiomiócito e dos vasos) | 1 min 15 s |
 | 11 | Milrinona | 45 s |
 | 12 | Milrinona ou dobutamina: quando escolher | 1 min 15 s |
 | 13 | Fenilefrina e efedrina | 1 min |
