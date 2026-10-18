@@ -70,7 +70,7 @@ RESERVA = {
  "intraopalvo": [
   "USO: pergunta sobre os ensaios de alvo de PAM no intraoperatório.",
   "PONTO-CHAVE: evitar PAM abaixo de 60 a 65 é consenso; subir o alvo só se mostrou útil em hipertensos de alto risco.",
-  "FALA: Três ensaios recentes testaram alvos mais altos no intraoperatório. O POISE-3 comparou evitar hipotensão, com PAM de 80 e anti-hipertensivos suspensos, a evitar hipertensão, e não reduziu eventos vasculares. O IMPROVE-multi individualizou o alvo pela pressão basal noturna e não foi melhor que 65. O HISTAP, em idosos hipertensos de alto risco em cirurgia abdominal maior, encontrou menos morte ou disfunção orgânica com PAM de 80, sobretudo por menos lesão renal aguda. A leitura prática é a do POQI: PAM de 60 é o piso em pacientes de risco, maior se a pressão venosa ou compartimental estiver alta; acima do piso, o benefício apareceu apenas em hipertensos de alto risco.",
+  "FALA: Três ensaios recentes testaram alvos mais altos no intraoperatório. O POISE-3 comparou evitar hipotensão, com PAM de 80 e anti-hipertensivos suspensos, a evitar hipertensão, e não reduziu eventos vasculares. O IMPROVE-multi individualizou o alvo pela pressão basal noturna e não foi melhor que 65. O HISTAP, em idosos hipertensos de alto risco em cirurgia abdominal maior, encontrou menos morte ou disfunção orgânica com PAM de 80, sobretudo por menos lesão renal aguda. A leitura prática é a do POQI: PAM de 60 é o piso em pacientes de risco, maior se a pressão venosa ou compartimental estiver alta; acima do piso, o benefício demonstrado até agora foi em hipertensos de alto risco.",
   "SE PERGUNTAREM: POISE-3 (Marcucci, Ann Intern Med 2023; n = 7.490): eventos vasculares em 30 dias 13,9% vs. 14,0%. IMPROVE-multi (Saugel, JAMA 2025; n = 1.134): composto em 7 dias 33,5% vs. 30,5% (RR 1,10; IC 95% 0,93–1,30). HISTAP (Cecconi, Intensive Care Med 2026; n = 630; 18 centros italianos): 38,1% vs. 48,9% (RR 0,78); lesão renal aguda leve a moderada 23,5% vs. 33,7%; PAM média alcançada 88 vs. 77 mmHg, com mais noradrenalina, efedrina e transfusão no alvo alto. POQI (Saugel, Br J Anaesth 2024).",
  ],
  "condutavd": [
@@ -87,6 +87,6 @@ RESERVA = {
  "refs": [
   "USO: se pedirem a referência exata de um estudo citado.",
   "PONTO-CHAVE: as citações completas estão abaixo; as diretrizes de base são SSC 2026, ESICM 2025, POQI 2024 e Miller, 10ª ed.",
-  "FALA: As referências estão neste slide em forma abreviada; as citações completas estão nas notas.",
+  "FALA: As referências estão neste slide em forma abreviada; nas notas estão os dados completos dos principais estudos.",
  ],
 }

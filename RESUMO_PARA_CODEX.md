@@ -40,11 +40,30 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 23 (cerca de 17 minutos e meio)
+## Estado atual: versão 24 (17 min 30 s)
 
 33 slides: 19 na apresentação principal, um divisor e 13 de reserva. Tempo previsto da parte
-principal: 17 min 45 s (2.100 palavras de fala, cerca de 117 palavras por minuto, já com folga
-para pausas); limite combinado com o Bruno: 18 minutos.
+principal: 17 min 30 s (cerca de 2.040 palavras de fala e 180 de transições, ou seja, 127
+palavras por minuto contando as transições); limite combinado com o Bruno: 18 minutos. O
+Codex recomenda ensaiar mirando 17 minutos para ter margem.
+
+Mudanças da versão 24 (revisão integral do Codex sobre a versão 23, conferida):
+- Títulos serifados dos destaques ("Pergunta central", "Como diferenciar?", "Atenção",
+  "Milrinona") com 32 px de folga à direita, para não encostarem no texto em renderizadores
+  que substituem a Georgia.
+- Noradrenalina: DC em geral mantido ou maior, podendo cair pela pós-carga.
+- Milrinona × dobutamina (fala): "o DOREMI não demonstrou superioridade de uma sobre a outra".
+- Falência de VD: noradrenalina para sustentar a PAM; vasopressina conforme a vasoplegia
+  associada. Transição 12→13 conforme o Codex.
+- Mensagens finais: milrinona "sobretudo" no VD com hipertensão pulmonar.
+- Reserva "Choque refratário": milrinona e levosimendana em linhas separadas.
+- Reserva "Alvo intraoperatório": "o benefício demonstrado até agora foi em hipertensos de
+  alto risco".
+- Intraoperatório: fala enxugada (o estudo de Gouvêa em uma frase) e SE PERGUNTAREM sem
+  repetições, com os critérios de exclusão que o Codex leu no texto completo (hipertensão
+  portopulmonar, síndrome hepatopulmonar, doença cardiopulmonar, insuficiência hepática
+  fulminante; 18 a 65 anos).
+- Tempos: noradrenalina 50 s, intraoperatório 80 s.
 
 | Slide | Título | Tempo |
 |---|---|---|
