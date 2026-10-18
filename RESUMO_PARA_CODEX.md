@@ -40,7 +40,61 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 29 (17 min 55 s)
+## Estado atual: versão 30 (17 min 55 s)
+
+Para o Codex conferir: esta versão fecha o ciclo pedido pelo Bruno depois da versão 27
+("tire o 'para discutir no nosso serviço'; depois disso, só um obrigado e um QR code com as
+referências; slides mais interativos e mais fáceis de lembrar; revisão completa").
+
+1. Fim da apresentação. O slide 19 (Mensagens finais) perdeu o parágrafo "Para discutir: no
+   nosso serviço..." e a frase correspondente da fala. Slide 20, novo: "Obrigado", autoria e um
+   QR code que abre `apresentacao/referencias.md` (41 citações com autores, título, periódico,
+   ano, volume/páginas e DOI; cada DOI conferido em duas buscas independentes). O slide de
+   referências saiu. Os 13 slides de reserva ficam no .pptx como ocultos (seção própria depois
+   do Obrigado; não aparecem na apresentação; para mostrar um, digitar o número e Enter). No
+   Claude, o deck mostra só os 20 slides da apresentação.
+2. Aparecimento por clique. Nos 18 slides de conteúdo cada bloco aparece no clique
+   correspondente (esmaecer 0,4 s), na ordem da fala; o que a fala cita primeiro já está
+   visível ao abrir (cartões escuros de receptores, cabeçalhos de tabela). 64 cliques no total.
+   Nas notas, cada ▸ da FALA marca um clique; o guia mostra os marcadores em laranja e o número
+   de cliques por slide. As tabelas de receptores e de mensagens finais aparecem linha a linha
+   (tabelas empilhadas no HTML). Conferido por ida e volta no LibreOffice: a contagem de cliques
+   por slide bate com a dos marcadores.
+3. Falas reescritas para seguir a ordem visual e dizer o que aparece em cada clique (doses,
+   riscos, adjuvantes). Unidades por extenso nas falas ("microgramas por quilo por minuto").
+   Sem "único", "só" e "igual" para resultados sem diferença estatística. VASSPR datado
+   ("outubro de 2026"); DOREMI apresentado como "o ensaio de referência"; HISTAP como "o ensaio
+   positivo mais recente", com POISE-3 e IMPROVE-multi citados como neutros.
+4. Transições reescritas para levar à primeira frase do slide seguinte (capa → objetivos,
+   fisiologia → perfusão, receptores → classificação, classificação → noradrenalina, milrinona
+   → comparação, fenilefrina/efedrina → "E quando a via adrenérgica não basta?", hipotensão
+   intraoperatória → mensagens). Pontos-chave de milrinona e vasopressina/adjuvantes cobrem o
+   slide inteiro.
+5. Texto visível: "bloqueio de neuroeixo"; "Riscos:" nos cartões de adrenalina e milrinona;
+   linha "Hipotensão com taquicardia (anestesia)" nas mensagens finais; rodapés "SSC 2026";
+   textos menores do intraoperatório em 24 px; "anti‑hipertensivos" sem quebra no hífen;
+   cartão "Costuma manter efeito" na vasopressina (reserva).
+6. Fatos conferidos nesta rodada (fontes nos commits e em v23/refs_conferidas.json):
+   doses de adrenalina na anafilaxia (cartão ANZAAG/ANZCA 2022: 10–20 mcg no grau 2, 50–100 mcg
+   no grau 3, infusão após mais de três bolus); estudo de Gouvêa e Diaz feito no HUCFF/UFRJ
+   (registro NCT03459924); Tran 2020 (2,9% com protocolo vs. 12% sem); SSC 2026 mantém, na
+   disfunção cardíaca, NA se taquiarritmia e adrenalina se bradiarritmia (frase restaurada no
+   slide da sequência). Da nota da vasopressina saíram os desfechos secundários do VASSPR que
+   não foram conferidos; da nota do OPTIME-CHF, "sem indicação clara de inotrópico" ficou na
+   fala por estar no desenho do ensaio.
+7. .pptx: um <a:pPr> por parágrafo (o pptxgenjs repetia o pPr a cada trecho), subscrito com
+   recuo padrão (-25%), docProps com 13 slides ocultos e fontes Georgia/Calibri, oito seções
+   alinhadas às partes numeradas dos slides, mais a seção dos ocultos.
+8. Revisão final por 12 agentes (6 revisores: linguagem, fatos, cliques, visual, .pptx,
+   transições; 6 céticos): 134 achados, 60 confirmados e aplicados; os refutados eram, em
+   geral, números já conferidos em fonte que não constavam desta lista, e foram mantidos.
+9. Pendências: ensaiar com cronômetro (17 min 55 s previstos; limite de 18); áudio da fala
+   para ouvir dirigindo (pedido para depois; os serviços de síntese de voz estão bloqueados
+   nesta sessão, então a saída provável é um botão "ouvir" no guia, com a voz do celular);
+   capítulos do Miller; o QR aponta para o branch de trabalho no GitHub, que é o branch padrão
+   do repositório: se ele for renomeado, regenerar o QR com `figuras/qr.py` e republicar.
+
+## Estado anterior: versão 29 (17 min 55 s)
 
 Mesma estrutura da versão 28 (20 slides na apresentação e 13 ocultos de reserva), agora com
 aparecimento por clique e falas sincronizadas, a pedido do Bruno ("slides mais interativos e
