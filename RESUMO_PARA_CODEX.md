@@ -38,10 +38,20 @@ para este repositório.
     (Endo et al., Intensive Care Med 2025;51:883–892).
   - Notas do slide "Alvo intraoperatório": no HISTAP, a PAM média alcançada foi 77 mmHg no
     controle e 88 mmHg no grupo de alvo alto.
-- Dados conferidos em fontes: VASSPR (JAMA 2026; 31,8% vs. 33,0%), HISTAP (n = 630; LRA
-  23,5% vs. 33,7%), IMPROVE-multi (n = 1.134; 33,5% vs. 30,5%, NS), POISE-3 (13,9% vs.
-  14,0%), SSC 2026 (PAM inicial 65 mmHg; vasopressina com NA em escalada; início periférico;
-  corticoide condicional; sugestão contra terlipressina e levosimendan).
+  - Slide "Timing e via": a metanálise de Tran (Am J Emerg Med 2020; n = 1.835) teve 7% de
+    complicações, 96% delas leves. O slide dizia "~9%" e trazia "9 estudos" e "cateter ≥20G",
+    que não estão na fonte e foram retirados. Nas notas, a frase sobre sal e base estava com
+    o sentido invertido: em sal, o número é o dobro da dose em base.
+  - Notas do slide "Alvo de PAM": a exposição a vasopressor no 65 trial foi corrigida para
+    duração média 46,0 vs. 55,9 h e dose total média de NA-equivalente 31,5 vs. 44,3 mg.
+- Dados conferidos em fontes: VASSPR (JAMA 2026; 31,8% vs. 33,0%), HISTAP (n = 630;
+  composto 38,1% vs. 48,9%, RR 0,78; LRA 23,5% vs. 33,7%), IMPROVE-multi (n = 1.134; 33,5%
+  vs. 30,5%, NS), POISE-3 (13,9% vs. 14,0%), ESICM 2025 (PAM ≥80 mmHg no TCE grave),
+  SSC 2026 (PAM inicial 65 mmHg; vasopressina com NA em escalada; início periférico;
+  corticoide condicional; sugestão contra terlipressina e levosimendan; enquete dos
+  painelistas: 85,1% associam vasopressina, mediana de NA 0,3 mcg/kg/min, e 69% nunca ou
+  quase nunca usam azul de metileno), carta de Ibarra-Estrada, Kattan e Jung (Intensive
+  Care Med 2024;50:1181–1182) e revisão de Park e Choi (Anesth Pain Med 2024;19:85–93).
 - PowerPoint gerado: `apresentacao/Aminas_Vasoativas.pptx`. Formato 16:9, títulos em Georgia
   e texto em Arial, tudo editável (caixas de texto e tabelas nativas), notas do apresentador
   em todos os slides, seções e transição esmaecer.
@@ -81,10 +91,13 @@ Estas dependem do Bruno:
 
 Estas são opcionais:
 
-3. Fenilefrina: o rodapé cita uma revisão (Park & Choi, Anesth Pain Med 2024) para os dados
+3. Slide "Timing e via": o rodapé cita "InCor/HC-FMUSP 2020", que não foi possível
+   confirmar. O InCor tem uma nota técnica de farmácia de 2014 e um manual de medicamentos
+   sem ano visível. Confirmar o documento ou citar a bula do hemitartarato de norepinefrina.
+4. Fenilefrina: o rodapé cita uma revisão (Park & Choi, Anesth Pain Med 2024) para os dados
    de bradicardia (10,7% vs. 37,5%). Trocar pelo estudo original, Sharkey et al., Anesth
    Analg 2019;129:1312–8, depois de conferir os números no artigo.
-4. Fenilefrina: o painel mostra PAM ↑ com RVS ↑↑. Avaliar se PAM ↑↑ fica mais coerente para
+5. Fenilefrina: o painel mostra PAM ↑ com RVS ↑↑. Avaliar se PAM ↑↑ fica mais coerente para
    um agonista α1 puro.
 
 ## Regras para continuar o trabalho
