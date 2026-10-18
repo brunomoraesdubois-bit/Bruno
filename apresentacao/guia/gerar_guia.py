@@ -6,99 +6,37 @@ notas = json.load(open(S + "/v20/notas.json", encoding="utf-8"))
 import os
 prints = sorted(os.listdir(S + "/v20/webfull"))
 
-TEMPO = [20, 30, 60, 60, 45, 30, 75, 60, 60, 75, 45, 75, 60, 60, 60, 75, 45, 60, 75, 45]
-CHAVE = [
- "A aula nasceu de uma pergunta prática: quando a milrinona tem indicação?",
- "Qual componente da PAM está falhando?",
- "Vasoplegia pede vasopressor; bomba fraca, inotrópico; pré-carga baixa, volume.",
- "Inotrópico se decide por hipoperfusão e débito, não só pela pressão.",
- "Cada droga tem um perfil de receptores; vasopressina e milrinona usam outras vias.",
- "Catecolamina: infusão titulável. Não catecolamina: bolus.",
- "α1 potente com β1 modesto: sobe a PAM e preserva o débito.",
- "Dose baixa, β; dose alta, α. Droga da anafilaxia; terceira droga no choque séptico.",
- "Dopamina fora da primeira linha; dobutamina para baixo débito com hipoperfusão.",
- "Dobutamina aumenta a produção de AMPc; milrinona impede a degradação.",
- "Inodilatador de meia-vida longa e eliminação renal.",
- "Primeiro a indicação; depois a escolha é farmacológica, sem superioridade em desfecho.",
- "Fenilefrina: tônus baixo com FC alta. Efedrina: tônus baixo com bradicardia.",
- "Vasopressina age por outra via (V1) e poupa catecolamina.",
- "Noradrenalina, depois vasopressina, depois adrenalina; PAM inicial de 65 mmHg.",
- "Afastar causas, identificar o mecanismo, escolher a droga.",
- "PAM de 60–65 mmHg como piso; alvo maior só em selecionados.",
- "Pausa de alguns segundos: falência de VD ou vasoplegia?",
- "Na falência de VD com hipertensão pulmonar, a milrinona tem fundamento; na vasoplegia, a droga é o vasopressor.",
- "A droga certa corrige o componente que falha, na menor dose e pelo menor tempo.",
-]
-TRANS = [
- "Para responder, o objetivo da aula.",
- "Primeiro, de que depende a PAM.",
- "Mas PAM normal não basta: pressão não é perfusão.",
- "Definido o problema, as ferramentas: os receptores.",
- "Antes das drogas, uma classificação rápida.",
- "Começo pela droga de primeira linha.",
- "A adrenalina é parecida na estrutura, mas tem outro perfil.",
- "Agora os dois inotrópicos clássicos.",
- "Para entender a diferença entre dobutamina e milrinona, um esquema.",
- "Com esse mecanismo, a milrinona fica fácil de entender.",
- "E a pergunta central: quando escolher cada uma.",
- "Saindo dos inotrópicos, as drogas de bolus do centro cirúrgico.",
- "E quando as catecolaminas não bastam?",
- "Juntando tudo no choque séptico.",
- "No centro cirúrgico, o raciocínio é o mesmo, com outras causas.",
- "E quanto de PAM é suficiente no intraoperatório?",
- "Agora, um caso para aplicar tudo isso.",
- "A resposta e a conduta.",
- "Para fechar.",
- "Obrigado. Fico à disposição para perguntas.",
-]
-FALA_CAPA = ("Bom dia. Sou Bruno Dubois; meus orientadores são Marcelo Bandeira e Glauber Gouvea. "
- "O tema é aminas vasoativas. A aula nasceu de uma discussão em sala sobre o uso de milrinona: "
- "quando ela tem indicação, e quando a dobutamina ou um vasopressor seriam a escolha. "
- "Vou partir da fisiologia, passar pelas drogas e terminar com um caso.")
-FALA_MENSAGENS = ("Voltando à pergunta do início: qual componente da PAM está falhando? Vasoplegia pede noradrenalina e, "
- "quando a dose sobe, vasopressina; baixo débito com hipoperfusão pede inotrópico, com a milrinona reservada sobretudo para o VD "
- "com hipertensão pulmonar; bradicardia pede efedrina; anafilaxia, adrenalina. A droga certa é a que corrige esse componente, "
- "na menor dose eficaz e pelo menor tempo. Para discutir com o grupo: no nosso serviço, como documentamos o baixo débito antes "
- "do inotrópico, e quando associamos vasopressina?")
-
-def limpar(n):
-    n = re.sub(r"^(Trinta segundos|Quarenta e cinco segundos|Um minuto e quinze|Um minuto|Vinte segundos)\.\s*", "", n.strip())
-    partes = n.split("Se perguntarem:")
-    fala = partes[0].strip()
-    manga = ("Se perguntarem:".join(partes[1:])).strip() if len(partes) > 1 else ""
-    fala = fala.replace("Deixar a pergunta para a plateia por alguns segundos antes de passar.", "").strip()
-    return fala, manga
-
+G = json.load(open(S + "/guia/guia.json", encoding="utf-8"))
+dados = G["slides"]; total = G["total"]
+deck = json.load(open(S + "/artifact-files/351a25a9-1efc-412b-9232-d1cf8f2e53fe/project/deck.json", encoding="utf-8"))
+titulos = {}
+for x in dados:
+    t_ = open(f"{S}/artifact-files/351a25a9-1efc-412b-9232-d1cf8f2e53fe/project/slides/{x['id']}.html", encoding="utf-8").read()
+    titulos[x["id"]] = html.unescape(re.sub("<[^>]+>", "", re.search(r"<h[12][^>]*>(.*?)</h[12]>", t_, re.S).group(1)))
 def mmss(s): return f"{s//60}:{s%60:02d}"
-def dur(s): return (f"{s//60} min " if s >= 60 else "") + (f"{s%60} s" if s % 60 else "").strip()
-
+def dur(s): return " ".join(v for v in ((f"{s//60} min" if s >= 60 else ""), (f"{s%60} s" if s % 60 else "")) if v)
 def thumb(i):
     im = Image.open(f"{S}/v20/webfull/{prints[i]}").convert("RGB").resize((640, 360), Image.LANCZOS)
     b = io.BytesIO(); im.save(b, "JPEG", quality=72, optimize=True)
     return "data:image/jpeg;base64," + base64.b64encode(b.getvalue()).decode()
-
 e = html.escape
-blocos = []; relogio = 0
-for i, x in enumerate(notas):
-    fala, manga = limpar(x["notas"])
-    if x["id"] == "cover": fala, manga = FALA_CAPA, ""
-    if x["id"] == "mensagens": fala = FALA_MENSAGENS
-    ini = relogio; relogio += TEMPO[i]
-    pausa = '<p class="pausa">Pausa de 3 a 5 segundos antes de mostrar a resposta.</p>' if x["id"] == "casovd" else ""
+blocos = []
+for i, x in enumerate(dados):
+    n = i + 1
     blocos.append(f'''
-<article class="slide" id="s{x["n"]}">
-  <div class="cab"><span class="num">{x["n"]:02d}</span><h2>{e(x["titulo"])}</h2><span class="tempo"><b>{mmss(ini)}</b> → {mmss(relogio)} · {dur(TEMPO[i])}</span></div>
+<article class="slide" id="s{n}">
+  <div class="cab"><span class="num">{n:02d}</span><h2>{e(titulos[x["id"]])}</h2><span class="tempo"><b>{mmss(x["ini"])}</b> → {mmss(x["fim"])} · {dur(x["seg"])}</span></div>
   <div class="corpo">
-    <img src="{thumb(i)}" alt="Miniatura do slide {x["n"]}: {e(x["titulo"])}" loading="lazy">
+    <img src="{thumb(i)}" alt="Miniatura do slide {n}: {e(titulos[x["id"]])}" loading="lazy">
     <div class="texto">
-      <p class="chave">{e(CHAVE[i])}</p>
-      <p class="fala">{e(fala)}</p>{pausa}
-      <p class="trans"><span>Transição</span> {e(TRANS[i])}</p>
-      {f'<details><summary>Se perguntarem</summary><p>{e(manga)}</p></details>' if manga else ''}
+      <p class="chave">{e(x["chave"])}</p>
+      <p class="fala">{e(x["fala"])}</p>
+      <p class="trans"><span>Transição</span> {e(x["trans"])}</p>
+      {f'<details><summary>Se perguntarem</summary><p>{e(x["manga"])}</p></details>' if x["manga"] else ''}
     </div>
   </div>
 </article>''')
-total = relogio
+notas = [dict(n=i+1, titulo=titulos[x["id"]]) for i, x in enumerate(dados)]
 
 PERGUNTAS = [
  ("Por que não milrinona sempre que o paciente usa betabloqueador?",
@@ -108,7 +46,7 @@ PERGUNTAS = [
  ("Milrinona no choque séptico?",
   "A SSC 2026 não encontrou dados para comparar com a dobutamina. Num ECR de 2025 (Tongyoo, 64 pacientes), a milrinona aumentou o débito em 6 h, sem diferença de mortalidade (50% × 50%). Débito maior não é desfecho melhor."),
  ("Então quando a milrinona tem indicação?",
-  "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, a hipotensão é vasoplegia e a droga é o vasopressor. Slides 12, 18 e 19."),
+  "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, a hipotensão é vasoplegia e a droga é o vasopressor. Slide 12 e reserva “Falência de VD”."),
  ("Quando associar vasopressina?",
   "SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide 15 e reserva."),
  ("Qual o alvo de PAM no intraoperatório?",
@@ -117,6 +55,8 @@ PERGUNTAS = [
   "Na metanálise de Tran, complicações em 7% (combinada 8,6%), 96% leves; menos com protocolo de segurança. A SSC 2026 sugere iniciar por veia periférica. Reserva “Início precoce e via periférica”."),
  ("Fenilefrina ou noradrenalina na cesárea?",
   "O consenso de 2018 recomenda vasopressor α-agonista em infusão profilática. A noradrenalina causa menos bradicardia materna, com pH umbilical semelhante (Sharkey, 10,7% × 37,5% de bradicardia). Reserva “Fenilefrina”."),
+ ("E na hipotensão da reperfusão do transplante hepático?",
+  "No estudo da casa (Gouvêa, Diaz et al., PLoS One 2022; 19 pacientes, ETE), a função do VD foi normal em todas as fases, inclusive após a reperfusão. O eco ajuda a separar vasoplegia de disfunção ventricular; na vasoplegia refratária, vasopressina e, como resgate, azul de metileno. Slide 16."),
  ("Dopamina em dose renal?",
   "Não protege o rim: no ANZICS (n = 328), sem diferença em creatinina, diálise ou mortalidade."),
  ("E o azul de metileno?",
@@ -128,12 +68,12 @@ PERGUNTAS = [
 ]
 RESERVA = ["Síntese das drogas", "Dopamina", "Dobutamina", "Fenilefrina", "Efedrina", "Vasopressina", "Choque refratário: adjuvantes",
            "Sequência de vasopressores na SSC 2026", "Alvo de PAM no choque séptico", "Início precoce e via periférica",
-           "Alvo de PAM no intraoperatório: ensaios", "Roteiro", "Referências"]
+           "Alvo de PAM no intraoperatório: ensaios", "Falência de VD: o que fazer", "Roteiro", "Referências"]
 
 perguntas = "".join(f'<details class="q"><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in PERGUNTAS)
-reserva = "".join(f'<li><span>{22+i}</span> {e(r)}</li>' for i, r in enumerate(RESERVA))
-marcos = [(6, "fim da farmacologia básica"), (12, "fim de milrinona × dobutamina"), (17, "fim do intraoperatório")]
-acum = [sum(TEMPO[:k]) for k in range(len(TEMPO)+1)]
+reserva = "".join(f'<li><span>{20+i}</span> {e(r)}</li>' for i, r in enumerate(RESERVA))
+marcos = [(6, "fim da farmacologia básica"), (12, "fim de milrinona × dobutamina"), (16, "fim da escolha no intraoperatório")]
+acum = [0] + [x['fim'] for x in dados]
 marcos_html = "".join(f'<li><b>{mmss(acum[k])}</b> ao fim do slide {k} — {m}</li>' for k, m in marcos)
 indice = "".join(f'<a href="#s{x["n"]}"><span>{x["n"]:02d}</span>{e(x["titulo"])}</a>' for x in notas)
 
@@ -195,19 +135,19 @@ html {{ scroll-behavior: smooth }}
 <header>
   <p class="eyebrow">Sessão clínica · Anestesiologia · UFRJ</p>
   <h1>Guia de fala das aminas vasoativas</h1>
-  <p>O que dizer em cada slide, com o relógio acumulado, a frase-chave, a transição para o próximo e o que guardar para as perguntas.</p>
+  <p>O que dizer em cada slide, com o relógio acumulado, a frase-chave, a transição para o próximo e o que guardar para as perguntas. O mesmo texto está nas notas do apresentador de cada slide.</p>
 </header>
 <div class="painel">
-  <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">20 slides principais. Ensaiar em 18 a 19 minutos, sem passar de 20.</p></section>
+  <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">18 slides principais. Ensaiar em 16 a 17 minutos, sem passar de 20.</p></section>
   <section><h3>Marcos no cronômetro</h3><ul>{marcos_html}</ul></section>
-  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Números de estudos só se perguntarem.</li><li>No caso (slide 18), faça a pausa e olhe para a plateia.</li></ul></section>
+  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Números de estudos só se perguntarem.</li><li>No slide 16, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado da casa.</li></ul></section>
 </div>
 <nav class="indice" aria-label="Slides">{indice}</nav>
 {"".join(blocos)}
 <h2 class="secao">Perguntas prováveis</h2>
 {perguntas}
 <h2 class="secao">Slides de reserva</h2>
-<p style="margin:0;color:var(--suave)">Depois do divisor (slide 21). Use para responder perguntas sem voltar à apresentação principal.</p>
+<p style="margin:0;color:var(--suave)">Depois do divisor (slide 19). Use para responder perguntas sem voltar à apresentação principal.</p>
 <ol class="reserva">{reserva}</ol>
 </main>
 '''

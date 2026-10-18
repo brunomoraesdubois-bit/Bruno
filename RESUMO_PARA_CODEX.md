@@ -40,10 +40,48 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 19 (cerca de 18 minutos)
+## Estado atual: versão 21 (cerca de 16 minutos)
+
+33 slides: 18 na apresentação principal, um divisor e 14 de reserva. Tempo previsto: 16 min 20 s;
+ensaiar em 16 a 17 minutos, sem passar de 20. O caso clínico ilustrativo (saída de CEC) foi
+retirado a pedido do Bruno, porque a plateia é mais experiente que ele; a conduta na falência de
+VD ficou como slide de reserva.
+
+| Slide | Título | Tempo |
+|---|---|---|
+| 1 | Capa | 20 s |
+| 2 | Escolher a droga pelo mecanismo da hipotensão (objetivos) | 30 s |
+| 3 | Determinantes da pressão arterial média | 1 min |
+| 4 | Pressão arterial não garante perfusão | 1 min |
+| 5 | Receptores e vias de sinalização | 45 s |
+| 6 | Catecolaminas e não catecolaminas | 30 s |
+| 7 | Noradrenalina | 1 min 15 s |
+| 8 | Adrenalina | 1 min |
+| 9 | Dopamina e dobutamina | 1 min |
+| 10 | AMPc: onde agem dobutamina e milrinona (figura própria) | 1 min 15 s |
+| 11 | Milrinona | 45 s |
+| 12 | Milrinona ou dobutamina: quando escolher | 1 min 15 s |
+| 13 | Fenilefrina e efedrina | 1 min |
+| 14 | Vasopressina e adjuvantes | 1 min |
+| 15 | Choque séptico: recomendações da SSC 2026 | 1 min |
+| 16 | Escolha da droga no intraoperatório (fluxograma; estudo de Gouvêa e Diaz) | 1 min 15 s |
+| 17 | Hipotensão intraoperatória e alvo de pressão (editorial com Diaz) | 45 s |
+| 18 | Problema hemodinâmico e droga de escolha | 45 s |
+
+Guia de fala dentro da apresentação: as notas de cada slide principal trazem TEMPO (com o
+relógio acumulado), PONTO-CHAVE, FALA, TRANSIÇÃO e, quando há, SE PERGUNTAREM. A mesma
+informação está em `apresentacao/guia/guia-de-fala.html` (gerada por `gerar_guia.py` a partir de
+`montar_guia.py`, que escreve as notas).
+
+Citações dos staffs: Lineburger et al., "The hidden cost of hypotension" (Braz J Anesthesiol
+2025; Rodrigo Diaz coautor), no slide 17; Gouvêa G, Feiner J, Joshi S, Diaz R et al., função do
+VD no transplante hepático por ETE (PLoS One 2022;17(10):e0275301; n = 19, função normal em
+todas as fases), no slide 16.
+
+## Estado anterior: versão 19 (cerca de 18 minutos)
 
 O Bruno autorizou passar de 15 minutos, sem chegar a 20. São 34 slides: 20 na apresentação
-principal e 14 de reserva. Tempo previsto: 18 min 35 s; ensaiar em 18 a 19 minutos. Guia de fala em `apresentacao/guia/guia-de-fala.html`.
+principal e 14 de reserva. Tempo previsto na versão 19: 18 min 35 s.
 
 | Slide | Título | Tempo |
 |---|---|---|
@@ -367,6 +405,6 @@ Estas dependem do Bruno:
   - símbolo da UFRJ no canto inferior direito de todos os slides;
   - títulos serifados e texto sem serifa;
   - uma ideia por slide, com a fonte no rodapé.
-- Manter a parte principal em cerca de 18 minutos, sem passar de 20; material extra vai para a reserva.
+- Manter a parte principal entre 16 e 19 minutos, sem passar de 20; material extra vai para a reserva. Sem caso clínico ilustrativo.
 - Editar a fonte HTML, rodar `npm run verificar` e regenerar o .pptx, ou editar só o .pptx.
   Não misturar os dois sem sincronizar.

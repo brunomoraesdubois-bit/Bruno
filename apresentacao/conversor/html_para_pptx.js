@@ -260,7 +260,8 @@ function extrairSlide() {
   return {
     fundo: hex(getComputedStyle(sec).backgroundColor) || 'FFFFFF',
     itens,
-    notas: aside ? aside.textContent.replace(/\s+/g, ' ').trim() : '',
+    // As notas do guia de fala vêm em blocos rotulados, um por linha
+    notas: aside ? aside.textContent.split('\n').map((l) => l.replace(/\s+/g, ' ').trim()).filter(Boolean).join('\n') : '',
   };
 }
 
@@ -673,6 +674,16 @@ async function posProcessar(arquivo) {
         : xml.replace('</p:cSld>', '</p:cSld><p:transition spd="med"><p:fade/></p:transition>');
       zip.file(p, xml);
     }
+  }
+  // Notas: o pptxgenjs grava o texto inteiro em um parágrafo, com "\r\n" literal no meio;
+  // cada linha do guia de fala vira um parágrafo próprio
+  const notasXml = Object.keys(zip.files).filter((f) => /^ppt\/notesSlides\/notesSlide\d+\.xml$/.test(f));
+  for (const p of notasXml) {
+    const xml = await zip.file(p).async('string');
+    const novo = xml.replace(/<a:p>(<a:pPr[^>]*\/>)?<a:r>(<a:rPr[^>]*\/>)<a:t>([^<]*(?:\r?\n)[^<]*)<\/a:t><\/a:r>(<a:endParaRPr[^>]*\/>)?<\/a:p>/g,
+      (tudo, pPr = '', rPr, texto, fim = '') => texto.split(/\r?\n/).filter(Boolean)
+        .map((l) => `<a:p>${pPr}<a:r>${rPr}<a:t>${l}</a:t></a:r>${fim}</a:p>`).join(''));
+    if (novo !== xml) zip.file(p, novo);
   }
   fs.writeFileSync(arquivo, await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE' }));
 }
