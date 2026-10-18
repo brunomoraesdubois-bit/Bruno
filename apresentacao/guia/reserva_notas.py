@@ -5,7 +5,7 @@ RESERVA = {
  "divisor": [
   "USO: slides ocultos no PowerPoint, depois do Obrigado; não aparecem na apresentação. Abrir apenas se houver pergunta, indo até o slide pelo número.",
   "PONTO-CHAVE: daqui em diante é material de apoio, oculto na apresentação.",
-  "FALA: Deixei material de apoio em slides ocultos: a síntese das drogas, um slide para dopamina, dobutamina, fenilefrina, efedrina e vasopressina, os adjuvantes do choque refratário, a sequência da SSC 2026, os alvos de pressão no choque e no intraoperatório e o roteiro. Posso abrir o que for útil para a discussão.",
+  "FALA: Deixei material de apoio em slides ocultos: a síntese das drogas; um slide para dopamina, dobutamina, fenilefrina, efedrina e vasopressina; os adjuvantes do choque refratário; a sequência da SSC 2026; os alvos de pressão no choque e no intraoperatório; o início precoce e a via periférica; e o roteiro. Posso abrir o que for útil para a discussão.",
  ],
  "comparativo": [
   "USO: pergunta sobre comparação entre drogas, receptores ou doses.",
@@ -53,6 +53,7 @@ RESERVA = {
   "USO: pergunta sobre o que mudou na SSC 2026 ou sobre a força das recomendações.",
   "PONTO-CHAVE: noradrenalina, vasopressina e adrenalina em sequência, com a força de cada recomendação.",
   "FALA: Este slide repete a sequência da SSC 2026 com a força de cada recomendação. Noradrenalina em primeiro lugar, recomendação forte, iniciada cedo e, se preciso, por veia periférica. Vasopressina quando a noradrenalina está em escalada, sugestão condicional com certeza moderada. Adrenalina se a pressão continuar inadequada, condicional com certeza muito baixa. Na disfunção cardíaca com hipoperfusão apesar de volume e pressão adequados, dobutamina com noradrenalina ou adrenalina isolada. Hidrocortisona sugerida. Contra: dopamina como primeira linha, levosimendana e terlipressina. Azul de metileno sem recomendação, por evidência insuficiente.",
+  "SE PERGUNTAREM: a preferência pela noradrenalina em relação à vasopressina e à angiotensina II passou a ser condicional; a sugestão de via periférica já existia em 2021; a sugestão contra a levosimendana também é de 2021; a terlipressina recebeu sugestão contra em 2026. A diretriz não define limiar numérico para associar vasopressina (Prescott, Crit Care Med 2026).",
  ],
  "alvopam": [
   "USO: pergunta sobre alvo de PAM no choque séptico ou sobre idosos.",

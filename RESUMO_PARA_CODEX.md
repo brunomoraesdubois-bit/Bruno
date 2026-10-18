@@ -430,29 +430,29 @@ Reserva, depois de um slide divisor:
 - "Por que noradrenalina e não fenilefrina em infusão?"
   - A fenilefrina é α1 pura e a bradicardia reflexa pode reduzir o DC.
   - A NA mantém o DC e aumenta o retorno venoso.
-  - Slides 3, 6 e 11.
+  - Slides 3, 7 e 14.
 - "Qual o alvo de PAM no intraoperatório?"
   - POQI: PAM ≥60 em pacientes de risco, como limite mínimo; alvo maior com pressão venosa
     alta.
   - HISTAP favoreceu PAM ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram
     neutros.
-  - Slide 15 e reserva "Alvo de PAM no intraoperatório: ensaios".
+  - Slide 18 e reserva "Alvo de PAM no intraoperatório: ensaios".
 - "E o índice de previsão de hipotensão ou a alça fechada?"
   - Reduzem a exposição à hipotensão, ainda sem benefício claro em desfechos.
-  - Notas do slide 15.
+  - Notas do slide 18.
 - "Milrinona ou dobutamina?"
   - Primeiro, a indicação: baixo débito com hipoperfusão. Vasoplegia pede vasopressor.
   - Milrinona: VD com hipertensão pulmonar; betabloqueador ou taquicardia limitando a
     dobutamina. Causa mais hipotensão e acumula na insuficiência renal.
   - DOREMI: sem diferença estatisticamente significativa, o que não prova equivalência.
-  - Slides 9 e 10.
+  - Slides 11 e 12.
 - "Quando associar vasopressina?"
   - SSC 2026: quando a dose de NA está subindo, sem limiar fixo.
   - VASSPR: antecipar como regra não reduziu a mortalidade.
-  - Slides 12 e 13 e reservas.
+  - Slides 15 e 16 e reservas.
 - "E na reperfusão do enxerto hepático?"
   - Vasopressina; azul de metileno como resgate, com evidência limitada.
-  - Slides 12 e 14.
+  - Slides 15 e 17.
 - "NA em veia periférica é segura?"
   - Complicações em 7% (8,6% combinada), 96% leves; menos com protocolo de segurança.
   - Reserva "Início precoce e via periférica".

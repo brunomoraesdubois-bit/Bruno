@@ -46,7 +46,7 @@ PERGUNTAS = [
  ("Milrinona no choque séptico?",
   "A SSC 2026 não encontrou dados para comparar com a dobutamina. Em um ECR de 2025 (Tongyoo, 64 pacientes), a milrinona aumentou o débito em 6 h, sem diferença de mortalidade (50% vs. 50%). Débito maior não é desfecho melhor."),
  ("Então quando a milrinona tem indicação?",
-  "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, considerar vasoplegia: a droga é o vasopressor. Slides 12 e 13."),
+  "Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, considerar vasoplegia: a droga é o vasopressor. Slides 11 a 13."),
  ("Quando associar vasopressina?",
   "SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide 16 e reserva."),
  ("Qual o alvo de PAM no intraoperatório?",
@@ -54,7 +54,7 @@ PERGUNTAS = [
  ("Noradrenalina em veia periférica é segura?",
   "Na metanálise de Tran, complicações em 7% (combinada 8,6%), 96% leves; menos com protocolo de segurança. A SSC 2026 sugere iniciar por veia periférica. Reserva “Início precoce e via periférica”."),
  ("Fenilefrina ou noradrenalina na cesárea?",
-  "O consenso de 2018 recomenda vasopressor α-agonista em infusão profilática. A noradrenalina causa menos bradicardia materna, com pH umbilical semelhante (Sharkey, 10,7% vs. 37,5% de bradicardia). Reserva “Fenilefrina”."),
+  "O consenso de 2018 recomenda vasopressor α-agonista em infusão profilática. A noradrenalina causa menos bradicardia materna (Sharkey, 10,7% vs. 37,5% de bradicardia). Reserva “Fenilefrina”."),
  ("E na hipotensão da reperfusão do transplante hepático?",
   "No estudo do nosso serviço (Gouvêa, Diaz et al., PLoS One 2022; 19 pacientes, ETE), a função do VD foi normal em todas as fases, inclusive após a reperfusão. O eco ajuda a separar vasoplegia de disfunção ventricular; na vasoplegia refratária, vasopressina e, como resgate, azul de metileno. Slide 17."),
  ("Dopamina em dose renal?",
@@ -70,6 +70,7 @@ import sys; sys.path.insert(0, S + "/guia")
 from reserva_notas import RESERVA as RES_NOTAS
 ordem = deck["order"]; res_ordem = json.load(open("/home/user/Bruno/apresentacao/deck/reserva.json", encoding="utf-8"))["order"]
 def titulo_de(id_):
+    if id_ == "divisor": return "Slides de reserva para perguntas"
     t_ = open(f"{S}/artifact-files/351a25a9-1efc-412b-9232-d1cf8f2e53fe/project/slides/{id_}.html", encoding="utf-8").read()
     return html.unescape(re.sub("<[^>]+>", "", re.search(r"<h[12][^>]*>(.*?)</h[12]>", t_, re.S).group(1)))
 def campo(linhas, rotulo):
@@ -78,7 +79,6 @@ def campo(linhas, rotulo):
     return ""
 blocos_res = []
 for k, id_ in enumerate(res_ordem, len(ordem) + 1):
-    if id_ == "divisor": continue  # o divisor não tem título h2; os blocos começam no primeiro slide de conteúdo
     L = RES_NOTAS[id_]; manga = campo(L, "SE PERGUNTAREM")
     blocos_res.append(f'''<article class="slide res" id="s{k}">
   <div class="cab"><span class="num">{k:02d}</span><h2>{e(titulo_de(id_))}</h2><span class="tempo">oculto</span></div>
