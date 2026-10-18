@@ -232,27 +232,34 @@ function extrairSlide() {
   }
 
   const itens = [];
+  // Passo de aparecimento (data-passo="N" no elemento ou em um ancestral): os itens do mesmo
+  // passo aparecem juntos, no N-ésimo clique; sem data-passo, o item já está visível
+  const passoDe = (el) => {
+    const a = el.closest('[data-passo]');
+    return a ? parseInt(a.getAttribute('data-passo'), 10) || null : null;
+  };
   function percorrer(el) {
     const cs = getComputedStyle(el);
     if (cs.display === 'none' || cs.visibility === 'hidden') return;
+    const passo = passoDe(el);
     if (el.tagName === 'X-SHAPE') {
-      itens.push({ tipo: 'forma', tipoForma: el.getAttribute('kind'), caixa: caixa(el.getBoundingClientRect()), cor: hex(cs.backgroundColor) });
+      itens.push({ tipo: 'forma', tipoForma: el.getAttribute('kind'), caixa: caixa(el.getBoundingClientRect()), cor: hex(cs.backgroundColor), passo });
       return;
     }
     if (el.tagName === 'TABLE') {
-      itens.push(tabela(el));
+      itens.push({ ...tabela(el), passo });
       return;
     }
     if (el.tagName === 'IMG') {
-      itens.push({ tipo: 'imagem', caixa: caixa(el.getBoundingClientRect()), src: el.getAttribute('src') || '', alt: el.getAttribute('alt') || '' });
+      itens.push({ tipo: 'imagem', caixa: caixa(el.getBoundingClientRect()), src: el.getAttribute('src') || '', alt: el.getAttribute('alt') || '', passo });
       return;
     }
     if (ehTexto(el)) {
-      itens.push(bloco(el, cs));
+      itens.push({ ...bloco(el, cs), passo });
       return;
     }
     const p = pintura(cs);
-    if (p) itens.push({ tipo: 'caixa', caixa: caixa(el.getBoundingClientRect()), pintura: p });
+    if (p) itens.push({ tipo: 'caixa', caixa: caixa(el.getBoundingClientRect()), pintura: p, passo });
     for (const ch of el.children) percorrer(ch);
   }
   for (const ch of sec.children) percorrer(ch);
@@ -443,14 +450,18 @@ function adicionarFaixas(slide, pres, caixa, pintura, base) {
       x: (caixa.x + x0) * PX, y: (caixa.y + y0) * PX,
       w: (Math.max(...xs) - x0) * PX, h: (Math.max(...ys) - y0) * PX,
       points: pontos, fill: { color: b.c }, line: { type: 'none' },
-      objectName: 'Borda de destaque',
+      objectName: nome('Borda de destaque'),
     });
   });
 }
 
+// Prefixo "[pN] " no nome do objeto: o pós-processamento monta a animação de aparecimento
+let PASSO = null;
+const nome = (base) => (PASSO ? `[p${PASSO}] ${base}` : base);
+
 function adicionarCaixa(slide, pres, it) {
   const { forma, op, base } = opcoesForma(pres, it.caixa, it.pintura);
-  slide.addShape(forma, { ...op, objectName: 'Cartão' });
+  slide.addShape(forma, { ...op, objectName: nome('Cartão') });
   adicionarFaixas(slide, pres, it.caixa, it.pintura, base);
 }
 
@@ -477,7 +488,7 @@ function adicionarTexto(slide, pres, it, opcoesExtra = {}) {
     paraSpaceBefore: 0,
     paraSpaceAfter: 0,
     wrap: !umaLinha,
-    objectName: resumo(it.trechos),
+    objectName: nome(resumo(it.trechos)),
   };
   if (it.pintura) {
     // Pílula ou bloco pintado: uma forma só, com o texto dentro
@@ -540,7 +551,7 @@ function adicionarTabela(slide, it) {
   }));
   slide.addTable(linhas, {
     x: it.caixa.x * PX, y: it.caixa.y * PX, w: colW.reduce((a, b) => a + b, 0),
-    colW, rowH, autoPage: false, objectName: 'Tabela',
+    colW, rowH, autoPage: false, objectName: nome('Tabela'),
   });
 }
 
@@ -555,7 +566,7 @@ function adicionarForma(slide, it) {
   slide.addShape(tipo, {
     x: it.caixa.x * PX, y: it.caixa.y * PX, w: it.caixa.w * PX, h: it.caixa.h * PX,
     fill: it.cor ? { color: it.cor } : { type: 'none' }, line: { type: 'none' },
-    objectName: 'Seta',
+    objectName: nome('Seta'),
   });
 }
 
@@ -588,7 +599,7 @@ function adicionarImagem(slide, it, imagens, pastaDeck, idSlide) {
     w = t.w * escala;
     h = t.h * escala;
   }
-  slide.addImage({ path: arquivo, x: x * PX, y: y * PX, w: w * PX, h: h * PX, altText: it.alt, objectName: it.alt || 'Imagem' });
+  slide.addImage({ path: arquivo, x: x * PX, y: y * PX, w: w * PX, h: h * PX, altText: it.alt, objectName: nome(it.alt || 'Imagem') });
 }
 
 // Título = primeiro h1/h2 do slide (ou, sem eles, o primeiro texto); vira o placeholder
@@ -655,6 +666,54 @@ function definirLayouts(pres, slides) {
   return layouts;
 }
 
+// Ids únicos por slide (o pptxgenjs pode repetir ids entre formas, tabelas e imagens) e, para
+// os objetos nomeados "[pN] ...", uma sequência principal com um clique por passo N: cada
+// objeto do passo esmaece para visível (presetID 10, "Fade"), o primeiro no clique e os
+// demais junto com ele. Objetos sem passo ficam visíveis desde o início.
+function montarAnimacao(xml) {
+  let n = 0;
+  xml = xml.replace(/<p:cNvPr id="\d+"/g, () => `<p:cNvPr id="${++n}"`);
+  const grupos = new Map();
+  const re = /<p:(sp|pic|graphicFrame|cxnSp)>(?:(?!<\/p:\1>)[\s\S])*?<p:cNvPr id="(\d+)" name="([^"]*)"/g;
+  let m;
+  while ((m = re.exec(xml))) {
+    const pm = /^\[p(\d+)\]/.exec(m[3]);
+    if (!pm) continue;
+    const k = +pm[1];
+    if (!grupos.has(k)) grupos.set(k, []);
+    const trecho = xml.slice(m.index, xml.indexOf(`</p:${m[1]}>`, m.index));
+    grupos.get(k).push({ id: +m[2], tipo: m[1], fundo: m[1] === 'sp' && /<p:spPr>(?:(?!<\/p:spPr>)[\s\S])*<a:solidFill>/.test(trecho) });
+  }
+  if (!grupos.size) return xml;
+  const passos = [...grupos.keys()].sort((a, b) => a - b);
+  let id = 2;
+  const cond0 = '<p:stCondLst><p:cond delay="0"/></p:stCondLst>';
+  const efeito = (sp, tipoNo) => {
+    const c = ++id, s = ++id, a = ++id;
+    return `<p:par><p:cTn id="${c}" presetID="10" presetClass="entr" presetSubtype="0" fill="hold" grpId="0" nodeType="${tipoNo}">${cond0}<p:childTnLst>`
+      + `<p:set><p:cBhvr><p:cTn id="${s}" dur="1" fill="hold">${cond0}</p:cTn><p:tgtEl><p:spTgt spid="${sp}"/></p:tgtEl><p:attrNameLst><p:attrName>style.visibility</p:attrName></p:attrNameLst></p:cBhvr><p:to><p:strVal val="visible"/></p:to></p:set>`
+      + `<p:animEffect transition="in" filter="fade"><p:cBhvr><p:cTn id="${a}" dur="400"/><p:tgtEl><p:spTgt spid="${sp}"/></p:tgtEl></p:cBhvr></p:animEffect>`
+      + '</p:childTnLst></p:cTn></p:par>';
+  };
+  const cliques = passos.map((k) => {
+    const c1 = ++id, c2 = ++id;
+    const efeitos = grupos.get(k).map((f, i) => efeito(f.id, i === 0 ? 'clickEffect' : 'withEffect')).join('');
+    return `<p:par><p:cTn id="${c1}" fill="hold"><p:stCondLst><p:cond delay="indefinite"/></p:stCondLst><p:childTnLst>`
+      + `<p:par><p:cTn id="${c2}" fill="hold">${cond0}<p:childTnLst>${efeitos}</p:childTnLst></p:cTn></p:par>`
+      + '</p:childTnLst></p:cTn></p:par>';
+  }).join('');
+  const bld = passos.flatMap((k) => grupos.get(k)).map((f) => (f.tipo === 'graphicFrame'
+    ? `<p:bldGraphic spid="${f.id}" grpId="0"><p:bldAsOne/></p:bldGraphic>`
+    : `<p:bldP spid="${f.id}" grpId="0"${f.fundo ? ' animBg="1"' : ''}/>`)).join('');
+  const timing = '<p:timing><p:tnLst><p:par><p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot"><p:childTnLst>'
+    + `<p:seq concurrent="1" nextAc="seek"><p:cTn id="2" dur="indefinite" nodeType="mainSeq"><p:childTnLst>${cliques}</p:childTnLst></p:cTn>`
+    + '<p:prevCondLst><p:cond evt="onPrev" delay="0"><p:tgtEl><p:sldTgt/></p:tgtEl></p:cond></p:prevCondLst>'
+    + '<p:nextCondLst><p:cond evt="onNext" delay="0"><p:tgtEl><p:sldTgt/></p:tgtEl></p:cond></p:nextCondLst></p:seq>'
+    + `</p:childTnLst></p:cTn></p:par></p:tnLst><p:bldLst>${bld}</p:bldLst></p:timing>`;
+  if (!xml.includes('</p:transition>')) throw new Error('slide sem <p:transition> antes da animação');
+  return xml.replace('</p:transition>', '</p:transition>' + timing);
+}
+
 async function posProcessar(arquivo) {
   const zip = await JSZip.loadAsync(fs.readFileSync(arquivo));
   const temas = Object.keys(zip.files).filter((f) => /^ppt\/theme\/theme\d+\.xml$/.test(f));
@@ -684,6 +743,12 @@ async function posProcessar(arquivo) {
         : xml.replace('</p:cSld>', '</p:cSld><p:transition spd="med"><p:fade/></p:transition>');
       zip.file(p, xml);
     }
+  }
+  // Animação de aparecimento (esmaecer, 0,4 s) por clique, pelos nomes "[pN] ..." dos objetos
+  for (const p of slidesXml) {
+    const xml = await zip.file(p).async('string');
+    const novo = montarAnimacao(xml);
+    if (novo !== xml) zip.file(p, novo);
   }
   // Notas: o pptxgenjs grava o texto inteiro em um parágrafo, com "\r\n" literal no meio;
   // cada linha do guia de fala vira um parágrafo próprio
@@ -743,6 +808,7 @@ async function main() {
     slide.background = { color: s.fundo };
     if (ocultos.has(s.id)) slide.hidden = true;
     for (const it of s.itens) {
+      PASSO = it.passo || null;
       if (it.tipo === 'caixa') adicionarCaixa(slide, pres, it);
       else if (it.tipo === 'tabela') adicionarTabela(slide, it);
       else if (it.tipo === 'forma') adicionarForma(slide, it);
@@ -758,6 +824,7 @@ async function main() {
         }
       }
     }
+    PASSO = null;
     if (s.notas) slide.addNotes(s.notas);
   }
 

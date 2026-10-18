@@ -40,7 +40,33 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 28 (17 min 55 s)
+## Estado atual: versão 29 (17 min 55 s)
+
+Mesma estrutura da versão 28 (20 slides na apresentação e 13 ocultos de reserva), agora com
+aparecimento por clique e falas sincronizadas, a pedido do Bruno ("slides mais interativos e
+mais fáceis de lembrar na hora de apresentar"):
+- Nos 18 slides de conteúdo, cada bloco (cartão, parágrafo, linha de tabela) aparece no clique
+  correspondente, com esmaecimento de 0,4 s, na ordem da fala. O que a fala cita primeiro já
+  está visível ao abrir o slide; o resto entra clique a clique. Total de 65 cliques; o número
+  por slide está no guia de fala.
+- Nas notas (FALA), cada ▸ marca um clique: o bloco correspondente aparece quando se chega
+  àquele ponto. O guia de fala mostra os mesmos marcadores em laranja.
+- Falas reorganizadas para seguir a ordem visual dos blocos: objetivos (quatro objetivos, depois
+  a pergunta central), receptores (ordem da tabela), milrinona (indicações antes de dose),
+  hipotensão intraoperatória (manejo proativo por último), mensagens finais (uma linha da
+  tabela por clique, incluindo fenilefrina e o alvo intraoperatório), intraoperatório (pré-carga
+  baixa citada), fenilefrina e efedrina (efedrina em dois cliques).
+- Tempos: objetivos 30 s, noradrenalina 40 s, sinalização 80 s, mensagens finais 40 s; total
+  mantido em 17 min 55 s (2.180 palavras, 115 a 133 por minuto em cada slide).
+- Como funciona: `data-passo="N"` no HTML de cada bloco (`apresentacao/guia/passos.py` marca
+  os slides); o conversor nomeia os objetos "[pN] ..." e grava a animação no XML do slide;
+  tabelas que aparecem linha a linha são tabelas empilhadas (receptores, mensagens finais).
+  Conferido por ida e volta no LibreOffice (.pptx → .odp): a contagem de cliques por slide bate
+  com a dos marcadores ▸. O deck no Claude não tem animação (o tipo Slides só anima elementos
+  posicionados); a apresentação é feita pelo .pptx.
+- Áudio da fala para ouvir dirigindo: pedido pelo Bruno para depois; ainda não gerado.
+
+## Estado anterior: versão 28 (17 min 55 s)
 
 20 slides na apresentação (19 de conteúdo e o Obrigado) e, depois deles, 13 slides ocultos de
 reserva (o divisor e 12 de conteúdo), que não aparecem na apresentação. Tempo previsto:
@@ -440,7 +466,8 @@ Reserva, depois de um slide divisor:
 - `apresentacao/referencias.md`: lista completa de referências; é a página aberta pelo QR code
   do último slide.
 - `apresentacao/figuras/qr.py`: gera o QR code; `figura.py` e `render.js` geram a figura do AMPc.
-- `apresentacao/guia/`: guia de fala (HTML) e os scripts que montam as notas dos slides.
+- `apresentacao/guia/`: guia de fala (HTML), os scripts que montam as notas dos slides e
+  `passos.py`, que marca os passos de aparecimento (`data-passo`) nos slides.
 - `apresentacao/conversor/html_para_pptx.js`: gera o .pptx a partir da fonte HTML.
 - `apresentacao/conversor/verificar_layout.js`: confere se cada slide cabe com as fontes do
   deck no Claude (Source Sans 3 e Source Serif 4).
@@ -459,6 +486,11 @@ npm run pptx        # regenera ../Aminas_Vasoativas.pptx
 ```
 
 Em Linux, instale `fonts-liberation` para que as quebras de linha batam com o PowerPoint.
+
+Aparecimento por clique: um elemento com `data-passo="N"` (e tudo dentro dele) aparece no
+N-ésimo clique; sem o atributo, já está visível. Ao editar a fala, manter um ▸ por passo, na
+ordem; `montar_guia.py` confere que o número de ▸ de cada fala é igual ao número de passos do
+slide.
 
 ## Pendências
 

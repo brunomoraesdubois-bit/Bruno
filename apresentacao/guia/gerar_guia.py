@@ -25,12 +25,12 @@ for i, x in enumerate(dados):
     n = i + 1
     blocos.append(f'''
 <article class="slide" id="s{n}">
-  <div class="cab"><span class="num">{n:02d}</span><h2>{e(titulos[x["id"]])}</h2><span class="tempo"><b>{mmss(x["ini"])}</b> → {mmss(x["fim"])} · {dur(x["seg"])}</span></div>
+  <div class="cab"><span class="num">{n:02d}</span><h2>{e(titulos[x["id"]])}</h2><span class="tempo"><b>{mmss(x["ini"])}</b> → {mmss(x["fim"])} · {dur(x["seg"])}{f" · {x['fala'].count(chr(9656))} cliques" if x["fala"].count(chr(9656)) > 1 else (" · 1 clique" if x["fala"].count(chr(9656)) == 1 else "")}</span></div>
   <div class="corpo">
     <img src="{thumb(i)}" alt="Miniatura do slide {n}: {e(titulos[x["id"]])}" loading="lazy">
     <div class="texto">
       <p class="chave">{e(x["chave"])}</p>
-      <p class="fala">{e(x["fala"])}</p>
+      <p class="fala">{e(x["fala"]).replace("▸", '<span class="clique" title="clique">▸</span>')}</p>
       <p class="trans"><span>Transição</span> {e(x["trans"])}</p>
       {f'<details><summary>Se perguntarem</summary><p>{e(x["manga"])}</p></details>' if x["manga"] else ''}
     </div>
@@ -133,6 +133,7 @@ nav.indice a:hover, nav.indice a:focus-visible {{ text-decoration: underline; ou
 .texto {{ display: flex; flex-direction: column; gap: 10px; min-width: 0 }}
 .chave {{ margin: 0; font-weight: 700; font-size: 18px; border-left: 3px solid var(--acento); padding-left: 12px }}
 .fala {{ margin: 0; max-width: 72ch }}
+.clique {{ color: var(--acento); font-weight: 700; margin: 0 3px }}
 .pausa {{ margin: 0; font-weight: 600; color: var(--acento) }}
 .trans {{ margin: 0; color: var(--suave); font-style: italic }}
 .uso {{ margin: 0; color: var(--suave) }}
@@ -160,7 +161,7 @@ html {{ scroll-behavior: smooth }}
 <div class="painel">
   <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">{len(dados)} slides. Ensaiar em cerca de 17 minutos e meio, sem passar de 18.</p></section>
   <section><h3>Marcos no cronômetro</h3><ul>{marcos_html}</ul></section>
-  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Números de estudos só se perguntarem.</li><li>No slide 17, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado do serviço.</li></ul></section>
+  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Cada <b style="color:var(--acento)">▸</b> na fala é um clique: o elemento correspondente aparece no slide.</li><li>Números de estudos só se perguntarem.</li><li>No slide 17, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado do serviço.</li></ul></section>
 </div>
 <nav class="indice" aria-label="Slides">{indice}</nav>
 {"".join(blocos)}
