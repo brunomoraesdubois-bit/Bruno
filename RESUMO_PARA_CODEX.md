@@ -48,6 +48,11 @@ manutenção da milrinona (slide 11); no slide 12, a tabela é apresentada antes
 DOREMI (e a abertura repetida com a transição saiu); no slide 7, a fala diz que o débito pode cair
 pela pós-carga, como o cartão. Tempos inalterados.
 
+Conferência do Codex sobre a versão 31 (19/10/2026): as três correções confirmadas nas notas e nas
+animações; 20 visíveis, 13 ocultos, 64 marcadores e 64 cliques; integridade do arquivo sem erros.
+Parecer: versão aprovada; nenhuma alteração de conteúdo antes do ensaio. Restam o teste dos
+cliques no Microsoft PowerPoint e o ensaio cronometrado (17 min 55 s é estimativa, com 5 s de margem).
+
 ## Estado anterior: versão 30 (17 min 55 s)
 
 Para o Codex conferir: esta versão fecha o ciclo pedido pelo Bruno depois da versão 27
