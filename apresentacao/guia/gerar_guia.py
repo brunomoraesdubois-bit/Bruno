@@ -163,7 +163,7 @@ html {{ scroll-behavior: smooth }}
 <div class="painel">
   <section><h3>Tempo previsto</h3><p class="total">{mmss(total)}</p><p style="margin:6px 0 0;color:var(--suave)">{len(dados)} slides. Ensaiar com cronômetro mirando 15 minutos.</p></section>
   <section><h3>Marcos no cronômetro</h3><ul>{marcos_html}</ul></section>
-  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Cada <b style="color:var(--acento)">▸</b> na fala é um clique: o elemento correspondente aparece no slide.</li><li>Números de estudos só se perguntarem.</li><li>No slide {N("intraop")[0]}, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado do serviço.</li></ul></section>
+  <section><h3>Durante a fala</h3><ul><li>Diga a frase-chave de cada slide, mesmo que corte o resto.</li><li>Os slides aparecem prontos, sem cliques internos: um avanço por slide.</li><li>Números de estudos só se perguntarem.</li><li>No slide {N("intraop")[0]}, cite o estudo de Gouvêa e Diaz (PLoS One 2022) como dado do serviço.</li></ul></section>
 </div>
 <nav class="indice" aria-label="Slides">{indice}</nav>
 {"".join(blocos)}

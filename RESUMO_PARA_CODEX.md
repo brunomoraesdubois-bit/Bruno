@@ -40,7 +40,19 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 33 (14 min 05 s previstos), revisão de fisiologia aplicada e auditoria do Codex
+## Estado atual: versão 34 (13 min 30 s previstos), slides prontos, sem cliques internos
+
+Pedido do Bruno: a sessão clínica será mais curta; retirar o aparecimento item por item (cada slide já aparece
+pronto, um avanço por slide) e encurtar um pouco a fala sem deixar a aula curta demais.
+- Sem animações internas: nenhum data-passo nos 33 slides; o .pptx não tem mais sequência de cliques (conferido no
+  .odp: 0 on-click). As falas perderam as marcas ▸. Fica um avanço por slide, com a transição de esmaecimento.
+- Falas encurtadas em 7 slides (fisiologia, receptores, milrinona, milrinona × dobutamina, SSC 2026, intraoperatório,
+  alvo de pressão): 1.729 palavras, 13 min 30 s previstos a 132 palavras/min (eram 14 min 05 s). Persichini saiu da
+  fala e foi para SE PERGUNTAREM do slide 3 (o rodapé continua citando). Abaixo de 12 minutos seria preciso tirar
+  evidência (DOREMI, VASSPR, HISTAP ou o dado do serviço), por isso parou em 13 min 30 s.
+- Guia e áudio regenerados; 18 + 15 slides; layout e validate.py ok.
+
+## Estado anterior: versão 33 (14 min 05 s previstos), revisão de fisiologia aplicada e auditoria do Codex
 
 Depois da revisão, o Bruno pediu que o slide do esquema do AMPc saísse da apresentação: ele foi
 para a reserva oculta (com ficha no divisor, notas de USO/PONTO-CHAVE/FALA/SE PERGUNTAREM e sem
