@@ -40,7 +40,106 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 32 (14 min 35 s previstos), enxuta
+## Estado atual: versão 33 (15 min 00 s previstos), revisão de fisiologia aplicada
+
+Revisão da versão 32 por 6 revisores (fisiologia cardiovascular, farmacologia clínica, evidências,
+linguagem, cliques/tempo, visual) e 4 céticos (fisiologia, farmacologia, evidências, linguagem;
+os céticos de cliques e visual não rodaram por limite de sessão, e esses achados foram julgados
+pelo orquestrador). 104 achados; aplicados os confirmados. Sem erro conceitual novo introduzido:
+cada mudança de fisiologia foi confirmada em fonte pelo cético antes de entrar.
+
+O que mudou (texto visível):
+- Figura do AMPc (slide 9): o cálcio que entra pelo canal L aparece como gatilho da liberação
+  pelo RyR2 (liberação induzida por cálcio); a fosforilação do fosfolambam ganha "↑carga do RS";
+  rótulos de 18–20 px passaram a 24 px; "PKA fosforila →" saiu (as setas tracejadas já dizem
+  isso; a fala diz "a PKA aumenta a entrada de cálcio pelo canal tipo L", coerente com a nota
+  sobre a proteína Rad). Legenda em uma linha. Figura nova enviada como asset do artifact.
+- Receptores (slide 5): α2 com "pós-sináptico vascular" e "vasoconstrição"; nota do rodapé sem
+  redação absoluta ("em geral infusão", "permitem bolus"), em uma linha.
+- Fisiologia (slide 3): "DC em geral preservado ou alto" na vasoplegia; cartão "Pré-carga baixa".
+- Noradrenalina (6) e adrenalina (7): cartões "Ação e uso" e "Dose e cuidados" empilhados à
+  direita, como no slide da milrinona (não ficam meio vazios); efeito hemodinâmico na ordem fixa
+  PAM · DC · FC · RVS em todos os cartões de droga (slides 6, 7, 8 e 13); "DC ↔ (↑/↓)" na
+  noradrenalina, coerente com o cartão; adrenalina "0,01–0,1 mcg/kg/min (predomínio β); no
+  choque, dose maior, titulada pela PAM".
+- Dobutamina e dopamina (8): rótulo "DOBUTAMINA E DOPAMINA"; cartão da dopamina sem o
+  meta-texto "Em uma frase:" e com o comparador ("mais arritmia que a noradrenalina").
+- Milrinona ou dobutamina (11): célula "Age após o receptor β; sem vantagem no DOREMI" (uma linha).
+- Falência de VD (12): faixa "Atenção" com "A milrinona pode baixar a PAM: associar
+  noradrenalina. Com débito preservado e RVS baixa, pensar em vasoplegia: a droga é o vasopressor."
+- Fenilefrina e efedrina (13): "5–10 mg" sem quebra; milrinona (10): "0,375–0,75 mcg/kg/min" sem quebra.
+- Vasopressina e adjuvantes (14): "Inibe a via óxido nítrico–GMPc" (igual à reserva).
+- Intraoperatório (16): cartões de uma frase (as cinco linhas cinza saíram), fonte 27 px; o
+  contexto da vasopressina foi para a linha principal; "nas cinco fases avaliadas".
+- Mensagens (18): linha do baixo débito sem "NA se a PAM cair" (cabe em uma linha; o ponto está
+  nos slides 8 e 16).
+- Seções do .pptx: "02 · Receptores e vias de sinalização" e "03 · Drogas: noradrenalina,
+  adrenalina, dobutamina (e dopamina), milrinona (escolha e falência de VD), fenilefrina e efedrina".
+- Reserva: ficha "Classificação" no divisor; roteiro atualizado; "1ª linha" padronizado;
+  sequência SSC com "forte vs. dopamina; condicional vs. vasopressina e angiotensina II";
+  hidrocortisona "Sugere usar no choque séptico (condicional, certeza baixa)"; POISE-3 com
+  "IECA/BRA suspensos e demais anti-hipertensivos se PAS ≥130 vs. PAM ≥60 com todos mantidos";
+  VASSPR com "NA-equivalente"; dobutamina "efeitos α1 em grande parte se cancelam"; efedrina
+  "escapa da COMT; o grupo α-metil a protege da MAO"; síntese: adrenalina "0,01–0,1 (β); maior no choque".
+
+O que mudou (falas e notas):
+- Fisiologia: "A PAM é o produto do débito cardíaco pela resistência vascular sistêmica, somado à
+  pressão venosa central, que pesa quando está alta, porque reduz a pressão de perfusão";
+  vasoplegia com "as causas anestésicas e a anafilaxia somam venodilatação"; Persichini com o
+  resultado ("em 16 pacientes com choque séptico, reduziu a noradrenalina e viu caírem a pressão
+  sistêmica média e o retorno venoso"). SE PERGUNTAREM novo sobre obstrução (quarto tipo de choque).
+- Perfusão: o OPTIME-CHF saiu da fala (foi para SE PERGUNTAREM, com Tongyoo); notas novas sobre
+  SvcO₂ normal ou alta na sepse e gap venoarterial de CO₂ >6 mmHg (Vallée 2008) e sobre os limites
+  de VPP/VVS (volume corrente ≥8 mL/kg, ritmo regular, tórax fechado, sem disfunção de VD).
+- Receptores: "α2 ... pós-sináptico no vaso, também contrai"; "costumam ir em infusão / em
+  bolus"; "um dos fundamentos para associar uma droga de outra via"; nota sobre dexmedetomidina.
+- Noradrenalina: "com ação α1 potente e β1 modesta"; nota: afinidade por β1 semelhante à da
+  adrenalina, o modesto é o efeito cardíaco líquido (barorreflexo e pós-carga).
+- Adrenalina: transição "Passando à dobutamina e, em uma frase, à dopamina."; "diretriz
+  australiana e neozelandesa (ANZCA/ANZAAG 2022)"; nota com a bula americana (0,05–2 mcg/kg/min
+  no choque) e o cartão ANZAAG/ANZCA completo (escalada de dose, infusão, IM).
+- Dopamina: "uma frase apenas ... com mais arritmia que a noradrenalina"; ponto-chave com a
+  dobutamina primeiro.
+- Sinalização: sem a frase repetida de abertura; "A PKA aumenta a entrada de cálcio pelo canal
+  tipo L, que dispara a liberação pelo RyR2 do retículo ... e fosforila o fosfolambam ... carrega
+  mais o retículo para a sístole seguinte"; a frase sobre arritmias saiu (os cartões cobrem).
+- Milrinona: abre com "A milrinona é um inodilatador" (sem repetir PDE3).
+- Milrinona ou dobutamina: desfecho do DOREMI por extenso ("parada cardíaca revertida,
+  transplante ou suporte circulatório mecânico"), "sem diferença estatisticamente significativa";
+  ponto-chave "sem superioridade demonstrada em desfecho".
+- Falência de VD: "tolera mal a sobrecarga de volume".
+- Fenilefrina e efedrina: "agonista α1 direto, praticamente sem ação β"; clique 2 da efedrina diz o
+  que o cartão escuro mostra ("α1 e β1 moderados; sobe pressão, frequência e débito") e o clique 3
+  diz o cartão claro.
+- Vasopressina: "deficiência relativa do hormônio endógeno"; nota do azul de metileno com
+  guanilato ciclase solúvel, G6PD, SpO₂ e BIS, MAO-A.
+- SSC 2026: VASSPR descrito como é (13 hospitais, cluster-crossover, 0,1 vs. 0,4 mcg/kg/min de
+  noradrenalina ou equivalente).
+- Intraoperatório: "tônus baixo com frequência normal ou alta pede agonista α1"; nota com a
+  dependência de carga do TAPSE e da variação fracional de área.
+- Reserva: terlipressina e levosimendana como sugestões contra já de 2021, mantidas em 2026;
+  Kotani 2023 citado para o fator 2,5 da vasopressina; PONTO-CHAVE com inicial maiúscula.
+- Tempos pela fórmula (132 palavras/min, múltiplos de 5 s): total 15 min 00 s (900 s); capa com
+  "ensaiar mirando 15 minutos"; guia com marcos e ponteiros de slide na numeração atual (slides 5,
+  12 e 16; perguntas prontas apontam para 9/11, 10–12, 15, 17 e 16).
+- Referências: 43 (Vallée 2008 e Kotani 2023 acrescentadas, DOI conferidos).
+
+Conferências: 61 cliques, ▸ = data-passo = animações no .odp em todos os 18 slides de conteúdo;
+layout dentro do limite em todos os 33 slides; validate.py sem erros; renders do PowerPoint e do
+deck conferidos para os slides alterados.
+
+O que ficou como estava, por decisão do cético (sem erro):
+- "entra na conta quando está alta" virou a forma acima, mas sem a fórmula de Magder na fala;
+  cartão da pré-carga mantido; β2 e D1 da tabela mantidos (precisões secundárias); PDE3
+  "↓degradação do AMPc" mantido; MLCK na figura mantido; β2 da noradrenalina na síntese
+  continua "0" (nota explica); título "Noradrenalina" sem "(NA)"; "betabloqueados" na fala;
+  "ECRs" na reserva; "Hipovolemia não se corrige com amina" saiu junto com as linhas cinza do
+  slide 16 (decisão visual, não de linguagem).
+
+Pendências: Miller 10ª ed. sem capítulos (PDF do Drive inacessível nesta rede); áudio da versão 33
+em geração (Kokoro, voz pm_alex, 0,9).
+
+## Estado anterior: versão 32 (14 min 35 s previstos), enxuta
 
 Pedido do Bruno depois de ver os slides e ouvir os áudios: slides grandes demais; falando, a aula
 passaria de 20 minutos; alvo em torno de 15 minutos; dopamina só citada (a dobutamina fica como
