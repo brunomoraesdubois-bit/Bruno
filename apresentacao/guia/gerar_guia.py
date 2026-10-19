@@ -42,7 +42,7 @@ notas = [dict(n=i+1, titulo=titulos[x["id"]]) for i, x in enumerate(dados)]
 
 PERGUNTAS = [
  ("Por que não milrinona sempre que o paciente usa betabloqueador?",
-  f"Porque o benefício é teórico. A milrinona age depois do receptor e mantém efeito no betabloqueado, mas na subanálise do DOREMI (93 pacientes betabloqueados) não houve vantagem clínica. Slide {N("milrdobu")[0]} e reserva (esquema do AMPc)."),
+  f"Porque o benefício é teórico. A milrinona age depois do receptor e mantém efeito no betabloqueado, mas na subanálise do DOREMI (93 pacientes betabloqueados) não houve vantagem clínica. Slide {N("milrdobu")[0]}."),
  ("O DOREMI não mostrou que as duas são iguais?",
   "Não houve diferença significativa (49% vs. 54%; RR 0,90; IC 95% 0,69–1,19; n = 192), mas o intervalo é largo: o estudo não prova equivalência. Arritmia, hipotensão sustentada e necessidade de vasopressor também não diferiram."),
  ("Milrinona no choque séptico?",
@@ -50,9 +50,9 @@ PERGUNTAS = [
  ("Então quando a milrinona tem indicação?",
   f"Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, considerar vasoplegia: a droga é o vasopressor. Slides {N("milrinona")[0]} a {N("condutavd")[0]}."),
  ("Quando associar vasopressina?",
-  f"SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide {N("ssc2026")[0]} e reserva."),
+  f"SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide {N("ssc2026")[0]}."),
  ("Qual o alvo de PAM no intraoperatório?",
-  f"POQI 2024: PAM ≥60 mmHg em pacientes de risco como piso, maior com pressão venosa ou compartimental alta. HISTAP favoreceu ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram neutros. Slide {N("pamintraop")[0]} e reserva."),
+  f"POQI 2024: PAM ≥60 mmHg em pacientes de risco como piso, maior com pressão venosa ou compartimental alta. HISTAP favoreceu ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram neutros. Slide {N("pamintraop")[0]}."),
  ("Noradrenalina em veia periférica é segura?",
   "Na metanálise de Tran, complicações em 7% (combinada 8,6%), 96% leves; menos com protocolo de segurança. A SSC 2026 sugere iniciar por veia periférica. Reserva “Início precoce e via periférica”."),
  ("Fenilefrina ou noradrenalina na cesárea?",
@@ -70,7 +70,7 @@ PERGUNTAS = [
 ]
 import sys; sys.path.insert(0, S + "/guia")
 from reserva_notas import RESERVA as RES_NOTAS
-ordem = deck["order"]; res_ordem = json.load(open("/home/user/Bruno/apresentacao/deck/reserva.json", encoding="utf-8"))["order"]
+ordem = deck["order"]; res_ordem = json.load(open("/home/user/Bruno/apresentacao/deck/reserva.json", encoding="utf-8"))["order"] if os.path.exists("/home/user/Bruno/apresentacao/deck/reserva.json") else []
 def titulo_de(id_):
     if id_ == "divisor": return "Slides de reserva para perguntas"
     t_ = open(f"{S}/artifact-files/351a25a9-1efc-412b-9232-d1cf8f2e53fe/project/slides/{id_}.html", encoding="utf-8").read()
@@ -91,6 +91,9 @@ for k, id_ in enumerate(res_ordem, len(ordem) + 1):
 
 perguntas = "".join(f'<details class="q"><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in PERGUNTAS)
 reserva = "".join(blocos_res)
+secao_reserva = ('''<h2 class="secao">Slides ocultos de reserva</h2>
+<p style="margin:0;color:var(--suave)">Ficam no PowerPoint depois do Obrigado, ocultos: não aparecem na apresentação. Para mostrar um, digite o número do slide e Enter. Cada um tem uma fala curta, para responder perguntas sem voltar à apresentação principal.</p>
+{reserva}''') if res_ordem else ''
 marcos = [(NUM["receptores"], "fim da farmacologia básica"), (NUM["condutavd"], "fim de milrinona, dobutamina e falência de VD"), (NUM["intraop"], "fim da escolha no intraoperatório")]
 acum = [0] + [x['fim'] for x in dados]
 marcos_html = "".join(f'<li><b>{mmss(acum[k])}</b> ao fim do slide {k} — {m}</li>' for k, m in marcos)
@@ -169,9 +172,7 @@ html {{ scroll-behavior: smooth }}
 {"".join(blocos)}
 <h2 class="secao">Perguntas prováveis</h2>
 {perguntas}
-<h2 class="secao">Slides ocultos de reserva</h2>
-<p style="margin:0;color:var(--suave)">Ficam no PowerPoint depois do Obrigado, ocultos: não aparecem na apresentação. Para mostrar um, digite o número do slide e Enter. Cada um tem uma fala curta, para responder perguntas sem voltar à apresentação principal.</p>
-{reserva}
+{secao_reserva}
 </main>
 '''
 open(S + "/guia/guia-de-fala.html", "w", encoding="utf-8").write(page)

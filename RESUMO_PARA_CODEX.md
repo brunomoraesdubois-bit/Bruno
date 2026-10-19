@@ -50,7 +50,11 @@ pronto, um avanço por slide) e encurtar um pouco a fala sem deixar a aula curta
   alvo de pressão): 1.729 palavras, 13 min 30 s previstos a 132 palavras/min (eram 14 min 05 s). Persichini saiu da
   fala e foi para SE PERGUNTAREM do slide 3 (o rodapé continua citando). Abaixo de 12 minutos seria preciso tirar
   evidência (DOREMI, VASSPR, HISTAP ou o dado do serviço), por isso parou em 13 min 30 s.
-- Guia e áudio regenerados; 18 + 15 slides; layout e validate.py ok.
+- Guia e áudio regenerados; layout e validate.py ok.
+- Depois, a pedido do Bruno, os slides de reserva saíram do .pptx final: 18 slides, nenhum oculto, nenhuma animação.
+  O material de reserva continua no repositório (deck/slides/*.html e deck/reserva_arquivada.json) para consulta,
+  mas não entra no PowerPoint nem no guia. A nota da noradrenalina deixou de apontar para a reserva (cita CENSER e
+  Tran nas referências) e as perguntas prontas do guia apontam só para os slides principais.
 
 ## Estado anterior: versão 33 (14 min 05 s previstos), revisão de fisiologia aplicada e auditoria do Codex
 
