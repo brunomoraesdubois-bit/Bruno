@@ -1,0 +1,142 @@
+[
+ {
+  "slide": 1,
+  "id": "cover",
+  "titulo": "Aminas vasoativas",
+  "segundos": 18.7,
+  "texto": "Slide um. Aminas vasoativas. Bom dia. Sou Bruno Dubois; meus orientadores são Marcelo Bandeira e Glauber Gouvêa. O tema é aminas vasoativas. A aula nasceu de uma discussão em sala sobre o uso de milrinona: quando ela tem indicação, e quando a dobutamina ou um vasopressor seriam a escolha. Começo pelos objetivos."
+ },
+ {
+  "slide": 2,
+  "id": "objetivos",
+  "titulo": "Escolher a droga pelo mecanismo da hipotensão",
+  "segundos": 32.0,
+  "texto": "Slide dois. Escolher a droga pelo mecanismo da hipotensão. Quatro objetivos. Distinguir vasoplegia, falência de bomba e pré-carga baixa. Relacionar o perfil de receptores de cada droga ao seu efeito hemodinâmico. Conhecer ação, dose e cuidados de cada droga, e quando preferir milrinona ou dobutamina. Aplicar o raciocínio no choque séptico e no centro cirúrgico. A pergunta que organiza a aula: qual componente da pressão arterial média, a pam, está falhando? Para responder, precisamos entender de que depende a pressão arterial média."
+ },
+ {
+  "slide": 3,
+  "id": "fisiologia",
+  "titulo": "Determinantes da pressão arterial média",
+  "segundos": 53.4,
+  "texto": "Slide três. Determinantes da pressão arterial média. A pam depende do débito cardíaco e da resistência vascular, e a pê vê cê pesa quando está alta. Na vasoplegia o problema é o tônus: sepse, anestesia geral, bloqueio de neuroeixo, anafilaxia, saída de cê é cê. Na falência de bomba o débito é baixo, em geral com resistência alta; na sepse, a disfunção miocárdica pode coexistir com vasoplegia. Na pré-carga baixa, a hipovolemia se corrige com volume; e o alfa um também contrai veias, recruta volume não estressado e aumenta o retorno venoso: Persichini mostrou, no choque séptico, que reduzir a dose de noradrenalina diminui a pressão sistêmica média, o retorno venoso e o débito cardíaco. Para diferenciar, a é ésse i cê ême dois mil e vinte e cinco recomenda eco como primeira imagem, parâmetros dinâmicos antes de mais volume e perfusão seriada pelo enchimento capilar. Mas uma pam normal não basta."
+ },
+ {
+  "slide": 4,
+  "id": "perfusao",
+  "titulo": "Pressão arterial não garante perfusão",
+  "segundos": 54.5,
+  "texto": "Slide quatro. Pressão arterial não garante perfusão. Pressão não é fluxo: uma resistência alta pode manter a pam com débito baixo. Por isso, a decisão de usar inotrópico depende de sinais de hipoperfusão e de uma estimativa do débito, não apenas da pressão. Os sinais estão no slide. Antes da droga, perguntar se o débito responde a volume, com parâmetros dinâmicos ou um teste de volume; o eco mostra o vê tê i e a função dos ventrículos. Vale a ressalva oposta: aumentar o débito com uma droga não é melhorar o desfecho. No óptime cê agá éfe, novecentos e cinquenta e um pacientes internados por insuficiência cardíaca descompensada, sem indicação clara de inotrópico, receberam milrinona ou placebo por quarenta e oito horas: não houve benefício, e a milrinona causou mais hipotensão sustentada, dez vírgula sete contra três vírgula dois por cento, e mais arritmia atrial. Definido o problema, as ferramentas: os receptores."
+ },
+ {
+  "slide": 5,
+  "id": "receptores",
+  "titulo": "Receptores e vias de sinalização",
+  "segundos": 42.9,
+  "texto": "Slide cinco. Receptores e vias de sinalização. alfa um contrai artérias e veias; αdois, no terminal pré-sináptico, explica os simpatolíticos clonidina e dexmedetomidina. beta um aumenta contratilidade e frequência; beta dois dilata vasos e brônquios e eleva glicemia e lactato. dê um dilata os leitos renal e mesentérico. vê um e pê dê é três entram porque vasopressina e milrinona não dependem do adrenoceptor: a vasopressina age no receptor vê um, e a milrinona inibe a enzima que degrada o a ême pê cíclico, depois do receptor beta. A dessensibilização com o uso prolongado ajuda a explicar a taquifilaxia e a lógica de associar uma droga de outra via. Antes das drogas, a via de síntese e uma classificação rápida."
+ },
+ {
+  "slide": 6,
+  "id": "classificacao",
+  "titulo": "Catecolaminas e não catecolaminas",
+  "segundos": 31.5,
+  "texto": "Slide seis. Catecolaminas e não catecolaminas. A via de síntese explica dois pontos práticos: parte do efeito da dopamina vem da conversão e da liberação de noradrenalina, e a síntese de adrenalina na medula adrenal depende de cortisol. A curta duração das catecolaminas facilita a titulação por infusão contínua; fenilefrina e efedrina, sem o anel catecol, duram mais e costumam ser usadas em bolus na hipotensão transitória, embora a fenilefrina também possa ser infundida. Começo pela noradrenalina."
+ },
+ {
+  "slide": 7,
+  "id": "noradrenalina",
+  "titulo": "Noradrenalina",
+  "segundos": 35.0,
+  "texto": "Slide sete. Noradrenalina. É a droga de primeira linha no choque séptico. É um alfa um potente, com efeito beta um modesto: eleva a pam pela resistência e pela venoconstrição, com débito em geral mantido ou maior, podendo cair pela pós-carga, e frequência estável ou menor, por reflexo. A dose usual vai de zero vírgula zero um a zero vírgula cinco microgramas por quilo por minuto, sem teto fixo no choque refratário; no centro cirúrgico, bolus de cinco a dez microgramas. Riscos: isquemia digital e esplâncnica e extravasamento. A adrenalina é parecida na estrutura, mas tem outro perfil."
+ },
+ {
+  "slide": 8,
+  "id": "adrenalina",
+  "titulo": "Adrenalina",
+  "segundos": 49.9,
+  "texto": "Slide oito. Adrenalina. Adrenalina: potente em alfa um, beta um e beta dois; sobe pressão, débito e frequência. O efeito depende da dose: em dose baixa predominam beta um e beta dois, com débito alto e resistência que pode cair; em dose alta prevalece o alfa um. É a droga da anafilaxia e, no choque séptico, entra como terceira droga quando a pam segue inadequada com noradrenalina e vasopressina. Na anafilaxia em ambiente monitorizado, bolus endovenosos diluídos e titulados, conforme o anzág; se forem necessários mais de três bolus, iniciar infusão; sem acesso venoso, ou fora desse ambiente, zero vírgula cinco miligramas intramuscular. O lactato pode subir por efeito beta dois, mas isso não autoriza ignorar hipoperfusão. Passando à dopamina e à dobutamina, duas catecolaminas com aplicações muito diferentes."
+ },
+ {
+  "slide": 9,
+  "id": "dopadobuta",
+  "titulo": "Dopamina e dobutamina",
+  "segundos": 67.4,
+  "texto": "Slide nove. Dopamina e dobutamina. Dopamina: perfil amplo, de dê um a alfa um. O efeito muda com a dose, primeiro dê um, depois beta um e, em doses altas, alfa um, com resposta variável. A dose renal não protege o rim: no ensaio da anzics, trezentos e vinte e oito pacientes críticos com disfunção renal inicial receberam dopamina em dois microgramas por quilo por minuto ou placebo, sem diferença em creatinina, diálise ou mortalidade. No soap dois, mil, seiscentos e setenta e nove pacientes em choque receberam dopamina ou noradrenalina como primeira droga: mortalidade em vinte e oito dias semelhante, cinquenta e dois vírgula cinco contra quarenta e oito vírgula cinco por cento, com o dobro de arritmias; por isso a ésse ésse cê dois mil e vinte e seis recomenda não usá-la como primeira linha. Dobutamina: inotropismo beta um com queda discreta da resistência. É indicada no baixo débito com hipoperfusão, de dois vírgula cinco a vinte microgramas por quilo por minuto; taquicardia e arritmia limitam a dose e, se a pam cair, associar vasopressor para sustentar a pressão de perfusão. Para entender a diferença entre dobutamina e milrinona, um esquema."
+ },
+ {
+  "slide": 10,
+  "id": "sinalizacao",
+  "titulo": "AMPc: onde agem dobutamina e milrinona",
+  "segundos": 60.0,
+  "texto": "Slide dez. AMPc: onde agem dobutamina e milrinona. Este é o mecanismo que separa as duas drogas. A dobutamina estimula o receptor beta um; pela proteína gê ésse, a adenilato ciclase produz a ême pê cíclico, que ativa a pê cá á. A pê cá á fosforila o canal de cálcio tipo L, aumentando o cálcio na sístole, e o fosfolambam, que deixa de inibir a serca dois a e acelera a recaptação na diástole. A milrinona entra em outro ponto: inibe a pê dê é três, a enzima que degrada o a ême pê cíclico em cinco linha a ême pê. Ela não depende do receptor beta, mas precisa de alguma produção de a ême pê cíclico; por isso mantém efeito com betabloqueio ou receptores dessensibilizados. Mas isso é fundamento farmacológico, não benefício demonstrado: veremos no doremi. No músculo liso vascular, a mesma via inibe a quinase da cadeia leve da miosina e o vaso relaxa: por isso a milrinona é inodilatadora e pode baixar a pam. E, como as duas aumentam a ême pê cíclico e cálcio, ambas podem causar arritmias. Com esse mecanismo, a milrinona fica fácil de entender."
+ },
+ {
+  "slide": 11,
+  "id": "milrinona",
+  "titulo": "Milrinona",
+  "segundos": 48.0,
+  "texto": "Slide onze. Milrinona. Como vimos, a milrinona inibe a pê dê é três e age depois do receptor beta. É um inodilatador: aumenta a contratilidade e o relaxamento e reduz as resistências sistêmica e pulmonar. A indicação é a disfunção ventricular com baixo débito que exige suporte inotrópico, incluindo a saída difícil de cê é cê. Dose de bula: ataque de cinquenta microgramas por quilo em dez minutos e manutenção de zero vírgula trezentos e setenta e cinco a zero vírgula setenta e cinco microgramas por quilo por minuto. Por ser vasodilatadora, muitas vezes exige associação com noradrenalina. Tem eliminação renal e meia-vida bem mais longa que a da dobutamina: é menos titulável e acumula na insuficiência renal. E a pergunta prática que motivou a aula: quando escolher cada uma?"
+ },
+ {
+  "slide": 12,
+  "id": "milrdobu",
+  "titulo": "Milrinona ou dobutamina: quando escolher",
+  "segundos": 93.2,
+  "texto": "Slide doze. Milrinona ou dobutamina: quando escolher. Primeiro, a indicação: inotrópico se justifica quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e pam. Se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. A tabela resume os perfis esperados: meia-vida, circulação pulmonar, frequência e pressão, e resposta com betabloqueador. O ensaio de referência que comparou as duas no choque cardiogênico é o doremi: randomizado e duplo-cego, cento e noventa e dois pacientes receberam milrinona ou dobutamina. O desfecho composto de morte, parada, suporte mecânico, infarto, a vê cê ou diálise ocorreu em quarenta e nove por cento com milrinona e cinquenta e quatro por cento com dobutamina, sem diferença; arritmia, hipotensão sustentada e necessidade de vasopressor também não diferiram. Na subanálise dos noventa e três pacientes que usavam betabloqueador antes do choque, a milrinona não teve vantagem. Isso não comprova equivalência; a escolha fica farmacológica. A milrinona faz sentido no vê dê com hipertensão pulmonar, como na saída de cê é cê, porque reduz a resistência pulmonar, e quando a taquicardia ou o betabloqueio limitam a dobutamina. Quando há indicação de inotrópico, a dobutamina pode ser mais conveniente se houver hipotensão associada, insuficiência renal, porque a milrinona acumula, ou necessidade de titulação rápida. Um cenário em que essa diferença farmacológica realmente importa é a falência de ventrículo direito. Como abordá-la?"
+ },
+ {
+  "slide": 13,
+  "id": "condutavd",
+  "titulo": "Falência de VD: o que fazer",
+  "segundos": 54.1,
+  "texto": "Slide treze. Falência de VD: o que fazer. Na falência de vê dê, quatro frentes andam juntas. Primeiro, a pressão de perfusão: o vê dê pode ficar isquêmico quando a pam cai; por isso, noradrenalina para sustentar a pam e, conforme a vasoplegia associada, vasopressina. Segundo, a resistência pulmonar: corrigir hipóxia, hipercapnia e acidose e, se preciso, vasodilatador pulmonar inalado. Terceiro, a contratilidade: aqui a milrinona faz sentido, porque é inotrópica e reduz a resistência pulmonar; a dobutamina é alternativa, e a adrenalina entra se o choque for grave. Quarto, volume e ritmo: o vê dê dilatado tolera mal mais volume; manter ritmo sinusal e sincronia á vê. A milrinona pode baixar a pam e não substitui o diagnóstico: com débito preservado e resistência baixa, considerar vasoplegia e, nesse caso, a droga é o vasopressor. Saindo dos inotrópicos, as drogas de bolus do centro cirúrgico."
+ },
+ {
+  "slide": 14,
+  "id": "fenilefedrina",
+  "titulo": "Fenilefrina e efedrina",
+  "segundos": 51.1,
+  "texto": "Slide catorze. Fenilefrina e efedrina. Fenilefrina: agonista alfa um puro, sem ação beta; a pam sobe pela resistência e a frequência cai por reflexo. Em bolus de cinquenta a cem microgramas, é útil quando a taquicardia é indesejável, mas pode reduzir o débito quando ele depende da frequência. Na estenose aórtica, manter a pós-carga e evitar taquicardia. Na cesárea, o consenso internacional de dois mil e dezoito recomenda vasopressor alfa-agonista em infusão profilática, titulado para manter a pê á ésse perto da basal. Efedrina: ação mista, direta em alfa e beta e indireta, liberando noradrenalina. Bolus de cinco a dez miligramas, útil na hipotensão com bradicardia. Perde efeito com doses repetidas e com estoques de noradrenalina depletados; atravessa a placenta e se associa a mais acidose fetal. E quando a via adrenérgica não basta?"
+ },
+ {
+  "slide": 15,
+  "id": "vasorefrat",
+  "titulo": "Vasopressina e adjuvantes",
+  "segundos": 54.0,
+  "texto": "Slide quinze. Vasopressina e adjuvantes. A vasopressina age no receptor vê um, fora da via adrenérgica: poupa catecolamina e costuma manter efeito em acidose; no choque séptico há deficiência relativa de vasopressina. Em geral, usa-se dose fixa; a ordem do desmame segue o protocolo do serviço. Indicações: choque séptico com noradrenalina em escalada, vasoplegia após cê é cê e hipotensão refratária em pacientes em uso de iéca ou bê érre á. Riscos: isquemia digital e mesentérica, hiponatremia. Antes de associar drogas, corrigir causas tratáveis. Adjuvantes: a hidrocortisona restaura a resposta às catecolaminas, duzentos miligramas por dia no choque séptico; a angiotensina II, agonista á tê um, poupa catecolamina, mas é pouco disponível; o azul de metileno bloqueia a via do óxido nítrico e fica como resgate na vasoplegia refratária. Juntando tudo no choque séptico."
+ },
+ {
+  "slide": 16,
+  "id": "ssc2026",
+  "titulo": "Choque séptico: recomendações da SSC 2026",
+  "segundos": 73.0,
+  "texto": "Slide dezesseis. Choque séptico: recomendações da SSC 2026. A ésse ésse cê dois mil e vinte e seis organiza os vasopressores em sequência. Noradrenalina primeiro, iniciada cedo e, se preciso, por veia periférica. Vasopressina quando a dose de noradrenalina está subindo; sem limiar definido; a mediana da enquete dos painelistas foi zero vírgula três microgramas por quilo por minuto. Adrenalina se a pam continuar inadequada. Alvo inicial de sessenta e cinco milímetros de mercúrio, ou sessenta a sessenta e cinco a partir dos sessenta e cinco anos. Sobre o momento: o vásper, de outubro de dois mil e vinte e seis, três mil, novecentos e cinquenta e nove pacientes com choque séptico em hospitais sorteados para iniciar a vasopressina com noradrenalina em zero vírgula um ou em zero vírgula quatro microgramas por quilo por minuto; a mortalidade foi semelhante, trinta e um vírgula oito contra trinta e três por cento. Antecipar como regra não trouxe ganho. Na disfunção cardíaca com hipoperfusão apesar de volume e pam adequados, dobutamina com noradrenalina, ou adrenalina; hidrocortisona sugerida; sugestão contra levosimendana e terlipressina. No centro cirúrgico, o raciocínio é o mesmo, com outras causas."
+ },
+ {
+  "slide": 17,
+  "id": "intraop",
+  "titulo": "Escolha da droga no intraoperatório",
+  "segundos": 76.8,
+  "texto": "Slide dezessete. Escolha da droga no intraoperatório. Antes da droga, afastar causas tratáveis: plano anestésico profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia, que pede adrenalina. Se persistir, avaliar a resposta a volume e fazer eco. A escolha segue o mecanismo: tônus baixo com frequência preservada pede alfa um; bradicardia associada pede ação beta um, com efedrina ou, se grave, adrenalina; baixo débito pede inotrópico, e a milrinona tem a vantagem de reduzir a resistência pulmonar. A vasoplegia refratária às catecolaminas, como após cê é cê, com iéca ou bê érre á ou na reperfusão do enxerto hepático, pode responder à vasopressina; o azul de metileno fica como resgate. E pré-carga baixa pede volume, não amina. Na cesárea, fenilefrina profilática, com a noradrenalina como alternativa. Um dado do nosso serviço: Gouvêa, Diaz e colaboradores avaliaram por ecocardiografia transesofágica a função do vê dê de dezenove pacientes selecionados em cinco momentos do transplante hepático; tápse e variação fracional de área permaneceram normais, inclusive após a reperfusão. Mais um motivo para identificar o mecanismo antes de presumir falência de vê dê. E quanto de pam é suficiente no intraoperatório?"
+ },
+ {
+  "slide": 18,
+  "id": "pamintraop",
+  "titulo": "Hipotensão intraoperatória e alvo de pressão",
+  "segundos": 67.5,
+  "texto": "Slide dezoito. Hipotensão intraoperatória e alvo de pressão. A hipotensão intraoperatória, mesmo por períodos curtos, se associa a lesão renal aguda, lesão miocárdica, delirium e mortalidade: é a mensagem do editorial de Lineburger e colaboradores sobre o custo oculto da hipotensão, com Rodrigo Diaz entre os autores. O póqui dois mil e vinte e quatro trata pam de sessenta em pacientes de risco como limite mínimo, não como garantia de perfusão; com pressão venosa ou compartimental alta, o alvo tende a ser maior. Acima do piso, o ensaio positivo mais recente é o histap: seiscentos e trinta pacientes com sessenta anos ou mais, hipertensos, em cirurgia abdominal maior, randomizados para pam de pelo menos oitenta ou de pelo menos sessenta e cinco; morte ou disfunção orgânica em trinta e oito contra quarenta e nove por cento, sobretudo por menos lesão renal aguda. Outros ensaios com alvos mais altos ou individualizados, como o poise três e o improve multi, foram neutros. Daí a proposta do editorial: monitorização contínua, manejo proativo e metas individualizadas. Para terminar, as mensagens da aula."
+ },
+ {
+  "slide": 19,
+  "id": "mensagens",
+  "titulo": "Problema hemodinâmico e droga de escolha",
+  "segundos": 36.5,
+  "texto": "Slide dezenove. Problema hemodinâmico e droga de escolha. Voltando à pergunta do início: qual componente da pam está falhando? Vasoplegia pede noradrenalina e, quando a dose sobe, vasopressina; baixo débito com hipoperfusão pede inotrópico, com a milrinona reservada sobretudo para o vê dê com hipertensão pulmonar; na hipotensão anestésica com bradicardia, efedrina; com taquicardia, fenilefrina; anafilaxia, adrenalina; e, no intraoperatório, tratar cedo, com pam mínima de sessenta a sessenta e cinco. A droga certa é a que corrige esse componente, na menor dose eficaz e pelo menor tempo. Com isso, chego ao fim."
+ },
+ {
+  "slide": 20,
+  "id": "obrigado",
+  "titulo": "Obrigado",
+  "segundos": 8.9,
+  "texto": "Slide vinte. Obrigado. Obrigado pela atenção. As referências completas da aula estão no código quê érre. Fico à disposição para perguntas."
+ }
+]
