@@ -16,7 +16,7 @@ SAIDA = os.path.join(AQUI, VOZ)
 os.makedirs(SAIDA, exist_ok=True)
 
 SIGLAS = [  # (padrão, forma falada); ordem importa
- (r"\bα1\b", "alfa um"), (r"\bβ1\b", "beta hum"), (r"\bβ2\b", "beta dois"), (r"\bD1\b", "dê um"), (r"\bV1\b", "vê um"), (r"\bAT1\b", "á tê um"),
+ (r"\bα1\b", "alfa §1"), (r"\bβ1\b", "beta §1"), (r"\bβ2\b", "beta §2"), (r"\bD1\b", "dê um"), (r"\bV1\b", "vê um"), (r"\bAT1\b", "á tê um"),
  (r"α-agonista", "alfa-agonista"), (r"\bα\b", "alfa"), (r"\bβ\b", "beta"),
  (r"\bPAM\b", "pãm"), (r"\bRVS\b", "érre vê ésse"), (r"\bRVP\b", "érre vê pê"), (r"\bDC\b", "dê cê"), (r"\bVD\b", "vê dê"), (r"\bVE\b", "vê é"),
  (r"\bFC\b", "éfe cê"), (r"\bPVC\b", "pê vê cê"), (r"\bCEC\b", "céc"), (r"\bETE\b", "ecocardiografia transesofágica"), (r"\bPDE3\b", "pê dê é três"),
@@ -45,7 +45,7 @@ def falado(t):
     t = re.sub(r"(\d)\s*[–-]\s*(\d)", r"\1 a \2", t)                   # 60–65 → 60 a 65
     t = re.sub(r"(\d+(?:,\d+)?)\s*%", r"\1 por cento", t)              # 48,5% → ... por cento
     t = re.sub(r"\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+(?:,\d+)?", numero, t)  # números por extenso
-    t = t.replace(" vírgula ", " vírgula ").replace("  ", " ")
+    t = t.replace("§", "").replace("  ", " ")  # § protege o algarismo de alfa 1 / beta 1 (lido com pausa mais clara)
     return t.strip()
 
 deck = json.load(open(os.path.join(DECK, "deck.json"), encoding="utf-8"))
