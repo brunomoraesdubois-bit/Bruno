@@ -11,24 +11,25 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 DECK = os.path.join(AQUI, "..", "deck")
 modelo, vozes = sys.argv[1], sys.argv[2]
 VOZ = sys.argv[3] if len(sys.argv) > 3 else "pm_alex"
-VEL = float(sys.argv[4]) if len(sys.argv) > 4 else 0.95
+VEL = float(sys.argv[4]) if len(sys.argv) > 4 else 0.9
 SAIDA = os.path.join(AQUI, VOZ)
 os.makedirs(SAIDA, exist_ok=True)
 
 SIGLAS = [  # (padrão, forma falada); ordem importa
- (r"\bα1\b", "alfa um"), (r"\bβ1\b", "beta um"), (r"\bβ2\b", "beta dois"), (r"\bD1\b", "dê um"), (r"\bV1\b", "vê um"), (r"\bAT1\b", "á tê um"),
+ (r"\bα1\b", "alfa um"), (r"\bβ1\b", "beta hum"), (r"\bβ2\b", "beta dois"), (r"\bD1\b", "dê um"), (r"\bV1\b", "vê um"), (r"\bAT1\b", "á tê um"),
  (r"α-agonista", "alfa-agonista"), (r"\bα\b", "alfa"), (r"\bβ\b", "beta"),
- (r"\bPAM\b", "pam"), (r"\bRVS\b", "érre vê ésse"), (r"\bRVP\b", "érre vê pê"), (r"\bDC\b", "dê cê"), (r"\bVD\b", "vê dê"), (r"\bVE\b", "vê é"),
- (r"\bFC\b", "éfe cê"), (r"\bPVC\b", "pê vê cê"), (r"\bCEC\b", "cê é cê"), (r"\bETE\b", "ecocardiografia transesofágica"), (r"\bPDE3\b", "pê dê é três"),
+ (r"\bPAM\b", "pãm"), (r"\bRVS\b", "érre vê ésse"), (r"\bRVP\b", "érre vê pê"), (r"\bDC\b", "dê cê"), (r"\bVD\b", "vê dê"), (r"\bVE\b", "vê é"),
+ (r"\bFC\b", "éfe cê"), (r"\bPVC\b", "pê vê cê"), (r"\bCEC\b", "céc"), (r"\bETE\b", "ecocardiografia transesofágica"), (r"\bPDE3\b", "pê dê é três"),
  (r"\bAMPc\b", "a ême pê cíclico"), (r"5′-AMP", "cinco linha a ême pê"), (r"\bAMP\b", "a ême pê"), (r"\bPKA\b", "pê cá á"), (r"\bGs\b", "gê ésse"), (r"\bSERCA2a\b", "serca dois a"),
- (r"\bSSC\b", "ésse ésse cê"), (r"\bSOAP II\b", "soap dois"), (r"\bOPTIME-CHF\b", "óptime cê agá éfe"), (r"\bPOISE-3\b", "poise três"), (r"\bIMPROVE-multi\b", "improve multi"),
- (r"\bVASSPR\b", "vásper"), (r"\bPOQI\b", "póqui"), (r"\bESICM\b", "é ésse i cê ême"), (r"\bANZICS\b", "anzics"), (r"\bANZAAG\b", "anzág"), (r"\bANZCA\b", "anzca"),
- (r"\bTAPSE\b", "tápse"), (r"\bVTI\b", "vê tê i"), (r"\bPAS\b", "pê á ésse"), (r"\bAV\b", "á vê"), (r"\bAVC\b", "a vê cê"), (r"\bEV\b", "endovenosos"), (r"\bIM\b", "intramuscular"),
+ (r"\bSSC\b", "ésse ésse cê"), (r"\bSOAP II\b", "sôup dois"), (r"\bOPTIME-CHF\b", "óptime cê agá éfe"), (r"\bPOISE-3\b", "poise três"), (r"\bIMPROVE-multi\b", "improve multi"),
+ (r"\bVASSPR\b", "vás-pê-érre"), (r"\bPOQI\b", "póqui"), (r"\bESICM\b", "diretriz europeia de terapia intensiva de"), (r"\bANZICS\b", "anzics"), (r"\bANZAAG\b", "anzág"), (r"\bANZCA\b", "anzca"),
+ (r"\bTAPSE\b", "tápsi"), (r"\bVTI\b", "vê tê i"), (r"\bPAS\b", "pê á ésse"), (r"\bAV\b", "á vê"), (r"\bAVC\b", "a vê cê"), (r"\bEV\b", "endovenosos"), (r"\bIM\b", "intramuscular"),
  (r"\bIECA\b", "iéca"), (r"\bBRA\b", "bê érre á"), (r"\bNA\b", "noradrenalina"), (r"\bUFRJ\b", "u éfe érre jota"), (r"\bQR code\b", "código quê érre"),
- (r"\bPLoS One\b", "plós uan"), (r"\bJAMA\b", "jama"), (r"\bHISTAP\b", "histap"), (r"\bDOREMI\b", "doremi"), (r"\bVPP\b", "vê pê pê"), (r"\bVVS\b", "vê vê ésse"), (r"\bSNC\b", "ésse ene cê"),
+ (r"\bPLoS One\b", "plós uan"), (r"\bJAMA\b", "jama"), (r"\bHISTAP\b", "ristap"), (r"\bDOREMI\b", "doremi"), (r"\bVPP\b", "vê pê pê"), (r"\bVVS\b", "vê vê ésse"), (r"\bSNC\b", "ésse ene cê"),
  (r"mcg/kg/min", "microgramas por quilo por minuto"), (r"mcg/kg", "microgramas por quilo"), (r"U/min", "unidades por minuto"), (r"mg/dia", "miligramas por dia"),
  (r"\bmmHg\b", "milímetros de mercúrio"), (r"\bmcg\b", "microgramas"), (r"\bmg\b", "miligramas"), (r"\bkg\b", "quilo"), (r"\bmin\b", "minutos"),
- (r"“The hidden cost of hypotension”, de Lineburger e colaboradores,", "de Lineburger e colaboradores sobre o custo oculto da hipotensão,"),
+ (r"“The hidden cost of hypotension”, de Lineburger e colaboradores,", "de Lineburguer e colaboradores sobre o custo oculto da hipotensão,"),
+ (r"\bPersichini\b", "Persiquini"), (r"\bGouvêa\b", "Govêa"), (r"\b[Mm]ilrinona\b", "miurinona"),
  (r"≥", "maior ou igual a "), (r"[“”]", ""), (r"\s*▸\s*", " "),
 ]
 def numero(m):
@@ -62,7 +63,7 @@ pausa = lambda s, sr: np.zeros(int(s * sr), dtype=np.float32)
 roteiro = []; completo = []; sr = 24000
 for n, id_ in enumerate(deck["order"], 1):
     titulo, fala, trans = notas(id_)
-    texto = f"Slide {num2words(n, lang='pt_BR')}. {titulo}. " + falado(fala) + (" " + falado(trans) if trans else "")
+    texto = f"Slide {num2words(n, lang='pt_BR')}. {falado(titulo)}. " + falado(fala) + (" " + falado(trans) if trans else "")
     audio, sr = sintetizar(texto)
     nome = f"{n:02d} - {re.sub(r'[^\w\s-]', '', titulo).strip()[:60]}"
     sf.write(os.path.join(SAIDA, nome + ".wav"), audio, sr)
