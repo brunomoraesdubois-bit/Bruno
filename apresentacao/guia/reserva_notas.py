@@ -5,7 +5,12 @@ RESERVA = {
  "divisor": [
   "USO: slides ocultos no PowerPoint, depois do Obrigado; não aparecem na apresentação. Abrir apenas se houver pergunta, indo até o slide pelo número.",
   "PONTO-CHAVE: daqui em diante é material de apoio, oculto na apresentação.",
-  "FALA: Deixei material de apoio em slides ocultos: a síntese das drogas; um slide para dopamina, dobutamina, fenilefrina, efedrina e vasopressina; os adjuvantes do choque refratário; a sequência da SSC 2026; os alvos de pressão no choque e no intraoperatório; o início precoce e a via periférica; e o roteiro. Posso abrir o que for útil para a discussão.",
+  "FALA: Deixei material de apoio em slides ocultos: a classificação das drogas e a síntese; um slide para dopamina, dobutamina, fenilefrina, efedrina e vasopressina; os adjuvantes do choque refratário; a sequência da SSC 2026; os alvos de pressão no choque e no intraoperatório; o início precoce e a via periférica; e o roteiro. Posso abrir o que for útil para a discussão.",
+ ],
+ "classificacao": [
+  "USO: se perguntarem sobre a via de síntese das catecolaminas ou a diferença entre catecolaminas e não catecolaminas.",
+  "PONTO-CHAVE: catecolaminas: meia-vida de minutos, infusão titulável; fenilefrina e efedrina: sem o anel catecol, duram mais, bolus.",
+  "FALA: A via de síntese vai da tirosina à adrenalina; a tirosina hidroxilase é a etapa limitante e a PNMT, na medula adrenal, depende de cortisol. As catecolaminas têm o núcleo catecol, são degradadas por MAO e COMT e recaptadas, com meia-vida de minutos: por isso vão em infusão contínua. Fenilefrina e efedrina, sem o anel catecol, escapam da COMT, duram mais e servem para bolus; a efedrina age também liberando noradrenalina.",
  ],
  "comparativo": [
   "USO: pergunta sobre comparação entre drogas, receptores ou doses.",

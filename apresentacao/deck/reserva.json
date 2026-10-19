@@ -2,6 +2,7 @@
  "description": "Slides ocultos de reserva para perguntas (não aparecem na apresentação)",
  "order": [
   "divisor",
+  "classificacao",
   "comparativo",
   "dopamina",
   "dobutamina",
