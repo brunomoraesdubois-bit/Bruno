@@ -52,7 +52,9 @@ Lista das referências citadas na apresentação e nas notas, com DOI conferido 
 38. Persichini R, Silva S, Teboul JL, et al. Effects of norepinephrine on mean systemic pressure and venous return in human septic shock. *Crit Care Med*. 2012;40(12):3146-3153. doi: [10.1097/CCM.0b013e318260c6c3](https://doi.org/10.1097/CCM.0b013e318260c6c3)
 39. Zaccolo M, Kovanich D. Nanodomain cAMP signaling in cardiac pathophysiology: potential for developing targeted therapeutic interventions. *Physiol Rev*. 2025;105(2):541-591. doi: [10.1152/physrev.00013.2024](https://doi.org/10.1152/physrev.00013.2024)
 40. Liu G, Papa A, Katchman AN, et al. Mechanism of adrenergic CaV1.2 stimulation revealed by proximity proteomics. *Nature*. 2020;577(7792):695-700. doi: [10.1038/s41586-020-1947-z](https://doi.org/10.1038/s41586-020-1947-z)
+41. Vallée F, Vallet B, Mathe O, et al. Central venous-to-arterial carbon dioxide difference: an additional target for goal-directed therapy in septic shock?. *Intensive Care Med*. 2008;34(12):2218-2225. doi: [10.1007/s00134-008-1199-0](https://doi.org/10.1007/s00134-008-1199-0)
+42. Kotani Y, Di Gioia A, Landoni G, et al. An updated "norepinephrine equivalent" score in intensive care as a marker of shock severity. *Crit Care*. 2023;27(1):29. doi: [10.1186/s13054-023-04322-y](https://doi.org/10.1186/s13054-023-04322-y)
 
 ## Livro-texto
 
-41. Gropper MA, Eriksson LI, Fleisher LA, et al. (eds.). Miller's Anesthesia, 10th edition (2-volume set). Elsevier; 2025.
+43. Gropper MA, Eriksson LI, Fleisher LA, et al. (eds.). Miller's Anesthesia, 10th edition (2-volume set). Elsevier; 2025.
