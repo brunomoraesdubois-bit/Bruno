@@ -57,12 +57,13 @@ t(1082, 250, "Ca²⁺", 22, LARANJA, 700)
 seta(1084, 262, 1098, 346, LARANJA)
 t(1070, 324, "gatilho: liberação induzida por Ca²⁺", 20, NAVY, 600, "end")
 # retículo sarcoplasmático
-s.append(f'<rect x="1000" y="376" width="620" height="118" rx="40" fill="#f6e6d5" stroke="{CLARO}" stroke-width="2.5"/>')
-t(1310, 478, "Retículo sarcoplasmático", 22, NAVY, 700)
+s.append(f'<rect x="1000" y="376" width="640" height="118" rx="40" fill="#f6e6d5" stroke="{CLARO}" stroke-width="2.5"/>')
+t(1160, 478, "Retículo sarcoplasmático", 22, NAVY, 700)
 caixa(1040, 354, 120, 44, "RyR2", size=22)
 t(1100, 428, "libera Ca²⁺", 24, NAVY, 600)
 caixa(1330, 354, 250, 44, "SERCA2a · fosfolambam", size=21)
-t(1455, 428, "recapta Ca²⁺ · ↑carga do RS", 24, NAVY, 600)
+t(1455, 424, "PKA fosforila o fosfolambam", 20, LARANJA, 700)
+t(1455, 452, "SERCA2a livre: recapta Ca²⁺, ↑carga do RS", 20, NAVY, 600)
 # fosforilação pela PKA
 for (x2, y2) in ((1044, 178), (1452, 350)):
     s.append(f'<line x1="922" y1="262" x2="{x2}" y2="{y2}" stroke="{LARANJA}" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#p{LARANJA[1:]})"/>')

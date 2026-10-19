@@ -40,7 +40,7 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 33 (15 min 00 s previstos), revisão de fisiologia aplicada
+## Estado atual: versão 33 (14 min 00 s previstos), revisão de fisiologia aplicada
 
 Depois da revisão, o Bruno pediu que o slide do esquema do AMPc saísse da apresentação: ele foi
 para a reserva oculta (com ficha no divisor, notas de USO/PONTO-CHAVE/FALA/SE PERGUNTAREM e sem
@@ -48,7 +48,7 @@ clique). A apresentação ficou com 18 slides e 14 min 00 s previstos (840 s); a
 dobutamina passou a "A milrinona chega ao mesmo ponto por outra via." e a fala da milrinona abre
 com o mecanismo em uma frase ("inibe a PDE3, a enzima que degrada o AMPc, e por isso age depois
 do receptor β"). Guia e perguntas prontas na numeração nova (marcos nos slides 5, 11 e 15).
-Conferido: 18 + 15 slides no .pptx, 60 cliques iguais ao ▸ das falas, layout e validate.py ok.
+Conferido: 18 + 15 slides no .pptx, 59 cliques iguais ao ▸ das falas, layout e validate.py ok.
 
 Revisão da versão 32 por 6 revisores (fisiologia cardiovascular, farmacologia clínica, evidências,
 linguagem, cliques/tempo, visual) e 4 céticos (fisiologia, farmacologia, evidências, linguagem;
@@ -132,7 +132,7 @@ O que mudou (falas e notas):
   12 e 16; perguntas prontas apontam para 9/11, 10–12, 15, 17 e 16).
 - Referências: 43 (Vallée 2008 e Kotani 2023 acrescentadas, DOI conferidos).
 
-Conferências: 61 cliques, ▸ = data-passo = animações no .odp em todos os 18 slides de conteúdo;
+Conferências (antes da saída do slide do AMPc): 60 cliques, ▸ = data-passo = animações no .odp em todos os 18 slides de conteúdo;
 layout dentro do limite em todos os 33 slides; validate.py sem erros; renders do PowerPoint e do
 deck conferidos para os slides alterados.
 
