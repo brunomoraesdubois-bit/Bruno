@@ -42,7 +42,7 @@ notas = [dict(n=i+1, titulo=titulos[x["id"]]) for i, x in enumerate(dados)]
 
 PERGUNTAS = [
  ("Por que não milrinona sempre que o paciente usa betabloqueador?",
-  f"Porque o benefício é teórico. A milrinona age depois do receptor e mantém efeito no betabloqueado, mas na subanálise do DOREMI (93 pacientes betabloqueados) não houve vantagem clínica. Slides {N("sinalizacao")[0]} e {N("milrdobu")[0]}."),
+  f"Porque o benefício é teórico. A milrinona age depois do receptor e mantém efeito no betabloqueado, mas na subanálise do DOREMI (93 pacientes betabloqueados) não houve vantagem clínica. Slide {N("milrdobu")[0]} e reserva (esquema do AMPc)."),
  ("O DOREMI não mostrou que as duas são iguais?",
   "Não houve diferença significativa (49% vs. 54%; RR 0,90; IC 95% 0,69–1,19; n = 192), mas o intervalo é largo: o estudo não prova equivalência. Arritmia, hipotensão sustentada e necessidade de vasopressor também não diferiram."),
  ("Milrinona no choque séptico?",

@@ -1,19 +1,20 @@
 {
- "description": "Slides ocultos de reserva para perguntas (não aparecem na apresentação)",
- "order": [
-  "divisor",
-  "classificacao",
-  "comparativo",
-  "dopamina",
-  "dobutamina",
-  "fenilefrina",
-  "efedrina",
-  "vasopressina",
-  "refratario",
-  "sequencia",
-  "alvopam",
-  "timing",
-  "intraopalvo",
-  "roteiro"
- ]
+  "description": "Slides ocultos de reserva para perguntas (não aparecem na apresentação)",
+  "order": [
+    "divisor",
+    "classificacao",
+    "comparativo",
+    "dopamina",
+    "dobutamina",
+    "sinalizacao",
+    "fenilefrina",
+    "efedrina",
+    "vasopressina",
+    "refratario",
+    "sequencia",
+    "alvopam",
+    "timing",
+    "intraopalvo",
+    "roteiro"
+  ]
 }

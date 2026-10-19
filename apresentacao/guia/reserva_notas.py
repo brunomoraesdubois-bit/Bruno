@@ -5,7 +5,7 @@ RESERVA = {
  "divisor": [
   "USO: slides ocultos no PowerPoint, depois do Obrigado; não aparecem na apresentação. Abrir apenas se houver pergunta, indo até o slide pelo número.",
   "PONTO-CHAVE: Daqui em diante é material de apoio, oculto na apresentação.",
-  "FALA: Deixei material de apoio em slides ocultos: a classificação das drogas e a síntese; um slide para dopamina, dobutamina, fenilefrina, efedrina e vasopressina; os adjuvantes do choque refratário; a sequência da SSC 2026; os alvos de pressão no choque e no intraoperatório; o início precoce e a via periférica; e o roteiro. Posso abrir o que for útil para a discussão.",
+  "FALA: Deixei material de apoio em slides ocultos: a classificação das drogas e a síntese; um slide para dopamina, dobutamina, fenilefrina, efedrina e vasopressina; o esquema do AMPc; os adjuvantes do choque refratário; a sequência da SSC 2026; os alvos de pressão no choque e no intraoperatório; o início precoce e a via periférica; e o roteiro. Posso abrir o que for útil para a discussão.",
  ],
  "classificacao": [
   "USO: se perguntarem sobre a via de síntese das catecolaminas ou a diferença entre catecolaminas e não catecolaminas.",
@@ -30,6 +30,12 @@ RESERVA = {
   "PONTO-CHAVE: Inotrópico β1 com vasodilatação β2; associar vasopressor quando a PAM cair.",
   "FALA: A dobutamina é uma mistura racêmica: o isômero positivo é agonista β1 e β2 e antagonista α1; o negativo é agonista α1. Os efeitos α1 em grande parte se cancelam e sobra inotropismo com queda discreta da resistência. A faixa é de 2,5 a 20 microgramas por quilo por minuto. Os limites são taquicardia, arritmia, maior consumo de oxigênio pelo miocárdio e tolerância com uso prolongado; no paciente hipovolêmico ou vasoplégico ela tende a baixar a pressão e, nesse caso, associa-se vasopressor para sustentar a pressão de perfusão. No choque cardiogênico, o DOREMI não mostrou diferença significativa em relação à milrinona.",
   "SE PERGUNTAREM: DOREMI (n = 192): desfecho composto 54% vs. 49% com milrinona; mortalidade hospitalar 43% vs. 37%, sem diferença significativa. SSC 2026: com disfunção cardíaca e hipoperfusão persistente, dobutamina com noradrenalina ou adrenalina isolada; não há dados para comparar dobutamina e milrinona no choque séptico; sugere não usar levosimendana.",
+ ],
+ "sinalizacao": [
+  "USO: pergunta sobre o mecanismo da dobutamina e da milrinona (AMPc, PKA, PDE3), sobre betabloqueio ou sobre a figura.",
+  "PONTO-CHAVE: Dobutamina aumenta a produção de AMPc; milrinona impede a degradação; as duas convergem na PKA.",
+  "FALA: A dobutamina estimula o receptor β1; pela proteína Gs, a adenilato ciclase produz AMPc, que ativa a PKA. A PKA aumenta a entrada de cálcio pelo canal tipo L, que dispara a liberação pelo RyR2 do retículo, com mais cálcio na sístole; e fosforila o fosfolambam, que deixa de inibir a SERCA2a: a recaptação acelera e o retículo fica mais carregado para a sístole seguinte. A milrinona inibe a PDE3, a enzima que degrada o AMPc: não depende do receptor β, mas precisa de alguma produção de AMPc; por isso mantém efeito com betabloqueio, embora isso seja fundamento farmacológico, não benefício demonstrado. No músculo liso vascular, a mesma via inibe a quinase da cadeia leve da miosina e o vaso relaxa: a milrinona é inodilatadora e pode baixar a PAM.",
+  "SE PERGUNTAREM: a sinalização do AMPc é compartimentalizada, com PKA e fosfodiesterases ancoradas por AKAPs em nanodomínios (Zaccolo e Kovanich, Physiol Rev 2025); parte do efeito da PKA sobre o canal tipo L passa pela fosforilação da proteína Rad, que deixa de inibir o canal (Liu, Nature 2020). O cálcio que entra pelo canal L é o gatilho da liberação pelo RyR2 (liberação induzida por cálcio), e a maior parte do cálcio da sístole vem do retículo; a fosforilação do fosfolambam, ao acelerar a SERCA2a, também aumenta a carga de cálcio do retículo. A contribuição funcional da fosforilação do RyR2 pela PKA ainda é debatida; por isso a figura não desenha seta da PKA para o RyR2.",
  ],
  "fenilefrina": [
   "USO: pergunta sobre cesárea, estenose aórtica ou fenilefrina no choque.",

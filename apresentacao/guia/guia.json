@@ -1,5 +1,5 @@
 {
- "total": 900,
+ "total": 840,
  "slides": [
   {
    "id": "cover",
@@ -77,35 +77,25 @@
    "ini": 295,
    "fim": 340,
    "chave": "Dobutamina para baixo débito com hipoperfusão; dopamina fora da primeira linha.",
-   "trans": "Para entender a diferença entre dobutamina e milrinona, um esquema.",
+   "trans": "A milrinona chega ao mesmo ponto por outra via.",
    "fala": "Dobutamina: inotrópico β1 com vasodilatação β2; sobe o débito, baixa um pouco a resistência e pode baixar a PAM. ▸ Indicada no baixo débito com hipoperfusão, de 2,5 a 20 microgramas por quilo por minuto; se a PAM cair, associar vasopressor; taquicardia e arritmia limitam a dose. ▸ Sobre a dopamina, uma frase apenas: efeito dose-dependente e pouco previsível, de D1 a α1, com mais arritmia que a noradrenalina; a SSC 2026 recomenda contra o uso como primeira linha, e hoje o uso é residual.",
    "manga": ""
   },
   {
-   "id": "sinalizacao",
-   "seg": 65,
-   "ini": 340,
-   "fim": 405,
-   "chave": "Dobutamina aumenta a produção de AMPc; milrinona impede a degradação.",
-   "trans": "Com esse mecanismo, a milrinona fica fácil de entender.",
-   "fala": "A dobutamina estimula o receptor β1; pela proteína Gs, a adenilato ciclase produz AMPc, que ativa a PKA. A PKA aumenta a entrada de cálcio pelo canal tipo L, que dispara a liberação pelo RyR2 do retículo, com mais cálcio na sístole; e fosforila o fosfolambam, que deixa de inibir a SERCA2a: a recaptação acelera, o que relaxa mais rápido e carrega mais o retículo para a sístole seguinte. ▸ A milrinona inibe a PDE3, a enzima que degrada o AMPc: não depende do receptor β, mas precisa de alguma produção de AMPc; por isso mantém efeito com betabloqueio, embora isso seja fundamento farmacológico, não benefício demonstrado. No músculo liso vascular, a mesma via inibe a quinase da cadeia leve da miosina e o vaso relaxa: a milrinona é inodilatadora e pode baixar a PAM.",
-   "manga": "a sinalização do AMPc é compartimentalizada, com PKA e fosfodiesterases ancoradas por AKAPs em nanodomínios (Zaccolo e Kovanich, Physiol Rev 2025); e parte do efeito da PKA sobre o canal tipo L passa pela fosforilação da proteína Rad, que deixa de inibir o canal (Liu, Nature 2020). O cálcio que entra pelo canal L é o gatilho da liberação pelo RyR2 (liberação induzida por cálcio), e a maior parte do cálcio da sístole vem do retículo; a fosforilação do fosfolambam, ao acelerar a SERCA2a, também aumenta a carga de cálcio do retículo. A contribuição funcional da fosforilação do RyR2 pela PKA ainda é debatida; por isso a figura não desenha seta da PKA para o RyR2 e mostra apenas os dois alvos bem estabelecidos, o canal tipo L e o fosfolambam."
-  },
-  {
    "id": "milrinona",
-   "seg": 45,
-   "ini": 405,
-   "fim": 450,
+   "seg": 50,
+   "ini": 340,
+   "fim": 390,
    "chave": "Inodilatador pós-receptor β para a disfunção ventricular com baixo débito; meia-vida longa e eliminação renal.",
    "trans": "E a pergunta prática que motivou a aula: quando escolher cada uma?",
-   "fala": "A milrinona é um inodilatador: aumenta contratilidade e relaxamento e reduz as resistências sistêmica e pulmonar. ▸ A indicação é a disfunção ventricular com baixo débito que exige inotrópico, incluindo a saída difícil de CEC. ▸ Dose: ataque de 50 microgramas por quilo em 10 minutos, muitas vezes omitido, e manutenção de 0,375 a 0,75 microgramas por quilo por minuto. Por ser vasodilatadora, costuma exigir noradrenalina; tem eliminação renal e meia-vida bem mais longa que a da dobutamina, e acumula na insuficiência renal.",
+   "fala": "A milrinona inibe a PDE3, a enzima que degrada o AMPc, e por isso age depois do receptor β: é um inodilatador, aumenta contratilidade e relaxamento e reduz as resistências sistêmica e pulmonar. ▸ A indicação é a disfunção ventricular com baixo débito que exige inotrópico, incluindo a saída difícil de CEC. ▸ Dose: ataque de 50 microgramas por quilo em 10 minutos, muitas vezes omitido, e manutenção de 0,375 a 0,75 microgramas por quilo por minuto. Por ser vasodilatadora, costuma exigir noradrenalina; tem eliminação renal e meia-vida bem mais longa que a da dobutamina, e acumula na insuficiência renal.",
    "manga": "no OPTIME-CHF (JAMA 2002), na IC descompensada sem indicação clara de inotrópico, não houve benefício, com mais hipotensão sustentada (10,7% vs. 3,2%) e arritmias atriais (4,6% vs. 1,5%). No DOREMI (N Engl J Med 2021), no choque cardiogênico, não houve diferença estatisticamente significativa no desfecho composto em relação à dobutamina, o que não prova equivalência. A SSC 2026 não encontrou dados para comparar as duas no choque séptico."
   },
   {
    "id": "milrdobu",
    "seg": 80,
-   "ini": 450,
-   "fim": 530,
+   "ini": 390,
+   "fim": 470,
    "chave": "Primeiro a indicação; depois a escolha é farmacológica, sem superioridade demonstrada em desfecho.",
    "trans": "Um cenário em que essa diferença farmacológica realmente importa é a falência de ventrículo direito. Como abordá-la?",
    "fala": "▸ Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e PAM. Se a hipotensão é por vasoplegia, a droga é o vasopressor; um inodilatador baixa ainda mais a pressão. ▸ A tabela resume os perfis esperados: meia-vida, circulação pulmonar, frequência e pressão, e resposta com betabloqueador. O ensaio de referência é o DOREMI: 192 pacientes com choque cardiogênico, randomizados, em duplo-cego, para milrinona ou dobutamina. O desfecho composto de morte, parada cardíaca revertida, transplante ou suporte circulatório mecânico, infarto, AVC ou diálise ocorreu em 49% com milrinona e 54% com dobutamina, sem diferença estatisticamente significativa; arritmia, hipotensão e necessidade de vasopressor também não diferiram; nos 93 pacientes betabloqueados, a milrinona não teve vantagem. Isso não comprova equivalência, mas a escolha fica farmacológica. ▸ Milrinona no VD com hipertensão pulmonar, como na saída de CEC, e quando taquicardia ou betabloqueio limitam a dobutamina. ▸ Dobutamina se houver hipotensão associada, insuficiência renal ou necessidade de titulação rápida.",
@@ -114,8 +104,8 @@
   {
    "id": "condutavd",
    "seg": 50,
-   "ini": 530,
-   "fim": 580,
+   "ini": 470,
+   "fim": 520,
    "chave": "Na falência de VD, a milrinona entra na contratilidade, com noradrenalina; com débito preservado e RVS baixa, considerar vasoplegia.",
    "trans": "Saindo dos inotrópicos, as drogas de bolus do centro cirúrgico.",
    "fala": "Na falência de VD, quatro frentes. ▸ Pressão de perfusão: o VD pode ficar isquêmico quando a PAM cai; noradrenalina e, se houver vasoplegia, vasopressina. ▸ Resistência pulmonar: corrigir hipóxia, hipercapnia e acidose; se preciso, vasodilatador inalado. ▸ Contratilidade: a milrinona faz sentido porque é inotrópica e reduz a resistência pulmonar; a dobutamina é alternativa; adrenalina no choque grave. ▸ Volume e ritmo: o VD dilatado tolera mal a sobrecarga de volume. ▸ A milrinona não substitui o diagnóstico: com débito preservado e resistência baixa, pensar em vasoplegia, e nesse caso a droga é o vasopressor.",
@@ -124,8 +114,8 @@
   {
    "id": "fenilefedrina",
    "seg": 50,
-   "ini": 580,
-   "fim": 630,
+   "ini": 520,
+   "fim": 570,
    "chave": "Fenilefrina: tônus baixo com FC alta. Efedrina: tônus baixo com bradicardia.",
    "trans": "E quando a via adrenérgica não basta?",
    "fala": "Fenilefrina: agonista α1 direto, praticamente sem ação β; a PAM sobe pela resistência e a frequência cai por reflexo. ▸ Em bolus de 50 a 100 microgramas, é útil quando a taquicardia é indesejável, mas pode reduzir o débito quando ele depende da frequência; na cesárea, o consenso de 2018 recomenda vasopressor α-agonista em infusão profilática. ▸ Efedrina: α1 e β1 moderados; sobe pressão, frequência e débito. ▸ Ação mista, direta e indireta, liberando noradrenalina: bolus de 5 a 10 mg na hipotensão com bradicardia; perde efeito com doses repetidas e, na cesárea, associa-se a mais acidose fetal.",
@@ -134,8 +124,8 @@
   {
    "id": "vasorefrat",
    "seg": 45,
-   "ini": 630,
-   "fim": 675,
+   "ini": 570,
+   "fim": 615,
    "chave": "Vasopressina age por outra via (V1) e poupa catecolamina; no refratário, somar mecanismos: hidrocortisona, angiotensina II e azul de metileno.",
    "trans": "Juntando tudo no choque séptico.",
    "fala": "A vasopressina age no receptor V1, fora da via adrenérgica: poupa catecolamina e costuma manter efeito em acidose; no choque séptico há deficiência relativa do hormônio endógeno. Dose fixa, em geral 0,03 unidades por minuto. Indicações: choque séptico com noradrenalina em escalada, vasoplegia após CEC e hipotensão refratária com IECA ou BRA. Riscos: isquemia digital e mesentérica. Antes de somar drogas, corrigir causas tratáveis. ▸ Adjuvantes: a hidrocortisona restaura a resposta às catecolaminas, 200 mg por dia; ▸ a angiotensina II poupa catecolamina, mas é pouco disponível; ▸ o azul de metileno fica como resgate na vasoplegia refratária.",
@@ -144,8 +134,8 @@
   {
    "id": "ssc2026",
    "seg": 50,
-   "ini": 675,
-   "fim": 725,
+   "ini": 615,
+   "fim": 665,
    "chave": "Noradrenalina, depois vasopressina, depois adrenalina; PAM inicial de 65 mmHg.",
    "trans": "No centro cirúrgico, o raciocínio é o mesmo, com outras causas.",
    "fala": "A SSC 2026 organiza os vasopressores em sequência. ▸ Noradrenalina primeiro, cedo, mesmo por veia periférica. ▸ Vasopressina quando a dose de noradrenalina sobe, sem limiar definido. ▸ Adrenalina se a PAM continuar inadequada. ▸ Alvo inicial de 65 mmHg, ou 60 a 65 a partir dos 65 anos. Sobre o momento da vasopressina, o VASSPR, de outubro de 2026: 3.959 pacientes com choque séptico, em 13 hospitais que alternaram, por sorteio, iniciá-la com 0,1 ou com 0,4 microgramas por quilo por minuto de noradrenalina ou equivalente; mortalidade semelhante, 31,8 contra 33,0%. ▸ Na disfunção cardíaca com hipoperfusão, dobutamina com noradrenalina, ou adrenalina; hidrocortisona sugerida.",
@@ -154,8 +144,8 @@
   {
    "id": "intraop",
    "seg": 70,
-   "ini": 725,
-   "fim": 795,
+   "ini": 665,
+   "fim": 735,
    "chave": "Afastar causas, identificar o mecanismo, escolher a droga.",
    "trans": "E quanto de PAM é suficiente no intraoperatório?",
    "fala": "Antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia, que pede adrenalina. Se persistir, avaliar a resposta a volume e fazer eco. A escolha segue o mecanismo: ▸ tônus baixo com frequência normal ou alta pede agonista α1; ▸ bradicardia associada pede ação β1, efedrina ou, se grave, adrenalina; ▸ baixo débito pede inotrópico, e a milrinona ajuda no VD com hipertensão pulmonar; ▸ vasoplegia refratária às catecolaminas, como após CEC, com IECA ou BRA ou na reperfusão do enxerto hepático, pode responder à vasopressina, com azul de metileno como resgate; ▸ e pré-carga baixa pede volume, não amina. ▸ Um dado do nosso serviço: Gouvêa, Diaz e colaboradores avaliaram por ETE o VD de 19 pacientes selecionados em cinco momentos do transplante hepático; TAPSE e variação fracional de área permaneceram normais, inclusive após a reperfusão. Mais um motivo para identificar o mecanismo antes de presumir falência de VD.",
@@ -164,8 +154,8 @@
   {
    "id": "pamintraop",
    "seg": 60,
-   "ini": 795,
-   "fim": 855,
+   "ini": 735,
+   "fim": 795,
    "chave": "PAM de 60–65 mmHg como piso; alvo maior apenas em selecionados.",
    "trans": "Para terminar, as mensagens da aula.",
    "fala": "A hipotensão intraoperatória, mesmo breve, associa-se a lesão renal aguda, lesão miocárdica, delirium e mortalidade: é a mensagem do editorial de Lineburger e colaboradores, com Rodrigo Diaz entre os autores. ▸ O POQI 2024 trata PAM de 60 em pacientes de risco como limite mínimo; com pressão venosa ou compartimental alta, o alvo sobe. ▸ Acima do piso, o ensaio positivo mais recente é o HISTAP: 630 hipertensos com 60 anos ou mais, em cirurgia abdominal maior, randomizados para PAM de pelo menos 80 ou de pelo menos 65; morte ou disfunção orgânica em 38 contra 49%, sobretudo por menos lesão renal aguda. Outros ensaios, como o POISE-3 e o IMPROVE-multi, foram neutros. ▸ Daí a proposta: monitorização contínua, manejo proativo e metas individualizadas.",
@@ -174,8 +164,8 @@
   {
    "id": "mensagens",
    "seg": 35,
-   "ini": 855,
-   "fim": 890,
+   "ini": 795,
+   "fim": 830,
    "chave": "A droga certa corrige o componente que falha, na menor dose e pelo menor tempo.",
    "trans": "Com isso, chego ao fim.",
    "fala": "Voltando à pergunta do início: qual componente da PAM está falhando? ▸ Vasoplegia: noradrenalina e, quando a dose sobe, vasopressina. ▸ Baixo débito com hipoperfusão: inotrópico, com a milrinona sobretudo no VD com hipertensão pulmonar. ▸ Hipotensão anestésica com bradicardia: efedrina. ▸ Com taquicardia: fenilefrina. ▸ Anafilaxia: adrenalina. ▸ No intraoperatório, tratar cedo, com PAM mínima de 60 a 65. A droga certa corrige o componente que falha, na menor dose eficaz e pelo menor tempo.",
@@ -184,8 +174,8 @@
   {
    "id": "obrigado",
    "seg": 10,
-   "ini": 890,
-   "fim": 900,
+   "ini": 830,
+   "fim": 840,
    "chave": "Referências completas no QR code; abrir para perguntas.",
    "trans": "",
    "fala": "Obrigado pela atenção. As referências completas da aula estão no QR code. Fico à disposição para perguntas.",
