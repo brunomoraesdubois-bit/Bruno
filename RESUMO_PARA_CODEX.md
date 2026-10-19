@@ -42,6 +42,14 @@ para este repositório.
 
 ## Estado atual: versão 33 (15 min 00 s previstos), revisão de fisiologia aplicada
 
+Depois da revisão, o Bruno pediu que o slide do esquema do AMPc saísse da apresentação: ele foi
+para a reserva oculta (com ficha no divisor, notas de USO/PONTO-CHAVE/FALA/SE PERGUNTAREM e sem
+clique). A apresentação ficou com 18 slides e 14 min 00 s previstos (840 s); a transição da
+dobutamina passou a "A milrinona chega ao mesmo ponto por outra via." e a fala da milrinona abre
+com o mecanismo em uma frase ("inibe a PDE3, a enzima que degrada o AMPc, e por isso age depois
+do receptor β"). Guia e perguntas prontas na numeração nova (marcos nos slides 5, 11 e 15).
+Conferido: 18 + 15 slides no .pptx, 60 cliques iguais ao ▸ das falas, layout e validate.py ok.
+
 Revisão da versão 32 por 6 revisores (fisiologia cardiovascular, farmacologia clínica, evidências,
 linguagem, cliques/tempo, visual) e 4 céticos (fisiologia, farmacologia, evidências, linguagem;
 os céticos de cliques e visual não rodaram por limite de sessão, e esses achados foram julgados
