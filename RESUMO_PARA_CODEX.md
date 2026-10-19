@@ -40,7 +40,7 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 33 (14 min 00 s previstos), revisão de fisiologia aplicada
+## Estado atual: versão 33 (14 min 05 s previstos), revisão de fisiologia aplicada e auditoria do Codex
 
 Depois da revisão, o Bruno pediu que o slide do esquema do AMPc saísse da apresentação: ele foi
 para a reserva oculta (com ficha no divisor, notas de USO/PONTO-CHAVE/FALA/SE PERGUNTAREM e sem
