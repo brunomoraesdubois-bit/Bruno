@@ -18,12 +18,10 @@
     "dopadobuta",
     "milrinona",
     "milrdobu",
-    "condutavd",
     "fenilefedrina",
     "vasorefrat",
     "ssc2026",
     "intraop",
-    "pamintraop",
     "mensagens",
     "obrigado"
   ],
@@ -37,15 +35,15 @@
       "start": "fisiologia"
     },
     "s2": {
-      "description": "02 · Receptores e vias de sinalização",
+      "description": "02 · Receptores",
       "start": "receptores"
     },
     "s3": {
-      "description": "03 · Drogas: noradrenalina, adrenalina, dobutamina (e dopamina), milrinona (escolha e falência de VD), fenilefrina e efedrina",
+      "description": "03 · Drogas: noradrenalina, adrenalina, dobutamina (e dopamina), milrinona (escolha), fenilefrina e efedrina",
       "start": "noradrenalina"
     },
     "s4": {
-      "description": "04 · Além das aminas: vasopressina e adjuvantes",
+      "description": "04 · Além das aminas: vasopressina, hidrocortisona e azul de metileno",
       "start": "vasorefrat"
     },
     "s5": {
@@ -53,7 +51,7 @@
       "start": "ssc2026"
     },
     "s6": {
-      "description": "06 · Perioperatório: escolha da droga e alvo de pressão",
+      "description": "06 · Perioperatório: escolha da droga",
       "start": "intraop"
     },
     "s7": {

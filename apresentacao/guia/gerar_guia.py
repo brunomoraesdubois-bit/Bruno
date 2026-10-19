@@ -48,11 +48,11 @@ PERGUNTAS = [
  ("Milrinona no choque séptico?",
   "A SSC 2026 não encontrou dados para comparar com a dobutamina. Em um ECR de 2025 (Tongyoo, 64 pacientes), a milrinona aumentou o débito em 6 h, sem diferença de mortalidade (50% vs. 50%). Débito maior não é desfecho melhor."),
  ("Então quando a milrinona tem indicação?",
-  f"Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, considerar vasoplegia: a droga é o vasopressor. Slides {N("milrinona")[0]} a {N("condutavd")[0]}."),
+  f"Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, considerar vasoplegia: a droga é o vasopressor. Slides {N("milrinona")[0]} e {N("milrdobu")[0]}."),
  ("Quando associar vasopressina?",
   f"SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide {N("ssc2026")[0]}."),
  ("Qual o alvo de PAM no intraoperatório?",
-  f"POQI 2024: PAM ≥60 mmHg em pacientes de risco como piso, maior com pressão venosa ou compartimental alta. HISTAP favoreceu ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram neutros. Slide {N("pamintraop")[0]}."),
+  f"POQI 2024: PAM ≥60 mmHg em pacientes de risco como piso, maior com pressão venosa ou compartimental alta. HISTAP favoreceu ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram neutros. Não está mais nos slides; responder de cabeça."),
  ("Noradrenalina em veia periférica é segura?",
   "Na metanálise de Tran, complicações em 7% (combinada 8,6%), 96% leves; menos com protocolo de segurança. A SSC 2026 sugere iniciar por veia periférica. Reserva “Início precoce e via periférica”."),
  ("Fenilefrina ou noradrenalina na cesárea?",
@@ -94,7 +94,7 @@ reserva = "".join(blocos_res)
 secao_reserva = ('''<h2 class="secao">Slides ocultos de reserva</h2>
 <p style="margin:0;color:var(--suave)">Ficam no PowerPoint depois do Obrigado, ocultos: não aparecem na apresentação. Para mostrar um, digite o número do slide e Enter. Cada um tem uma fala curta, para responder perguntas sem voltar à apresentação principal.</p>
 {reserva}''') if res_ordem else ''
-marcos = [(NUM["receptores"], "fim da farmacologia básica"), (NUM["condutavd"], "fim de milrinona, dobutamina e falência de VD"), (NUM["intraop"], "fim da escolha no intraoperatório")]
+marcos = [(NUM["receptores"], "fim da fisiologia e dos receptores"), (NUM["milrdobu"], "fim de milrinona e dobutamina"), (NUM["intraop"], "fim da escolha no intraoperatório")]
 acum = [0] + [x['fim'] for x in dados]
 marcos_html = "".join(f'<li><b>{mmss(acum[k])}</b> ao fim do slide {k} — {m}</li>' for k, m in marcos)
 indice = "".join(f'<a href="#s{x["n"]}"><span>{x["n"]:02d}</span>{e(x["titulo"])}</a>' for x in notas)

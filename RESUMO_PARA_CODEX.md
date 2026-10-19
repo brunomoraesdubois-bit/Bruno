@@ -40,7 +40,38 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 34 (13 min 30 s previstos), slides prontos, sem cliques internos
+## Estado atual: versão 35 (11 min 30 s previstos), 16 slides, aula mais curta e mais fisiológica
+
+Pedido do Bruno (revisão slide a slide): menos estudos, mais fisiologia e drogas; falas sem antecipar o slide
+seguinte; sessão curta (10 minutos não é problema). O que mudou:
+- Saíram os slides "Falência de VD: o que fazer" e "Hipotensão intraoperatória e alvo de pressão" (HISTAP, POQI,
+  Lineburger). A linha "Hipotensão intraoperatória" saiu da tabela final. 16 slides, sem ocultos, sem animações.
+- Objetivos: objetivo 3 sem "quando preferir milrinona ou dobutamina"; pergunta central sem "a resposta orienta".
+- Fisiologia (3): fórmula PAM ≈ DC × RVS + PVC no slide, no lugar do cartão "Como diferenciar?"; fala simples sobre
+  PVC e perfusão. Perfusão (4): virou "Como avaliar a perfusão no intraoperatório": eco (ETE/POCUS), monitores de
+  débito e parâmetros dinâmicos, marcadores de perfusão tissular; tudo dito na fala. OPTIME-CHF só em nota.
+- Receptores (5): título "Receptores das aminas"; sem a coluna de sinalização; α2 explicado de forma simples
+  (pré-sináptico; alvo da dexmedetomidina); fala abre anunciando a revisão breve.
+- Adrenalina (7): doses resumidas, sem IM; mantido lactato por β2.
+- Dobutamina e dopamina (8): dopamina em uma frase, sem D1 → β1 → α1, sem SSC; limitações gerais (mais
+  taquicardia e arritmia que as outras aminas; dose renal não protege o rim, ANZICS no rodapé).
+- Milrinona (9): a ponte com o AMPc passou para a abertura deste slide; indicações com hipertensão pulmonar,
+  falência de VD e saída de CEC com RVP alta ou betabloqueio; OPTIME-CHF fora do rodapé.
+- Milrinona ou dobutamina (10): sem DOREMI (fica só em nota); "Considere" reescrito pelo perfil: milrinona para VD e
+  circulação pulmonar com PAM sustentada; dobutamina com pressão baixa ou vasoplegia (choque séptico), insuficiência
+  renal ou titulação rápida.
+- Fenilefrina e efedrina (11): introdução (não catecolaminas de bolus); fenilefrina sem dose de bolus e sem cesárea;
+  efedrina com o mecanismo explicado e a cesárea mantida.
+- Além das aminas (12): vasopressina, hidrocortisona e azul de metileno; angiotensina II saiu.
+- SSC 2026 (13): a fala diz o que é a Surviving Sepsis Campaign; só a sequência NA → vasopressina → adrenalina;
+  sem alvo de PAM, sem VASSPR, sem cartão de disfunção cardíaca.
+- Intraoperatório (14): fala mais curta; o estudo de Gouvêa e Diaz explicado pela contribuição (VD preservado nas
+  cinco fases, inclusive após a reperfusão: a instabilidade da reperfusão não se explicou por falência de VD, o que
+  favorece tratá-la como vasoplegia e confirmar pelo eco antes do inotrópico).
+- Transições de antecipação retiradas de todos os slides; cada fala abre com a sua própria introdução.
+- 984 palavras; 11 min 30 s previstos. Áudio regenerado.
+
+## Estado anterior: versão 34 (13 min 30 s previstos), slides prontos, sem cliques internos
 
 Pedido do Bruno: a sessão clínica será mais curta; retirar o aparecimento item por item (cada slide já aparece
 pronto, um avanço por slide) e encurtar um pouco a fala sem deixar a aula curta demais.
