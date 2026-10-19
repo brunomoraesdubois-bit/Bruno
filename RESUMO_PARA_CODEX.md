@@ -40,7 +40,19 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 31 (17 min 55 s)
+## Estado atual: versão 31 (17 min 55 s) com áudio da fala
+
+Áudio (pedido do Bruno: "faça os áudios da melhor maneira possível com voz masculina"), em
+`apresentacao/audio/pm_alex/`: um MP3 por slide (01 a 20, com "Slide N. Título." no início, a FALA
+e a TRANSIÇÃO) e `00 - Aminas vasoativas - fala completa.mp3` com tudo em sequência. Voz: Kokoro
+v1.0 (modelo aberto, rodando localmente), voz masculina brasileira `pm_alex`, velocidade 0,95.
+Os serviços de voz em nuvem (Edge/Azure, Google, Hugging Face) estão bloqueados nesta rede; o
+modelo veio das releases do GitHub. Antes da síntese, `gerar_audio.py` converte siglas, números,
+unidades e letras gregas para a forma falada (ex.: "RVS" → "érre vê ésse", "3.959" → "três mil,
+novecentos e cinquenta e nove", "0,375" → "zero vírgula trezentos e setenta e cinco", "mmHg" →
+"milímetros de mercúrio"); o texto exato lido está em `roteiro.json`. O áudio serve para o Bruno
+ouvir a fala dirigindo; não substitui o ensaio cronometrado (a voz sintética tem ritmo próprio).
+
 
 Auditoria do Codex sobre a versão 30 (cliques dos slides 7, 8, 9, 11 e 12, tabelas dos slides 5 e
 19, ocultos e QR: tudo conferido). Aplicadas as três sugestões: unidade por extenso na dose de
