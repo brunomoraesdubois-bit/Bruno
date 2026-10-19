@@ -40,7 +40,15 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 30 (17 min 55 s)
+## Estado atual: versão 31 (17 min 55 s)
+
+Auditoria do Codex sobre a versão 30 (cliques dos slides 7, 8, 9, 11 e 12, tabelas dos slides 5 e
+19, ocultos e QR: tudo conferido). Aplicadas as três sugestões: unidade por extenso na dose de
+manutenção da milrinona (slide 11); no slide 12, a tabela é apresentada antes dos resultados do
+DOREMI (e a abertura repetida com a transição saiu); no slide 7, a fala diz que o débito pode cair
+pela pós-carga, como o cartão. Tempos inalterados.
+
+## Estado anterior: versão 30 (17 min 55 s)
 
 Para o Codex conferir: esta versão fecha o ciclo pedido pelo Bruno depois da versão 27
 ("tire o 'para discutir no nosso serviço'; depois disso, só um obrigado e um QR code com as
