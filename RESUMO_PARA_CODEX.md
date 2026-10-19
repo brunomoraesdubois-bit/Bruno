@@ -45,13 +45,23 @@ para este repositório.
 Áudio (pedido do Bruno: "faça os áudios da melhor maneira possível com voz masculina"), em
 `apresentacao/audio/pm_alex/`: um MP3 por slide (01 a 20, com "Slide N. Título." no início, a FALA
 e a TRANSIÇÃO) e `00 - Aminas vasoativas - fala completa.mp3` com tudo em sequência. Voz: Kokoro
-v1.0 (modelo aberto, rodando localmente), voz masculina brasileira `pm_alex`, velocidade 0,95.
+v1.0 (modelo aberto, rodando localmente), voz masculina brasileira `pm_alex`, velocidade 0,9.
 Os serviços de voz em nuvem (Edge/Azure, Google, Hugging Face) estão bloqueados nesta rede; o
 modelo veio das releases do GitHub. Antes da síntese, `gerar_audio.py` converte siglas, números,
 unidades e letras gregas para a forma falada (ex.: "RVS" → "érre vê ésse", "3.959" → "três mil,
 novecentos e cinquenta e nove", "0,375" → "zero vírgula trezentos e setenta e cinco", "mmHg" →
 "milímetros de mercúrio"); o texto exato lido está em `roteiro.json`. O áudio serve para o Bruno
 ouvir a fala dirigindo; não substitui o ensaio cronometrado (a voz sintética tem ritmo próprio).
+Conferência "de ouvido" por reconhecimento de voz (Whisper small, local): cada faixa foi
+transcrita e comparada palavra a palavra com o texto previsto, e as grafias faladas foram
+ajustadas até a transcrição bater nos termos críticos: "PAM" lido como "pãm" (antes saía como
+"pão"), "HISTAP" como "ristap", "milrinona" como "miurinona" (o encontro "lr" saía errado), "CEC"
+como "céc", "SOAP II" como "sôup dois", "ESICM" como "diretriz europeia de terapia intensiva",
+"alfa 1"/"beta 1" com o algarismo (sem emendar na palavra seguinte), "Gouvêa" como "Govêa",
+"Persichini" como "Persiquini", "Lineburger" como "Lineburguer", "VASSPR" soletrado "vás-pê-érre".
+As diferenças que restam na transcrição são do reconhecedor (números em algarismos, siglas
+soletradas, variantes de grafia), não da fala. Nenhuma faixa tem silêncio interno acima de 0,6 s,
+cortes ou saturação; volume uniforme (−24 dBFS). Duração total: 17,7 min.
 
 
 Auditoria do Codex sobre a versão 30 (cliques dos slides 7, 8, 9, 11 e 12, tabelas dos slides 5 e
