@@ -44,11 +44,22 @@ para este repositório.
 
 Depois da revisão, o Bruno pediu que o slide do esquema do AMPc saísse da apresentação: ele foi
 para a reserva oculta (com ficha no divisor, notas de USO/PONTO-CHAVE/FALA/SE PERGUNTAREM e sem
-clique). A apresentação ficou com 18 slides e 14 min 00 s previstos (840 s); a transição da
-dobutamina passou a "A milrinona chega ao mesmo ponto por outra via." e a fala da milrinona abre
-com o mecanismo em uma frase ("inibe a PDE3, a enzima que degrada o AMPc, e por isso age depois
-do receptor β"). Guia e perguntas prontas na numeração nova (marcos nos slides 5, 11 e 15).
-Conferido: 18 + 15 slides no .pptx, 59 cliques iguais ao ▸ das falas, layout e validate.py ok.
+clique). A apresentação ficou com 18 slides e 14 min 05 s previstos (845 s). Guia e perguntas prontas na
+numeração nova (marcos nos slides 5, 11 e 15). Conferido: 18 + 15 slides no .pptx, 59 cliques
+iguais ao ▸ das falas (contagem no .odp), layout e validate.py ok.
+
+Auditoria do Codex sobre a versão 33 (feita no PPTX real) e o que foi aplicado em seguida:
+- Contagem de cliques corrigida na documentação: 59 (o PPTX e as falas já batiam).
+- Slide 17 (conclusão): "Hipotensão vasodilatadora com bradicardia" (efedrina) e "Hipotensão
+  vasodilatadora com taquicardia" (fenilefrina), na tabela e na fala, porque taquicardia isolada
+  não indica fenilefrina (POQI 2024: tratar pelo mecanismo).
+- Transição 8 → 9 nomeando o AMPc: "A dobutamina aumenta a produção de AMPc pelo receptor β1;
+  a milrinona também aumenta o AMPc, mas impedindo a degradação." A fala da milrinona abre com
+  "inibe a PDE3 e, por isso, age depois do receptor β: é um inodilatador".
+- Slide 7 (adrenalina): "0,01–0,1 mcg/kg/min (em geral, predomínio β)".
+- Figura do AMPc (reserva, slide 24): rótulos "PKA fosforila o fosfolambam" e "SERCA2a livre:
+  recapta Ca²⁺, ↑carga do RS", separando a fosforilação do fosfolambam da ativação da SERCA2a.
+- Áudio regenerado após as correções: fala completa de 13 min 55 s.
 
 Revisão da versão 32 por 6 revisores (fisiologia cardiovascular, farmacologia clínica, evidências,
 linguagem, cliques/tempo, visual) e 4 céticos (fisiologia, farmacologia, evidências, linguagem;
@@ -144,7 +155,7 @@ O que ficou como estava, por decisão do cético (sem erro):
   "ECRs" na reserva; "Hipovolemia não se corrige com amina" saiu junto com as linhas cinza do
   slide 16 (decisão visual, não de linguagem).
 
-Áudio regenerado para os 18 slides (Kokoro, voz pm_alex, 0,9): fala completa de 13 min 51 s e um
+Áudio regenerado para os 18 slides (Kokoro, voz pm_alex, 0,9): fala completa de 13 min 55 s e um
 MP3 por slide; conferido por reconhecimento de voz (whisper-small), sem erro novo de pronúncia.
 Pendência: Miller 10ª ed. sem capítulos (PDF do Drive inacessível nesta rede).
 
