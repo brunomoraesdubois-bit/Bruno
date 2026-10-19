@@ -157,7 +157,14 @@ O que ficou como estava, por decisão do cético (sem erro):
 
 Áudio regenerado para os 18 slides (Kokoro, voz pm_alex, 0,9): fala completa de 13 min 55 s e um
 MP3 por slide; conferido por reconhecimento de voz (whisper-small), sem erro novo de pronúncia.
-Pendência: Miller 10ª ed. sem capítulos (PDF do Drive inacessível nesta rede).
+Miller 10ª ed.: a referência 43 ganhou editores, ISBN 9780323935920 e data de publicação (setembro de 2024,
+copyright 2025), conferidos em listagens da Elsevier, Amazon e VitalSource. Os capítulos continuam fora das citações:
+o Codex propôs 13 (Cardiac Physiology), 16 (Basic Principles of Pharmacology), 33 (Perioperative Echocardiography and
+POCUS), 43 (Perioperative Fluid and Electrolyte Therapy), 50 (Cardiac Surgical Procedures), 56 (Abdominal Organ
+Transplantation), 58 (Obstetrics) e 79 (Critical Care Anesthesiology), mas as listagens de produto da Elsevier
+encontradas por busca dão 14, 17, 44, 51, 57 e 59 para seis deles (33 e 79 coincidem). As páginas da Elsevier não
+abrem nesta rede e o PDF do Drive (287 MB) não é legível pela ferramenta. Resolver abrindo o sumário do PDF e
+preenchendo guia/aplicar_capitulos.py (dicionário CAPITULOS), que aplica a numeração nas citações dos slides.
 
 ## Estado anterior: versão 32 (14 min 35 s previstos), enxuta
 

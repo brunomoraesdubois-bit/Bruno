@@ -27,6 +27,7 @@ def fmt(prefixo):
     if len(nomes) > 4 and "(eds" not in autores and ";" not in autores: autores = ", ".join(nomes[:3]) + ", et al"
     partes = [autores + ".", r["titulo"].rstrip(".") + "."]
     if r["periodico"] == "Elsevier": partes.append(f"Elsevier; {r['ano']}.")
+    if r.get("isbn"): partes.append(f"Publicado em setembro de 2024. ISBN {r['isbn']}.")
     elif r["periodico"] == "ANZCA/ANZAAG": partes.append(f"ANZCA e ANZAAG; {r['ano']}. Disponível em anzca.edu.au.")
     else:
         vp = f";{r['volume_paginas']}" if r["volume_paginas"] else ". Publicado online"
