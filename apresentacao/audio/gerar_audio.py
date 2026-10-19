@@ -44,7 +44,7 @@ def falado(t):
     for p, r in SIGLAS: t = re.sub(p, r, t)
     t = re.sub(r"(\d)\s*[–-]\s*(\d)", r"\1 a \2", t)                   # 60–65 → 60 a 65
     t = re.sub(r"(\d+(?:,\d+)?)\s*%", r"\1 por cento", t)              # 48,5% → ... por cento
-    t = re.sub(r"\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+(?:,\d+)?", numero, t)  # números por extenso
+    t = re.sub(r"(?<!§)\d{1,3}(?:\.\d{3})+(?:,\d+)?|(?<!§)\d+(?:,\d+)?", numero, t)  # números por extenso (exceto após §)
     t = t.replace("§", "").replace("  ", " ")  # § protege o algarismo de alfa 1 / beta 1 (lido com pausa mais clara)
     return t.strip()
 
