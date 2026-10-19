@@ -157,14 +157,16 @@ O que ficou como estava, por decisão do cético (sem erro):
 
 Áudio regenerado para os 18 slides (Kokoro, voz pm_alex, 0,9): fala completa de 13 min 55 s e um
 MP3 por slide; conferido por reconhecimento de voz (whisper-small), sem erro novo de pronúncia.
-Miller 10ª ed.: a referência 43 ganhou editores, ISBN 9780323935920 e data de publicação (setembro de 2024,
-copyright 2025), conferidos em listagens da Elsevier, Amazon e VitalSource. Os capítulos continuam fora das citações:
-o Codex propôs 13 (Cardiac Physiology), 16 (Basic Principles of Pharmacology), 33 (Perioperative Echocardiography and
-POCUS), 43 (Perioperative Fluid and Electrolyte Therapy), 50 (Cardiac Surgical Procedures), 56 (Abdominal Organ
-Transplantation), 58 (Obstetrics) e 79 (Critical Care Anesthesiology), mas as listagens de produto da Elsevier
-encontradas por busca dão 14, 17, 44, 51, 57 e 59 para seis deles (33 e 79 coincidem). As páginas da Elsevier não
-abrem nesta rede e o PDF do Drive (287 MB) não é legível pela ferramenta. Resolver abrindo o sumário do PDF e
-preenchendo guia/aplicar_capitulos.py (dicionário CAPITULOS), que aplica a numeração nas citações dos slides.
+Miller 10ª ed.: pendência encerrada por decisão do Bruno, com a numeração do sumário conferida pelo Codex nas
+páginas Evolve e Shop da Elsevier (ISBN 9780323935920): 13 Cardiac Physiology, 16 Basic Principles of Pharmacology,
+33 Perioperative Echocardiography and POCUS, 43 Perioperative Fluid and Electrolyte Therapy, 50 Anesthesia for Cardiac
+Surgical Procedures, 56 Anesthesia for Abdominal Organ Transplantation, 58 Anesthesia for Obstetrics, 79 Critical Care
+Anesthesiology. Aplicada pelo script guia/aplicar_capitulos.py nos 11 rodapés com conteúdo (o roteiro da reserva segue
+sem capítulo): fisiologia 13 e 43; receptores e classificação 16; noradrenalina e dobutamina/dopamina 16 e 79;
+sinalização 13 e 16; milrinona 16 e 50; falência de VD 13 e 50; fenilefrina/efedrina 16 e 58; intraoperatório 33 e 56.
+A referência 43 (página do QR) traz editores, ISBN, data e a lista dos capítulos citados. Listagens de produto
+encontradas por busca nesta sessão mostravam numeração deslocada em um para seis capítulos; prevaleceu o sumário
+oficial lido pelo Codex. Sem páginas atribuídas.
 
 ## Estado anterior: versão 32 (14 min 35 s previstos), enxuta
 

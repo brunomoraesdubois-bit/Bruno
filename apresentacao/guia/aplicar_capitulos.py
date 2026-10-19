@@ -4,29 +4,28 @@
 #   python3 aplicar_capitulos.py --aplicar  (edita deck/slides/*.html e o projeto do Claude, se existir)
 # Depois: regenerar notas (montar_guia.py), prints, PPTX e referencias.md como nas versões anteriores.
 import re, sys, os, glob
-CAPITULOS = {  # número confirmado: título em inglês (deixe None enquanto não conferir)
- "Cardiac Physiology": None,
- "Basic Principles of Pharmacology": None,
- "Cardiovascular Pharmacology": None,   # se existir como capítulo; é o mais pertinente para os slides de drogas
- "Perioperative Echocardiography and Point-of-Care Ultrasound": None,
- "Perioperative Fluid and Electrolyte Therapy": None,
- "Anesthesia for Cardiac Surgical Procedures": None,
- "Anesthesia for Abdominal Organ Transplantation": None,
- "Anesthesia for Obstetrics": None,
- "Critical Care Anesthesiology": None,
+CAPITULOS = {  # numeração do sumário da 10ª ed. conferida pelo Codex no catálogo da Elsevier (ISBN 9780323935920)
+ "Cardiac Physiology": 13,
+ "Basic Principles of Pharmacology": 16,
+ "Perioperative Echocardiography and Point-of-Care Ultrasound": 33,
+ "Perioperative Fluid and Electrolyte Therapy": 43,
+ "Anesthesia for Cardiac Surgical Procedures": 50,
+ "Anesthesia for Abdominal Organ Transplantation": 56,
+ "Anesthesia for Obstetrics": 58,
+ "Critical Care Anesthesiology": 79,
 }
 # slide → capítulos pertinentes (títulos acima); a citação vira "Miller’s Anesthesia, 10ª ed. (2025), cap. N[, M]"
 POR_SLIDE = {
  "fisiologia": ["Cardiac Physiology", "Perioperative Fluid and Electrolyte Therapy"],
- "receptores": ["Basic Principles of Pharmacology", "Cardiovascular Pharmacology"],
- "classificacao": ["Basic Principles of Pharmacology", "Cardiovascular Pharmacology"],
- "noradrenalina": ["Cardiovascular Pharmacology", "Critical Care Anesthesiology"],
- "dopadobuta": ["Cardiovascular Pharmacology"],
- "sinalizacao": ["Cardiac Physiology", "Cardiovascular Pharmacology"],
- "milrinona": ["Cardiovascular Pharmacology", "Anesthesia for Cardiac Surgical Procedures"],
+ "receptores": ["Basic Principles of Pharmacology"],
+ "classificacao": ["Basic Principles of Pharmacology"],
+ "noradrenalina": ["Basic Principles of Pharmacology", "Critical Care Anesthesiology"],
+ "dopadobuta": ["Basic Principles of Pharmacology", "Critical Care Anesthesiology"],
+ "sinalizacao": ["Cardiac Physiology", "Basic Principles of Pharmacology"],
+ "milrinona": ["Basic Principles of Pharmacology", "Anesthesia for Cardiac Surgical Procedures"],
  "condutavd": ["Cardiac Physiology", "Anesthesia for Cardiac Surgical Procedures"],
- "fenilefedrina": ["Cardiovascular Pharmacology", "Anesthesia for Obstetrics"],
- "efedrina": ["Cardiovascular Pharmacology", "Anesthesia for Obstetrics"],
+ "fenilefedrina": ["Basic Principles of Pharmacology", "Anesthesia for Obstetrics"],
+ "efedrina": ["Basic Principles of Pharmacology", "Anesthesia for Obstetrics"],
  "intraop": ["Perioperative Echocardiography and Point-of-Care Ultrasound", "Anesthesia for Abdominal Organ Transplantation"],
  "roteiro": [],
 }
@@ -34,7 +33,7 @@ BASE = "Miller’s Anesthesia, 10ª ed. (2025)"
 aplicar = "--aplicar" in sys.argv
 raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 pastas = [os.path.join(raiz, "deck", "slides")]
-for extra in glob.glob("/tmp/claude-0/*/scratchpad/artifact-files/*/project/slides"): pastas.append(extra)
+for extra in glob.glob("/tmp/claude-0/*/*/scratchpad/artifact-files/*/project/slides"): pastas.append(extra)
 for pasta in pastas:
     for id_, caps in POR_SLIDE.items():
         p = os.path.join(pasta, id_ + ".html")

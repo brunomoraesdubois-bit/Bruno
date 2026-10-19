@@ -28,6 +28,7 @@ def fmt(prefixo):
     partes = [autores + ".", r["titulo"].rstrip(".") + "."]
     if r["periodico"] == "Elsevier": partes.append(f"Elsevier; {r['ano']}.")
     if r.get("isbn"): partes.append(f"Publicado em setembro de 2024. ISBN {r['isbn']}.")
+    if r.get("capitulos"): partes.append(f"Capítulos citados: {r['capitulos']}.")
     elif r["periodico"] == "ANZCA/ANZAAG": partes.append(f"ANZCA e ANZAAG; {r['ano']}. Disponível em anzca.edu.au.")
     else:
         vp = f";{r['volume_paginas']}" if r["volume_paginas"] else ". Publicado online"

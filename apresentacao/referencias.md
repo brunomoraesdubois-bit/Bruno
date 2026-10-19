@@ -57,4 +57,4 @@ Lista das referências citadas na apresentação e nas notas, com DOI conferido 
 
 ## Livro-texto
 
-43. Gropper MA, Eriksson LI, Fleisher LA, Cohen NH, Leslie K, Johnson-Akeju O (eds.). Miller's Anesthesia, 10th edition (2-volume set). Elsevier; 2025. Publicado em setembro de 2024. ISBN 9780323935920.
+43. Gropper MA, Eriksson LI, Fleisher LA, Cohen NH, Leslie K, Johnson-Akeju O (eds.). Miller's Anesthesia, 10th edition (2-volume set). Elsevier; 2025. Publicado em setembro de 2024. ISBN 9780323935920. Capítulos citados: 13 (Cardiac Physiology), 16 (Basic Principles of Pharmacology), 33 (Perioperative Echocardiography and Point-of-Care Ultrasound), 43 (Perioperative Fluid and Electrolyte Therapy), 50 (Anesthesia for Cardiac Surgical Procedures), 56 (Anesthesia for Abdominal Organ Transplantation), 58 (Anesthesia for Obstetrics), 79 (Critical Care Anesthesiology).
