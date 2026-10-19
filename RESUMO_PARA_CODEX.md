@@ -40,7 +40,35 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 31 (17 min 55 s) com áudio da fala
+## Estado atual: versão 32 (14 min 35 s previstos), enxuta
+
+Pedido do Bruno depois de ver os slides e ouvir os áudios: slides grandes demais; falando, a aula
+passaria de 20 minutos; alvo em torno de 15 minutos; dopamina só citada (a dobutamina fica como
+estava); revisar toda a fisiologia e o que mais puder ser reduzido, inclusive a parte inicial; não
+pode haver erro conceitual (plateia de fisiologistas); conferir referências e o Miller.
+
+O que mudou:
+- 19 slides na apresentação (o slide "Catecolaminas e não catecolaminas" passou para a reserva
+  oculta; o ponto prático dele, catecolaminas em infusão e fenilefrina/efedrina em bolus, virou
+  uma linha no slide de receptores e uma frase na fala) e 14 ocultos.
+- Texto visível enxugado em todos os slides de conteúdo (cartões com uma ou duas frases, sem
+  segunda camada de detalhes); a linha da cesárea saiu do slide do intraoperatório (fica no slide
+  da fenilefrina).
+- Slide 8 passou a "Dobutamina e dopamina": dobutamina à esquerda, como estava; dopamina em
+  um cartão de uma frase (dose-dependente e pouco previsível, mais arritmia, SSC 2026 contra como
+  1ª linha, uso residual), sem ANZICS e SOAP II.
+- Falas reescritas e mais curtas: 1.720 palavras (eram 2.160); 14 min 35 s previstos a 130
+  palavras por minuto. Estudos que ficaram são apresentados por inteiro (OPTIME-CHF, DOREMI,
+  VASSPR, HISTAP, Gouvêa, Persichini); ANZICS e SOAP II saíram.
+- Miller 10ª ed.: o PDF (287 MB) está no Drive do Bruno, mas a rede desta sessão bloqueia o
+  download do Drive e a ferramenta de leitura devolve o conteúdo vazio; segue citado sem
+  capítulos. Pedido ao Bruno: um PDF menor só com os capítulos de farmacologia do sistema nervoso
+  autônomo e de fisiologia cardiovascular.
+- Revisão em curso: 12 agentes (fisiologia cardiovascular, farmacologia clínica, evidências,
+  linguagem, cliques/tempo, visual) com céticos; os achados confirmados serão aplicados antes de
+  regenerar o áudio.
+
+## Estado anterior: versão 31 (17 min 55 s) com áudio da fala
 
 Áudio (pedido do Bruno: "faça os áudios da melhor maneira possível com voz masculina"), em
 `apresentacao/audio/pm_alex/`: um MP3 por slide (01 a 20, com "Slide N. Título." no início, a FALA
