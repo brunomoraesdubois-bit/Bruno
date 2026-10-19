@@ -144,8 +144,9 @@ O que ficou como estava, por decisão do cético (sem erro):
   "ECRs" na reserva; "Hipovolemia não se corrige com amina" saiu junto com as linhas cinza do
   slide 16 (decisão visual, não de linguagem).
 
-Pendências: Miller 10ª ed. sem capítulos (PDF do Drive inacessível nesta rede); áudio da versão 33
-em geração (Kokoro, voz pm_alex, 0,9).
+Áudio regenerado para os 18 slides (Kokoro, voz pm_alex, 0,9): fala completa de 13 min 51 s e um
+MP3 por slide; conferido por reconhecimento de voz (whisper-small), sem erro novo de pronúncia.
+Pendência: Miller 10ª ed. sem capítulos (PDF do Drive inacessível nesta rede).
 
 ## Estado anterior: versão 32 (14 min 35 s previstos), enxuta
 
