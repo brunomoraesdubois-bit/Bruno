@@ -53,6 +53,9 @@ minutos. O que mudou:
   aminas (vasopressina por indicação e azul de metileno mantidos, mais curtos) e intraoperatório (Gouvêa mantido).
 - Tempos: perfusão 65 s, receptores 60 s, milrinona ou dobutamina 70 s, além das aminas 70 s, intraoperatório 70 s.
   Áudio regenerado (16 slides).
+- v43: slide 5 (receptores) estava montado como quatro tabelas com larguras diferentes (colunas desalinhadas);
+  unificado em uma tabela; linha do α2 mais curta; fala reduzida para 113 palavras (50 s), sem a hipertensão do
+  bolus de dexmedetomidina na fala (fica na tela e na nota). 12 min 25 s. Áudio regenerado.
 
 ## Estado anterior: versão 38 a 41 (14 a 15 min previstos), 17 slides: monitores de débito ampliados, α2 corrigido
 
