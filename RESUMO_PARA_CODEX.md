@@ -40,7 +40,21 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 38 (14 min 25 s previstos), 17 slides: monitores de débito ampliados, α2 corrigido
+## Estado atual: versão 42 (cerca de 12 min 20 s previstos), 16 slides: sem o slide de monitores, falas enxutas
+
+Pedido do Bruno: retirar o slide 5 (monitores de débito), que não é o foco da aula, e voltar a cerca de 11 a 12
+minutos. O que mudou:
+- Slide "Monitores de débito" fora da ordem (arquivado em reserva_arquivada.json; o HTML continua em deck/slides).
+  Os números conferidos dos monitores (termodiluição, PiCCO, FloTrac 54% em cirróticos com versão antiga, Doppler
+  esofágico, zona cinzenta da VPP, desafio de volume corrente, elevação passiva das pernas, minidesafio) ficaram
+  condensados na nota SE PERGUNTAREM do slide 4. As cinco referências permanecem em referencias.md.
+- Falas enxutas: perfusão (eco mantido: variação fracional de área e TAPSE, dimensões cavitárias como pistas de
+  enchimento, VTI × área; monitores em uma frase), receptores (α2 em uma frase), milrinona ou dobutamina, além das
+  aminas (vasopressina por indicação e azul de metileno mantidos, mais curtos) e intraoperatório (Gouvêa mantido).
+- Tempos: perfusão 65 s, receptores 60 s, milrinona ou dobutamina 70 s, além das aminas 70 s, intraoperatório 70 s.
+  Áudio regenerado (16 slides).
+
+## Estado anterior: versão 38 a 41 (14 a 15 min previstos), 17 slides: monitores de débito ampliados, α2 corrigido
 
 Pedido do Bruno: o Glauber Gouvêa gosta de eco e monitores de débito (termodiluição etc.), então essa parte pode ser
 um pouco maior; tudo muito bem fundamentado, sem informação falsa; revisar todas as falas; e ele ouviu problema no
