@@ -1,5 +1,5 @@
 {
- "total": 745,
+ "total": 740,
  "slides": [
   {
    "id": "cover",
@@ -33,19 +33,19 @@
   },
   {
    "id": "perfusao",
-   "seg": 65,
+   "seg": 60,
    "ini": 110,
-   "fim": 175,
+   "fim": 170,
    "chave": "Pressão não é fluxo: combinar eco, débito e marcadores de perfusão antes de decidir por inotrópico.",
    "trans": "",
-   "fala": "Mas pressão não é fluxo: uma resistência alta pode manter a PAM com débito baixo. No intraoperatório o caminho é combinar métodos. O eco, transesofágico ou transtorácico à beira do leito, é o primeiro recurso para definir o tipo de choque: função do VE e do VD, com a variação fracional de área e o TAPSE; dimensões cavitárias como pistas de enchimento; pericárdio; e o VTI na via de saída, que vezes a área dá o volume sistólico e, repetido, mostra a resposta a volume ou a droga. Os monitores de débito dão o número e a resposta a uma intervenção. E os marcadores de perfusão tissular dizem se o fluxo está bastando: lactato e sua tendência, saturação venosa central, gap de CO₂, diurese, enchimento capilar e temperatura das extremidades. A decisão de usar inotrópico vem daí, não da pressão.",
-   "manga": "no OPTIME-CHF (Cuffe, JAMA 2002; 951 pacientes com IC descompensada sem indicação clara de inotrópico), milrinona vs. placebo por 48 h: sem benefício, com mais hipotensão sustentada e arritmia atrial. Em um ECR (Tongyoo, Ann Med 2025; 64 pacientes em choque séptico), a milrinona aumentou o débito em 6 horas em relação ao placebo, mas a mortalidade em 28 dias foi de 50% nos dois grupos. Na sepse a SvcO₂ pode estar normal ou alta apesar da hipoperfusão (defeito de extração e shunt microcirculatório); nesse caso, a diferença venoarterial de CO₂ acima de 6 mmHg sugere fluxo insuficiente para remover o CO₂ produzido (Vallée, Intensive Care Med 2008). Limites de VPP e VVS: ventilação controlada sem esforço espontâneo, volume corrente de pelo menos 8 mL/kg, ritmo regular, tórax fechado, sem disfunção de VD nem hipertensão intra-abdominal; com volume corrente baixo a sensibilidade cai. Fora dessas condições: elevação passiva das pernas ou minidesafio hídrico com medida direta do débito (ESICM 2025). Monitores de débito: termodiluição pelo cateter de artéria pulmonar é a referência clínica (invasiva, intermitente ou semicontínua; sugerida no choque refratário e na disfunção de VD); termodiluição transpulmonar (PiCCO) calibra o contorno de pulso e estima volumes e água pulmonar extravascular; contorno de pulso não calibrado (FloTrac, ClearSight) perde acurácia com RVS baixa e vasopressor: em cirróticos, versão antiga do FloTrac teve erro percentual de 54% vs. termodiluição, limite aceito 30% (Biancofiore, Br J Anaesth 2009); Doppler esofágico depende da posição e do ângulo da sonda e assume o diâmetro aórtico. Zona cinzenta da VPP de 9–13% (Cannesson, Anesthesiology 2011); desafio de volume corrente 6 → 8 mL/kg por 1 min quando a limitação é apenas o volume corrente baixo (Myatra, Crit Care Med 2017); elevação passiva das pernas com ↑DC ≥ 10%: sensibilidade 85%, especificidade 91% (Monnet, Intensive Care Med 2016, metanálise de 21 estudos); minidesafio de 100 mL em dois passos de 50 mL, ↑índice sistólico > 6% (Biais, Anesthesiology 2017; 44 pacientes em neurocirurgia)."
+   "fala": "Mas pressão não é fluxo: uma resistência alta pode manter a PAM com débito baixo. O eco, transesofágico ou transtorácico, é a primeira linha para definir o tipo de choque: função do VE e do VD, com a variação fracional de área e o TAPSE; tamanho das cavidades como pista de enchimento; pericárdio; e o VTI na via de saída, que vezes a área dá o volume sistólico e, repetido, mostra a resposta a volume ou a droga. Os monitores de débito dão o número e a resposta a uma intervenção. Os marcadores de perfusão tissular dizem se o fluxo está bastando: lactato e sua tendência, saturação venosa central, gap de CO₂, diurese, enchimento capilar e temperatura das extremidades. A decisão de usar inotrópico vem daí, não da pressão.",
+   "manga": "Eco: a ESICM 2025 sugere a ecocardiografia como imagem de primeira linha para definir o tipo de choque. VD: TAPSE abaixo de 17 mm e variação fracional de área abaixo de 35% indicam disfunção sistólica (ASE 2015); ao ETE, o TAPSE sofre com o alinhamento do feixe, por isso usa-se a variação fracional de área no corte médio-esofágico de quatro câmaras ou o TAPSE modificado. Volume sistólico = área da via de saída do VE × VTI; débito = volume sistólico × FC; como a área é fixa no mesmo paciente, a variação do VTI acompanha a do volume sistólico, e um aumento de cerca de 10 a 15% após elevação passiva das pernas ou volume indica resposta (estudos pequenos). A área diastólica final do VE no corte transgástrico é índice estático de pré-carga, útil nos extremos, e não prediz isoladamente a resposta a volume. No OPTIME-CHF (Cuffe, JAMA 2002; 951 pacientes com IC descompensada sem indicação clara de inotrópico), milrinona vs. placebo por 48 h: sem benefício, com mais hipotensão sustentada e arritmia atrial. Em um ECR (Tongyoo, Ann Med 2025; 64 pacientes em choque séptico), a milrinona aumentou o débito em 6 horas em relação ao placebo, mas a mortalidade em 28 dias foi de 50% nos dois grupos. Na sepse a SvcO₂ pode estar normal ou alta apesar da hipoperfusão (defeito de extração e shunt microcirculatório); nesse caso, a diferença venoarterial de CO₂ acima de 6 mmHg sugere fluxo insuficiente para remover o CO₂ produzido (Vallée, Intensive Care Med 2008). Limites de VPP e VVS: ventilação controlada sem esforço espontâneo, volume corrente de pelo menos 8 mL/kg, ritmo regular, tórax fechado, sem disfunção de VD nem hipertensão intra-abdominal; com volume corrente baixo a sensibilidade cai. Fora dessas condições: elevação passiva das pernas ou minidesafio hídrico com medida direta do débito (ESICM 2025). Monitores de débito: termodiluição pelo cateter de artéria pulmonar é a referência clínica (invasiva, intermitente ou semicontínua; sugerida no choque refratário e na disfunção de VD); termodiluição transpulmonar (PiCCO) calibra o contorno de pulso e estima volumes e água pulmonar extravascular; contorno de pulso não calibrado (FloTrac, ClearSight) perde acurácia com RVS baixa e vasopressor: em cirróticos, versão antiga do FloTrac teve erro percentual de 54% vs. termodiluição, limite aceito 30% (Biancofiore, Br J Anaesth 2009); Doppler esofágico depende da posição e do ângulo da sonda e assume o diâmetro aórtico. Zona cinzenta da VPP de 9–13% (Cannesson, Anesthesiology 2011); desafio de volume corrente 6 → 8 mL/kg por 1 min quando a limitação é apenas o volume corrente baixo (Myatra, Crit Care Med 2017); elevação passiva das pernas com ↑DC ≥ 10%: sensibilidade 85%, especificidade 91% (Monnet, Intensive Care Med 2016, metanálise de 21 estudos); minidesafio de 100 mL em dois passos de 50 mL, ↑índice sistólico > 6% (Biais, Anesthesiology 2017; 44 pacientes em neurocirurgia)."
   },
   {
    "id": "receptores",
    "seg": 50,
-   "ini": 175,
-   "fim": 225,
+   "ini": 170,
+   "fim": 220,
    "chave": "Cada droga tem um perfil de receptores; vasopressina e milrinona usam outras vias.",
    "trans": "",
    "fala": "Uma revisão breve dos receptores, apenas o que importa para as drogas de hoje. α1 contrai artérias e veias: sobe a resistência e o retorno venoso. α2 reduz a liberação de noradrenalina no terminal pré-sináptico e, no tronco encefálico, dá sedação e simpatólise, o efeito da dexmedetomidina. β1 aumenta contratilidade e frequência. β2 dilata vasos e brônquios e eleva glicemia e lactato. D1 dilata os leitos renal e mesentérico. V1 e PDE3 estão na tabela porque vasopressina e milrinona não dependem do adrenoceptor. Catecolaminas têm meia-vida de minutos e vão em infusão; fenilefrina e efedrina duram mais e são as drogas habituais de bolus. O uso prolongado dessensibiliza os receptores, sobretudo os β.",
@@ -54,8 +54,8 @@
   {
    "id": "noradrenalina",
    "seg": 40,
-   "ini": 225,
-   "fim": 265,
+   "ini": 220,
+   "fim": 260,
    "chave": "α1 potente com β1 modesto: sobe a PAM com débito em geral mantido.",
    "trans": "",
    "fala": "Começo pela noradrenalina, a droga de primeira linha no choque séptico, com ação α1 potente e efeito β1 clinicamente modesto: sobe a PAM pela resistência e pela venoconstrição, com débito em geral mantido, que pode subir pelo retorno venoso ou cair pela pós-carga, e frequência estável ou menor, por reflexo. Dose de 0,01 a 0,5 microgramas por quilo por minuto, sem teto fixo no choque refratário; no centro cirúrgico, bolus de 5 a 10 microgramas; pode começar em veia periférica calibrosa. Riscos: isquemia digital e esplâncnica, além de extravasamento.",
@@ -64,8 +64,8 @@
   {
    "id": "adrenalina",
    "seg": 40,
-   "ini": 265,
-   "fim": 305,
+   "ini": 260,
+   "fim": 300,
    "chave": "Dose baixa, β; dose alta, α. Droga da anafilaxia; terceira droga no choque séptico.",
    "trans": "",
    "fala": "Adrenalina: potente em α1, β1 e β2. O efeito depende da dose: em dose baixa predominam β1 e β2, com débito alto e resistência que pode cair; em dose alta prevalece o α1. É a droga da anafilaxia e, no choque séptico, a terceira droga. Na anafilaxia, bolus endovenosos pequenos e titulados, repetíveis a cada um ou dois minutos, com infusão se forem necessários mais de três bolus. O lactato pode subir por efeito β2, e isso não autoriza ignorar hipoperfusão.",
@@ -74,8 +74,8 @@
   {
    "id": "dopadobuta",
    "seg": 35,
-   "ini": 305,
-   "fim": 340,
+   "ini": 300,
+   "fim": 335,
    "chave": "Dobutamina para baixo débito com hipoperfusão; dopamina de uso restrito.",
    "trans": "",
    "fala": "Dobutamina: inotrópico β1 com vasodilatação β2; sobe o débito, baixa um pouco a resistência e pode baixar a PAM. Indicada no baixo débito com hipoperfusão, de 2,5 a 20 microgramas por quilo por minuto; se a PAM cair, associar vasopressor; taquicardia e arritmia limitam a dose. A dopamina, em uma frase: efeito pouco previsível, risco de taquicardia e arritmias, e a chamada dose renal não protege o rim; hoje tem uso restrito.",
@@ -84,8 +84,8 @@
   {
    "id": "milrinona",
    "seg": 55,
-   "ini": 340,
-   "fim": 395,
+   "ini": 335,
+   "fim": 390,
    "chave": "Inodilatador que age depois do receptor β; meia-vida longa e eliminação renal; costuma exigir noradrenalina.",
    "trans": "",
    "fala": "A milrinona chega ao mesmo ponto por outra via: a dobutamina aumenta a produção de AMPc pelo receptor β1; a milrinona inibe a PDE3, uma das fosfodiesterases que degradam o AMPc no miocárdio e no vaso, e por isso age depois do receptor. É um inodilatador: aumenta contratilidade e relaxamento e reduz as resistências sistêmica e pulmonar. A indicação é a disfunção ventricular com baixo débito que exige inotrópico, sobretudo quando há hipertensão pulmonar ou falência de VD. Dose: ataque de 50 microgramas por quilo em 10 minutos, muitas vezes omitido, e manutenção de 0,375 a 0,75 microgramas por quilo por minuto. Costuma exigir noradrenalina; tem eliminação renal e meia-vida bem mais longa que a da dobutamina, acumulando na insuficiência renal.",
@@ -94,8 +94,8 @@
   {
    "id": "milrdobu",
    "seg": 75,
-   "ini": 395,
-   "fim": 470,
+   "ini": 390,
+   "fim": 465,
    "chave": "Primeiro a indicação; depois o perfil: milrinona para VD e circulação pulmonar com PAM sustentada; dobutamina com pressão baixa ou para titular rápido. Na sepse, dobutamina é preferência prática, não superioridade demonstrada.",
    "trans": "",
    "fala": "Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e PAM; se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. Depois, o perfil, que está na tabela. Milrinona quando a circulação pulmonar e o VD são o problema, como na hipertensão pulmonar e na saída de CEC com resistência pulmonar alta, ou quando betabloqueio ou taquicardia limitam a dobutamina; a milrinona exige PAM sustentada, em geral com noradrenalina. Dobutamina, com vasopressor, quando o baixo débito vem com hipotensão ou vasoplegia, em que a vasodilatação e a meia-vida longa da milrinona pesam contra; na insuficiência renal; e para titulação rápida, com meia-vida de minutos. No choque séptico com disfunção miocárdica e hipoperfusão persistente, a Surviving Sepsis Campaign de 2026, a SSC, sugere dobutamina com noradrenalina, ou adrenalina, sem dados que a prefiram à milrinona: preferência prática, não superioridade demonstrada.",
@@ -104,8 +104,8 @@
   {
    "id": "fenilefedrina",
    "seg": 50,
-   "ini": 470,
-   "fim": 520,
+   "ini": 465,
+   "fim": 515,
    "chave": "Fenilefrina: hipotensão vasodilatadora com FC normal ou alta. Efedrina: com bradicardia.",
    "trans": "",
    "fala": "Agora duas aminas simpaticomiméticas que não são catecolaminas, as drogas habituais de bolus do centro cirúrgico. Fenilefrina: agonista α1 direto, praticamente sem ação β; a PAM sobe pela resistência e a frequência cai por reflexo, o que pode reduzir o débito quando ele depende da frequência; é a escolha na hipotensão vasodilatadora com frequência normal ou alta. Efedrina: age diretamente em α e β e também, de forma indireta, libera noradrenalina das terminações; sobe pressão, frequência e débito, por isso é a escolha quando há bradicardia; perde efeito com doses repetidas, em parte porque depleta a noradrenalina, e na cesárea atravessa a placenta e associa-se a mais acidose fetal que a fenilefrina.",
@@ -114,8 +114,8 @@
   {
    "id": "vasorefrat",
    "seg": 75,
-   "ini": 520,
-   "fim": 595,
+   "ini": 515,
+   "fim": 590,
    "chave": "Fora das aminas: vasopressina (V1), hidrocortisona e azul de metileno, cada uma por um mecanismo diferente.",
    "trans": "",
    "fala": "Três recursos além das aminas. A vasopressina age no receptor V1, fora da via adrenérgica, e costuma manter efeito em acidose; no choque séptico há deficiência relativa do hormônio. No choque séptico, com noradrenalina em escalada, a dose é em geral fixa, 0,03 unidades por minuto; na vasoplegia após CEC, o VANCS titulou de 0,01 a 0,06 unidades por minuto; com IECA ou BRA, bolus pequenos ou infusão titulada; o risco é isquemia digital e mesentérica. A hidrocortisona restaura a resposta vascular às catecolaminas, 200 mg por dia no choque séptico. O azul de metileno inibe a via do óxido nítrico e fica como resgate na vasoplegia refratária: após CEC, onde há mais estudos, e na reperfusão do enxerto hepático, com base em relatos, séries e um ensaio pequeno; o uso profilático não mostrou benefício em uma coorte pareada. Outras indicações, apenas para citar: metemoglobinemia e choque séptico refratário. Cuidados: deficiência de G6PD, interferência na oximetria e no BIS, e síndrome serotoninérgica, inclusive com certos opioides.",
@@ -124,8 +124,8 @@
   {
    "id": "ssc2026",
    "seg": 35,
-   "ini": 595,
-   "fim": 630,
+   "ini": 590,
+   "fim": 625,
    "chave": "Noradrenalina, depois vasopressina, depois adrenalina; inotrópico reservado à disfunção cardíaca com hipoperfusão.",
    "trans": "",
    "fala": "No choque séptico, a Surviving Sepsis Campaign, a diretriz internacional de sepse, atualizada em 2026, organiza os vasopressores em sequência: noradrenalina primeiro, cedo, mesmo por veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a PAM continuar inadequada. É o mesmo raciocínio da aula: tônus com noradrenalina, outra via com vasopressina, e inotrópico reservado à disfunção cardíaca com hipoperfusão, com volume e PAM já otimizados.",
@@ -134,8 +134,8 @@
   {
    "id": "intraop",
    "seg": 75,
-   "ini": 630,
-   "fim": 705,
+   "ini": 625,
+   "fim": 700,
    "chave": "Afastar causas, identificar o mecanismo, escolher a droga; o eco separa vasoplegia de falência de VD.",
    "trans": "",
    "fala": "No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista α1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito, inotrópico; vasoplegia refratária às catecolaminas, do pós-CEC, do uso de IECA ou BRA e da reperfusão do enxerto hepático: vasopressina, com azul de metileno como resgate; pré-carga baixa, volume. Um dado do nosso serviço ajuda nessa decisão: Gouvêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o VD de 19 pacientes selecionados em cinco fases do transplante hepático, e a função sistólica se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. Como não mediu os primeiros minutos da reperfusão, o estudo não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do VD; o que fica para a prática é o método: usar o eco para separar disfunção de VD de vasoplegia antes de escolher entre inotrópico e vasopressor.",
@@ -144,8 +144,8 @@
   {
    "id": "mensagens",
    "seg": 30,
-   "ini": 705,
-   "fim": 735,
+   "ini": 700,
+   "fim": 730,
    "chave": "A droga certa corrige o componente que falha, na menor dose e pelo menor tempo.",
    "trans": "",
    "fala": "Voltando à pergunta do início: qual componente da PAM está falhando? Vasoplegia: noradrenalina e, quando a dose sobe, vasopressina. Baixo débito com hipoperfusão: inotrópico, com a milrinona sobretudo no VD com hipertensão pulmonar. Hipotensão vasodilatadora da anestesia com bradicardia: efedrina; com frequência normal ou alta: fenilefrina. Anafilaxia: adrenalina. A droga certa corrige o componente que falha, na menor dose eficaz e pelo menor tempo.",
@@ -154,8 +154,8 @@
   {
    "id": "obrigado",
    "seg": 10,
-   "ini": 735,
-   "fim": 745,
+   "ini": 730,
+   "fim": 740,
    "chave": "Referências completas no QR code; abrir para perguntas.",
    "trans": "",
    "fala": "Obrigado pela atenção. As referências completas da aula estão no QR code. Fico à disposição para perguntas.",
