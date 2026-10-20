@@ -75,6 +75,9 @@ Os quatro achados do Codex foram confirmados e corrigidos:
   intervenções". Ressalva do Codex registrada na nota SE PERGUNTAREM do slide 14: o estudo mediu a função do VD,
   não testou a capacidade do eco de diferenciar vasoplegia de disfunção ventricular na hipotensão aguda. Revisão
   científica encerrada pelo Codex; próximo passo é o ensaio oral de cerca de 12 minutos.
+- Conferência final do Codex sobre a v36.1: aprovada (16 slides visíveis, 0 animações, notas 16/16 iguais ao guia,
+  11 min 55 s previstos, MP3 de 11 min 00 s, ZIP íntegro). Revisão científica encerrada; nenhuma alteração de
+  conteúdo antes da apresentação. Pendência apenas do Bruno: ensaio no PowerPoint com cronômetro, mirando 12 min.
 
 ## Estado anterior: versão 35 (11 min 30 s previstos), 16 slides, aula mais curta e mais fisiológica
 
