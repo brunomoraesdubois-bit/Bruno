@@ -40,7 +40,38 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 36 (11 min 55 s previstos), auditoria do Codex sobre a v35 aplicada
+## Estado atual: versão 37 (12 min 05 s previstos), revisão final de conceito e texto
+
+Pedido do Bruno: revisar tudo e confirmar que não há erro conceitual antes de enviar o PowerPoint e o áudio finais.
+Feito com seis revisores independentes (fisiologia, farmacologia, evidência, português e consistência, didática,
+"banca") e verificação adversarial de cada achado alto ou médio por duas lentes (é erro? vale mudar?). 51 achados
+brutos, 37 únicos; 2 confirmados pelas duas lentes, 6 rejeitados como erro (quatro deles com ajuste de redação
+aceito pelo editor), 29 de baixa gravidade avaliados por mim. Nenhum erro conceitual de fisiologia ou farmacologia
+foi confirmado. O que mudou:
+- Slide 3, nota: referência cruzada corrigida (causas a afastar estão no slide 14, não no 16); frase de Persichini
+  reescrita ("é evidência", não "é a prova"); maiúscula após ponto. Fala: "pressão de perfusão do órgão é a
+  diferença entre a PAM e a PVC"; "tônus vascular, sobretudo arterial"; "a droga é o vasopressor".
+- Slide 2: objetivo 3 com verbo ("Conhecer doses...") como os demais.
+- Slide 5: "fenilefrina e efedrina duram mais: são as drogas habituais de bolus" (a aula também usa bolus de
+  noradrenalina e adrenalina).
+- Slide 6: "DC em geral mantido: pode subir pelo retorno venoso ou cair pela pós-carga" (tela e fala, coerente com
+  DC ↔ (↑/↓) e com Persichini); nota: SOAP II com autor e ano; "praticamente não há vasodilatação"; grau da
+  recomendação da SSC sem "certeza alta" (não conferido); barras = efeito clínico, não afinidade.
+- Slide 10: "Age após o receptor β: efeito em grande parte preservado"; fala: "Dobutamina, junto com o vasopressor,
+  quando o baixo débito vem acompanhado de hipotensão ou vasoplegia" (desfaz a aparente contradição com a frase
+  anterior sobre vasoplegia).
+- Slide 11, fala: taquifilaxia da efedrina "em parte porque depleta a noradrenalina".
+- Slide 13, fala: "inotrópico apenas se houver disfunção cardíaca com hipoperfusão, com volume e PAM já otimizados";
+  nota: "alvo de PAM de 80–85 mmHg".
+- Slide 14, fala: "O que fica dele para a prática é o método" (não "o que ele sustenta"), alinhado à tela e à nota.
+- Slide 15: "Hipotensão vasodilatadora com FC normal ou alta → fenilefrina" (igual aos slides 11 e 14); rodapé com os
+  capítulos do Miller. Nota do slide 4: citação de Tongyoo no formato padrão; nota do slide 7: ANZCA/ANZAAG.
+- Rejeitados (mantidos): "DC em geral preservado ou alto" na vasoplegia (definição padrão, já relativizada); doses
+  do cartão ANZCA/ANZAAG (conferidas: corretas); "Alvo: tônus arterial" na tela do slide 3; meia-vida da milrinona
+  2,4 h (bula: 2,4 h em infusão contínua na IC); "30 min após a reperfusão" (conferido antes).
+- Tempos: milrinona ou dobutamina 80 s, SSC 2026 35 s; 1.527 palavras; 12 min 05 s. Áudio regenerado.
+
+## Estado anterior: versão 36 (11 min 55 s previstos), auditoria do Codex sobre a v35 aplicada
 
 Os quatro achados do Codex foram confirmados e corrigidos:
 - Slide 14 (intraoperatório): o estudo de Gouvêa e Diaz não é mais usado para concluir que a instabilidade da
