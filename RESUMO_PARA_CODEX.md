@@ -68,6 +68,13 @@ Os quatro achados do Codex foram confirmados e corrigidos:
   ensaiar mirando 12 minutos. Áudio regenerado.
 - Conferências: 16 slides, 0 ocultos, 0 animações (ODP sem nós on-click), validate.py aprovado, layout de todos os
   slides dentro do limite.
+- Conferência do Codex sobre a v36: estrutura aprovada (16 slides, 0 animações, notas 16/16, falas iguais ao guia);
+  slides 8, 10 e 14 aprovados. Último ajuste pedido e aplicado (v36.1): slide 4, "VTI na via de saída do VE:
+  estimativa seriada do volume sistólico" (o VTI isolado acompanha o volume sistólico; o débito exige a área da
+  VSVE e a frequência); fala: "o VTI na via de saída, que permite acompanhar o volume sistólico e a resposta às
+  intervenções". Ressalva do Codex registrada na nota SE PERGUNTAREM do slide 14: o estudo mediu a função do VD,
+  não testou a capacidade do eco de diferenciar vasoplegia de disfunção ventricular na hipotensão aguda. Revisão
+  científica encerrada pelo Codex; próximo passo é o ensaio oral de cerca de 12 minutos.
 
 ## Estado anterior: versão 35 (11 min 30 s previstos), 16 slides, aula mais curta e mais fisiológica
 
