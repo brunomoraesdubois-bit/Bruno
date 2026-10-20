@@ -40,7 +40,39 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 37 (12 min 05 s previstos), revisão final de conceito e texto
+## Estado atual: versão 38 (14 min 25 s previstos), 17 slides: monitores de débito ampliados, α2 corrigido
+
+Pedido do Bruno: o Glauber Gouvêa gosta de eco e monitores de débito (termodiluição etc.), então essa parte pode ser
+um pouco maior; tudo muito bem fundamentado, sem informação falsa; revisar todas as falas; e ele ouviu problema no
+áudio dos receptores, sobretudo no α2. O que mudou:
+- Áudio: "α2" não tinha forma falada e saía como "alpha two" em inglês; corrigido ("alfa dois"), junto com
+  dexmedetomidina, PiCCO, FloTrac, mL/kg e mL.
+- Slide 6 (receptores), linha α2: "Pré-sináptico; SNC (locus coeruleus); músculo liso vascular | ↓liberação de NA;
+  sedação e simpatólise central (dexmedetomidina); vasoconstrição pós-sináptica (hipertensão inicial do bolus)".
+  Fala: três localizações; nota: subtipos α2A (locus coeruleus: sedação e simpatólise) e α2B (vascular:
+  vasoconstrição e hipertensão transitória do bolus); hipotensão e bradicardia tardias por simpatólise e tônus vagal.
+  Base: revisões sobre a dexmedetomidina (α2A no locus coeruleus; α2B pós-juncional vascular).
+- Slide 4 (perfusão), fala ampliada no eco: a ESICM 2025 o coloca como primeira linha para definir o tipo de choque;
+  função de VE e VD (fração de variação de área e TAPSE), volemia pela área diastólica final do VE, pericárdio; VTI ×
+  área da via de saída = volume sistólico, seriado para a resposta a volume ou droga.
+- Slide 5 NOVO, "Monitores de débito: o que medem e onde falham": tabela com termodiluição pulmonar (cateter de
+  artéria pulmonar: referência clínica; PAP, POAP, SvO₂; invasivo e intermitente; reservado ao choque refratário,
+  disfunção de VD e hipertensão pulmonar), termodiluição transpulmonar (PiCCO/VolumeView: calibra o contorno de
+  pulso, volumes e água pulmonar extravascular), contorno de pulso não calibrado (FloTrac/ClearSight: perde acurácia
+  com RVS baixa e vasopressor; no cirrótico, erro percentual de 54% vs. termodiluição, limite aceito 30%: Biancofiore,
+  Br J Anaesth 2009), Doppler esofágico (velocidade na aorta descendente e nomograma; posição e ângulo da sonda) e ETE
+  (VS = VTI × área; FAC, TAPSE). Faixa "Responsividade a volume": condições de VPP/VVS, zona cinzenta de 9–13%
+  (Cannesson, Anesthesiology 2011), desafio de volume corrente 6 → 8 mL/kg por 1 min (Myatra, Crit Care Med 2017),
+  elevação passiva das pernas com ↑DC ≥ 10% (Monnet, Intensive Care Med 2016: metanálise, sensibilidade 85%,
+  especificidade 91%) e minidesafio de 100 mL (Biais, Anesthesiology 2017: ↑índice sistólico > 6%, sensibilidade 93%,
+  especificidade 85%). Fala de 110 s; nota SE PERGUNTAREM com os números e as fontes. As cinco referências novas foram
+  conferidas por busca (título, periódico, volume, páginas e DOI) e entraram em referencias.md (49 referências).
+- Tempos: perfusão 80 s, monitores 110 s, receptores 65 s; 1.812 palavras; 14 min 25 s.
+- Revisão de todas as falas, sentença a sentença: um revisor por slide (17) mais três lentes transversais
+  (monitorização hemodinâmica, farmacologia do autônomo, coerência), com verificação adversarial de cada achado por
+  duas lentes; resultado registrado abaixo quando aplicado.
+
+## Estado anterior: versão 37 (12 min 05 s previstos), revisão final de conceito e texto
 
 Pedido do Bruno: revisar tudo e confirmar que não há erro conceitual antes de enviar o PowerPoint e o áudio finais.
 Feito com seis revisores independentes (fisiologia, farmacologia, evidência, português e consistência, didática,

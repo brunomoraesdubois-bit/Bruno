@@ -16,7 +16,7 @@ SAIDA = os.path.join(AQUI, VOZ)
 os.makedirs(SAIDA, exist_ok=True)
 
 SIGLAS = [  # (padrão, forma falada); ordem importa
- (r"\bα1\b", "alfa §1"), (r"\bβ1\b", "beta §1"), (r"\bβ2\b", "beta §2"), (r"\bD1\b", "dê um"), (r"\bV1\b", "vê um"), (r"\bAT1\b", "á tê um"),
+ (r"\bα1\b", "alfa §1"), (r"\bα2\b", "alfa §2"), (r"\bα2A\b", "alfa dois á"), (r"\bα2B\b", "alfa dois bê"), (r"\bβ1\b", "beta §1"), (r"\bβ2\b", "beta §2"), (r"\bD1\b", "dê um"), (r"\bV1\b", "vê um"), (r"\bAT1\b", "á tê um"),
  (r"α-agonista", "alfa-agonista"), (r"\bα\b", "alfa"), (r"\bβ\b", "beta"),
  (r"\bPAM\b", "pãm"), (r"\bRVS\b", "érre vê ésse"), (r"\bRVP\b", "érre vê pê"), (r"\bDC\b", "dê cê"), (r"\bVD\b", "vê dê"), (r"\bVE\b", "vê é"),
  (r"\bFC\b", "éfe cê"), (r"\bPVC\b", "pê vê cê"), (r"\bCEC\b", "céc"), (r"\bETE\b", "ecocardiografia transesofágica"), (r"\bPDE3\b", "pê dê é três"),
@@ -29,7 +29,7 @@ SIGLAS = [  # (padrão, forma falada); ordem importa
  (r"mcg/kg/min", "microgramas por quilo por minuto"), (r"mcg/kg", "microgramas por quilo"), (r"U/min", "unidades por minuto"), (r"mg/dia", "miligramas por dia"),
  (r"\bmmHg\b", "milímetros de mercúrio"), (r"\bmcg\b", "microgramas"), (r"\bmg\b", "miligramas"), (r"\bkg\b", "quilo"), (r"\bmin\b", "minutos"),
  (r"“The hidden cost of hypotension”, de Lineburger e colaboradores,", "de Lineburguer e colaboradores sobre o custo oculto da hipotensão,"),
- (r"\bPersichini\b", "Persiquini"), (r"\bGouvêa\b", "Govêa"), (r"\b[Mm]ilrinona\b", "miurinona"),
+ (r"\bPersichini\b", "Persiquini"), (r"\bdexmedetomidina\b", "decsmedetomidina"), (r"\bPiCCO\b", "pico"), (r"\bFloTrac\b", "flôtrec"), (r"mL/kg", "mililitros por quilo"), (r"\bmL\b", "mililitros"), (r"\bVVS\b", "vê vê ésse"), (r"\bGouvêa\b", "Govêa"), (r"\b[Mm]ilrinona\b", "miurinona"),
  (r"≥", "maior ou igual a "), (r"[“”]", ""), (r"\s*▸\s*", " "),
 ]
 def numero(m):
