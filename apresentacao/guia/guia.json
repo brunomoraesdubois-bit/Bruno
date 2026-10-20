@@ -1,5 +1,5 @@
 {
- "total": 690,
+ "total": 715,
  "slides": [
   {
    "id": "cover",
@@ -76,9 +76,9 @@
    "seg": 35,
    "ini": 300,
    "fim": 335,
-   "chave": "Dobutamina para baixo débito com hipoperfusão; dopamina de uso residual.",
+   "chave": "Dobutamina para baixo débito com hipoperfusão; dopamina de uso restrito.",
    "trans": "",
-   "fala": "Dobutamina: inotrópico β1 com vasodilatação β2; sobe o débito, baixa um pouco a resistência e pode baixar a PAM. Indicada no baixo débito com hipoperfusão, de 2,5 a 20 microgramas por quilo por minuto; se a PAM cair, associar vasopressor; taquicardia e arritmia limitam a dose. A dopamina, em uma frase: efeito dose-dependente e pouco previsível, com mais taquicardia e arritmia que as outras aminas, e a dose renal não protege o rim; hoje o uso é residual.",
+   "fala": "Dobutamina: inotrópico β1 com vasodilatação β2; sobe o débito, baixa um pouco a resistência e pode baixar a PAM. Indicada no baixo débito com hipoperfusão, de 2,5 a 20 microgramas por quilo por minuto; se a PAM cair, associar vasopressor; taquicardia e arritmia limitam a dose. A dopamina, em uma frase: efeito pouco previsível, risco de taquicardia e arritmias, e a chamada dose renal não protege o rim; hoje tem uso restrito.",
    "manga": ""
   },
   {
@@ -93,19 +93,19 @@
   },
   {
    "id": "milrdobu",
-   "seg": 60,
+   "seg": 75,
    "ini": 390,
-   "fim": 450,
-   "chave": "Primeiro a indicação; depois o perfil: milrinona para VD e circulação pulmonar com PAM sustentada; dobutamina com pressão baixa ou para titular rápido.",
+   "fim": 465,
+   "chave": "Primeiro a indicação; depois o perfil: milrinona para VD e circulação pulmonar com PAM sustentada; dobutamina com pressão baixa ou para titular rápido. Na sepse, dobutamina é preferência prática, não superioridade demonstrada.",
    "trans": "",
-   "fala": "Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e PAM; se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. Depois, o perfil farmacológico, que está na tabela. Milrinona quando a circulação pulmonar e o VD são o problema, como na hipertensão pulmonar e na saída de CEC com resistência pulmonar alta, e quando o betabloqueio ou a taquicardia limitam a dobutamina; ela precisa de uma PAM sustentada, em geral com noradrenalina. Dobutamina quando a pressão está baixa ou há vasoplegia, como no choque séptico, em que a vasodilatação e a meia-vida longa da milrinona pesam contra; na insuficiência renal; e quando se quer titulação rápida, porque a meia-vida é de minutos.",
+   "fala": "Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e PAM; se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. Depois, o perfil farmacológico, que está na tabela. Milrinona quando a circulação pulmonar e o VD são o problema, como na hipertensão pulmonar e na saída de CEC com resistência pulmonar alta, e quando o betabloqueio ou a taquicardia limitam a dobutamina; ela precisa de uma PAM sustentada, em geral com noradrenalina. Dobutamina quando a pressão está baixa ou há vasoplegia, em que a vasodilatação e a meia-vida longa da milrinona pesam contra; na insuficiência renal; e quando se quer titulação rápida, porque a meia-vida é de minutos. No choque séptico com disfunção miocárdica, a SSC 2026 sugere dobutamina associada à noradrenalina, ou adrenalina isolada, e reconhece que faltam dados para preferir a dobutamina à milrinona: é preferência prática, não superioridade demonstrada.",
    "manga": "no DOREMI (n = 192, choque cardiogênico), o desfecho composto foi 49% com milrinona e 54% com dobutamina (RR 0,90; IC 95% 0,69–1,19); arritmias, hipotensão sustentada e necessidade de vasopressor também não diferiram; por isso, as diferenças da tabela são expectativa farmacológica. Na subanálise por betabloqueador (93 pacientes, 48%), o betabloqueio prévio não piorou o desfecho e não houve vantagem demonstrada da milrinona (Di Santo, Crit Care 2021). Isso não prova equivalência, mas também não mostra vantagem de uma sobre a outra. A meia-vida da milrinona é de cerca de 2,4 horas na insuficiência cardíaca e aumenta na insuficiência renal, que pede dose de manutenção menor; a da dobutamina é de cerca de 2 minutos. Sem hipoperfusão, não há benefício demonstrado de inotrópico: no OPTIME-CHF, a milrinona causou mais hipotensão e mais arritmia atrial."
   },
   {
    "id": "fenilefedrina",
    "seg": 50,
-   "ini": 450,
-   "fim": 500,
+   "ini": 465,
+   "fim": 515,
    "chave": "Fenilefrina: hipotensão vasodilatadora com FC normal ou alta. Efedrina: com bradicardia.",
    "trans": "",
    "fala": "Agora duas aminas simpaticomiméticas que não são catecolaminas, as drogas de bolus do centro cirúrgico. Fenilefrina: agonista α1 direto, praticamente sem ação β; a PAM sobe pela resistência e a frequência cai por reflexo, o que pode reduzir o débito quando ele depende da frequência; é a escolha na hipotensão vasodilatadora com frequência normal ou alta. Efedrina: age diretamente em α e β e, sobretudo, libera noradrenalina das terminações; sobe pressão, frequência e débito, por isso é a escolha quando há bradicardia; perde efeito com doses repetidas, porque depleta a noradrenalina, e na cesárea atravessa a placenta e associa-se a mais acidose fetal que a fenilefrina.",
@@ -114,8 +114,8 @@
   {
    "id": "vasorefrat",
    "seg": 55,
-   "ini": 500,
-   "fim": 555,
+   "ini": 515,
+   "fim": 570,
    "chave": "Fora das aminas: vasopressina (V1), hidrocortisona e azul de metileno, cada uma por um mecanismo diferente.",
    "trans": "",
    "fala": "Quando a via adrenérgica não basta, três recursos além das aminas. A vasopressina age no receptor V1, fora da via adrenérgica: poupa catecolamina e costuma manter efeito em acidose; no choque séptico há deficiência relativa do hormônio endógeno. Dose fixa, em geral 0,03 unidades por minuto, no choque séptico com noradrenalina em escalada, na vasoplegia após CEC e na hipotensão refratária com IECA ou BRA; o risco é isquemia digital e mesentérica. A hidrocortisona restaura a resposta vascular às catecolaminas, 200 mg por dia no choque séptico. O azul de metileno inibe a via do óxido nítrico e fica como resgate na vasoplegia refratária, como após CEC ou na reperfusão do enxerto hepático.",
@@ -124,8 +124,8 @@
   {
    "id": "ssc2026",
    "seg": 30,
-   "ini": 555,
-   "fim": 585,
+   "ini": 570,
+   "fim": 600,
    "chave": "Noradrenalina, depois vasopressina, depois adrenalina; inotrópico apenas com disfunção cardíaca e hipoperfusão.",
    "trans": "",
    "fala": "No choque séptico, a Surviving Sepsis Campaign, a diretriz internacional de sepse, atualizada em 2026, organiza os vasopressores em sequência: noradrenalina primeiro, cedo, mesmo por veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a PAM continuar inadequada. É o mesmo raciocínio da aula: tônus com noradrenalina, outra via com vasopressina, e inotrópico apenas se houver disfunção cardíaca com hipoperfusão.",
@@ -133,19 +133,19 @@
   },
   {
    "id": "intraop",
-   "seg": 65,
-   "ini": 585,
-   "fim": 650,
+   "seg": 75,
+   "ini": 600,
+   "fim": 675,
    "chave": "Afastar causas, identificar o mecanismo, escolher a droga; o eco separa vasoplegia de falência de VD.",
    "trans": "",
-   "fala": "No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista α1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito, inotrópico; vasoplegia refratária às catecolaminas, como após CEC, com IECA ou BRA ou na reperfusão do enxerto hepático, vasopressina, com azul de metileno como resgate; pré-carga baixa, volume. Um dado do nosso serviço ajuda nessa decisão: Gouvêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o ventrículo direito de 19 pacientes selecionados em cinco fases do transplante hepático, e a função sistólica do VD se manteve preservada em todas, inclusive após a reperfusão. Ou seja, nesses pacientes a instabilidade da reperfusão não se explicou por falência de VD, o que favorece tratá-la como vasoplegia, com vasopressor, e usar o eco para confirmar antes de iniciar um inotrópico.",
-   "manga": "Gouvêa G, Feiner J, Joshi S, Diaz R, et al., PLoS One 2022;17(10):e0275301: estudo observacional, 19 adultos de 18 a 65 anos, TAPSE e variação fracional de área do VD em cinco fases (basal, fase de hepatectomia, fase anepática, pós-reperfusão e fechamento); função sistólica do VD preservada nas cinco fases; excluídos hipertensão portopulmonar, síndrome hepatopulmonar, doença cardiopulmonar e insuficiência hepática fulminante. População selecionada: o estudo não permite concluir que toda hipotensão na reperfusão seja vasoplegia. TAPSE e variação fracional de área dependem da carga, e o TAPSE mede apenas a excursão longitudinal do anel lateral; normais sob anestesia, com pós-carga baixa, afastam disfunção sistólica evidente nos momentos avaliados, não medem reserva contrátil."
+   "fala": "No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista α1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito, inotrópico; vasoplegia refratária às catecolaminas, como após CEC, com IECA ou BRA ou na reperfusão do enxerto hepático, vasopressina, com azul de metileno como resgate; pré-carga baixa, volume. Um dado do nosso serviço ajuda nessa decisão: Gouvêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o ventrículo direito de 19 pacientes selecionados em cinco fases do transplante hepático, e a função sistólica do VD se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. O estudo não mediu os primeiros minutos da reperfusão, então não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do VD. O que ele sustenta é o método: usar o eco para separar disfunção de VD de vasoplegia antes de escolher entre inotrópico e vasopressor.",
+   "manga": "Gouvêa G, Feiner J, Joshi S, Diaz R, et al., PLoS One 2022;17(10):e0275301: estudo observacional, 19 adultos de 18 a 65 anos, TAPSE e variação fracional de área do VD em cinco fases (basal, fase de hepatectomia, fase anepática, 30 min após a reperfusão e fechamento); função sistólica do VD preservada nos cinco momentos; excluídos hipertensão portopulmonar, síndrome hepatopulmonar, doença cardiopulmonar e insuficiência hepática fulminante. População selecionada e medida feita 30 min depois da reperfusão: o estudo não mediu os primeiros minutos, quando ocorre a síndrome pós-reperfusão, não exclui disfunção transitória do VD nesse período e não permite atribuir a instabilidade aguda a vasoplegia. TAPSE e variação fracional de área dependem da carga, e o TAPSE mede apenas a excursão longitudinal do anel lateral; normais sob anestesia, com pós-carga baixa, afastam disfunção sistólica evidente nos momentos avaliados, não medem reserva contrátil."
   },
   {
    "id": "mensagens",
    "seg": 30,
-   "ini": 650,
-   "fim": 680,
+   "ini": 675,
+   "fim": 705,
    "chave": "A droga certa corrige o componente que falha, na menor dose e pelo menor tempo.",
    "trans": "",
    "fala": "Voltando à pergunta do início: qual componente da PAM está falhando? Vasoplegia: noradrenalina e, quando a dose sobe, vasopressina. Baixo débito com hipoperfusão: inotrópico, com a milrinona sobretudo no VD com hipertensão pulmonar. Hipotensão vasodilatadora da anestesia com bradicardia: efedrina; com taquicardia: fenilefrina. Anafilaxia: adrenalina. A droga certa corrige o componente que falha, na menor dose eficaz e pelo menor tempo.",
@@ -154,8 +154,8 @@
   {
    "id": "obrigado",
    "seg": 10,
-   "ini": 680,
-   "fim": 690,
+   "ini": 705,
+   "fim": 715,
    "chave": "Referências completas no QR code; abrir para perguntas.",
    "trans": "",
    "fala": "Obrigado pela atenção. As referências completas da aula estão no QR code. Fico à disposição para perguntas.",

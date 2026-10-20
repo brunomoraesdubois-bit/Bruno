@@ -3,9 +3,9 @@
 ## Contexto
 
 Apresentação de Bruno Dubois para uma sessão clínica de Anestesiologia e Terapia Intensiva
-sobre aminas vasoativas. Orientadores: Marcelo Bandeira e Glauber Gouvea. Duração: 15
-minutos. Público: médicos (anestesiologia e UTI). Idioma: português do Brasil. Glauber
-Gouvea e Rodrigo Diaz vão assistir.
+sobre aminas vasoativas. Orientadores: Marcelo Bandeira e Glauber Gouvea. Duração: sessão
+curta, em torno de 12 minutos (o Bruno aceitou até 10). Público: médicos (anestesiologia e
+UTI). Idioma: português do Brasil. Glauber Gouvea vai assistir; Rodrigo Diaz não estará presente.
 
 O deck foi montado no Claude (artifact "Aminas Vasoativas", tipo Slides) e depois exportado
 para este repositório.
@@ -40,7 +40,36 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 35 (11 min 30 s previstos), 16 slides, aula mais curta e mais fisiológica
+## Estado atual: versão 36 (11 min 55 s previstos), auditoria do Codex sobre a v35 aplicada
+
+Os quatro achados do Codex foram confirmados e corrigidos:
+- Slide 14 (intraoperatório): o estudo de Gouvêa e Diaz não é mais usado para concluir que a instabilidade da
+  reperfusão foi vasoplegia. Texto do slide: função sistólica do VD preservada nos momentos avaliados, inclusive
+  30 min após a reperfusão; o estudo não mediu os primeiros minutos nem a causa da instabilidade aguda; a lição é
+  usar o eco para separar disfunção de VD de vasoplegia antes de escolher entre inotrópico e vasopressor. A fala
+  diz o mesmo. A nota SE PERGUNTAREM registra a medida aos 30 min e que o estudo não exclui disfunção transitória
+  do VD no período agudo. Conferido na busca: a fase pós-reperfusão do artigo é definida como 30 min após a
+  reperfusão (PLoS One 2022;17(10):e0275301). Os números de síndrome pós-reperfusão citados pelo Codex (11 de 19,
+  bolus de adrenalina) não foram conferidos no texto completo e não entraram.
+- Slide 13 (SSC 2026): as notas estavam vazias no PPTX porque o HTML do slide tinha um <div> sem fechamento, o
+  que deixava o <aside> aninhado e invisível ao conversor. Fechado; as 16 notas foram conferidas uma a uma contra
+  o guia.json (todas presentes).
+- Slide 10 (milrinona ou dobutamina): cartão "Considere dobutamina" agora: "Hipotensão ou vasoplegia associada;
+  insuficiência renal; necessidade de titulação rápida (meia-vida de minutos). No choque séptico, a SSC 2026
+  sugere dobutamina com noradrenalina, ou adrenalina; faltam dados comparando com milrinona." A fala distingue
+  preferência prática de superioridade demonstrada. O ECR de 2026 (88 pacientes pós-CEC) citado pelo Codex não
+  foi conferido e não entrou.
+- Slide 8 (dopamina): "Efeito pouco previsível; risco de taquicardia e arritmias; a chamada dose "renal" não
+  protege o rim. Uso restrito." Fala correspondente. A comparação de arritmias fica só na nota do slide 6
+  (SOAP II, dopamina vs. noradrenalina).
+- Slide 4 (perfusão): espaçamento vertical apertado (o conteúdo chegava a 968 px; limite interno 920).
+- Contagem corrigida: a v35 tinha 1.443 palavras de fala (o resumo dizia 984, erro de contagem). A v36 tem 1.483
+  palavras; tempos recalculados (milrinona ou dobutamina 75 s, intraoperatório 75 s): 11 min 55 s. Nota da capa:
+  ensaiar mirando 12 minutos. Áudio regenerado.
+- Conferências: 16 slides, 0 ocultos, 0 animações (ODP sem nós on-click), validate.py aprovado, layout de todos os
+  slides dentro do limite.
+
+## Estado anterior: versão 35 (11 min 30 s previstos), 16 slides, aula mais curta e mais fisiológica
 
 Pedido do Bruno (revisão slide a slide): menos estudos, mais fisiologia e drogas; falas sem antecipar o slide
 seguinte; sessão curta (10 minutos não é problema). O que mudou:
@@ -69,7 +98,7 @@ seguinte; sessão curta (10 minutos não é problema). O que mudou:
   cinco fases, inclusive após a reperfusão: a instabilidade da reperfusão não se explicou por falência de VD, o que
   favorece tratá-la como vasoplegia e confirmar pelo eco antes do inotrópico).
 - Transições de antecipação retiradas de todos os slides; cada fala abre com a sua própria introdução.
-- 984 palavras; 11 min 30 s previstos. Áudio regenerado.
+- 1.443 palavras de fala (o texto anterior desta linha dizia 984, por erro); 11 min 30 s previstos. Áudio regenerado.
 
 ## Estado anterior: versão 34 (13 min 30 s previstos), slides prontos, sem cliques internos
 
