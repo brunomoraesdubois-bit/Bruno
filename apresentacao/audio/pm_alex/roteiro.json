@@ -17,8 +17,8 @@
   "slide": 3,
   "id": "fisiologia",
   "titulo": "Determinantes da pressão arterial média",
-  "segundos": 44.7,
-  "texto": "Slide três. Determinantes da pressão arterial média. Começo pela fisiologia. Na prática, a pãm é o débito cardíaco multiplicado pela resistência vascular sistêmica, somado à pressão venosa central. Como a pê vê cê costuma ser baixa, a pãm depende sobretudo do débito e da resistência; quando a pê vê cê sobe, o que cai é a perfusão, porque o órgão recebe a diferença entre a pãm e a pê vê cê. Três situações. Na vasoplegia o problema é o tônus arterial, como na sepse, na anestesia geral e no bloqueio de neuroeixo: o alvo é o vasopressor. Na falência de bomba o débito é baixo e a resistência em geral alta: o alvo é a contratilidade. Na pré-carga baixa, a hipovolemia pede volume; o alfa 1 contrai veias e recruta volume não estressado, mas não substitui a reposição."
+  "segundos": 49.5,
+  "texto": "Slide três. Determinantes da pressão arterial média. Começo pela fisiologia. Na prática, a pãm é o débito cardíaco multiplicado pela resistência vascular sistêmica, somado à pressão venosa central. Como a pê vê cê costuma ser baixa, a pãm depende sobretudo do débito e da resistência; quando a pê vê cê sobe, o que cai é a perfusão, porque a pressão de perfusão do órgão é a diferença entre a pãm e a pê vê cê. Três situações. Na vasoplegia o problema é o tônus vascular, sobretudo arterial, como na sepse, na anestesia geral e no bloqueio de neuroeixo: a droga é o vasopressor. Na falência de bomba o débito é baixo e a resistência em geral alta: o alvo é a contratilidade. Na pré-carga baixa, a hipovolemia pede volume; o alfa 1 contrai veias e recruta volume não estressado, mas não substitui a reposição."
  },
  {
   "slide": 4,
@@ -31,15 +31,15 @@
   "slide": 5,
   "id": "receptores",
   "titulo": "Receptores das aminas",
-  "segundos": 43.9,
-  "texto": "Slide cinco. Receptores das aminas. Uma revisão breve dos receptores, apenas o que importa para as drogas de hoje. alfa 1 contrai artérias e veias: sobe a resistência e o retorno venoso. αdois, pré-sináptico, reduz a liberação de noradrenalina; é o alvo da dexmedetomidina. beta 1 aumenta contratilidade e frequência. beta 2 dilata vasos e brônquios e eleva glicemia e lactato. dê um dilata os leitos renal e mesentérico. vê um e pê dê é três estão na tabela porque vasopressina e miurinona não dependem do adrenoceptor. Dois pontos práticos: as catecolaminas têm meia-vida de minutos, por isso vão em geral em infusão; fenilefrina e efedrina duram mais e permitem bolus. E o uso prolongado dessensibiliza os receptores."
+  "segundos": 45.0,
+  "texto": "Slide cinco. Receptores das aminas. Uma revisão breve dos receptores, apenas o que importa para as drogas de hoje. alfa 1 contrai artérias e veias: sobe a resistência e o retorno venoso. αdois, pré-sináptico, reduz a liberação de noradrenalina; é o alvo da dexmedetomidina. beta 1 aumenta contratilidade e frequência. beta 2 dilata vasos e brônquios e eleva glicemia e lactato. dê um dilata os leitos renal e mesentérico. vê um e pê dê é três estão na tabela porque vasopressina e miurinona não dependem do adrenoceptor. Dois pontos práticos: as catecolaminas têm meia-vida de minutos, por isso vão em geral em infusão; fenilefrina e efedrina duram mais, por isso são as drogas habituais de bolus. E o uso prolongado dessensibiliza os receptores."
  },
  {
   "slide": 6,
   "id": "noradrenalina",
   "titulo": "Noradrenalina",
-  "segundos": 35.8,
-  "texto": "Slide seis. Noradrenalina. Começo pela noradrenalina, a droga de primeira linha no choque séptico, com ação alfa 1 potente e beta 1 modesta: sobe a pãm pela resistência e pela venoconstrição, com débito em geral mantido, podendo cair pela pós-carga, e frequência estável ou menor, por reflexo. Dose de zero vírgula zero um a zero vírgula cinco microgramas por quilo por minuto, sem teto fixo no choque refratário; no centro cirúrgico, bolus de cinco a dez microgramas; pode começar em veia periférica calibrosa. Riscos: isquemia digital e esplâncnica, além de extravasamento."
+  "segundos": 37.4,
+  "texto": "Slide seis. Noradrenalina. Começo pela noradrenalina, a droga de primeira linha no choque séptico, com ação alfa 1 potente e beta 1 modesta: sobe a pãm pela resistência e pela venoconstrição, com débito em geral mantido, que pode subir pelo retorno venoso ou cair pela pós-carga, e frequência estável ou menor, por reflexo. Dose de zero vírgula zero um a zero vírgula cinco microgramas por quilo por minuto, sem teto fixo no choque refratário; no centro cirúrgico, bolus de cinco a dez microgramas; pode começar em veia periférica calibrosa. Riscos: isquemia digital e esplâncnica, além de extravasamento."
  },
  {
   "slide": 7,
@@ -66,15 +66,15 @@
   "slide": 10,
   "id": "milrdobu",
   "titulo": "Milrinona ou dobutamina: quando escolher",
-  "segundos": 68.8,
-  "texto": "Slide dez. miurinona ou dobutamina: quando escolher. Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e pãm; se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. Depois, o perfil farmacológico, que está na tabela. miurinona quando a circulação pulmonar e o vê dê são o problema, como na hipertensão pulmonar e na saída de céc com resistência pulmonar alta, e quando o betabloqueio ou a taquicardia limitam a dobutamina; ela precisa de uma pãm sustentada, em geral com noradrenalina. Dobutamina quando a pressão está baixa ou há vasoplegia, em que a vasodilatação e a meia-vida longa da miurinona pesam contra; na insuficiência renal; e quando se quer titulação rápida, porque a meia-vida é de minutos. No choque séptico com disfunção miocárdica, a ésse ésse cê dois mil e vinte e seis sugere dobutamina associada à noradrenalina, ou adrenalina isolada, e reconhece que faltam dados para preferir a dobutamina à miurinona: é preferência prática, não superioridade demonstrada."
+  "segundos": 71.7,
+  "texto": "Slide dez. miurinona ou dobutamina: quando escolher. Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e pãm; se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. Depois, o perfil farmacológico, que está na tabela. miurinona quando a circulação pulmonar e o vê dê são o problema, como na hipertensão pulmonar e na saída de céc com resistência pulmonar alta, e quando o betabloqueio ou a taquicardia limitam a dobutamina; ela precisa de uma pãm sustentada, em geral com noradrenalina. Dobutamina, junto com o vasopressor, quando o baixo débito vem acompanhado de hipotensão ou vasoplegia, em que a vasodilatação e a meia-vida longa da miurinona pesam contra; na insuficiência renal; e quando se quer titulação rápida, porque a meia-vida é de minutos. No choque séptico com disfunção miocárdica, a ésse ésse cê dois mil e vinte e seis sugere dobutamina associada à noradrenalina, ou adrenalina isolada, e reconhece que faltam dados para preferir a dobutamina à miurinona: é preferência prática, não superioridade demonstrada."
  },
  {
   "slide": 11,
   "id": "fenilefedrina",
   "titulo": "Fenilefrina e efedrina",
-  "segundos": 43.2,
-  "texto": "Slide onze. Fenilefrina e efedrina. Agora duas aminas simpaticomiméticas que não são catecolaminas, as drogas de bolus do centro cirúrgico. Fenilefrina: agonista alfa 1 direto, praticamente sem ação beta; a pãm sobe pela resistência e a frequência cai por reflexo, o que pode reduzir o débito quando ele depende da frequência; é a escolha na hipotensão vasodilatadora com frequência normal ou alta. Efedrina: age diretamente em alfa e beta e, sobretudo, libera noradrenalina das terminações; sobe pressão, frequência e débito, por isso é a escolha quando há bradicardia; perde efeito com doses repetidas, porque depleta a noradrenalina, e na cesárea atravessa a placenta e associa-se a mais acidose fetal que a fenilefrina."
+  "segundos": 43.8,
+  "texto": "Slide onze. Fenilefrina e efedrina. Agora duas aminas simpaticomiméticas que não são catecolaminas, as drogas de bolus do centro cirúrgico. Fenilefrina: agonista alfa 1 direto, praticamente sem ação beta; a pãm sobe pela resistência e a frequência cai por reflexo, o que pode reduzir o débito quando ele depende da frequência; é a escolha na hipotensão vasodilatadora com frequência normal ou alta. Efedrina: age diretamente em alfa e beta e, sobretudo, libera noradrenalina das terminações; sobe pressão, frequência e débito, por isso é a escolha quando há bradicardia; perde efeito com doses repetidas, em parte porque depleta a noradrenalina, e na cesárea atravessa a placenta e associa-se a mais acidose fetal que a fenilefrina."
  },
  {
   "slide": 12,
@@ -87,22 +87,22 @@
   "slide": 13,
   "id": "ssc2026",
   "titulo": "Choque séptico: a sequência da SSC 2026",
-  "segundos": 33.1,
-  "texto": "Slide treze. Choque séptico: a sequência da ésse ésse cê dois mil e vinte e seis. No choque séptico, a Survaiving Sépsis Campeim, a diretriz internacional de sepse, atualizada em dois mil e vinte e seis, organiza os vasopressores em sequência: noradrenalina primeiro, cedo, mesmo por veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a pãm continuar inadequada. É o mesmo raciocínio da aula: tônus com noradrenalina, outra via com vasopressina, e inotrópico apenas se houver disfunção cardíaca com hipoperfusão."
+  "segundos": 35.3,
+  "texto": "Slide treze. Choque séptico: a sequência da ésse ésse cê dois mil e vinte e seis. No choque séptico, a Survaiving Sépsis Campeim, a diretriz internacional de sepse, atualizada em dois mil e vinte e seis, organiza os vasopressores em sequência: noradrenalina primeiro, cedo, mesmo por veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a pãm continuar inadequada. É o mesmo raciocínio da aula: tônus com noradrenalina, outra via com vasopressina, e inotrópico apenas se houver disfunção cardíaca com hipoperfusão, com volume e pãm já otimizados."
  },
  {
   "slide": 14,
   "id": "intraop",
   "titulo": "Escolha da droga no intraoperatório",
-  "segundos": 72.6,
-  "texto": "Slide catorze. Escolha da droga no intraoperatório. No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista alfa 1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito, inotrópico; vasoplegia refratária às catecolaminas, como após céc, com iéca ou bê érre á ou na reperfusão do enxerto hepático, vasopressina, com azul de metileno como resgate; pré-carga baixa, volume. Um dado do nosso serviço ajuda nessa decisão: Govêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o ventrículo direito de dezenove pacientes selecionados em cinco fases do transplante hepático, e a função sistólica do vê dê se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. O estudo não mediu os primeiros minutos da reperfusão, então não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do vê dê. O que ele sustenta é o método: usar o eco para separar disfunção de vê dê de vasoplegia antes de escolher entre inotrópico e vasopressor."
+  "segundos": 73.5,
+  "texto": "Slide catorze. Escolha da droga no intraoperatório. No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista alfa 1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito, inotrópico; vasoplegia refratária às catecolaminas, como após céc, com iéca ou bê érre á ou na reperfusão do enxerto hepático, vasopressina, com azul de metileno como resgate; pré-carga baixa, volume. Um dado do nosso serviço ajuda nessa decisão: Govêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o ventrículo direito de dezenove pacientes selecionados em cinco fases do transplante hepático, e a função sistólica do vê dê se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. O estudo não mediu os primeiros minutos da reperfusão, então não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do vê dê. O que fica dele para a prática é o método: usar o eco para separar disfunção de vê dê de vasoplegia antes de escolher entre inotrópico e vasopressor."
  },
  {
   "slide": 15,
   "id": "mensagens",
   "titulo": "Problema hemodinâmico e droga de escolha",
-  "segundos": 31.5,
-  "texto": "Slide quinze. Problema hemodinâmico e droga de escolha. Voltando à pergunta do início: qual componente da pãm está falhando? Vasoplegia: noradrenalina e, quando a dose sobe, vasopressina. Baixo débito com hipoperfusão: inotrópico, com a miurinona sobretudo no vê dê com hipertensão pulmonar. Hipotensão vasodilatadora da anestesia com bradicardia: efedrina; com taquicardia: fenilefrina. Anafilaxia: adrenalina. A droga certa corrige o componente que falha, na menor dose eficaz e pelo menor tempo."
+  "segundos": 32.1,
+  "texto": "Slide quinze. Problema hemodinâmico e droga de escolha. Voltando à pergunta do início: qual componente da pãm está falhando? Vasoplegia: noradrenalina e, quando a dose sobe, vasopressina. Baixo débito com hipoperfusão: inotrópico, com a miurinona sobretudo no vê dê com hipertensão pulmonar. Hipotensão vasodilatadora da anestesia com bradicardia: efedrina; com frequência normal ou alta: fenilefrina. Anafilaxia: adrenalina. A droga certa corrige o componente que falha, na menor dose eficaz e pelo menor tempo."
  },
  {
   "slide": 16,
