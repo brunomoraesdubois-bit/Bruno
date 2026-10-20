@@ -56,6 +56,13 @@ minutos. O que mudou:
 - v43: slide 5 (receptores) estava montado como quatro tabelas com larguras diferentes (colunas desalinhadas);
   unificado em uma tabela; linha do α2 mais curta; fala reduzida para 113 palavras (50 s), sem a hipertensão do
   bolus de dexmedetomidina na fala (fica na tela e na nota). 12 min 25 s. Áudio regenerado.
+- v43, slide 4: fala do eco mais curta (115 palavras, 55 s) e conferida por buscas e por três verificadores
+  independentes com fontes (ESICM 2025: eco "sugerido" como imagem de primeira linha; ASE/EACVI 2015: TAPSE < 17 mm e
+  variação fracional de área < 35%; equação de continuidade VS = área × VTI; Monnet 2016 para a elevação passiva das
+  pernas; área diastólica final do VE como índice estático). Todas as afirmações foram confirmadas; ajustes aplicados:
+  "é sugerido como imagem de primeira linha" (recomendação fraca), FAC/TAPSE e a fórmula saem da fala e ficam na nota,
+  "marcadores lidos em conjunto", limiares de 10% (elevação das pernas) e 10 a 15% (prova de volume) separados na nota,
+  TAPSE ao ETE com M-mode anatômico transgástrico ou TAPSE modificado. 12 min 20 s. Áudio regenerado.
 
 ## Estado anterior: versão 38 a 41 (14 a 15 min previstos), 17 slides: monitores de débito ampliados, α2 corrigido
 
