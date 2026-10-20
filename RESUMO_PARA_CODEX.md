@@ -101,6 +101,12 @@ um pouco maior; tudo muito bem fundamentado, sem informação falsa; revisar tod
   - Mantidos após verificação: "DC em geral preservado ou alto" na vasoplegia; "Gouvêa, Diaz e colaboradores"
     (pedido do Bruno); "aminas vasoativas" como título.
 - Tempos finais: monitores 115 s, receptores 75 s, adrenalina 40 s, além das aminas 95 s; 1.991 palavras; 15 min 25 s.
+- Conferência do Codex sobre a v40: favorável; números dos monitores confirmados nos estudos originais; três ressalvas
+  aplicadas na v41: (1) slide 4, fala: "dimensões cavitárias como pistas de enchimento, sem definir isoladamente a
+  resposta a volume" no lugar de "volemia pela área diastólica do VE"; (2) slide 5: o erro de 54% do FloTrac é de um
+  estudo de 2009 com versão anterior do aparelho (tela e fala); (3) slide 13, fala: síndrome serotoninérgica "com
+  serotoninérgicos, inclusive certos opioides". Também: "transesofágico ou transtorácico à beira do leito" (slide 4).
+  O Codex considera que 15 min 25 s cabem (margem até 18 min) e recomenda manter o slide 5 completo. Áudio regenerado.
 
 ## Estado anterior: versão 37 (12 min 05 s previstos), revisão final de conceito e texto
 
