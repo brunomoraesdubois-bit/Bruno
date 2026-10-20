@@ -24,98 +24,91 @@
   "slide": 4,
   "id": "perfusao",
   "titulo": "Como avaliar a perfusão no intraoperatório",
-  "segundos": 66.7,
-  "texto": "Slide quatro. Como avaliar a perfusão no intraoperatório. Mas pressão não é fluxo: uma resistência alta pode manter a pãm com débito baixo. No intraoperatório a perfusão raramente é medida de forma direta, então o caminho é combinar métodos. O eco, transesofágico ou transtorácico à beira do leito, é o primeiro recurso para definir o tipo de choque, e a diretriz europeia de terapia intensiva de dois mil e vinte e cinco o sugere como primeira linha de imagem para isso: função do vê é e do vê dê, com a variação fracional de área e o tápsi para o vê dê; dimensões cavitárias como pistas de enchimento, sem definir isoladamente a resposta a volume; pericárdio; e o vê tê i na via de saída, que multiplicado pela área da via de saída dá o volume sistólico e, repetido, mostra a resposta a volume ou a droga. Os monitores de débito dão o número, contínuo ou seriado, e a resposta a uma intervenção. E os marcadores de perfusão tissular dizem se o fluxo está bastando: lactato e sua tendência, saturação venosa central, gap de CO₂, diurese, enchimento capilar e temperatura das extremidades. A decisão de usar inotrópico vem daí, não da pressão."
+  "segundos": 52.6,
+  "texto": "Slide quatro. Como avaliar a perfusão no intraoperatório. Mas pressão não é fluxo: uma resistência alta pode manter a pãm com débito baixo. No intraoperatório o caminho é combinar métodos. O eco, transesofágico ou transtorácico à beira do leito, é o primeiro recurso para definir o tipo de choque: função do vê é e do vê dê, com a variação fracional de área e o tápsi; dimensões cavitárias como pistas de enchimento; pericárdio; e o vê tê i na via de saída, que vezes a área dá o volume sistólico e, repetido, mostra a resposta a volume ou a droga. Os monitores de débito dão o número e a resposta a uma intervenção. E os marcadores de perfusão tissular dizem se o fluxo está bastando: lactato e sua tendência, saturação venosa central, gap de CO₂, diurese, enchimento capilar e temperatura das extremidades. A decisão de usar inotrópico vem daí, não da pressão."
  },
  {
   "slide": 5,
-  "id": "monitores",
-  "titulo": "Monitores de débito: o que medem e onde falham",
-  "segundos": 108.3,
-  "texto": "Slide cinco. Monitores de débito: o que medem e onde falham. Monitores de débito: o que cada um mede e onde falha. A termodiluição pelo cateter de artéria pulmonar continua a referência clínica: bolus frio no átrio direito e curva de temperatura na artéria pulmonar; dá também as pressões pulmonares e a saturação venosa mista; é invasiva e, no modo clássico, intermitente; fica sugerida sobretudo no choque refratário, na disfunção de vê dê e na hipertensão pulmonar. A termodiluição transpulmonar, como o pico, lê o bolus em artéria femoral, calibra o contorno de pulso e estima volumes cardíacos e água pulmonar extravascular. O contorno de pulso não calibrado, como o flôtrec, estima o volume sistólico pela forma da onda arterial; é contínuo e pouco invasivo, mas perde acurácia quando o tônus vascular muda, com resistência baixa ou vasopressor: no cirrótico, em um estudo de dois mil e nove com uma versão anterior do flôtrec, o erro contra a termodiluição chegou a cinquenta e quatro por cento, bem acima dos trinta por cento aceitáveis. O Doppler esofágico estima o volume sistólico pela velocidade na aorta descendente e um nomograma; depende da posição e do ângulo da sonda. vê pê pê e vê vê ésse exigem ventilação controlada sem esforço, volume corrente de pelo menos oito mililitros/quilo, ritmo regular, tórax fechado, sem disfunção de vê dê nem hipertensão intra-abdominal; para a vê pê pê, entre nove e treze por cento há uma zona cinzenta. Quando a limitação é o volume corrente baixo, mantidas as demais condições: desafio de volume corrente, de seis para oito mililitros/quilo por um minuto. Fora dessas condições: elevação passiva das pernas, com aumento do débito de dez por cento ou mais, ou minidesafio de cem mililitros, medindo o débito, não a pressão."
+  "id": "receptores",
+  "titulo": "Receptores das aminas",
+  "segundos": 56.3,
+  "texto": "Slide cinco. Receptores das aminas. Uma revisão breve dos receptores, apenas o que importa para as drogas de hoje. alfa 1 contrai artérias e veias: sobe a resistência e o retorno venoso. alfa 2: pré-sináptico, reduz a liberação de noradrenalina; no tronco encefálico, sedação e simpatólise, o efeito da decsmedetomidina; no músculo liso vascular, vasoconstrição, que explica a hipertensão transitória do bolus de decsmedetomidina. beta 1 aumenta contratilidade e frequência. beta 2 dilata vasos e brônquios e eleva glicemia e lactato. dê um dilata os leitos renal e mesentérico. vê um e pê dê é três estão na tabela porque vasopressina e miurinona não dependem do adrenoceptor. Dois pontos práticos: as catecolaminas têm meia-vida de minutos, por isso vão em geral em infusão; fenilefrina e efedrina duram mais, por isso são as drogas habituais de bolus. E o uso prolongado dessensibiliza os receptores, sobretudo os beta."
  },
  {
   "slide": 6,
-  "id": "receptores",
-  "titulo": "Receptores das aminas",
-  "segundos": 65.9,
-  "texto": "Slide seis. Receptores das aminas. Uma revisão breve dos receptores, apenas o que importa para as drogas de hoje. alfa 1 contrai artérias e veias: sobe a resistência e o retorno venoso. alfa 2 está em três lugares que importam aqui: pré-sináptico, reduzindo a liberação de noradrenalina; no sistema nervoso central, com sedação pelo locus coeruleus e simpatólise pelos centros vasomotores do tronco encefálico, que é o efeito da decsmedetomidina; e no músculo liso vascular, onde a noradrenalina e a adrenalina também agem, somando vasoconstrição, e onde um bolus de decsmedetomidina causa hipertensão transitória. beta 1 aumenta contratilidade e frequência. beta 2 dilata vasos e brônquios e eleva glicemia e lactato. dê um dilata os leitos renal e mesentérico. vê um e pê dê é três estão na tabela porque vasopressina e miurinona não dependem do adrenoceptor. Dois pontos práticos: as catecolaminas têm meia-vida de minutos, por isso vão em geral em infusão; fenilefrina e efedrina duram mais, por isso são as drogas habituais de bolus. E o uso prolongado dessensibiliza os receptores, sobretudo os beta."
+  "id": "noradrenalina",
+  "titulo": "Noradrenalina",
+  "segundos": 38.3,
+  "texto": "Slide seis. Noradrenalina. Começo pela noradrenalina, a droga de primeira linha no choque séptico, com ação alfa 1 potente e efeito beta 1 clinicamente modesto: sobe a pãm pela resistência e pela venoconstrição, com débito em geral mantido, que pode subir pelo retorno venoso ou cair pela pós-carga, e frequência estável ou menor, por reflexo. Dose de zero vírgula zero um a zero vírgula cinco microgramas por quilo por minuto, sem teto fixo no choque refratário; no centro cirúrgico, bolus de cinco a dez microgramas; pode começar em veia periférica calibrosa. Riscos: isquemia digital e esplâncnica, além de extravasamento."
  },
  {
   "slide": 7,
-  "id": "noradrenalina",
-  "titulo": "Noradrenalina",
-  "segundos": 38.5,
-  "texto": "Slide sete. Noradrenalina. Começo pela noradrenalina, a droga de primeira linha no choque séptico, com ação alfa 1 potente e efeito beta 1 clinicamente modesto: sobe a pãm pela resistência e pela venoconstrição, com débito em geral mantido, que pode subir pelo retorno venoso ou cair pela pós-carga, e frequência estável ou menor, por reflexo. Dose de zero vírgula zero um a zero vírgula cinco microgramas por quilo por minuto, sem teto fixo no choque refratário; no centro cirúrgico, bolus de cinco a dez microgramas; pode começar em veia periférica calibrosa. Riscos: isquemia digital e esplâncnica, além de extravasamento."
- },
- {
-  "slide": 8,
   "id": "adrenalina",
   "titulo": "Adrenalina",
   "segundos": 33.6,
-  "texto": "Slide oito. Adrenalina. Adrenalina: potente em alfa 1, beta 1 e beta 2. O efeito depende da dose: em dose baixa predominam beta 1 e beta 2, com débito alto e resistência que pode cair; em dose alta prevalece o alfa 1. É a droga da anafilaxia e, no choque séptico, a terceira droga. Na anafilaxia, bolus endovenosos pequenos e titulados, repetíveis a cada um ou dois minutos, com infusão se forem necessários mais de três bolus. O lactato pode subir por efeito beta 2, e isso não autoriza ignorar hipoperfusão."
+  "texto": "Slide sete. Adrenalina. Adrenalina: potente em alfa 1, beta 1 e beta 2. O efeito depende da dose: em dose baixa predominam beta 1 e beta 2, com débito alto e resistência que pode cair; em dose alta prevalece o alfa 1. É a droga da anafilaxia e, no choque séptico, a terceira droga. Na anafilaxia, bolus endovenosos pequenos e titulados, repetíveis a cada um ou dois minutos, com infusão se forem necessários mais de três bolus. O lactato pode subir por efeito beta 2, e isso não autoriza ignorar hipoperfusão."
  },
  {
-  "slide": 9,
+  "slide": 8,
   "id": "dopadobuta",
   "titulo": "Dobutamina e dopamina",
   "segundos": 30.7,
-  "texto": "Slide nove. Dobutamina e dopamina. Dobutamina: inotrópico beta 1 com vasodilatação beta 2; sobe o débito, baixa um pouco a resistência e pode baixar a pãm. Indicada no baixo débito com hipoperfusão, de dois vírgula cinco a vinte microgramas por quilo por minuto; se a pãm cair, associar vasopressor; taquicardia e arritmia limitam a dose. A dopamina, em uma frase: efeito pouco previsível, risco de taquicardia e arritmias, e a chamada dose renal não protege o rim; hoje tem uso restrito."
+  "texto": "Slide oito. Dobutamina e dopamina. Dobutamina: inotrópico beta 1 com vasodilatação beta 2; sobe o débito, baixa um pouco a resistência e pode baixar a pãm. Indicada no baixo débito com hipoperfusão, de dois vírgula cinco a vinte microgramas por quilo por minuto; se a pãm cair, associar vasopressor; taquicardia e arritmia limitam a dose. A dopamina, em uma frase: efeito pouco previsível, risco de taquicardia e arritmias, e a chamada dose renal não protege o rim; hoje tem uso restrito."
  },
  {
-  "slide": 10,
+  "slide": 9,
   "id": "milrinona",
   "titulo": "Milrinona",
   "segundos": 54.3,
-  "texto": "Slide dez. miurinona. A miurinona chega ao mesmo ponto por outra via: a dobutamina aumenta a produção de a ême pê cíclico pelo receptor beta 1; a miurinona inibe a pê dê é três, uma das fosfodiesterases que degradam o a ême pê cíclico no miocárdio e no vaso, e por isso age depois do receptor. É um inodilatador: aumenta contratilidade e relaxamento e reduz as resistências sistêmica e pulmonar. A indicação é a disfunção ventricular com baixo débito que exige inotrópico, sobretudo quando há hipertensão pulmonar ou falência de vê dê. Dose: ataque de cinquenta microgramas por quilo em dez minutos, muitas vezes omitido, e manutenção de zero vírgula trezentos e setenta e cinco a zero vírgula setenta e cinco microgramas por quilo por minuto. Costuma exigir noradrenalina; tem eliminação renal e meia-vida bem mais longa que a da dobutamina, acumulando na insuficiência renal."
+  "texto": "Slide nove. miurinona. A miurinona chega ao mesmo ponto por outra via: a dobutamina aumenta a produção de a ême pê cíclico pelo receptor beta 1; a miurinona inibe a pê dê é três, uma das fosfodiesterases que degradam o a ême pê cíclico no miocárdio e no vaso, e por isso age depois do receptor. É um inodilatador: aumenta contratilidade e relaxamento e reduz as resistências sistêmica e pulmonar. A indicação é a disfunção ventricular com baixo débito que exige inotrópico, sobretudo quando há hipertensão pulmonar ou falência de vê dê. Dose: ataque de cinquenta microgramas por quilo em dez minutos, muitas vezes omitido, e manutenção de zero vírgula trezentos e setenta e cinco a zero vírgula setenta e cinco microgramas por quilo por minuto. Costuma exigir noradrenalina; tem eliminação renal e meia-vida bem mais longa que a da dobutamina, acumulando na insuficiência renal."
+ },
+ {
+  "slide": 10,
+  "id": "milrdobu",
+  "titulo": "Milrinona ou dobutamina: quando escolher",
+  "segundos": 69.5,
+  "texto": "Slide dez. miurinona ou dobutamina: quando escolher. Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e pãm; se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. Depois, o perfil, que está na tabela. miurinona quando a circulação pulmonar e o vê dê são o problema, como na hipertensão pulmonar e na saída de céc com resistência pulmonar alta, ou quando betabloqueio ou taquicardia limitam a dobutamina; a miurinona exige pãm sustentada, em geral com noradrenalina. Dobutamina, com vasopressor, quando o baixo débito vem com hipotensão ou vasoplegia, em que a vasodilatação e a meia-vida longa da miurinona pesam contra; na insuficiência renal; e para titulação rápida, com meia-vida de minutos. No choque séptico com disfunção miocárdica e hipoperfusão persistente, a Survaiving Sépsis Campeim de dois mil e vinte e seis, a ésse ésse cê, sugere dobutamina com noradrenalina, ou adrenalina, sem dados que a prefiram à miurinona: preferência prática, não superioridade demonstrada."
  },
  {
   "slide": 11,
-  "id": "milrdobu",
-  "titulo": "Milrinona ou dobutamina: quando escolher",
-  "segundos": 75.1,
-  "texto": "Slide onze. miurinona ou dobutamina: quando escolher. Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e pãm; se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. Depois, o perfil farmacológico, que está na tabela. miurinona quando a circulação pulmonar e o vê dê são o problema, como na hipertensão pulmonar e na saída de céc com resistência pulmonar alta, e quando o betabloqueio ou a taquicardia limitam a dobutamina; a miurinona precisa de uma pãm sustentada, em geral com noradrenalina. Dobutamina, junto com o vasopressor, quando o baixo débito vem acompanhado de hipotensão ou vasoplegia, em que a vasodilatação e a meia-vida longa da miurinona pesam contra; na insuficiência renal; e quando se quer titulação rápida, porque a meia-vida é de minutos. No choque séptico com disfunção miocárdica e hipoperfusão persistente, a Survaiving Sépsis Campeim de dois mil e vinte e seis, a ésse ésse cê, sugere dobutamina associada à noradrenalina, ou adrenalina isolada, e reconhece que faltam dados para preferir a dobutamina à miurinona: é preferência prática, não superioridade demonstrada."
+  "id": "fenilefedrina",
+  "titulo": "Fenilefrina e efedrina",
+  "segundos": 44.3,
+  "texto": "Slide onze. Fenilefrina e efedrina. Agora duas aminas simpaticomiméticas que não são catecolaminas, as drogas habituais de bolus do centro cirúrgico. Fenilefrina: agonista alfa 1 direto, praticamente sem ação beta; a pãm sobe pela resistência e a frequência cai por reflexo, o que pode reduzir o débito quando ele depende da frequência; é a escolha na hipotensão vasodilatadora com frequência normal ou alta. Efedrina: age diretamente em alfa e beta e também, de forma indireta, libera noradrenalina das terminações; sobe pressão, frequência e débito, por isso é a escolha quando há bradicardia; perde efeito com doses repetidas, em parte porque depleta a noradrenalina, e na cesárea atravessa a placenta e associa-se a mais acidose fetal que a fenilefrina."
  },
  {
   "slide": 12,
-  "id": "fenilefedrina",
-  "titulo": "Fenilefrina e efedrina",
-  "segundos": 44.4,
-  "texto": "Slide doze. Fenilefrina e efedrina. Agora duas aminas simpaticomiméticas que não são catecolaminas, as drogas habituais de bolus do centro cirúrgico. Fenilefrina: agonista alfa 1 direto, praticamente sem ação beta; a pãm sobe pela resistência e a frequência cai por reflexo, o que pode reduzir o débito quando ele depende da frequência; é a escolha na hipotensão vasodilatadora com frequência normal ou alta. Efedrina: age diretamente em alfa e beta e também, de forma indireta, libera noradrenalina das terminações; sobe pressão, frequência e débito, por isso é a escolha quando há bradicardia; perde efeito com doses repetidas, em parte porque depleta a noradrenalina, e na cesárea atravessa a placenta e associa-se a mais acidose fetal que a fenilefrina."
+  "id": "vasorefrat",
+  "titulo": "Além das aminas",
+  "segundos": 71.8,
+  "texto": "Slide doze. Além das aminas. Três recursos além das aminas. A vasopressina age no receptor vê um, fora da via adrenérgica, e costuma manter efeito em acidose; no choque séptico há deficiência relativa do hormônio. No choque séptico, com noradrenalina em escalada, a dose é em geral fixa, zero vírgula zero três unidades por minuto; na vasoplegia após céc, o VANCS titulou de zero vírgula zero um a zero vírgula zero seis unidades por minuto; com iéca ou bê érre á, bolus pequenos ou infusão titulada; o risco é isquemia digital e mesentérica. A hidrocortisona restaura a resposta vascular às catecolaminas, duzentos miligramas por dia no choque séptico. O azul de metileno inibe a via do óxido nítrico e fica como resgate na vasoplegia refratária: após céc, onde há mais estudos, e na reperfusão do enxerto hepático, com base em relatos, séries e um ensaio pequeno; o uso profilático não mostrou benefício em uma coorte pareada. Outras indicações, apenas para citar: metemoglobinemia e choque séptico refratário. Cuidados: deficiência de GseisPD, interferência na oximetria e no BIS, e síndrome serotoninérgica, inclusive com certos opioides."
  },
  {
   "slide": 13,
-  "id": "vasorefrat",
-  "titulo": "Além das aminas",
-  "segundos": 89.8,
-  "texto": "Slide treze. Além das aminas. Quando a via adrenérgica não basta, três recursos além das aminas. A vasopressina age no receptor vê um, fora da via adrenérgica: poupa catecolamina e costuma manter efeito em acidose; no choque séptico há deficiência relativa do hormônio endógeno. No choque séptico, com noradrenalina em escalada, a dose é em geral fixa, zero vírgula zero três unidades por minuto; na vasoplegia após céc, o VANCS titulou de zero vírgula zero um a zero vírgula zero seis unidades por minuto; na hipotensão refratária com iéca ou bê érre á, bolus pequenos ou infusão titulada; o risco é isquemia digital e mesentérica. A hidrocortisona restaura a resposta vascular às catecolaminas, duzentos miligramas por dia no choque séptico. O azul de metileno inibe a óxido nítrico sintase e a guanilato ciclase solúvel, e fica como resgate na vasoplegia refratária: após céc, onde há mais estudos, e na reperfusão do enxerto hepático, onde a base são relatos e séries; um ensaio pequeno mostrou pãm maior e menos adrenalina com a dose dada antes da reperfusão, mas uma coorte pareada de setecentos e quinze transplantes não confirmou benefício do uso profilático. Outras indicações, apenas para citar: metemoglobinemia, a indicação clássica, e choque séptico refratário, ainda em estudo. Cuidados: deficiência de GseisPD, interferência na oximetria e no BIS, e síndrome serotoninérgica com serotoninérgicos, inclusive certos opioides."
+  "id": "ssc2026",
+  "titulo": "Choque séptico: a sequência da SSC 2026",
+  "segundos": 35.2,
+  "texto": "Slide treze. Choque séptico: a sequência da ésse ésse cê dois mil e vinte e seis. No choque séptico, a Survaiving Sépsis Campeim, a diretriz internacional de sepse, atualizada em dois mil e vinte e seis, organiza os vasopressores em sequência: noradrenalina primeiro, cedo, mesmo por veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a pãm continuar inadequada. É o mesmo raciocínio da aula: tônus com noradrenalina, outra via com vasopressina, e inotrópico reservado à disfunção cardíaca com hipoperfusão, com volume e pãm já otimizados."
  },
  {
   "slide": 14,
-  "id": "ssc2026",
-  "titulo": "Choque séptico: a sequência da SSC 2026",
-  "segundos": 35.3,
-  "texto": "Slide catorze. Choque séptico: a sequência da ésse ésse cê dois mil e vinte e seis. No choque séptico, a Survaiving Sépsis Campeim, a diretriz internacional de sepse, atualizada em dois mil e vinte e seis, organiza os vasopressores em sequência: noradrenalina primeiro, cedo, mesmo por veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a pãm continuar inadequada. É o mesmo raciocínio da aula: tônus com noradrenalina, outra via com vasopressina, e inotrópico reservado à disfunção cardíaca com hipoperfusão, com volume e pãm já otimizados."
+  "id": "intraop",
+  "titulo": "Escolha da droga no intraoperatório",
+  "segundos": 71.7,
+  "texto": "Slide catorze. Escolha da droga no intraoperatório. No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista alfa 1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito, inotrópico; vasoplegia refratária às catecolaminas, do pós-céc, do uso de iéca ou bê érre á e da reperfusão do enxerto hepático: vasopressina, com azul de metileno como resgate; pré-carga baixa, volume. Um dado do nosso serviço ajuda nessa decisão: Govêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o vê dê de dezenove pacientes selecionados em cinco fases do transplante hepático, e a função sistólica se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. Como não mediu os primeiros minutos da reperfusão, o estudo não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do vê dê; o que fica para a prática é o método: usar o eco para separar disfunção de vê dê de vasoplegia antes de escolher entre inotrópico e vasopressor."
  },
  {
   "slide": 15,
-  "id": "intraop",
-  "titulo": "Escolha da droga no intraoperatório",
-  "segundos": 73.9,
-  "texto": "Slide quinze. Escolha da droga no intraoperatório. No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista alfa 1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito, inotrópico; vasoplegia refratária às catecolaminas, que é a do pós-céc, do paciente em iéca ou bê érre á e da reperfusão do enxerto hepático: vasopressina, e azul de metileno como resgate; pré-carga baixa, volume. Um dado do nosso serviço ajuda nessa decisão: Govêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o ventrículo direito de dezenove pacientes selecionados em cinco fases do transplante hepático, e a função sistólica do vê dê se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. O estudo não mediu os primeiros minutos da reperfusão, então não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do vê dê. O que fica dele para a prática é o método: usar o eco para separar disfunção de vê dê de vasoplegia antes de escolher entre inotrópico e vasopressor."
+  "id": "mensagens",
+  "titulo": "Problema hemodinâmico e droga de escolha",
+  "segundos": 32.1,
+  "texto": "Slide quinze. Problema hemodinâmico e droga de escolha. Voltando à pergunta do início: qual componente da pãm está falhando? Vasoplegia: noradrenalina e, quando a dose sobe, vasopressina. Baixo débito com hipoperfusão: inotrópico, com a miurinona sobretudo no vê dê com hipertensão pulmonar. Hipotensão vasodilatadora da anestesia com bradicardia: efedrina; com frequência normal ou alta: fenilefrina. Anafilaxia: adrenalina. A droga certa corrige o componente que falha, na menor dose eficaz e pelo menor tempo."
  },
  {
   "slide": 16,
-  "id": "mensagens",
-  "titulo": "Problema hemodinâmico e droga de escolha",
-  "segundos": 32.5,
-  "texto": "Slide dezesseis. Problema hemodinâmico e droga de escolha. Voltando à pergunta do início: qual componente da pãm está falhando? Vasoplegia: noradrenalina e, quando a dose sobe, vasopressina. Baixo débito com hipoperfusão: inotrópico, com a miurinona sobretudo no vê dê com hipertensão pulmonar. Hipotensão vasodilatadora da anestesia com bradicardia: efedrina; com frequência normal ou alta: fenilefrina. Anafilaxia: adrenalina. A droga certa corrige o componente que falha, na menor dose eficaz e pelo menor tempo."
- },
- {
-  "slide": 17,
   "id": "obrigado",
   "titulo": "Obrigado",
-  "segundos": 9.4,
-  "texto": "Slide dezessete. Obrigado. Obrigado pela atenção. As referências completas da aula estão no código quê érre. Fico à disposição para perguntas."
+  "segundos": 9.3,
+  "texto": "Slide dezesseis. Obrigado. Obrigado pela atenção. As referências completas da aula estão no código quê érre. Fico à disposição para perguntas."
  }
 ]
