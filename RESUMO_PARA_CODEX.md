@@ -62,7 +62,11 @@ minutos. O que mudou:
   pernas; área diastólica final do VE como índice estático). Todas as afirmações foram confirmadas; ajustes aplicados:
   "é sugerido como imagem de primeira linha" (recomendação fraca), FAC/TAPSE e a fórmula saem da fala e ficam na nota,
   "marcadores lidos em conjunto", limiares de 10% (elevação das pernas) e 10 a 15% (prova de volume) separados na nota,
-  TAPSE ao ETE com M-mode anatômico transgástrico ou TAPSE modificado. 12 min 20 s. Áudio regenerado.
+  TAPSE ao ETE com M-mode anatômico transgástrico ou TAPSE modificado. 12 min 15 s. Áudio regenerado.
+- Auditoria final do Codex sobre a v43: aprovada em definitivo (16 slides com notas, 0 animações, tabela única de
+  receptores confirmada, falas iguais ao guia, 12 min 15 s previstos, MP3 de 11 min 30 s; ESICM 2025 e ASE/EACVI 2015
+  conferidas nas fontes originais). Único detalhe: vírgula no lugar de ponto na nota do slide 4, corrigida. Pendência
+  apenas do Bruno: ensaio cronometrado no PowerPoint.
 
 ## Estado anterior: versão 38 a 41 (14 a 15 min previstos), 17 slides: monitores de débito ampliados, α2 corrigido
 
