@@ -11,8 +11,8 @@ for r in refs:  # segunda conferência: completa o DOI das que ficaram sem confi
 
 SECOES = [
  ("Diretrizes, consensos e declarações", ["Prescott", "Monnet", "Kinsella", "Saugel · POQI", "ANZCA", "Cecconi · consenso", "Konstam"]),
- ("Ensaios clínicos randomizados", ["De Backer", "Russell", "Gordon", "Peltan", "Lamontagne", "Endo", "Permpikul", "Annane · CATS", "Myburgh", "Levy", "Mathew", "Cuffe", "Hajjar", "Khanna", "Tongyoo", "Bellomo", "Venkatesh", "Annane · APROCCHSS", "Marcucci", "Saugel · IMPROVE", "Cecconi · HISTAP"]),
- ("Estudos observacionais, subanálises, revisões e cartas", ["Cannesson", "Myatra", "Biais", "Biancofiore", "Monnet, Marik", "Di Santo", "Gouvêa", "Sharkey", "Park", "Lineburger", "Salmasi", "Tran", "Kattan", "Overgaard", "Persichini", "Zaccolo", "Liu", "Vallée", "Kotani", "Magder"]),
+ ("Ensaios clínicos randomizados", ["Koelzow", "De Backer", "Russell", "Gordon", "Peltan", "Lamontagne", "Endo", "Permpikul", "Annane · CATS", "Myburgh", "Levy", "Mathew", "Cuffe", "Hajjar", "Khanna", "Tongyoo", "Bellomo", "Venkatesh", "Annane · APROCCHSS", "Marcucci", "Saugel · IMPROVE", "Cecconi · HISTAP"]),
+ ("Estudos observacionais, subanálises, revisões e cartas", ["Cannesson", "Myatra", "Biais", "Biancofiore", "Monnet, Marik", "Fukazawa", "Di Santo", "Gouvêa", "Sharkey", "Park", "Lineburger", "Salmasi", "Tran", "Kattan", "Overgaard", "Persichini", "Zaccolo", "Liu", "Vallée", "Kotani", "Magder"]),
  ("Livro-texto", ["Miller"]),
 ]
 def acha(prefixo):
@@ -34,6 +34,7 @@ def fmt(prefixo):
         vp = f";{r['volume_paginas']}" if r["volume_paginas"] else ". Publicado online"
         partes.append(f"*{r['periodico']}*. {r['ano']}{vp}.")
     if r["doi"]: partes.append(f"doi: [{r['doi']}](https://doi.org/{r['doi']})")
+    elif r.get("pmid"): partes.append(f"PMID {r['pmid']}.")
     ap = APELIDO.get(prefixo)
     return ("**" + ap + ".** " if ap else "") + " ".join(partes)
 
