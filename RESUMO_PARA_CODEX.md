@@ -68,9 +68,39 @@ um pouco maior; tudo muito bem fundamentado, sem informação falsa; revisar tod
   especificidade 85%). Fala de 110 s; nota SE PERGUNTAREM com os números e as fontes. As cinco referências novas foram
   conferidas por busca (título, periódico, volume, páginas e DOI) e entraram em referencias.md (49 referências).
 - Tempos: perfusão 80 s, monitores 110 s, receptores 65 s; 1.812 palavras; 14 min 25 s.
+- Azul de metileno (slide 13) conferido para o transplante hepático: resgate na vasoplegia refratária da reperfusão
+  do enxerto com base em relatos e séries; ECR de 36 pacientes com 1,5 mg/kg antes da reperfusão (Koelzow, Anesth
+  Analg 2002: PAM maior, menos adrenalina); coorte pareada de 715 transplantes (Fukazawa, J Hepatobiliary Pancreat Sci
+  2011: o uso profilático não evitou a hipotensão da reperfusão nem mudou a função do enxerto); revisões de 2021 e
+  2025 apontam falta de ECRs. Outras indicações citadas na fala: metemoglobinemia (clássica) e choque séptico
+  refratário (em estudo); na nota: encefalopatia por ifosfamida, relatos em anafilaxia refratária e intoxicações.
+  Cuidados pela bula: G6PD, SpO₂ subestimada, queda do BIS relatada, síndrome serotoninérgica. Referências 50 e 51.
 - Revisão de todas as falas, sentença a sentença: um revisor por slide (17) mais três lentes transversais
   (monitorização hemodinâmica, farmacologia do autônomo, coerência), com verificação adversarial de cada achado por
-  duas lentes; resultado registrado abaixo quando aplicado.
+  duas lentes. 78 achados brutos, 62 únicos, 9 confirmados pelas duas lentes, 3 rejeitados como erro (mas com ajuste
+  editorial aceito), 50 baixos avaliados um a um. Aplicado:
+  - Slide 5: o desafio de volume corrente corrige apenas a limitação do volume corrente baixo (Myatra 2017); fora
+    das demais condições, elevação passiva das pernas ou minidesafio medindo o débito; zona cinzenta de 9–13% é da
+    VPP (Cannesson 2011); cateter de artéria pulmonar "intermitente ou semicontínuo", "sugerido sobretudo" (não
+    "reservado"); PiCCO com arterial calibrosa, em geral femoral; FloTrac pouco invasivo e ClearSight não invasivo;
+    Biais 2017 em dois passos de 50 mL. Termo "variação fracional de área" uniformizado.
+  - Slide 6: sedação pelo locus coeruleus e simpatólise pelos centros vasomotores do tronco encefálico; α2 vascular
+    também é alvo de noradrenalina e adrenalina; "bolus de dexmedetomidina" explícito; clonidina com perfil
+    semelhante e menor seletividade; dessensibilização sobretudo β.
+  - Slide 8: nota com o bloco do cartão ANZCA/ANZAAG duplicado (resíduo de edição) consertado; "reação moderada
+    (grau 2)" e "ameaçadora à vida (grau 3)"; anafilaxia: bolus repetidos a cada 1–2 min e infusão após mais de
+    três bolus (tela e fala); OptimaCC "que o artigo apresenta como desfecho de segurança".
+  - Slide 13: dose da vasopressina por indicação: choque séptico em geral fixa (0,03; até 0,04 U/min); vasoplegia
+    pós-CEC titulada (0,01–0,06 U/min no VANCS); com IECA/BRA, bolus pequenos ou infusão titulada.
+  - Miúdos: "pressão de perfusão aproxima-se de PAM − PVC"; ESICM 2025 "sugere" o eco como primeira linha de imagem;
+    PDE3 "uma das fosfodiesterases"; "a milrinona precisa de PAM sustentada" (sem "ela" ambíguo); SSC explicada na
+    primeira menção; dobutamina na sepse "com hipoperfusão persistente"; "inotrópico reservado à disfunção cardíaca
+    com hipoperfusão" (sem "apenas"); tabela final: "hipotensão da anestesia" e "dobutamina (ou adrenalina, no
+    choque séptico)"; rodapé do slide 16 sem ESICM; intraop: "adrenalina se grave" também na tela; nota do slide 3
+    aponta para o slide 15; grau da recomendação da SSC sobre dopamina retirado (não conferido).
+  - Mantidos após verificação: "DC em geral preservado ou alto" na vasoplegia; "Gouvêa, Diaz e colaboradores"
+    (pedido do Bruno); "aminas vasoativas" como título.
+- Tempos finais: monitores 115 s, receptores 75 s, adrenalina 40 s, além das aminas 95 s; 1.991 palavras; 15 min 25 s.
 
 ## Estado anterior: versão 37 (12 min 05 s previstos), revisão final de conceito e texto
 
