@@ -20,9 +20,7 @@
     "milrdobu",
     "fenilefedrina",
     "vasorefrat",
-    "ssc2026",
     "intraop",
-    "mensagens",
     "obrigado"
   ],
   "sections": {
@@ -46,17 +44,13 @@
       "description": "04 · Além das aminas: vasopressina, hidrocortisona e azul de metileno",
       "start": "vasorefrat"
     },
-    "s5": {
-      "description": "05 · Choque séptico: a sequência da SSC 2026",
-      "start": "ssc2026"
-    },
     "s6": {
-      "description": "06 · Perioperatório: escolha da droga",
+      "description": "05 · Perioperatório: escolha da droga e mensagem final",
       "start": "intraop"
     },
     "s7": {
-      "description": "07 · Mensagens finais e encerramento",
-      "start": "mensagens"
+      "description": "06 · Encerramento",
+      "start": "obrigado"
     }
   },
   "faces": {

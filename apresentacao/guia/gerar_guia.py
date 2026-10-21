@@ -50,7 +50,7 @@ PERGUNTAS = [
  ("Então quando a milrinona tem indicação?",
   f"Disfunção ventricular com baixo débito que exige inotrópico, sobretudo VD com hipertensão pulmonar e dificuldade de saída de CEC; com noradrenalina se a PAM cair. Sem baixo débito, considerar vasoplegia: a droga é o vasopressor. Slides {N("milrinona")[0]} e {N("milrdobu")[0]}."),
  ("Quando associar vasopressina?",
-  f"SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide {N("ssc2026")[0]}."),
+  f"SSC 2026: quando a dose de noradrenalina está subindo, sem limiar definido; na enquete dos painelistas, mediana de 0,3 mcg/kg/min. Antecipar como política (VASSPR) não reduziu mortalidade. Slide {N("intraop")[0]}."),
  ("Qual o alvo de PAM no intraoperatório?",
   f"POQI 2024: PAM ≥60 mmHg em pacientes de risco como piso, maior com pressão venosa ou compartimental alta. HISTAP favoreceu ≥80 em hipertensos de alto risco; IMPROVE-multi e POISE-3 foram neutros. Não está mais nos slides; responder de cabeça."),
  ("Noradrenalina em veia periférica é segura?",

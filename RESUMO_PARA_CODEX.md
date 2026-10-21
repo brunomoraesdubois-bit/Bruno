@@ -40,7 +40,19 @@ para este repositório.
       em sala levou o staff a dizer que não havia indicação no caso e a propor esta aula;
     - aplicar a auditoria do Codex sobre a versão 15 (ver abaixo).
 
-## Estado atual: versão 42 (cerca de 12 min 20 s previstos), 16 slides: sem o slide de monitores, falas enxutas
+## Estado atual: versão 44 (cerca de 11 min 30 s previstos), 14 slides: sem a SSC 2026; intraoperatório e mensagens finais fundidos
+
+Pedido do Bruno: o ensaio ficou longo; retirar o slide 13 (sequência da SSC 2026) e juntar os slides 14
+(intraoperatório) e 15 (mensagens finais), que repetiam conteúdo; não há problema em ficar curto. O que mudou:
+- Slides "Choque séptico: a sequência da SSC 2026" e "Problema hemodinâmico e droga de escolha" arquivados.
+- Slide de síntese "Escolha da droga: do mecanismo à conduta" (antigo 14): faixa "afastar causas"; seis cartões
+  mecanismo → conduta (tônus baixo com FC normal ou alta; com bradicardia; baixo débito com hipoperfusão; vasoplegia
+  persistente ou refratária, com a sequência da SSC 2026 NA → vasopressina → adrenalina e o azul de metileno; pré-carga
+  baixa; anafilaxia); parágrafo do estudo de Gouvêa mantido; frase final "A droga certa corrige o componente da PAM que
+  falha, na menor dose eficaz e pelo menor tempo". A nota recebeu a sequência da SSC, o VASSPR e o OPTPRESS.
+- Fala do slide de síntese: 95 s; tempo total cerca de 11 min 30 s. Áudio regenerado (14 slides).
+
+## Estado anterior: versão 42 e 43 (cerca de 12 min 15 s previstos), 16 slides: sem o slide de monitores, falas enxutas
 
 Pedido do Bruno: retirar o slide 5 (monitores de débito), que não é o foco da aula, e voltar a cerca de 11 a 12
 minutos. O que mudou:
