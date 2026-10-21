@@ -63,6 +63,10 @@ Pedido do Bruno: o ensaio ficou longo; retirar o slide 13 (sequência da SSC 202
   aminas 104, síntese 170). Tempo total 10 min 20 s. Áudio dos slides 8 a 14 regenerado e entregue em arquivo único
   (apresentacao/audio/pm_alex/00 - Aminas vasoativas - slides 8 a 14.mp3) com as falas em
   apresentacao/guia/falas_slides_8_a_14.md.
+- Auditoria do Codex sobre a v46: aprovada (14 slides, 0 animações, notas 14/14, falas iguais ao guia). Dois ajustes
+  aplicados na v47: no slide 13, a sequência NA → vasopressina → adrenalina ficou explicitamente restrita ao choque
+  séptico (tela e fala: "vasopressina; no choque séptico, a sequência da SSC"); no slide 12, o azul de metileno "pode
+  ser considerado como resgate". Áudio dos slides 12 e 13 regenerado; arquivo dos slides 8 a 14 refeito.
 
 ## Estado anterior: versão 42 e 43 (cerca de 12 min 15 s previstos), 16 slides: sem o slide de monitores, falas enxutas
 
