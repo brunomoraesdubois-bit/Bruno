@@ -1,5 +1,5 @@
 {
- "total": 675,
+ "total": 625,
  "slides": [
   {
    "id": "cover",
@@ -93,49 +93,49 @@
   },
   {
    "id": "milrdobu",
-   "seg": 75,
+   "seg": 60,
    "ini": 385,
-   "fim": 460,
+   "fim": 445,
    "chave": "Primeiro a indicação; depois o perfil: milrinona para VD e circulação pulmonar com PAM sustentada; dobutamina com pressão baixa ou para titular rápido. Na sepse, dobutamina é preferência prática, não superioridade demonstrada.",
    "trans": "",
-   "fala": "Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e PAM; se a hipotensão é por vasoplegia, a droga é o vasopressor, e um inodilatador baixa ainda mais a pressão. Depois, o perfil, que está na tabela. Milrinona quando a circulação pulmonar e o VD são o problema, como na hipertensão pulmonar e na saída de CEC com resistência pulmonar alta, ou quando betabloqueio ou taquicardia limitam a dobutamina; a milrinona exige PAM sustentada, em geral com noradrenalina. Dobutamina, com vasopressor, quando o baixo débito vem com hipotensão ou vasoplegia, em que a vasodilatação e a meia-vida longa da milrinona pesam contra; na insuficiência renal; e para titulação rápida, com meia-vida de minutos. No choque séptico com disfunção miocárdica e hipoperfusão persistente, a Surviving Sepsis Campaign de 2026, a SSC, sugere dobutamina com noradrenalina, ou adrenalina, sem dados que a prefiram à milrinona: preferência prática, não superioridade demonstrada.",
+   "fala": "Então, quando escolher? Primeiro, a indicação: inotrópico quando há disfunção ventricular com baixo débito e hipoperfusão, depois de otimizar volume e PAM; se a hipotensão é por vasoplegia, a droga é o vasopressor. Depois, o perfil da tabela. Milrinona quando a circulação pulmonar e o VD são o problema, como na hipertensão pulmonar e na saída de CEC com resistência pulmonar alta, ou quando betabloqueio ou taquicardia limitam a dobutamina; a milrinona exige PAM sustentada, em geral com noradrenalina. Dobutamina, com vasopressor, quando o baixo débito vem com hipotensão ou vasoplegia, na insuficiência renal e para titulação rápida. No choque séptico, a Surviving Sepsis Campaign de 2026 sugere dobutamina com noradrenalina, ou adrenalina, sem dados que a prefiram à milrinona: preferência prática, não superioridade demonstrada.",
    "manga": "no DOREMI (n = 192, choque cardiogênico), o desfecho composto foi 49% com milrinona e 54% com dobutamina (RR 0,90; IC 95% 0,69–1,19); arritmias, hipotensão sustentada e necessidade de vasopressor também não diferiram; por isso, as diferenças da tabela são expectativa farmacológica. Na subanálise por betabloqueador (93 pacientes, 48%), o betabloqueio prévio não piorou o desfecho e não houve vantagem demonstrada da milrinona (Di Santo, Crit Care 2021). Isso não prova equivalência, mas também não mostra vantagem de uma sobre a outra. A meia-vida da milrinona é de cerca de 2,4 horas na insuficiência cardíaca e aumenta na insuficiência renal, que pede dose de manutenção menor; a da dobutamina é de cerca de 2 minutos. Sem hipoperfusão, não há benefício demonstrado de inotrópico: no OPTIME-CHF, a milrinona causou mais hipotensão e mais arritmia atrial."
   },
   {
    "id": "fenilefedrina",
-   "seg": 50,
-   "ini": 460,
-   "fim": 510,
+   "seg": 40,
+   "ini": 445,
+   "fim": 485,
    "chave": "Fenilefrina: hipotensão vasodilatadora com FC normal ou alta. Efedrina: com bradicardia.",
    "trans": "",
-   "fala": "Agora duas aminas simpaticomiméticas que não são catecolaminas, as drogas habituais de bolus do centro cirúrgico. Fenilefrina: agonista α1 direto, praticamente sem ação β; a PAM sobe pela resistência e a frequência cai por reflexo, o que pode reduzir o débito quando ele depende da frequência; é a escolha na hipotensão vasodilatadora com frequência normal ou alta. Efedrina: age diretamente em α e β e também, de forma indireta, libera noradrenalina das terminações; sobe pressão, frequência e débito, por isso é a escolha quando há bradicardia; perde efeito com doses repetidas, em parte porque depleta a noradrenalina, e na cesárea atravessa a placenta e associa-se a mais acidose fetal que a fenilefrina.",
+   "fala": "Duas aminas que não são catecolaminas, as drogas habituais de bolus do centro cirúrgico. Fenilefrina: agonista α1 direto; a PAM sobe pela resistência e a frequência cai por reflexo, o que pode reduzir o débito; é a escolha na hipotensão vasodilatadora com frequência normal ou alta. Efedrina: ação direta em α e β e indireta, liberando noradrenalina; sobe pressão, frequência e débito, por isso é a escolha quando há bradicardia; faz taquifilaxia e, na cesárea, associa-se a mais acidose fetal que a fenilefrina.",
    "manga": ""
   },
   {
    "id": "vasorefrat",
-   "seg": 60,
-   "ini": 510,
-   "fim": 570,
+   "seg": 50,
+   "ini": 485,
+   "fim": 535,
    "chave": "Fora das aminas: vasopressina (V1), hidrocortisona e azul de metileno, cada uma por um mecanismo diferente.",
    "trans": "",
-   "fala": "Três recursos além das aminas. A vasopressina age no receptor V1, fora da via adrenérgica, e costuma manter efeito em acidose: no choque séptico com noradrenalina em escalada, dose em geral fixa de 0,03 unidades por minuto; na vasoplegia após CEC, dose titulada, como no VANCS; na hipotensão refratária com IECA ou BRA, bolus pequenos ou infusão; o risco é isquemia digital e mesentérica. A hidrocortisona restaura a resposta vascular às catecolaminas, 200 mg por dia no choque séptico. O azul de metileno inibe a via do óxido nítrico e fica como resgate na vasoplegia refratária, após CEC ou na reperfusão do enxerto hepático, onde a base são relatos e séries e o uso profilático não mostrou benefício. Cuidados: deficiência de G6PD, interferência na oximetria e síndrome serotoninérgica.",
+   "fala": "Três recursos além das aminas. A vasopressina age no receptor V1, fora da via adrenérgica, e costuma manter efeito em acidose: no choque séptico com noradrenalina em escalada, dose em geral fixa de 0,03 unidades por minuto; na vasoplegia após CEC, dose titulada; o risco é isquemia digital e mesentérica. A hidrocortisona restaura a resposta vascular às catecolaminas, 200 mg por dia no choque séptico. O azul de metileno inibe a via do óxido nítrico e é o resgate na vasoplegia refratária, após CEC ou na reperfusão do enxerto hepático, com base em relatos e séries. Cuidados: deficiência de G6PD, oximetria e síndrome serotoninérgica.",
    "manga": "no VANCS (Hajjar, Anesthesiology 2017, InCor), na vasoplegia pós-CEC, a vasopressina teve menos morte ou complicação grave que a noradrenalina (32% vs. 49%); é uma população de cirurgia cardíaca, e o resultado não deve ser extrapolado para o choque séptico. Hidrocortisona: 200 mg/dia (50 mg de 6/6 h ou em infusão). Angiotensina II: no ATHOS-3, a resposta da PAM em 3 h ocorreu em 69,9% vs. 23,4% dos pacientes, sem diferença de mortalidade; é pouco disponível. Azul de metileno: inibe a óxido nítrico sintase e a guanilato ciclase solúvel; na vasoplegia, em geral 1,5 a 2 mg/kg EV em 20 a 30 min. Pós-CEC: ensaios pequenos e séries. Transplante hepático: ECR de 36 pacientes com 1,5 mg/kg antes da reperfusão (Koelzow, Anesth Analg 2002): PAM maior e menos adrenalina; coorte pareada por propensão de 715 transplantes, 105 com azul de metileno profilático de 1 a 1,5 mg/kg (Fukazawa, J Hepatobiliary Pancreat Sci 2011): sem redução da hipotensão da reperfusão, do vasopressor ou da transfusão, e sem efeito na função do enxerto; revisões de 2021 e 2025 apontam a falta de ECRs no transplante e a hidroxocobalamina como alternativa em estudo. Outras indicações: metemoglobinemia (1 a 2 mg/kg EV, a indicação clássica); choque séptico (metanálise de ECRs: menos tempo de vasopressor e de UTI, sem substituir a vasopressina); encefalopatia por ifosfamida; relatos em anafilaxia refratária e em intoxicação por betabloqueador ou bloqueador de canal de cálcio. Contraindicado na deficiência de G6PD (hemólise, com anemia que pode aparecer dias depois); subestima a SpO₂ e pode reduzir o BIS (a bula recomenda outro método para avaliar a profundidade anestésica); síndrome serotoninérgica com ISRS, IRSN, IMAO e alguns opioides, por inibir a MAO-A."
   },
   {
    "id": "intraop",
-   "seg": 95,
-   "ini": 570,
-   "fim": 665,
+   "seg": 80,
+   "ini": 535,
+   "fim": 615,
    "chave": "Afastar causas, identificar o mecanismo, escolher a droga; o eco separa vasoplegia de falência de VD; a droga certa corrige o componente que falha.",
    "trans": "",
-   "fala": "No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista α1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito com hipoperfusão, inotrópico, com noradrenalina se a PAM cair; vasoplegia persistente, a sequência da Surviving Sepsis Campaign de 2026: noradrenalina em escalada, depois vasopressina e, se a PAM seguir inadequada, adrenalina, com azul de metileno como resgate após CEC, com IECA ou BRA e na reperfusão do enxerto hepático; pré-carga baixa, volume; anafilaxia, adrenalina. Um dado do nosso serviço ajuda nessa decisão: Gouvêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o VD de 19 pacientes selecionados em cinco fases do transplante hepático, e a função sistólica se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. Como não mediu os primeiros minutos da reperfusão, o estudo não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do VD; o que fica para a prática é o método: usar o eco para separar disfunção de VD de vasoplegia antes de escolher entre inotrópico e vasopressor. Voltando à pergunta do início: a droga certa corrige o componente da PAM que falha, na menor dose eficaz e pelo menor tempo.",
+   "fala": "No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo, agonista α1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito com hipoperfusão, inotrópico, com noradrenalina se a PAM cair; vasoplegia persistente, a sequência da Surviving Sepsis Campaign: noradrenalina, vasopressina e, se preciso, adrenalina, com azul de metileno como resgate; pré-carga baixa, volume; anafilaxia, adrenalina. Um dado do nosso serviço: Gouvêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o VD de 19 pacientes em cinco fases do transplante hepático, e a função sistólica se manteve preservada, inclusive trinta minutos após a reperfusão. Como não mediu os primeiros minutos, o estudo não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do VD; o que fica é o método: usar o eco para separar disfunção de VD de vasoplegia antes de escolher entre inotrópico e vasopressor. Voltando à pergunta do início: a droga certa corrige o componente da PAM que falha, na menor dose eficaz e pelo menor tempo.",
    "manga": "Gouvêa G, Feiner J, Joshi S, Diaz R, et al., PLoS One 2022;17(10):e0275301: estudo observacional, 19 adultos de 18 a 65 anos, TAPSE e variação fracional de área do VD em cinco fases (basal, fase de hepatectomia, fase anepática, 30 min após a reperfusão e fechamento); função sistólica do VD preservada nos cinco momentos; excluídos hipertensão portopulmonar, síndrome hepatopulmonar, doença cardiopulmonar e insuficiência hepática fulminante. População selecionada e medida feita 30 min depois da reperfusão: o estudo não mediu os primeiros minutos, quando ocorre a síndrome pós-reperfusão, não exclui disfunção transitória do VD nesse período e não permite atribuir a instabilidade aguda a vasoplegia. TAPSE e variação fracional de área dependem da carga, e o TAPSE mede apenas a excursão longitudinal do anel lateral; normais sob anestesia, com pós-carga baixa, afastam disfunção sistólica evidente nos momentos avaliados, não medem reserva contrátil. O estudo mediu a função do VD; não testou a capacidade do eco de diferenciar vasoplegia de disfunção ventricular na hipotensão aguda: essa é a aplicação clínica proposta na aula, não um resultado do estudo. Choque séptico (SSC 2026): noradrenalina em primeira linha, iniciada cedo, mesmo em veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a PAM continuar inadequada; inotrópico reservado à disfunção cardíaca com hipoperfusão. VASSPR (JAMA 2026, n = 3.959; cluster-crossover em 13 hospitais): iniciar vasopressina com 0,1 vs. 0,4 mcg/kg/min de noradrenalina-equivalente não mudou a mortalidade (31,8% vs. 33,0%). OPTPRESS: alvo de PAM de 80–85 mmHg em idosos aumentou a mortalidade."
   },
   {
    "id": "obrigado",
    "seg": 10,
-   "ini": 665,
-   "fim": 675,
+   "ini": 615,
+   "fim": 625,
    "chave": "Referências completas no QR code; abrir para perguntas.",
    "trans": "",
    "fala": "Obrigado pela atenção. As referências completas da aula estão no QR code. Fico à disposição para perguntas.",

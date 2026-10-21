@@ -58,6 +58,11 @@ Pedido do Bruno: o ensaio ficou longo; retirar o slide 13 (sequência da SSC 202
 - Revisão de formatação dos 14 slides nos renders do PPTX: colunas do slide 12 alinhadas em altura, rodapés dos slides
   12 e 13 na mesma fonte dos demais, recuo superior do slide 13 igual ao dos outros. Tempo total 11 min 15 s. Áudio
   regenerado.
+- v46: o Bruno gravou a própria voz até a adrenalina (slide 7) e pediu as falas dos slides seguintes; depois pediu
+  para resumir as falas dos slides 10 a 13 (milrinona ou dobutamina 125 palavras, fenilefrina e efedrina 83, além das
+  aminas 104, síntese 170). Tempo total 10 min 20 s. Áudio dos slides 8 a 14 regenerado e entregue em arquivo único
+  (apresentacao/audio/pm_alex/00 - Aminas vasoativas - slides 8 a 14.mp3) com as falas em
+  apresentacao/guia/falas_slides_8_a_14.md.
 
 ## Estado anterior: versão 42 e 43 (cerca de 12 min 15 s previstos), 16 slides: sem o slide de monitores, falas enxutas
 
