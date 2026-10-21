@@ -51,6 +51,13 @@ Pedido do Bruno: o ensaio ficou longo; retirar o slide 13 (sequência da SSC 202
   baixa; anafilaxia); parágrafo do estudo de Gouvêa mantido; frase final "A droga certa corrige o componente da PAM que
   falha, na menor dose eficaz e pelo menor tempo". A nota recebeu a sequência da SSC, o VASSPR e o OPTPRESS.
 - Fala do slide de síntese: 95 s; tempo total cerca de 11 min 30 s. Áudio regenerado (14 slides).
+- v45: slide 12 ("Além das aminas") reduzido ao essencial: vasopressina (fora da via adrenérgica, mantém efeito em
+  acidose; dose fixa no choque séptico, titulada no VANCS; indicações; risco), hidrocortisona, azul de metileno
+  (mecanismo, resgate pós-CEC e na reperfusão do enxerto hepático com base em relatos e séries; cuidados). As outras
+  indicações do azul de metileno e os detalhes dos estudos ficaram na nota. Fala de 128 palavras (60 s).
+- Revisão de formatação dos 14 slides nos renders do PPTX: colunas do slide 12 alinhadas em altura, rodapés dos slides
+  12 e 13 na mesma fonte dos demais, recuo superior do slide 13 igual ao dos outros. Tempo total 11 min 15 s. Áudio
+  regenerado.
 
 ## Estado anterior: versão 42 e 43 (cerca de 12 min 15 s previstos), 16 slides: sem o slide de monitores, falas enxutas
 
