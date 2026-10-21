@@ -85,30 +85,16 @@
  },
  {
   "slide": 13,
-  "id": "ssc2026",
-  "titulo": "Choque séptico: a sequência da SSC 2026",
-  "segundos": 35.2,
-  "texto": "Slide treze. Choque séptico: a sequência da ésse ésse cê dois mil e vinte e seis. No choque séptico, a Survaiving Sépsis Campeim, a diretriz internacional de sepse, atualizada em dois mil e vinte e seis, organiza os vasopressores em sequência: noradrenalina primeiro, cedo, mesmo por veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a pãm continuar inadequada. É o mesmo raciocínio da aula: tônus com noradrenalina, outra via com vasopressina, e inotrópico reservado à disfunção cardíaca com hipoperfusão, com volume e pãm já otimizados."
+  "id": "intraop",
+  "titulo": "Escolha da droga: do mecanismo à conduta",
+  "segundos": 90.4,
+  "texto": "Slide treze. Escolha da droga: do mecanismo à conduta. No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista alfa 1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito com hipoperfusão, inotrópico, com noradrenalina se a pãm cair; vasoplegia persistente, a sequência da Survaiving Sépsis Campeim de dois mil e vinte e seis: noradrenalina em escalada, depois vasopressina e, se a pãm seguir inadequada, adrenalina, com azul de metileno como resgate após céc, com iéca ou bê érre á e na reperfusão do enxerto hepático; pré-carga baixa, volume; anafilaxia, adrenalina. Um dado do nosso serviço ajuda nessa decisão: Govêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o vê dê de dezenove pacientes selecionados em cinco fases do transplante hepático, e a função sistólica se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. Como não mediu os primeiros minutos da reperfusão, o estudo não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do vê dê; o que fica para a prática é o método: usar o eco para separar disfunção de vê dê de vasoplegia antes de escolher entre inotrópico e vasopressor. Voltando à pergunta do início: a droga certa corrige o componente da pãm que falha, na menor dose eficaz e pelo menor tempo."
  },
  {
   "slide": 14,
-  "id": "intraop",
-  "titulo": "Escolha da droga no intraoperatório",
-  "segundos": 71.7,
-  "texto": "Slide catorze. Escolha da droga no intraoperatório. No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo com frequência normal ou alta, agonista alfa 1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito, inotrópico; vasoplegia refratária às catecolaminas, do pós-céc, do uso de iéca ou bê érre á e da reperfusão do enxerto hepático: vasopressina, com azul de metileno como resgate; pré-carga baixa, volume. Um dado do nosso serviço ajuda nessa decisão: Govêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o vê dê de dezenove pacientes selecionados em cinco fases do transplante hepático, e a função sistólica se manteve preservada nos momentos avaliados, inclusive trinta minutos após a reperfusão. Como não mediu os primeiros minutos da reperfusão, o estudo não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do vê dê; o que fica para a prática é o método: usar o eco para separar disfunção de vê dê de vasoplegia antes de escolher entre inotrópico e vasopressor."
- },
- {
-  "slide": 15,
-  "id": "mensagens",
-  "titulo": "Problema hemodinâmico e droga de escolha",
-  "segundos": 32.1,
-  "texto": "Slide quinze. Problema hemodinâmico e droga de escolha. Voltando à pergunta do início: qual componente da pãm está falhando? Vasoplegia: noradrenalina e, quando a dose sobe, vasopressina. Baixo débito com hipoperfusão: inotrópico, com a miurinona sobretudo no vê dê com hipertensão pulmonar. Hipotensão vasodilatadora da anestesia com bradicardia: efedrina; com frequência normal ou alta: fenilefrina. Anafilaxia: adrenalina. A droga certa corrige o componente que falha, na menor dose eficaz e pelo menor tempo."
- },
- {
-  "slide": 16,
   "id": "obrigado",
   "titulo": "Obrigado",
-  "segundos": 9.3,
-  "texto": "Slide dezesseis. Obrigado. Obrigado pela atenção. As referências completas da aula estão no código quê érre. Fico à disposição para perguntas."
+  "segundos": 9.2,
+  "texto": "Slide catorze. Obrigado. Obrigado pela atenção. As referências completas da aula estão no código quê érre. Fico à disposição para perguntas."
  }
 ]
