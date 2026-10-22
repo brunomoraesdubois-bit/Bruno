@@ -12,14 +12,14 @@ for r in refs:  # segunda conferência: completa o DOI das que ficaram sem confi
 SECOES = [
  ("Diretrizes, consensos e declarações", ["Prescott", "Monnet", "Kinsella", "Saugel · POQI", "ANZCA", "Cecconi · consenso", "Konstam"]),
  ("Ensaios clínicos randomizados", ["Koelzow", "De Backer", "Russell", "Gordon", "Peltan", "Lamontagne", "Endo", "Permpikul", "Annane · CATS", "Myburgh", "Levy", "Mathew", "Cuffe", "Hajjar", "Khanna", "Tongyoo", "Bellomo", "Venkatesh", "Annane · APROCCHSS", "Marcucci", "Saugel · IMPROVE", "Cecconi · HISTAP"]),
- ("Estudos observacionais, subanálises, revisões e cartas", ["Cannesson", "Myatra", "Biais", "Biancofiore", "Monnet, Marik", "Fukazawa", "Di Santo", "Gouvêa", "Sharkey", "Park", "Lineburger", "Salmasi", "Tran", "Kattan", "Overgaard", "Persichini", "Zaccolo", "Liu", "Vallée", "Kotani", "Magder"]),
+ ("Estudos observacionais, subanálises, revisões e cartas", ["Cannesson", "Myatra", "Biais", "Biancofiore", "Monnet, Marik", "Fukazawa", "Di Santo", "Sharkey", "Park", "Lineburger", "Salmasi", "Tran", "Kattan", "Overgaard", "Persichini", "Zaccolo", "Liu", "Vallée", "Kotani", "Magder"]),
  ("Livro-texto", ["Miller"]),
 ]
 def acha(prefixo):
     for r in refs:
         if r["chave"].startswith(prefixo): return r
     raise KeyError(prefixo)
-APELIDO = {"De Backer": "SOAP II", "Russell": "VASST", "Gordon": "VANISH", "Peltan": "VASSPR", "Lamontagne": "65 trial", "Endo": "OPTPRESS", "Permpikul": "CENSER", "Annane · CATS": "CATS", "Myburgh": "CAT", "Levy": "OptimaCC", "Mathew": "DOREMI", "Cuffe": "OPTIME-CHF", "Hajjar": "VANCS", "Khanna": "ATHOS-3", "Bellomo": "ANZICS, dopamina em dose baixa", "Venkatesh": "ADRENAL", "Annane · APROCCHSS": "APROCCHSS", "Marcucci": "POISE-3", "Saugel · IMPROVE": "IMPROVE-multi", "Cecconi · HISTAP": "HISTAP", "Di Santo": "DOREMI, subanálise por betabloqueador", "Gouvêa": "transplante hepático, UFRJ", "Prescott": "Surviving Sepsis Campaign 2026", "Monnet": "ESICM 2025", "Saugel · POQI": "POQI", "Cecconi · consenso": "ESICM 2014", "Konstam": "AHA"}
+APELIDO = {"De Backer": "SOAP II", "Russell": "VASST", "Gordon": "VANISH", "Peltan": "VASSPR", "Lamontagne": "65 trial", "Endo": "OPTPRESS", "Permpikul": "CENSER", "Annane · CATS": "CATS", "Myburgh": "CAT", "Levy": "OptimaCC", "Mathew": "DOREMI", "Cuffe": "OPTIME-CHF", "Hajjar": "VANCS", "Khanna": "ATHOS-3", "Bellomo": "ANZICS, dopamina em dose baixa", "Venkatesh": "ADRENAL", "Annane · APROCCHSS": "APROCCHSS", "Marcucci": "POISE-3", "Saugel · IMPROVE": "IMPROVE-multi", "Cecconi · HISTAP": "HISTAP", "Di Santo": "DOREMI, subanálise por betabloqueador", "Prescott": "Surviving Sepsis Campaign 2026", "Monnet": "ESICM 2025", "Saugel · POQI": "POQI", "Cecconi · consenso": "ESICM 2014", "Konstam": "AHA"}
 def fmt(prefixo):
     r = acha(prefixo)
     autores = r["autores"].rstrip(".")
