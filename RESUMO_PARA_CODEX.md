@@ -67,6 +67,9 @@ Pedido do Bruno: o ensaio ficou longo; retirar o slide 13 (sequência da SSC 202
   aplicados na v47: no slide 13, a sequência NA → vasopressina → adrenalina ficou explicitamente restrita ao choque
   séptico (tela e fala: "vasopressina; no choque séptico, a sequência da SSC"); no slide 12, o azul de metileno "pode
   ser considerado como resgate". Áudio dos slides 12 e 13 regenerado; arquivo dos slides 8 a 14 refeito.
+- v48: a pedido do Bruno, o estudo de Gouvêa e Diaz saiu do slide de síntese (parágrafo, fala, nota, rodapé e
+  pergunta do guia); ficou só a frase "na dúvida entre vasoplegia e falência de VD, o eco separa as duas". A
+  referência permanece na lista do QR code. Fala do slide 13 com 55 s; tempo total 10 min.
 
 ## Estado anterior: versão 42 e 43 (cerca de 12 min 15 s previstos), 16 slides: sem o slide de monitores, falas enxutas
 

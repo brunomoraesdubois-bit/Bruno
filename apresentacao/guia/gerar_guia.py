@@ -57,8 +57,6 @@ PERGUNTAS = [
   "Na metanálise de Tran, complicações em 7% (combinada 8,6%), 96% leves; menos com protocolo de segurança. A SSC 2026 sugere iniciar por veia periférica. Reserva “Início precoce e via periférica”."),
  ("Fenilefrina ou noradrenalina na cesárea?",
   "O consenso de 2018 recomenda vasopressor α-agonista em infusão profilática. A noradrenalina causa menos bradicardia materna (Sharkey, 10,7% vs. 37,5% de bradicardia). Reserva “Fenilefrina”."),
- ("E na hipotensão da reperfusão do transplante hepático?",
-  f"No estudo do nosso serviço (Gouvêa, Diaz et al., PLoS One 2022; 19 pacientes, ETE), a função do VD foi normal em todas as fases, inclusive após a reperfusão. O eco ajuda a separar vasoplegia de disfunção ventricular; na vasoplegia refratária, vasopressina e, como resgate, azul de metileno. Slide {N("intraop")[0]}."),
  ("Dopamina em dose renal?",
   "Não protege o rim: no ANZICS (n = 328), sem diferença em creatinina, diálise ou mortalidade."),
  ("E o azul de metileno?",

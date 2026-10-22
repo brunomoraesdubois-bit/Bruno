@@ -1,5 +1,5 @@
 {
- "total": 625,
+ "total": 600,
  "slides": [
   {
    "id": "cover",
@@ -123,19 +123,19 @@
   },
   {
    "id": "intraop",
-   "seg": 80,
+   "seg": 55,
    "ini": 535,
-   "fim": 615,
+   "fim": 590,
    "chave": "Afastar causas, identificar o mecanismo, escolher a droga; o eco separa vasoplegia de falência de VD; a droga certa corrige o componente que falha.",
    "trans": "",
-   "fala": "No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo, agonista α1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito com hipoperfusão, inotrópico, com noradrenalina se a PAM cair; vasoplegia persistente, vasopressina, e, no choque séptico, a sequência da Surviving Sepsis Campaign: noradrenalina, depois vasopressina e, se preciso, adrenalina; azul de metileno como resgate em casos selecionados; pré-carga baixa, volume; anafilaxia, adrenalina. Um dado do nosso serviço: Gouvêa, Diaz e colaboradores acompanharam por ecocardiografia transesofágica o VD de 19 pacientes em cinco fases do transplante hepático, e a função sistólica se manteve preservada, inclusive trinta minutos após a reperfusão. Como não mediu os primeiros minutos, o estudo não diz se a instabilidade aguda é vasoplegia ou disfunção transitória do VD; o que fica é o método: usar o eco para separar disfunção de VD de vasoplegia antes de escolher entre inotrópico e vasopressor. Voltando à pergunta do início: a droga certa corrige o componente da PAM que falha, na menor dose eficaz e pelo menor tempo.",
-   "manga": "Gouvêa G, Feiner J, Joshi S, Diaz R, et al., PLoS One 2022;17(10):e0275301: estudo observacional, 19 adultos de 18 a 65 anos, TAPSE e variação fracional de área do VD em cinco fases (basal, fase de hepatectomia, fase anepática, 30 min após a reperfusão e fechamento); função sistólica do VD preservada nos cinco momentos; excluídos hipertensão portopulmonar, síndrome hepatopulmonar, doença cardiopulmonar e insuficiência hepática fulminante. População selecionada e medida feita 30 min depois da reperfusão: o estudo não mediu os primeiros minutos, quando ocorre a síndrome pós-reperfusão, não exclui disfunção transitória do VD nesse período e não permite atribuir a instabilidade aguda a vasoplegia. TAPSE e variação fracional de área dependem da carga, e o TAPSE mede apenas a excursão longitudinal do anel lateral; normais sob anestesia, com pós-carga baixa, afastam disfunção sistólica evidente nos momentos avaliados, não medem reserva contrátil. O estudo mediu a função do VD; não testou a capacidade do eco de diferenciar vasoplegia de disfunção ventricular na hipotensão aguda: essa é a aplicação clínica proposta na aula, não um resultado do estudo. Choque séptico (SSC 2026): noradrenalina em primeira linha, iniciada cedo, mesmo em veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a PAM continuar inadequada; inotrópico reservado à disfunção cardíaca com hipoperfusão. VASSPR (JAMA 2026, n = 3.959; cluster-crossover em 13 hospitais): iniciar vasopressina com 0,1 vs. 0,4 mcg/kg/min de noradrenalina-equivalente não mudou a mortalidade (31,8% vs. 33,0%). OPTPRESS: alvo de PAM de 80–85 mmHg em idosos aumentou a mortalidade."
+   "fala": "No centro cirúrgico, antes da droga, afastar causas tratáveis: plano profundo, hipovolemia, compressão aortocava, pneumotórax e anafilaxia. Depois, o mecanismo: tônus baixo, agonista α1; bradicardia, efedrina ou, se grave, adrenalina; baixo débito com hipoperfusão, inotrópico, com noradrenalina se a PAM cair; vasoplegia persistente, vasopressina, e, no choque séptico, a sequência da Surviving Sepsis Campaign: noradrenalina, depois vasopressina e, se preciso, adrenalina; azul de metileno como resgate em casos selecionados; pré-carga baixa, volume; anafilaxia, adrenalina. Na dúvida entre vasoplegia e falência de VD, o eco separa as duas antes de escolher entre vasopressor e inotrópico. Voltando à pergunta do início: a droga certa corrige o componente da PAM que falha, na menor dose eficaz e pelo menor tempo.",
+   "manga": "O eco separa vasoplegia de disfunção de VD pela função sistólica (variação fracional de área, TAPSE) e pelo tamanho das cavidades; o VTI seriado mostra a resposta à intervenção. Choque séptico (SSC 2026): noradrenalina em primeira linha, iniciada cedo, mesmo em veia periférica; vasopressina quando a dose de noradrenalina sobe, sem limiar definido; adrenalina se a PAM continuar inadequada; inotrópico reservado à disfunção cardíaca com hipoperfusão. VASSPR (JAMA 2026, n = 3.959; cluster-crossover em 13 hospitais): iniciar vasopressina com 0,1 vs. 0,4 mcg/kg/min de noradrenalina-equivalente não mudou a mortalidade (31,8% vs. 33,0%). OPTPRESS: alvo de PAM de 80–85 mmHg em idosos aumentou a mortalidade."
   },
   {
    "id": "obrigado",
    "seg": 10,
-   "ini": 615,
-   "fim": 625,
+   "ini": 590,
+   "fim": 600,
    "chave": "Referências completas no QR code; abrir para perguntas.",
    "trans": "",
    "fala": "Obrigado pela atenção. As referências completas da aula estão no QR code. Fico à disposição para perguntas.",
